@@ -1,0 +1,27 @@
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Testing & Linting
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environments
+.venv/
+venv/
+ENV/
+env/
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Large intermediate / temporary artifacts (keep essential datasets)
+data/processed/apple_conversations_raw.json
+data/processed/gold_candidates.json
+data/processed/intent_classifier_clean.joblib
+data/processed/clf_fold_*.joblib

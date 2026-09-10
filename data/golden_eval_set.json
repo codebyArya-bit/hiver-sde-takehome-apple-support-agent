@@ -1,0 +1,3202 @@
+[
+  {
+    "id": "GOLD_001",
+    "conversation_id": "b62b611bbaa281cfa6fa34063ed51767",
+    "customer_query": "i need help i send you my problem in privet message",
+    "gold_intent": "OUT_OF_SCOPE_OTHER",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "Customer already sent a private message; routing to Twitter DM inbox queue.",
+    "reference_resolution": "Confirm DM received and request customer to monitor their direct messages.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_002",
+    "conversation_id": "4bc681d9c061d73ab15f975260aa2423",
+    "customer_query": "It's been nearly two weeks and I've yet to get LTE on my Watch () working. Think I paid a premium for a spec of red paint. Yes and I talked to Apple Care a few days ago.",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "General inquiry addressable with clarifying questions and standard support resources.",
+    "reference_resolution": "Offer assistance and request iOS version and model details.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_003",
+    "conversation_id": "b962328f87be977c2ad06c6409de26cd",
+    "customer_query": "https://t.co/DcSrdWNuPm says \"Photos is locked\" and full-res photos can't be downloaded. Since about at least 3PM EST.",
+    "gold_intent": "APPLE_ID_AND_ICLOUD",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "Account lockouts, credential recovery, and 2FA credentials require secure authenticated recovery workflows.",
+    "reference_resolution": "Direct to iforgot.apple.com or invite to DM with Apple ID confirmation.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_004",
+    "conversation_id": "feeaaac8d95f2f447c65af4d006e5fcc",
+    "customer_query": "Mira que me gusta vuestra actualización pero me va como el culo ahora, cuando queráis lo solucionáis.",
+    "gold_intent": "OUT_OF_SCOPE_OTHER",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "Non-English message requires routing to native language support specialist.",
+    "reference_resolution": "Direct user to international Apple support portal or native language support agent.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_005",
+    "conversation_id": "399dccc18eb75139a14f2ef8de9d1210",
+    "customer_query": "I updated to 11.0.2 and my phone is still getting frozen. What are you guys doing over there?? since the update my apps won't open!! I run a business from my phone not GOOD!!",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "Persistent unresolved bug despite troubleshooting or critical business disruption requires tier-2 escalation.",
+    "reference_resolution": "Apologize for ongoing disruption, request device model and build number in DM for specialized engineering review.",
+    "difficulty": "HARD",
+    "human_rubric": {
+      "groundedness": 4.0,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_006",
+    "conversation_id": "3252f589174612e4b09a16de6a230481",
+    "customer_query": "Major problems with my iPhone 6 #gps since the iOS update last week. Can't find my location to use Maps or Pokémon Go. 😡",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_007",
+    "conversation_id": "295cf2292ad0403164e9c1c40068dfe0",
+    "customer_query": "iOS 11 fail https://t.co/7cHNcUM18P It's the worst....wish I could downgrade 😂 - system is much slower",
+    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "High customer frustration or brand reputation risk requires empathetic senior human intervention.",
+    "reference_resolution": "Acknowledge frustration with empathy, apologize for the inconvenience, and transfer to a senior support representative.",
+    "difficulty": "HARD",
+    "human_rubric": {
+      "groundedness": 4.0,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_008",
+    "conversation_id": "0b10aef6de935a0e15cd9f4769ce096c",
+    "customer_query": "I've had to do it multiple times when I reset my device and how do I change trusted device from old phone to new phone?",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard product usage and UI how-to query can be immediately answered with public steps.",
+    "reference_resolution": "Provide step-by-step navigation instructions and relevant Apple Support Guide article.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_009",
+    "conversation_id": "019817c39eff50638b38ed8acfc65986",
+    "customer_query": "none of my photos have went onto my new iPhone device eventhough they were backed up and I've tried everything I know of m?? iCloud I think!",
+    "gold_intent": "APPLE_ID_AND_ICLOUD",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "Account lockouts, credential recovery, and 2FA credentials require secure authenticated recovery workflows.",
+    "reference_resolution": "Direct to iforgot.apple.com or invite to DM with Apple ID confirmation.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_010",
+    "conversation_id": "5b3844b03bacdc8bb4f9ddb96c7d2672",
+    "customer_query": "Please allow us to switch off Bluetooth &amp; Wifi in the control center again, it's really bugging a lot of iphone users!!!🙏🏼",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_011",
+    "conversation_id": "336058b4c0587104a700d432a2d47097",
+    "customer_query": "every few weeks \"my apply ID has been locked for security reasons\" and I have to go through and make a new pw. Why???",
+    "gold_intent": "APPLE_ID_AND_ICLOUD",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "Account lockouts, credential recovery, and 2FA credentials require secure authenticated recovery workflows.",
+    "reference_resolution": "Direct to iforgot.apple.com or invite to DM with Apple ID confirmation.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_012",
+    "conversation_id": "66d8edd721e626acf58c39669330c796",
+    "customer_query": "Dis c'est normal que mon #iPhone5S chauffe énormément depuis l'installation de l'#iOS11 ? 🌡",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_013",
+    "conversation_id": "fe9371ab7929c249ae6075f70095ed21",
+    "customer_query": "the new 11.0.2 made it so I can't open recently updated apps or download new ones 😶 I did restart it, it worked partially but there are still some \"broken\" apps. Nevermind they all stopped working, im gonna take a nap",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "Persistent unresolved bug despite troubleshooting or critical business disruption requires tier-2 escalation.",
+    "reference_resolution": "Apologize for ongoing disruption, request device model and build number in DM for specialized engineering review.",
+    "difficulty": "HARD",
+    "human_rubric": {
+      "groundedness": 4.0,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_014",
+    "conversation_id": "5151480e2a6bb112ace1863a1f9dff1e",
+    "customer_query": "Dear my #iPhone6s &amp; my worked so well together. After the update to #iOS11 ,they're not working well together at all. Fix it. My current iOS version is 11.0.2 Thank you for the reply. I really appreciate it. Thank you for the reply. I really appreciate it.",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_015",
+    "conversation_id": "b167036243ccdc313f75afa8b9546092",
+    "customer_query": "Anybody else on iOS 11 BT keeps skipping when you in the car🤔 FIX IT It used to on my powerbeats3 but I haven't used them since goin to 11.0.2 Yup I even deleted &amp; &amp; downloaded again still happened Sure",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "Persistent unresolved bug despite troubleshooting or critical business disruption requires tier-2 escalation.",
+    "reference_resolution": "Apologize for ongoing disruption, request device model and build number in DM for specialized engineering review.",
+    "difficulty": "HARD",
+    "human_rubric": {
+      "groundedness": 4.0,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_016",
+    "conversation_id": "c23fb8e0e0093a0e08cf2819c97146ba",
+    "customer_query": "ur new update 11.0.2 is draining battery like hell pls fix this asap i dont have heavy usuage of phn and device is also on low battery mode but still i can see battery draining drastically",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Software-side battery health checks and settings optimization can be performed by customer directly.",
+    "reference_resolution": "Recommend checking Settings > Battery > Battery Health and optimizing background refresh.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_017",
+    "conversation_id": "61c6904808ff284351f08039534d420b",
+    "customer_query": "my 7 plus iPhone for the third time after I did the last update hanged on me and I had to restart it so what is the problem ? https://t.co/sCdvIvfqrP And then what ? Ok thanks",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_018",
+    "conversation_id": "605559102ff2cf71fab6e2efb450701b",
+    "customer_query": "my iPhone 6s is slow as f*ck since I did the update to ios11 and after 1hour screen time it's empty #sucks All most all apps, it almost looks like they slow down all the old devices so everybody buy new phones",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_019",
+    "conversation_id": "319e8206d45fdd668d1d4d30fbca763f",
+    "customer_query": "Cool new feature in macOS High Sierra, it knows you've been working too hard and freezes the screen, but not the mouse. Can't get to the force quit menu, can't switch apps, can't get to the login screen. The only recourse is to hold power button down.",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_020",
+    "conversation_id": "868ae66bc209b8ed9c518a8ce88e3d1d",
+    "customer_query": "yo iOS 11 not handling doing an awesome job of handing off btwn my vehicles dock connector and bluetooth. what do i do? iPhone 7+ iOS 11.0.2 the vehicle is a Ram w/the Uconnect system! thx Pandora and audible now show up with the swipe up function!!! Still buggy though.",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "Persistent unresolved bug despite troubleshooting or critical business disruption requires tier-2 escalation.",
+    "reference_resolution": "Apologize for ongoing disruption, request device model and build number in DM for specialized engineering review.",
+    "difficulty": "HARD",
+    "human_rubric": {
+      "groundedness": 4.0,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_021",
+    "conversation_id": "e3df86302fda43c5608dfc59646c863f",
+    "customer_query": "Is the new update not letting anyone connect to WiFi? Because everyone else can use my WiFi but since I've updated it won't connect. It connects and when I try to load Facebook or Instagram it says \"can not refresh feed check connection\" on the app. Yep I've done that about 3 times. Left it off for 10 minutes turned it back on, reset all my settings. Deleted the network added it again.. Dm sent",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_022",
+    "conversation_id": "8230ad9d32561ea0d8b0b6e2724c014a",
+    "customer_query": "Grrr! Why won't the contacts from my phone back up to iCloud?? #icloud Doing that. I see Default Account and its set to my enterprise email account 11.0.1",
+    "gold_intent": "APPLE_ID_AND_ICLOUD",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "Account lockouts, credential recovery, and 2FA credentials require secure authenticated recovery workflows.",
+    "reference_resolution": "Direct to iforgot.apple.com or invite to DM with Apple ID confirmation.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_023",
+    "conversation_id": "270ab04f7c6a4c915a701f8ae9664089",
+    "customer_query": "the battery life on my phone is actually the worst. Get it together! I can't be connected to a charger all day. Yes and it still sucks",
+    "gold_intent": "APP_STORE_AND_BILLING",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "Billing disputes, refund requests, and financial account charges require private identity and payment verification.",
+    "reference_resolution": "Guide user to reportaproblem.apple.com or invite to DM for secure billing review.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_024",
+    "conversation_id": "cb0895da8b855984e72f3a1d3b1466c2",
+    "customer_query": "This #iphone update is crap! My screen brightness won't stay where I have it set, auto adjusts on its own when I have it set not to i'm having the same problem and it's pretty annoying because it drains my battery when the screen brightness is all the way up 11.0.1 and I have an 7+",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Software-side battery health checks and settings optimization can be performed by customer directly.",
+    "reference_resolution": "Recommend checking Settings > Battery > Battery Health and optimizing background refresh.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_025",
+    "conversation_id": "72297cf8993e28f6d0a10f2f6985ff4c",
+    "customer_query": "Ever since I updated my iPhone the Bluetooth won't stay connected. My phone stays being trash.",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_026",
+    "conversation_id": "dad6f99320f1148de134bbdd5493f7bb",
+    "customer_query": "I am seeing an issue since Apple Watch iOS11 installation with heart beat data record on activities. Tested twice today. https://t.co/RkJK0d9OSN",
+    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "High customer frustration or brand reputation risk requires empathetic senior human intervention.",
+    "reference_resolution": "Acknowledge frustration with empathy, apologize for the inconvenience, and transfer to a senior support representative.",
+    "difficulty": "HARD",
+    "human_rubric": {
+      "groundedness": 4.0,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_027",
+    "conversation_id": "d9c77961fe0f5f3281b5f89f2a50ade2",
+    "customer_query": "I'm going to freak out with this new update. What did you do to my phone!!!! So every time I go for a walk my cellular data stays off and I keep manually have to turn it on since the update I've never had to do this",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_028",
+    "conversation_id": "e8f3dd01ebeeadddedfd504b2b768f55",
+    "customer_query": "You ruined my phone because of the latest update😿🙏🏻 Attached and wet The phone after the update operates and opens itself and is slow How to send a message directly",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_029",
+    "conversation_id": "27be92d881d31d16c4f552ffcefe53b1",
+    "customer_query": "why is my phone brightness shifting from super dark to super bright all on its own without me being anywhere near the slider. Help Auto brightness is not enabled. It does it randomly when I have my brightness set lower. It's ios 11. I let my coworker play with my phone and I think they fixed it for now. I will be doing the 11.0.1 update tonight. Thank you!",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_030",
+    "conversation_id": "3446f8d981f789aaa148f31037a75220",
+    "customer_query": "The new iOS sucks. Emailing from the phone is now a pain. Charging the battery twice a day is not exciting. What else?",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Software-side battery health checks and settings optimization can be performed by customer directly.",
+    "reference_resolution": "Recommend checking Settings > Battery > Battery Health and optimizing background refresh.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_031",
+    "conversation_id": "9e978401fa03e34539d54be495a86dff",
+    "customer_query": "I just updated the iOS on my iPad and know I can't find any of the signs on the keyboard It's not something you can help with, it's just how you guys chose to redesign the keyboard",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_032",
+    "conversation_id": "a3843f997fcd61391e707a47873c5a2e",
+    "customer_query": "real issues with making phone calls since the update. They can't hear me I can't hear them. Battery replaced, still going on! 6s just updated 10 mins ago to iOS 11.0.2 so I'll give this one 24hrs to see what it's like thanks to apple for doing the battery on recall!",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "Physical hardware inspection, damage assessment, or part replacement requires Genius Bar appointment.",
+    "reference_resolution": "Provide support.apple.com/repair link and assist with scheduling Genius Bar appointment.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_033",
+    "conversation_id": "70d10bf1d5a4d0ba2ec87755c52708ff",
+    "customer_query": "My battery went from 35 to 25 in two second, WTF",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Software-side battery health checks and settings optimization can be performed by customer directly.",
+    "reference_resolution": "Recommend checking Settings > Battery > Battery Health and optimizing background refresh.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_034",
+    "conversation_id": "760cdbf1ee490db95a9e6918a268026d",
+    "customer_query": "why can't I access/send pics that are on the Cloud? https://t.co/lOUX31N12g Or I just can't select it and they all have a cloud icon https://t.co/vMy6kzAVxO https://t.co/mWQ6ttt25b",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard product usage and UI how-to query can be immediately answered with public steps.",
+    "reference_resolution": "Provide step-by-step navigation instructions and relevant Apple Support Guide article.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_035",
+    "conversation_id": "4c9a0737361e075e8c87f8734d7bad39",
+    "customer_query": "so my 7plus since the update blacks out often throughout the day. Constantly requires forced restarts.Apps stall.🤷🏽‍♂️😒 And my sim card (att) continues to leave the network (sim failure)",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_036",
+    "conversation_id": "0609174c75e6a0e1bb7393787517ea0c",
+    "customer_query": "New ios 11.0.2 still does not resolve Mail app issues!! Cannot connect to Microsoft office exchange without searching for ages Any resolution to this? 11.0.2 - iPhone 7 - still no mail via mail app - Outlook App works without issue No error message, just constant spinning dial whilst phone/app connecting to exchange. Must be a 30sec lag compared to instant pre new IOS The Mail app. Split between connected and WiFi. App works equally slowing via both. Ok thank you. I'll dm you. What info do you need? Code from back of phone?",
+    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "High customer frustration or brand reputation risk requires empathetic senior human intervention.",
+    "reference_resolution": "Acknowledge frustration with empathy, apologize for the inconvenience, and transfer to a senior support representative.",
+    "difficulty": "HARD",
+    "human_rubric": {
+      "groundedness": 4.0,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_037",
+    "conversation_id": "a669859552d30cb3bcda717555569221",
+    "customer_query": "help https://t.co/ZpVmNgWPhg An now all me numbers have deleted this is a joke",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "General inquiry addressable with clarifying questions and standard support resources.",
+    "reference_resolution": "Offer assistance and request iOS version and model details.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_038",
+    "conversation_id": "dc89e8a959622bb503d796e9f866c9d4",
+    "customer_query": "Literally the worst update have done, not had any problems with my phone up n now the sounds faulty, phone crashes n restarts 24/7👍🏼😡",
+    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "High customer frustration or brand reputation risk requires empathetic senior human intervention.",
+    "reference_resolution": "Acknowledge frustration with empathy, apologize for the inconvenience, and transfer to a senior support representative.",
+    "difficulty": "HARD",
+    "human_rubric": {
+      "groundedness": 4.0,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_039",
+    "conversation_id": "36f1fd54ffbf45d359270687b3bfb409",
+    "customer_query": "the loading icon is appearing almost 100% of the time in my status bar, even after reboot. Help! iPhone 7",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_040",
+    "conversation_id": "0f372570f2843bb879597bfbc6d7f286",
+    "customer_query": "My WiFi seems to going funny since I've updated , any reported issues for it on iOS11.1? Have to keep turning off and on to get connection",
+    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "High customer frustration or brand reputation risk requires empathetic senior human intervention.",
+    "reference_resolution": "Acknowledge frustration with empathy, apologize for the inconvenience, and transfer to a senior support representative.",
+    "difficulty": "HARD",
+    "human_rubric": {
+      "groundedness": 4.0,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_041",
+    "conversation_id": "262a7c2acbc93dbcaa4393aa64d3ff90",
+    "customer_query": "Are you kidding me - the new iOS is just blacking out my phone randomly. Your new fix has fixed nothing!",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_042",
+    "conversation_id": "479fd5a63024f23a4e14b41a83974c19",
+    "customer_query": "just noticed numbers near my cell and WiFi signal icons in my status bar?? https://t.co/lYazDUAqVI",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_043",
+    "conversation_id": "4325e4492641b9f113162f2805838868",
+    "customer_query": "Hi , is it possible to stop my Mac receiving the two-factor authentication code and only send it to my iPhone or iPad?",
+    "gold_intent": "APPLE_ID_AND_ICLOUD",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "Account lockouts, credential recovery, and 2FA credentials require secure authenticated recovery workflows.",
+    "reference_resolution": "Direct to iforgot.apple.com or invite to DM with Apple ID confirmation.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_044",
+    "conversation_id": "5fab33209dc5e9c256a0f23c0cc405b5",
+    "customer_query": "I have an iPhone that refuses to connect to WiFi even though it's inches away from the router! 😡😡. 2 expensive 2 b this crap. I know how to do that, it disconnects itself all the time. It's pot luck whether I get WiFi on it in my own house. I thought it was my ISP. And with that, their support ends. Thanks Apple. You've been really useful. I'm getting a Samsung tomorrow. iPhone 6. Totally up to date with updates. About a year ago. I thought it was my ISP. It's not. My iPad is fine. The phone is faulty. I've changed my ISP over it!!! Again, thanks for the help. You've been great 👍🏻👍🏻. I'll never get an iPhone again. Utter rubbish.",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_045",
+    "conversation_id": "8477c7aaa298567ba175a46377f8f32e",
+    "customer_query": "So I've installed 11.0.3 and waited... still missing photos on iPad Air, it just won't sync. What next? Full restore from b/up",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "General inquiry addressable with clarifying questions and standard support resources.",
+    "reference_resolution": "Offer assistance and request iOS version and model details.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_046",
+    "conversation_id": "7962107b6afcb2fd5e180d98e4f788e3",
+    "customer_query": "how the fuck do you \"not have Mac technicians available\" this is worse than when guitar center didn't have their \"guitar guy\" in",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "General inquiry addressable with clarifying questions and standard support resources.",
+    "reference_resolution": "Offer assistance and request iOS version and model details.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_047",
+    "conversation_id": "d4d395f8f3879cec9059f5caf2acb4b7",
+    "customer_query": "Hi Apple! My early 2015 Macbook Pro Retina has glares on it. Since I have no Apple Care, will I be able to get a free repair? Thanks so much but I've just made a Genius Bar reservation!",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "General inquiry addressable with clarifying questions and standard support resources.",
+    "reference_resolution": "Offer assistance and request iOS version and model details.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_048",
+    "conversation_id": "4e0b80c6c31febbb290fd799dd348e6a",
+    "customer_query": "I'm on 11.0.2. No matter how many time I reset the settings or restart the phone my autocorrect etc wont work. Any fixes? I have an iPhone SE. Since the update predictive text and all other keyboard settings are not showing/working. Yes, still nothing https://t.co/cpqydKm3R4",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "Persistent unresolved bug despite troubleshooting or critical business disruption requires tier-2 escalation.",
+    "reference_resolution": "Apologize for ongoing disruption, request device model and build number in DM for specialized engineering review.",
+    "difficulty": "HARD",
+    "human_rubric": {
+      "groundedness": 4.0,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_049",
+    "conversation_id": "37459f467894a1490da0fb5434ca1c96",
+    "customer_query": "so my phone is charged for an hour now and the battery keeps going down..wtf? get your shit together",
+    "gold_intent": "APP_STORE_AND_BILLING",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "Billing disputes, refund requests, and financial account charges require private identity and payment verification.",
+    "reference_resolution": "Guide user to reportaproblem.apple.com or invite to DM for secure billing review.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_050",
+    "conversation_id": "abbea043c506a9a19b7c1844f373153f",
+    "customer_query": "what have you done w ios 11? It has crippled my phone. Each new update seems to do more harm than good. Msg app useless Horrible lag. Freezes. Touch screen wont work. Also on home screen flashing phone numbers or recent calls. Overall perf is really bad.",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_051",
+    "conversation_id": "7eca82bef1a92ca904094a3b612a05c8",
+    "customer_query": "Hey ever since updating the iPhone iOS my 6s keeps freezing on apps/needing to be restarted. Any fix or is the \"fix\" to buy a new one",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_052",
+    "conversation_id": "6aff6493794c59d267c6c8d5d86b5b0b",
+    "customer_query": "Seriously my train ride is only 30 min and my phone goes from 100% to 20..fix #ios11",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_053",
+    "conversation_id": "baeb9f62e3b2d046e0d8ffbf018da968",
+    "customer_query": "#iOS11 0.2 on 📱7. #Fail Poor battery. Poor WiFi. No speakerphone. Apps Freeze. Can't pause 🎧 in Control Centre. Thanks 🍎 Not!",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Software-side battery health checks and settings optimization can be performed by customer directly.",
+    "reference_resolution": "Recommend checking Settings > Battery > Battery Health and optimizing background refresh.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_054",
+    "conversation_id": "74eaec819fdd06150a82adc8734c90e8",
+    "customer_query": "Please advise why, since updating the operating system, the iCloud icon is missing??? https://t.co/gVTQIDVgoj iPad Pro &amp; iPhone 6.",
+    "gold_intent": "APPLE_ID_AND_ICLOUD",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "Account lockouts, credential recovery, and 2FA credentials require secure authenticated recovery workflows.",
+    "reference_resolution": "Direct to iforgot.apple.com or invite to DM with Apple ID confirmation.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_055",
+    "conversation_id": "a598f3a2f1e4b43f40608681fbfc29bb",
+    "customer_query": "Yo your iOS update is killing my battery life. Fix it I wish they would I gave up on my iPhone 7 Plus and sold it got a galaxy s8 plus. I still have this iPad mini that I have to have for work It would go all day easy and then some now I unplug it and watch the battery drop 2 hours later I have to charge it. That's what I'm dealing with",
+    "gold_intent": "APP_STORE_AND_BILLING",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "Billing disputes, refund requests, and financial account charges require private identity and payment verification.",
+    "reference_resolution": "Guide user to reportaproblem.apple.com or invite to DM for secure billing review.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_056",
+    "conversation_id": "fb02732efa52c14a6410b4864ee531f4",
+    "customer_query": "Dear why the fuck does my iPhone 6 battery go from 100% to 4% in less than an hour sitting on my desk. Any chance of a new one?! Hi it's 10.1.0 it's ridiculous. By the time I've got to work my battery is dead. It's not like I'm even using it!!!",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Software-side battery health checks and settings optimization can be performed by customer directly.",
+    "reference_resolution": "Recommend checking Settings > Battery > Battery Health and optimizing background refresh.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_057",
+    "conversation_id": "2151845b4188b67b0cef081fe3565704",
+    "customer_query": "is there a reason some of my emojis are rendering in my mac? For instance, the taco emoji is a placeholder square. Thanks! https://t.co/p0L9JqtNUO",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "General inquiry addressable with clarifying questions and standard support resources.",
+    "reference_resolution": "Offer assistance and request iOS version and model details.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_058",
+    "conversation_id": "e83fa3b8d7c865b7f6c4fdc6577265d1",
+    "customer_query": "seems your PowerBeats3 aren't much good. My pair has given up after a handful of uses! Seems it's a common fault as well. In asking friends 2 people have had the same and then looking at forums numerous people have experienced the same thing",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "General inquiry addressable with clarifying questions and standard support resources.",
+    "reference_resolution": "Offer assistance and request iOS version and model details.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_059",
+    "conversation_id": "ce9dc7fc98c542ada02c9bf2670d06cd",
+    "customer_query": "how do you delete apps on the Apple TV?!?!? I'm holding down on the app till it wiggles then holding down play and nope",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "General inquiry addressable with clarifying questions and standard support resources.",
+    "reference_resolution": "Offer assistance and request iOS version and model details.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_060",
+    "conversation_id": "91e1ef38d956c545996c6ce127e56c38",
+    "customer_query": "Idk if it's the new iOS update but my phone been lagging lately If you read the comments almost every post is about this shitty iOS 11 these guys here will make it seem like it is isolated",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_061",
+    "conversation_id": "66586e07e4255cb082bfa532046d4d1a",
+    "customer_query": "my phone won't change back to imessage and i've done everything possible to try fix this. help please? tried everything, still not working",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "General inquiry addressable with clarifying questions and standard support resources.",
+    "reference_resolution": "Offer assistance and request iOS version and model details.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_062",
+    "conversation_id": "035f6c2ae021b326162a5bef066a4202",
+    "customer_query": "It went down 2% in two minutes with low battery use on. What the fuck, ?",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Software-side battery health checks and settings optimization can be performed by customer directly.",
+    "reference_resolution": "Recommend checking Settings > Battery > Battery Health and optimizing background refresh.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_063",
+    "conversation_id": "07074a20ffe924afc1f031cb0b2b4cf2",
+    "customer_query": "- iOS 11 &amp; .1 terrible! Battery life drops quicker than pound did after Brexit referendum! &amp; it crashes more than bumper cars!",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Software-side battery health checks and settings optimization can be performed by customer directly.",
+    "reference_resolution": "Recommend checking Settings > Battery > Battery Health and optimizing background refresh.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_064",
+    "conversation_id": "487c9b2d3fb9c7199f1a7dbebd80188b",
+    "customer_query": "Is there anyway of telling that you're not interested in setting up Apple Pay on my iPhone following the recent update?",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_065",
+    "conversation_id": "d88c9d80d7ccb961f7ee415b7be1590d",
+    "customer_query": "Snapchat notification icon on Apple Watch is blanked out. Even after updating to OS 4.0.1.... I am still getting the notification as normal. But the icon is affected. The twitter notification is the same way.",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard product usage and UI how-to query can be immediately answered with public steps.",
+    "reference_resolution": "Provide step-by-step navigation instructions and relevant Apple Support Guide article.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_066",
+    "conversation_id": "fa144fa2d8e9613ea77dd5e859c1d918",
+    "customer_query": "Hey Why did you release #ios11 with so many bugs? I love #iphone and #iOS but this is the worst iOS update yet. We deserve better. https://t.co/w83ZuJX78m I agree it sure is the worst",
+    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "High customer frustration or brand reputation risk requires empathetic senior human intervention.",
+    "reference_resolution": "Acknowledge frustration with empathy, apologize for the inconvenience, and transfer to a senior support representative.",
+    "difficulty": "HARD",
+    "human_rubric": {
+      "groundedness": 4.0,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_067",
+    "conversation_id": "6cb40b26e5a41ebe6c316ea9a0bf6d17",
+    "customer_query": "2tgread they HAVE replied!!but reply bounced ABOVE my last message to them! Come on apple sort this out! Worst update EVER!",
+    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "High customer frustration or brand reputation risk requires empathetic senior human intervention.",
+    "reference_resolution": "Acknowledge frustration with empathy, apologize for the inconvenience, and transfer to a senior support representative.",
+    "difficulty": "HARD",
+    "human_rubric": {
+      "groundedness": 4.0,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_068",
+    "conversation_id": "aa187fa785f84b7b4a9fbc3fed2f75ea",
+    "customer_query": "#IOS11 - what the heck?? what happened to my apps? https://t.co/U19DGSfpiU",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_069",
+    "conversation_id": "9dd8592ff9fa3881d49190d6f59fc210",
+    "customer_query": "why has #HighSierra destroyed blank background PNG images in Photos? Some now inconsistently have square, white BGs It's inconsistent. Some have white BG in Preview where it didn't before, others show blank BG in Preview but have BG after import to Photos GIFs are consistent but Preview can't export to GIF.",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "General inquiry addressable with clarifying questions and standard support resources.",
+    "reference_resolution": "Offer assistance and request iOS version and model details.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_070",
+    "conversation_id": "35653b6c4c21f5976bb2a4e8cca1436b",
+    "customer_query": "So the new iOS updates have drained my iPod's battery considerably faster than before and People function is HORRIFICALLY inaccurate.",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Software-side battery health checks and settings optimization can be performed by customer directly.",
+    "reference_resolution": "Recommend checking Settings > Battery > Battery Health and optimizing background refresh.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_071",
+    "conversation_id": "c27d8ef26e61ce79d9dd370690397fe4",
+    "customer_query": "iOS 11 has wrecked my iPhone 7. Phone is slow keeps freezing. Very poor show.",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_072",
+    "conversation_id": "5ecb6fc9bbc932234e8cbb499725cea6",
+    "customer_query": "I've never been so disappointed in an iOS rollout. This update has basically made my iphone unusable. Even 11.0.1 didn't help! Bluetooth issue, speakerphone issue, lag issue when switching apple apps, half updated apps issue. Beyond upset with failed Apple's iOS 11.",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Software-side battery health checks and settings optimization can be performed by customer directly.",
+    "reference_resolution": "Recommend checking Settings > Battery > Battery Health and optimizing background refresh.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_073",
+    "conversation_id": "196cd5b8300ff04a0ec76cd7239453b7",
+    "customer_query": "battery life is terrible since iOS11. Why does 5min of background in mail use 10%? https://t.co/BB7OJIh2B8",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Software-side battery health checks and settings optimization can be performed by customer directly.",
+    "reference_resolution": "Recommend checking Settings > Battery > Battery Health and optimizing background refresh.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_074",
+    "conversation_id": "3e0834d7c3e9c294cf273964570829c5",
+    "customer_query": "hey! My music app doesn't work after iOS 11 update, it crashes right after I open the app. need support. Alright thanks I've sent a DM. Bless.",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_075",
+    "conversation_id": "36e5cd71692ccaae2521df0611ff97d5",
+    "customer_query": "My iPhone runs out of battery so fast it's ridiculous 😡 you better fix this",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Software-side battery health checks and settings optimization can be performed by customer directly.",
+    "reference_resolution": "Recommend checking Settings > Battery > Battery Health and optimizing background refresh.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_076",
+    "conversation_id": "72379e44ec3062c723d39acf153853c0",
+    "customer_query": "This new update is DRAINING my battery! 6s",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Software-side battery health checks and settings optimization can be performed by customer directly.",
+    "reference_resolution": "Recommend checking Settings > Battery > Battery Health and optimizing background refresh.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_077",
+    "conversation_id": "8b280b7384b4d2d1de5f4587382301b9",
+    "customer_query": "This new #iPhone update is some bs. Phone hasn't been acting right since I did it. #iPhone update is killing my battery life. Thanks",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Software-side battery health checks and settings optimization can be performed by customer directly.",
+    "reference_resolution": "Recommend checking Settings > Battery > Battery Health and optimizing background refresh.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_078",
+    "conversation_id": "11154cc9c7a17501e32cc6a019fb7192",
+    "customer_query": "left house from 100% battery Life when I went workplace just 20 minuets journey battery gone 90% #Apple hate #iOS11 fixed f*** iOS 11.0.2",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Software-side battery health checks and settings optimization can be performed by customer directly.",
+    "reference_resolution": "Recommend checking Settings > Battery > Battery Health and optimizing background refresh.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_079",
+    "conversation_id": "7cc2e17086de01fe69e943226e8eb9b6",
+    "customer_query": "new update is terrible. My brand new iPhone keeps freezing repeatedly. I've had an iPhone for years, never happened iPhone 7, yes 11.0.02 iPhone 6 Plus from 11.0.1 to 11.0.2 to try &amp; combat issues but still suffering lockups -can't swipe to answer calls -very laggy in general.",
+    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "High customer frustration or brand reputation risk requires empathetic senior human intervention.",
+    "reference_resolution": "Acknowledge frustration with empathy, apologize for the inconvenience, and transfer to a senior support representative.",
+    "difficulty": "HARD",
+    "human_rubric": {
+      "groundedness": 4.0,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_080",
+    "conversation_id": "b88e8eb3e7d033832f22cf5fe5aa4e4f",
+    "customer_query": "When is the update to fix this update?",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_081",
+    "conversation_id": "3e52e6da16f4e4051fb977b95464e41d",
+    "customer_query": "My iPhone 7+ is now the most expensive paperweight I have ever owned. Thanks new update. 😖😑 #Apple #Update #NothingWorksAnymore",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_082",
+    "conversation_id": "8db3b2a2afa792d1d10581def0d68d1a",
+    "customer_query": "the new iOS is making my phone freeze!",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_083",
+    "conversation_id": "47bb4b853cbd2386c5d2d8035e397f2a",
+    "customer_query": "Sitting with my iPhone plugged into the charger and its battery is slowly going down. Great logic there",
+    "gold_intent": "APP_STORE_AND_BILLING",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "Billing disputes, refund requests, and financial account charges require private identity and payment verification.",
+    "reference_resolution": "Guide user to reportaproblem.apple.com or invite to DM for secure billing review.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_084",
+    "conversation_id": "171d21af78f87591f09d44a0fed2332c",
+    "customer_query": "why has outlook been blocked with the new macOS High Sierra update on my Mac? Says unsupported but no way of updating app!?",
+    "gold_intent": "APPLE_ID_AND_ICLOUD",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "Account lockouts, credential recovery, and 2FA credentials require secure authenticated recovery workflows.",
+    "reference_resolution": "Direct to iforgot.apple.com or invite to DM with Apple ID confirmation.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_085",
+    "conversation_id": "5ed38859f337c6d7e06359c3f5d53a1c",
+    "customer_query": "Thank you to the new #iOS11 update. My #iPhone barely made it till 6pm",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_086",
+    "conversation_id": "475220754d77ad262817edb657678a06",
+    "customer_query": "Has killed the IPhone 6 with IOS 11 my phone had slowed down so much! It's pain ful iOS 11 installed the performance dropped then updated to 11.0.1 then 11.0.2 complete factory restore but no real difference Brought my wife iPhone 8 and opening an app my phone is 5x slower from the point to open an app it's about 5-10s ie messages No freezing but factory restore on phone then did a restore from backup",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_087",
+    "conversation_id": "2120377d94e249946387e181fb5754d9",
+    "customer_query": "Nope. Mine was off. Battery still draining super fast w/ iOS11.",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Software-side battery health checks and settings optimization can be performed by customer directly.",
+    "reference_resolution": "Recommend checking Settings > Battery > Battery Health and optimizing background refresh.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_088",
+    "conversation_id": "ef42c277042ecd3e728823c0d2fb7d36",
+    "customer_query": "Hey , my iPhone keeps freezing in each app &amp; turning off with iOS 11.0.2 pls fix it. Thx.",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_089",
+    "conversation_id": "1d0c4a0a5daed60c94b9b2106d1106d7",
+    "customer_query": "The experience can be tough sometimes. Any help https://t.co/r2LJkpUHqH",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "General inquiry addressable with clarifying questions and standard support resources.",
+    "reference_resolution": "Offer assistance and request iOS version and model details.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_090",
+    "conversation_id": "d514dd4ab63af770077de99e31edbeb8",
+    "customer_query": "Just restored my iPhone to my latest iCloud backup after removed the ability to hide comments on LIVE videos. 🤦🏽‍♀️ Over the last year 's added useful features to help make its app safer for all, but its 17.0 iOS update is a step backwards. I updated to 18.0 only to find they haven't added it back. I've spent the past 30 minutes trying to restore 16.0... And now I can't manually backup my iPhone in anymore. 🤦🏽‍♀️ Restoring my iPhone – again. Thanks. In iTunes \"Back Up Now\" is greyed out. The only thing I can click is \"Restore Backup...",
+    "gold_intent": "APPLE_ID_AND_ICLOUD",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "Account lockouts, credential recovery, and 2FA credentials require secure authenticated recovery workflows.",
+    "reference_resolution": "Direct to iforgot.apple.com or invite to DM with Apple ID confirmation.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_091",
+    "conversation_id": "fb9d21120419e366290b9d4807dc34d4",
+    "customer_query": "on iOS 11.02 iPhone 6 Plus restored to factory settings still have white screen &amp; lag when opening apps. Any help appreciated https://t.co/WYGzGTSRCd Thanks. White scrn on most native apple apps. Slow load on welcome scrn most others. Erase via settings as 'new device' no backup restored Thank you. Set my phone up as new",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "Persistent unresolved bug despite troubleshooting or critical business disruption requires tier-2 escalation.",
+    "reference_resolution": "Apologize for ongoing disruption, request device model and build number in DM for specialized engineering review.",
+    "difficulty": "HARD",
+    "human_rubric": {
+      "groundedness": 4.0,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_092",
+    "conversation_id": "fdf020fcfcca7ed8cbd0d5132a57eb9a",
+    "customer_query": "iOS 11 sucks!!! iPhone switches off af 70% battery. Calls not gettting through. Too many probs. Is that how you revolutionize? 11.0.2 ! I keep it updated all the time. What's wrong ?",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Software-side battery health checks and settings optimization can be performed by customer directly.",
+    "reference_resolution": "Recommend checking Settings > Battery > Battery Health and optimizing background refresh.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_093",
+    "conversation_id": "cb57b7cc7e9d7bcc6e9c8e97c5ae0b8d",
+    "customer_query": "This IOS 11.0.2 update is trash. get it together! Phone has been freezing all day, apps tripping. I'm livid. https://t.co/RhSUtLZu6l Yes I've restarted my phone numerous times today &amp; I'm still having issues after the update. Apps freezing (Instagram, Kik, vsco &amp; Facebook)",
+    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "High customer frustration or brand reputation risk requires empathetic senior human intervention.",
+    "reference_resolution": "Acknowledge frustration with empathy, apologize for the inconvenience, and transfer to a senior support representative.",
+    "difficulty": "HARD",
+    "human_rubric": {
+      "groundedness": 4.0,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_094",
+    "conversation_id": "b9b2e60d297a8661834bad22533e7155",
+    "customer_query": "My ios 11.0.2 loses the wi fi It's iphone 7 https://t.co/y0z6yHRwlN",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_095",
+    "conversation_id": "0fc88b4454fbeebf31936eee698b7e2e",
+    "customer_query": "I have trouble often not seeing the media player widget in lock screen from ie . cant control vol, too. latest iOS 11! y iOS 11.0.2. it works when the media widget is working. It isn't, when it's not. Same for pause/play. The latter will start default player With SoundCloud and Audible as well",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_096",
+    "conversation_id": "5542efcd39ea5827380e9db1a1237f7e",
+    "customer_query": "omg #frustrated since the new iOS update phone doesn't work properly. Can't upload photos as says iCloud problem 😡 I've carried out a reset network settings https://t.co/07ZMPSmRbh",
+    "gold_intent": "APPLE_ID_AND_ICLOUD",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "Account lockouts, credential recovery, and 2FA credentials require secure authenticated recovery workflows.",
+    "reference_resolution": "Direct to iforgot.apple.com or invite to DM with Apple ID confirmation.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_097",
+    "conversation_id": "0209d640cec7124abae2f023ae4d739e",
+    "customer_query": "Ok, , please explain this. Playback came from iPhone speakers. https://t.co/67JPCOWSZ7 Thx. They're 🎧 and I have repaired them a billion times. They have worked poorly with my iPhone since iOS 10 came out. All apps.",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "Physical hardware inspection, damage assessment, or part replacement requires Genius Bar appointment.",
+    "reference_resolution": "Provide support.apple.com/repair link and assist with scheduling Genius Bar appointment.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_098",
+    "conversation_id": "e79c6277116a2f651b5f8ed03eee5f62",
+    "customer_query": "My iPhone is slower than dial up since the new iOS update.",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_099",
+    "conversation_id": "b0ae19787c5c9eb79d6c275025345eba",
+    "customer_query": "Ever since the update my Mom and I's phones haven't been working correctly. Text/Siri aren't working. Who do we contact? Oh, we didn't get notified of that update but I went in and found it. I'll see if that helps. Thanks! Sorry one more question. My phone brightness keeps diming on and off even with auto off. It shows the brightness still all the way up when I check it. Is that a battery issue? This has been happening a while before the update",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Software-side battery health checks and settings optimization can be performed by customer directly.",
+    "reference_resolution": "Recommend checking Settings > Battery > Battery Health and optimizing background refresh.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_100",
+    "conversation_id": "e389eb57efc577ba2b722aef7fb41830",
+    "customer_query": "your update sucks. FaceTime doesn't work anymore. One of the main reasons to have an iPhone.. I downloaded 11.0.2 and it still doesn't work. There is no connection even when in perfect WiFi",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "Persistent unresolved bug despite troubleshooting or critical business disruption requires tier-2 escalation.",
+    "reference_resolution": "Apologize for ongoing disruption, request device model and build number in DM for specialized engineering review.",
+    "difficulty": "HARD",
+    "human_rubric": {
+      "groundedness": 4.0,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_101",
+    "conversation_id": "6128bcddfcdf6c9d0d62c6f9a683e517",
+    "customer_query": "screen went black. Reset photo came back. WTF? https://t.co/yABpvf2NEn Sorry. I hard restart? Held down button on right and down volume button",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "General inquiry addressable with clarifying questions and standard support resources.",
+    "reference_resolution": "Offer assistance and request iOS version and model details.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_102",
+    "conversation_id": "954f557d9f0a9c478e09630f394c3023",
+    "customer_query": "If I buy the watch with cellular will it work on bluetooth/Wi-Fi until @O2 start stocking it in their line up?",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_103",
+    "conversation_id": "7e16f85e0cf205e7c2c24c60657aa778",
+    "customer_query": "An iPhone that I bought 5 months ago shouldn't have its battery go from 100 to 93 in 12 MINUTES. What the hell! #ios11 Awesome, thanks, I already did :)",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Software-side battery health checks and settings optimization can be performed by customer directly.",
+    "reference_resolution": "Recommend checking Settings > Battery > Battery Health and optimizing background refresh.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_104",
+    "conversation_id": "541db6e2d42088d160d6df259eb1adf8",
+    "customer_query": "my iPhone 7 runs worse after updating to ios11",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_105",
+    "conversation_id": "6fb6f0849187d8eb942fb80654089128",
+    "customer_query": "Since latest update my iPhone battery has been utterly destroyed. stop sabotaging my phone to make me buy a new one The latest update drains my battery 11.0.2",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Software-side battery health checks and settings optimization can be performed by customer directly.",
+    "reference_resolution": "Recommend checking Settings > Battery > Battery Health and optimizing background refresh.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_106",
+    "conversation_id": "e61b16a8092402413d6a0f01e9eb9e1c",
+    "customer_query": "SOME ASSHOLE HACKED INTO MY ITUNES AND BOUGHT A BUNCH OF EMO MUSIC WTF https://t.co/PNqNuP8m9b pls answer my rep is at stake",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "General inquiry addressable with clarifying questions and standard support resources.",
+    "reference_resolution": "Offer assistance and request iOS version and model details.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_107",
+    "conversation_id": "22b64c79cfc67383ddcf88eb6c59721c",
+    "customer_query": "Hey this new update sucks ! Phone freezing, battery dead, all bad. First time ever considering",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Software-side battery health checks and settings optimization can be performed by customer directly.",
+    "reference_resolution": "Recommend checking Settings > Battery > Battery Health and optimizing background refresh.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_108",
+    "conversation_id": "ec10fb88c8d5d2d9e89e3b84f87da67a",
+    "customer_query": "Y'all gotta do better next time. 7plus, yes I installed the latest software. It's just not functioning/working properly. You guys need to hurry with a New Software Update👍🏾",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_109",
+    "conversation_id": "37e170505195a18f41fefa7b7f71796e",
+    "customer_query": "why does the new update drain the battery so quick?!?",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Software-side battery health checks and settings optimization can be performed by customer directly.",
+    "reference_resolution": "Recommend checking Settings > Battery > Battery Health and optimizing background refresh.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_110",
+    "conversation_id": "9ef5a95434d1ffbd0c6216dd7c74334d",
+    "customer_query": "S/O to iOS 11 for turning my two month old iPhone 7 into a piece of shit",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_111",
+    "conversation_id": "ea91bf58d3712691b09950a423a97574",
+    "customer_query": "If a business has definitely had a name change and located at the same address, how long does it take for that to be changed in the Maps App?",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "General inquiry addressable with clarifying questions and standard support resources.",
+    "reference_resolution": "Offer assistance and request iOS version and model details.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_112",
+    "conversation_id": "3f041c4dfc23ee460ca9a69193e3fca8",
+    "customer_query": "I'm trying to get Apple care for my watch but I can't open the diagnostics. I open the link but it doesn't open anything :( https://t.co/PCr1wBmMk2",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "General inquiry addressable with clarifying questions and standard support resources.",
+    "reference_resolution": "Offer assistance and request iOS version and model details.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_113",
+    "conversation_id": "1a1f59ddd45e8542d98bc4a7b52e0302",
+    "customer_query": "I don't see the fix for \"sucking the life out of my battery with these updates\" issue... https://t.co/Wtz3xPevpW Or the issue of my phone running slow as molasses making it take 3 mins to send an \"ok\" text or it being hot as FIRE all damn day long.",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Software-side battery health checks and settings optimization can be performed by customer directly.",
+    "reference_resolution": "Recommend checking Settings > Battery > Battery Health and optimizing background refresh.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_114",
+    "conversation_id": "6273d12dacb4505c89dafe057f199c8c",
+    "customer_query": "mate my iPhone is a complete bag of wank since updating to the new iOS 😩 keeps freezing and crashing my phone. sort your life",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_115",
+    "conversation_id": "c8348dd2b8ddc1a429a1efb8caf6c1de",
+    "customer_query": "fix this my phone has been dying faster since I updated",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_116",
+    "conversation_id": "4a41fc2c7417a87907b54cb0b70ca70b",
+    "customer_query": "Is #apple planning on another update since the latest one is draining batteries like crazy?",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Software-side battery health checks and settings optimization can be performed by customer directly.",
+    "reference_resolution": "Recommend checking Settings > Battery > Battery Health and optimizing background refresh.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_117",
+    "conversation_id": "89fdbaf3d8b4ef2d18936eb9dcd6b8eb",
+    "customer_query": "ever since I downloaded the latest ios update my phone has been lagging and freezing...unfuck your self",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_118",
+    "conversation_id": "5393c883c8b57bcb027c88341bdd542e",
+    "customer_query": "My macbook pro battery has fully stopped working overnight... it is a 2015... is this typical? #MacBookPro",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Software-side battery health checks and settings optimization can be performed by customer directly.",
+    "reference_resolution": "Recommend checking Settings > Battery > Battery Health and optimizing background refresh.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_119",
+    "conversation_id": "5a3dc337db175ea7b3cf06939c8a96fd",
+    "customer_query": "Cupertino, we have a problem. Batt fully charged @ 930am, dead by 330. ⚡️\"iOS11 can suck your battery dry 🔋\" Here's the msg: batt drains 3x as fast, no volume control Oh, and Bluetooth no longer syncs with devices. Great going, guys! What's to look into? Your developers dropped the ball w/ this update. Back to the drawing board and fix the problems!",
+    "gold_intent": "APP_STORE_AND_BILLING",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "Billing disputes, refund requests, and financial account charges require private identity and payment verification.",
+    "reference_resolution": "Guide user to reportaproblem.apple.com or invite to DM for secure billing review.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_120",
+    "conversation_id": "825867f18a089833e099207a56d43568",
+    "customer_query": "any suggestions? Was even hooked up to charge but not showing on my phone as charging, and it's not a dudf cable https://t.co/W10DsZYVim",
+    "gold_intent": "APP_STORE_AND_BILLING",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "Billing disputes, refund requests, and financial account charges require private identity and payment verification.",
+    "reference_resolution": "Guide user to reportaproblem.apple.com or invite to DM for secure billing review.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_121",
+    "conversation_id": "767bf9921d4ee3ba6b1b3a21551e2554",
+    "customer_query": "hi updated my phone today, when I play music from Spotify, soundcloud etc they do not show in my control centre?",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_122",
+    "conversation_id": "45d20aada41fe399181f68bf58ee8951",
+    "customer_query": "I'm tired of my phone dying fast. Fix this issue!",
+    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "High customer frustration or brand reputation risk requires empathetic senior human intervention.",
+    "reference_resolution": "Acknowledge frustration with empathy, apologize for the inconvenience, and transfer to a senior support representative.",
+    "difficulty": "HARD",
+    "human_rubric": {
+      "groundedness": 4.0,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_123",
+    "conversation_id": "d6ffb8fb403fd71aa05131cca9f8ec9e",
+    "customer_query": "Anyone else having portrait/landscape orientation issues in the new iOS? Portrait mode lock function doesn't seem to work. (cc: )",
+    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "High customer frustration or brand reputation risk requires empathetic senior human intervention.",
+    "reference_resolution": "Acknowledge frustration with empathy, apologize for the inconvenience, and transfer to a senior support representative.",
+    "difficulty": "HARD",
+    "human_rubric": {
+      "groundedness": 4.0,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_124",
+    "conversation_id": "7c907701ff1ea0e5235dd07c56c6b0e6",
+    "customer_query": "مشكلة البطارية في #ios11 مستمرة والآن وصلت الى iphone 8 plus مع التحديث الأخير 11.0.2 !! battery drain in ios 11 &amp; 11.0.1 &amp; 11.0.2 and also in 11.1 beta !! iphone 6 and 7 plus",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Software-side battery health checks and settings optimization can be performed by customer directly.",
+    "reference_resolution": "Recommend checking Settings > Battery > Battery Health and optimizing background refresh.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_125",
+    "conversation_id": "91db24deb40142f118ab4f106d4a9786",
+    "customer_query": "help, screaming into the void over here. phone won't let me restore to backup, says my password is wrong. but it's not wrong. help. thank you, wow. from iTunes. I hoped to do full restore so I could have my health data. I restored settings on old phone to make new psswrd but resetting settings on old phone to make new encrypted backup failed, and asked for the old password, which it won't accept so a question -- if I back up from icloud, will it give me my health data? Yes, I do. But it asks me for the password each time, and then it fails. I ultimately set it up somehow, but it's missing all my health data",
+    "gold_intent": "APPLE_ID_AND_ICLOUD",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "Account lockouts, credential recovery, and 2FA credentials require secure authenticated recovery workflows.",
+    "reference_resolution": "Direct to iforgot.apple.com or invite to DM with Apple ID confirmation.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_126",
+    "conversation_id": "fba05666aec048c550089d9bc5ac8f53",
+    "customer_query": "Why does the wifi keep turning itself back on when I turn it off in iOS 11? Why does exiting airplane mode turn everything on? I don't want to go to settings to turn off WiFi, I want to reliably be able to turn it off by clicking the button as before. Fix it.",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_127",
+    "conversation_id": "bb7cacd75eeefa4a0930ded31dfd484a",
+    "customer_query": "My battery has become the worst after updating to IOS 11.0.1",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Software-side battery health checks and settings optimization can be performed by customer directly.",
+    "reference_resolution": "Recommend checking Settings > Battery > Battery Health and optimizing background refresh.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_128",
+    "conversation_id": "a9f55616f04bc4d42200ab35302f6d60",
+    "customer_query": "Pq meu celular diminuiu a qualidade das fotos da galeria ?",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "General inquiry addressable with clarifying questions and standard support resources.",
+    "reference_resolution": "Offer assistance and request iOS version and model details.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_129",
+    "conversation_id": "c5b57a5a13e1b7164ea3d9dc4545f548",
+    "customer_query": "updating to #ios11 big mistake. Phone keeps crashing. Apps don't work. And I am on a 6s! I hate it. 😡",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_130",
+    "conversation_id": "d9d0545096876c9a7cebca60ac07a8d3",
+    "customer_query": "my iPhone My iPhone keeps crashing I can't even text nor call after the update. As you can tell I couldn't even post my tweet before iPhone 6s IOS 11.0.2.",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_131",
+    "conversation_id": "a085a252fb4d6007b21382610d7e21ab",
+    "customer_query": "- https://t.co/jbcpYvd2Ws: Hey is my iphone suddenly being 100% wrong about everything",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "General inquiry addressable with clarifying questions and standard support resources.",
+    "reference_resolution": "Offer assistance and request iOS version and model details.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_132",
+    "conversation_id": "6d08401c57f75d61299c549ea72ffbdf",
+    "customer_query": "can y'all fix the damn podcast app",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "General inquiry addressable with clarifying questions and standard support resources.",
+    "reference_resolution": "Offer assistance and request iOS version and model details.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_133",
+    "conversation_id": "f4750f8ff2e692ccdecc4e4cf315a320",
+    "customer_query": "can you guys fix the damn ios 11. My phone has been lagging and the battery dies quickly",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Software-side battery health checks and settings optimization can be performed by customer directly.",
+    "reference_resolution": "Recommend checking Settings > Battery > Battery Health and optimizing background refresh.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_134",
+    "conversation_id": "d59b1021d0fb7fb239073cc8f0f533fc",
+    "customer_query": "Ever since the new IOS11 updates all my phone does is freeze constantly! 😩😡",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_135",
+    "conversation_id": "548a4d165ef9051a0deb56082b48d504",
+    "customer_query": "this #iPhone update totally sucks. I use my phone for work and you have made my day horrible with this. What's up?!",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_136",
+    "conversation_id": "d0d4c901d774779d369915cc1b027981",
+    "customer_query": "⬇️ my iPhone 📱 battery 🔋 drains quickly after iOS 11 update ugh 😑 FYI 🤦🏻‍♀️😭😭😭 https://t.co/m0C6MIgLXo Yes, earlier today 📱🔋 I'm experiencing the same thing as many other people, I left for work phone at 100% ten hours later it's at 20% 😳 bad update 😡",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Software-side battery health checks and settings optimization can be performed by customer directly.",
+    "reference_resolution": "Recommend checking Settings > Battery > Battery Health and optimizing background refresh.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_137",
+    "conversation_id": "b4a81b7c9e33691a0fffa3401d4f4145",
+    "customer_query": "Guys, the new update is making my apps crash and its too slow, and its heating up my phone, so plz fix it up 😊",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_138",
+    "conversation_id": "e6da56e89c54b7f37a5b1ccd0fa2ed61",
+    "customer_query": "como es posible que un iphone 6 plus no funcione correctamente en ios 11?Un smartphone de 800€ con un rendimiento inadmisible",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_139",
+    "conversation_id": "eebbab429135c93814aea10d1e0c09e7",
+    "customer_query": "what's up my phones battery the last up date was not good",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Software-side battery health checks and settings optimization can be performed by customer directly.",
+    "reference_resolution": "Recommend checking Settings > Battery > Battery Health and optimizing background refresh.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_140",
+    "conversation_id": "3ab485027286795a5b4a97f2b11edc29",
+    "customer_query": "me too. What's with this update https://t.co/w6lwcfA1xg True story mason",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_141",
+    "conversation_id": "1e2aa2a1bc7825e8d02bbd9043588631",
+    "customer_query": "Starting today, Instagram is crashing on iOS11. Also, battery is draining like water on my iPhone. Can you do anything?",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "Physical hardware inspection, damage assessment, or part replacement requires Genius Bar appointment.",
+    "reference_resolution": "Provide support.apple.com/repair link and assist with scheduling Genius Bar appointment.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_142",
+    "conversation_id": "e426bf742e70d534e4b6065e59ff9aaf",
+    "customer_query": "since 11.0 update my iPhone 7+ Bluetooth drops out within 1 song on Bluetooth speakers Sony XB2 - iPhone 5 works fine. Pls fix",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Software-side battery health checks and settings optimization can be performed by customer directly.",
+    "reference_resolution": "Recommend checking Settings > Battery > Battery Health and optimizing background refresh.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_143",
+    "conversation_id": "cac82bfa5ba2ccd2e98f35716acc1afa",
+    "customer_query": "Worst #iPhoneUpdate ever! Phone not working properly Join the club this iso is shit isn't helping besides making you do this and that waste hours and nothing works",
+    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "High customer frustration or brand reputation risk requires empathetic senior human intervention.",
+    "reference_resolution": "Acknowledge frustration with empathy, apologize for the inconvenience, and transfer to a senior support representative.",
+    "difficulty": "HARD",
+    "human_rubric": {
+      "groundedness": 4.0,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_144",
+    "conversation_id": "cb3847e6c448b8eeb3a2374cbc7e4b6d",
+    "customer_query": "Seems like is against making quality products Sent my 7 in to get it repaired and one day in the loaner they gave me is having issues It crashed while I was sending a text and now that it's back on it won't connect to wifi. Taking it to the Apple store now :/",
+    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "High customer frustration or brand reputation risk requires empathetic senior human intervention.",
+    "reference_resolution": "Acknowledge frustration with empathy, apologize for the inconvenience, and transfer to a senior support representative.",
+    "difficulty": "HARD",
+    "human_rubric": {
+      "groundedness": 4.0,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_145",
+    "conversation_id": "a3141a2b45c293ae37edacb4695ed9bf",
+    "customer_query": "yI'm trying to activate touch passcode but it's not working with update 11.2 could you please help me urgent ??? Yes, it's ok but why it's hang when I switch between home pages. Is the latest update is useful. Or have a problems ? Thank in advance I'm usually update my phone through ITunes",
+    "gold_intent": "APPLE_ID_AND_ICLOUD",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "Account lockouts, credential recovery, and 2FA credentials require secure authenticated recovery workflows.",
+    "reference_resolution": "Direct to iforgot.apple.com or invite to DM with Apple ID confirmation.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_146",
+    "conversation_id": "998c3c18398e4e674a5acdf3d7904949",
+    "customer_query": "My 📱 is 6s and since i run the IOS 11 with all the fix bug issues my📱 is keep lagging",
+    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "High customer frustration or brand reputation risk requires empathetic senior human intervention.",
+    "reference_resolution": "Acknowledge frustration with empathy, apologize for the inconvenience, and transfer to a senior support representative.",
+    "difficulty": "HARD",
+    "human_rubric": {
+      "groundedness": 4.0,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_147",
+    "conversation_id": "ade08e34f83daf752ff1a9f0d3a38c57",
+    "customer_query": "Пришло фишинговое письмо от имени New phishing emails began to come from your name, I think you should know about it. https://t.co/DzsrpCqdce",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "General inquiry addressable with clarifying questions and standard support resources.",
+    "reference_resolution": "Offer assistance and request iOS version and model details.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_148",
+    "conversation_id": "d90fd1f77972a52cb1fff1a912062070",
+    "customer_query": "The new update caused my iPhone to cut off and not come back on but I had to figure it out to make it work I fixed the issue myself thanks",
+    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "High customer frustration or brand reputation risk requires empathetic senior human intervention.",
+    "reference_resolution": "Acknowledge frustration with empathy, apologize for the inconvenience, and transfer to a senior support representative.",
+    "difficulty": "HARD",
+    "human_rubric": {
+      "groundedness": 4.0,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_149",
+    "conversation_id": "2d3935494e9837950dcc09a9e13e35d5",
+    "customer_query": "how can I send emails to the trash now instead of the archived option in the Apple Mail App iPhone 6S Plus Yes. I click on it but I only get the option to archive. Not to delete the email or emails",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "General inquiry addressable with clarifying questions and standard support resources.",
+    "reference_resolution": "Offer assistance and request iOS version and model details.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_150",
+    "conversation_id": "d2abb677d2758b1d19dd53a76ae252d7",
+    "customer_query": "why does FaceTime keep freezing my phone and slowing everything down with iOS 11 Read the posts here on Twitter is overwhelmed with the complaints about iOS 11",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_151",
+    "conversation_id": "46b435979ab7c0e36b3fce1639a409a0",
+    "customer_query": "ios 11.0.2 completely screwed up the battery on my iphone6 what on earth you guys did🙄!!!",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Software-side battery health checks and settings optimization can be performed by customer directly.",
+    "reference_resolution": "Recommend checking Settings > Battery > Battery Health and optimizing background refresh.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_152",
+    "conversation_id": "a596c06d5889515fcd0c2e2111b494fc",
+    "customer_query": "The new updates leave WiFi on in settings, even tho you swipe up and turn it off. Please fix.",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_153",
+    "conversation_id": "1cb2f484e40a0ada143d8ee197f96686",
+    "customer_query": "iCloud hacked &amp; am now locked out of my Mac which now asks for a 6 digit pin or to contact support on __email__...",
+    "gold_intent": "APPLE_ID_AND_ICLOUD",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "Account lockouts, credential recovery, and 2FA credentials require secure authenticated recovery workflows.",
+    "reference_resolution": "Direct to iforgot.apple.com or invite to DM with Apple ID confirmation.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_154",
+    "conversation_id": "cb255f9223bd6bcae9c80551853b23f9",
+    "customer_query": "Hey thanks for the shit update that makes my phone crash or freeze every ten minutes.",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_155",
+    "conversation_id": "47fabcf900d9c18366e57a1f63fc0357",
+    "customer_query": "I want all MY music back on my phone. Why do I constantly have to download it from the cloud.",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "General inquiry addressable with clarifying questions and standard support resources.",
+    "reference_resolution": "Offer assistance and request iOS version and model details.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_156",
+    "conversation_id": "b4a9656c2c1e57a65964e8c50469781d",
+    "customer_query": "i'm not playing, send me a new phone. your update makes me hard restart my phone 5-7 times a day when i try to open regular apps.",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_157",
+    "conversation_id": "45ce2099ecb349d15b334ea3bb9d61b9",
+    "customer_query": "why when i put my phone on do not disturb, motherfuckers can still disturb me? uhh, yes! i've never NOT been disturbed since i've had the 7+😒 &amp; what ios got to do w/ do not disturb?😕",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "Persistent unresolved bug despite troubleshooting or critical business disruption requires tier-2 escalation.",
+    "reference_resolution": "Apologize for ongoing disruption, request device model and build number in DM for specialized engineering review.",
+    "difficulty": "HARD",
+    "human_rubric": {
+      "groundedness": 4.0,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_158",
+    "conversation_id": "936c451b01080592cf32f3fe616e4935",
+    "customer_query": "I have an issue with my Apple Music account and it needs to be fixed ASAP Apple Music is not letting me switch to the student subscription after I verified my student account 2 months ago! I've been charged $9.99 https://t.co/SBNuE1OA11",
+    "gold_intent": "APP_STORE_AND_BILLING",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "Billing disputes, refund requests, and financial account charges require private identity and payment verification.",
+    "reference_resolution": "Guide user to reportaproblem.apple.com or invite to DM for secure billing review.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_159",
+    "conversation_id": "fd4e7c09f37a3700bb5a28f4df936f95",
+    "customer_query": "The newest IOS 11.__credit_card__ is draining the S*** out my battery life. Hey , can you please do something about it.",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Software-side battery health checks and settings optimization can be performed by customer directly.",
+    "reference_resolution": "Recommend checking Settings > Battery > Battery Health and optimizing background refresh.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_160",
+    "conversation_id": "d29931e47066b50bc3960e9091ba643e",
+    "customer_query": "Welp, iOS 11.0.2 has officially ruined my battery. Have charged my iPhone 7 three times today. will 11.0.3 resolve?",
+    "gold_intent": "APP_STORE_AND_BILLING",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "Billing disputes, refund requests, and financial account charges require private identity and payment verification.",
+    "reference_resolution": "Guide user to reportaproblem.apple.com or invite to DM for secure billing review.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_161",
+    "conversation_id": "0c05ad444048297507acf515376fbd0b",
+    "customer_query": "Since iOS 11 my battery rate drops so fast, it's lost 30% in a couple of hours. #betterbattery What info do you want in the DM?",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Software-side battery health checks and settings optimization can be performed by customer directly.",
+    "reference_resolution": "Recommend checking Settings > Battery > Battery Health and optimizing background refresh.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_162",
+    "conversation_id": "d3e5b3822c0ea10d44d63b5cc5369f09",
+    "customer_query": "This fucking update USE to be my favorite and now ALL of my FUCKING APPS ARE FREEZING FIX IT",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_163",
+    "conversation_id": "67dec7c3a3535847bb1445bd4521577f",
+    "customer_query": "Mi teléfono se ha comportado DLV desde la última actualización de iOS 😡 Así el mío también, está todo lento y se pasma, de saberlo no descargo la actualización 👎🏽😼",
+    "gold_intent": "OUT_OF_SCOPE_OTHER",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "Non-English message requires routing to native language support specialist.",
+    "reference_resolution": "Direct user to international Apple support portal or native language support agent.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_164",
+    "conversation_id": "faf305d20c6e75a1b675d0509be63046",
+    "customer_query": "what have you done to my iPad? Keeps going sleep while I'm using it and repeatedly takes screenshots for no apparent reason 11.0.2",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "General inquiry addressable with clarifying questions and standard support resources.",
+    "reference_resolution": "Offer assistance and request iOS version and model details.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_165",
+    "conversation_id": "2d895a4204d41e2c092a2cdc260c8ada",
+    "customer_query": "pls fix this https://t.co/rmWr5aMZe4 iPhone 8, iOS 11.0.1, if I scroll to another page and then come back my apps show up again, I haven't been able to deliberately (1/2) Replicate the issue but it happens often (2/2)",
+    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "High customer frustration or brand reputation risk requires empathetic senior human intervention.",
+    "reference_resolution": "Acknowledge frustration with empathy, apologize for the inconvenience, and transfer to a senior support representative.",
+    "difficulty": "HARD",
+    "human_rubric": {
+      "groundedness": 4.0,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_166",
+    "conversation_id": "a95815480f945000f879a973fd674772",
+    "customer_query": "Since this #update the battery on my 6 has be horrible The second one. The battery life has incredibly decreased.",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Software-side battery health checks and settings optimization can be performed by customer directly.",
+    "reference_resolution": "Recommend checking Settings > Battery > Battery Health and optimizing background refresh.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_167",
+    "conversation_id": "0107be903c1436adef1d571659858ce3",
+    "customer_query": "your system was down @ UnionSquare store in SF so couldn't get new phone during my appt. Can you tell me when it's up again?",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "General inquiry addressable with clarifying questions and standard support resources.",
+    "reference_resolution": "Offer assistance and request iOS version and model details.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_168",
+    "conversation_id": "fb6d88609c2551a7988070d21c5e0e5c",
+    "customer_query": "Dear : I love your products, but ever since I updated my phone's software, It. Hasn't. Worked. Please fix it. Dear Apple, My GPS has not been working in several locations since I updated my phone last Friday. Please address this concern. Thank you!",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_169",
+    "conversation_id": "5cd9fa38674b8abcc7c470793a4d3940",
+    "customer_query": "I'm experiencing the same thing as many other people, I left for work phone at 100% ten hours later it's at 20% 😳 bad update 😡 Yes installed the 11.0.2 While holding it vertical. It's the 7plus, it shuts off and restarts on its own at least once a day, the screen is set on autorotate it gets stuck on the horizontal What is DM?",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_170",
+    "conversation_id": "e281201e1acc5238185e677f0fb1976b",
+    "customer_query": "My MacBook Pro dies whenever it's under 60% battery. The bat. % also jumps around a little. Is it a battery problem? Don't refer me. Thanks! Nope just randomly not a specific program. That makes me think it's the battery Also, it never dies when it's plugged in to the charger. It's died over and over for months now but always only when it's not plugged in.",
+    "gold_intent": "APP_STORE_AND_BILLING",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "Billing disputes, refund requests, and financial account charges require private identity and payment verification.",
+    "reference_resolution": "Guide user to reportaproblem.apple.com or invite to DM for secure billing review.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_171",
+    "conversation_id": "f95708027adda52e4e9e2937443cd6ac",
+    "customer_query": "That feeling when your battery is on 3% 😯 Well us Apple iPhone owners don't have to worry about exploding phones 🙊 Potentially carrying around a ticking time bomb #PhoneWar However since updating IOS, my battery is terrible 🤦‍♀️",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Software-side battery health checks and settings optimization can be performed by customer directly.",
+    "reference_resolution": "Recommend checking Settings > Battery > Battery Health and optimizing background refresh.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_172",
+    "conversation_id": "04d40adf775ff1e17d48554005543fd4",
+    "customer_query": "Is there a way to undo an iPhone update... hating on the new iOS 11 😩 just sucks the life out of my battery! #iPhoneProblems",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Software-side battery health checks and settings optimization can be performed by customer directly.",
+    "reference_resolution": "Recommend checking Settings > Battery > Battery Health and optimizing background refresh.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_173",
+    "conversation_id": "6c717fa1156c00a72a37462fb9bbbb07",
+    "customer_query": "holy shit...the new iOS fucks up everything. Are you trying to screw this thing up?",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_174",
+    "conversation_id": "942c066b2341d5187b96d55239e662a8",
+    "customer_query": "It's insane that devices mess up with a new release. I paid $60 to get my camera fixed less than a month ago and now I'm having the same problems. Seriously!",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Software-side battery health checks and settings optimization can be performed by customer directly.",
+    "reference_resolution": "Recommend checking Settings > Battery > Battery Health and optimizing background refresh.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_175",
+    "conversation_id": "9aa9a9366c646389564307f2e883ae1d",
+    "customer_query": "Idk why won't improve the battery! My phone is always dying!",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Software-side battery health checks and settings optimization can be performed by customer directly.",
+    "reference_resolution": "Recommend checking Settings > Battery > Battery Health and optimizing background refresh.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_176",
+    "conversation_id": "954492ff1465b7a89a3bbf044b28137d",
+    "customer_query": "I've noticed how IOS11 quickly drains my iPhones battery.",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Software-side battery health checks and settings optimization can be performed by customer directly.",
+    "reference_resolution": "Recommend checking Settings > Battery > Battery Health and optimizing background refresh.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_177",
+    "conversation_id": "13137c2710c539e48bf274d6485deb32",
+    "customer_query": "please can you stop my phone from being glitchy 😭 stupid IOS update So I update my phone yesterday and the touch screen isn't working properly, I've restarted it numerous times and it's still not ok ☹️",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "Persistent unresolved bug despite troubleshooting or critical business disruption requires tier-2 escalation.",
+    "reference_resolution": "Apologize for ongoing disruption, request device model and build number in DM for specialized engineering review.",
+    "difficulty": "HARD",
+    "human_rubric": {
+      "groundedness": 4.0,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_178",
+    "conversation_id": "cd158521635118339870ba510fd19f25",
+    "customer_query": "i don't like that my phone automatically gets super bright when i'm trying to text in class - fix this omg i'm sorry i didn't mean for this to sound rude, but it's the newest update &amp; there's no option for manual brightness yes, i can, but it still changes the brightness depending on where i am - there's no option to prevent auto-brightness like before get me in on this convo! myself &amp; many others are struggling with this as well. why'd you get rid of the option to disable auto-brightness?",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "Persistent unresolved bug despite troubleshooting or critical business disruption requires tier-2 escalation.",
+    "reference_resolution": "Apologize for ongoing disruption, request device model and build number in DM for specialized engineering review.",
+    "difficulty": "HARD",
+    "human_rubric": {
+      "groundedness": 4.0,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_179",
+    "conversation_id": "c23abaff68096e7e6d050d72aec290b0",
+    "customer_query": "I have been having nonstop problems with my phone ever since I updated to iOS 11. I really don't like you .",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_180",
+    "conversation_id": "7b7929f5f19dd2b6bb08bb123548e074",
+    "customer_query": "Hey - what's up with the iPhone ringer being FULL BLAST regardless of the setting since the last update? Annoying please fix..",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_181",
+    "conversation_id": "0ae2f193654f08aacea91a3a296ed29b",
+    "customer_query": "thanks for the update, now I can't FaceTime",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_182",
+    "conversation_id": "84020c50b658d1bc78a49774db402403",
+    "customer_query": "Yo I didn't pay $900 to have my phone be glitching after not even 6 months. Quit your shit.",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_183",
+    "conversation_id": "4a918fc9200e6c25a69adfc3b0543000",
+    "customer_query": "Your new update is killing my battery. #FixThis",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Software-side battery health checks and settings optimization can be performed by customer directly.",
+    "reference_resolution": "Recommend checking Settings > Battery > Battery Health and optimizing background refresh.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_184",
+    "conversation_id": "47d07bd03f28d7914f1c7802cd5641e1",
+    "customer_query": "Any reason why my iTunes payment method (credit card) gets rejected for some subscriptions and in-app purchases, but works fine for others within the same app?",
+    "gold_intent": "APP_STORE_AND_BILLING",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "Billing disputes, refund requests, and financial account charges require private identity and payment verification.",
+    "reference_resolution": "Guide user to reportaproblem.apple.com or invite to DM for secure billing review.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 4.5
+    }
+  },
+  {
+    "id": "GOLD_185",
+    "conversation_id": "7c8ba2ff3175d736c9071e402ca750b5",
+    "customer_query": "hey i need to restore my iphone 5 but all the firmwares are unsigned.... https://t.co/LQ7cUYwWt7",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "General inquiry addressable with clarifying questions and standard support resources.",
+    "reference_resolution": "Offer assistance and request iOS version and model details.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_186",
+    "conversation_id": "b50c33175ff0e9fca0e942dac08d2885",
+    "customer_query": "the update is killing my battery",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Software-side battery health checks and settings optimization can be performed by customer directly.",
+    "reference_resolution": "Recommend checking Settings > Battery > Battery Health and optimizing background refresh.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_187",
+    "conversation_id": "0bf8b63fa569656b6db9151bfbcca3d3",
+    "customer_query": "Ever since I updated my phone to iOS 11 my phone has been slow AF. No you aren't gonna make me buy the new iPhone I'm poor and totally fine with my iPhone 6!",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_188",
+    "conversation_id": "5babcbab6e80f6929b21edfb8dc3d1e9",
+    "customer_query": "When breaks your phone. Nice update guys. https://t.co/oJ3MoHAgG7",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_189",
+    "conversation_id": "499d3dc8d07a4e5cecaa15e0e61b8a37",
+    "customer_query": "IOS 11 eats my battery, so annoying",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Software-side battery health checks and settings optimization can be performed by customer directly.",
+    "reference_resolution": "Recommend checking Settings > Battery > Battery Health and optimizing background refresh.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_190",
+    "conversation_id": "1a308325d9c7280c9c42d1e162cae549",
+    "customer_query": "my phone dies faster because of the stupid update.. fix this shit",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_191",
+    "conversation_id": "1973d7f94b2a9851c402a2e38e6ec137",
+    "customer_query": "My phone has been so fucking slow since the latest iOS update I've had the 7 for about a month &amp; a half. It's been freezing, extremely slow, &amp; the apps force close.",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_192",
+    "conversation_id": "2659c66e7ee0b926cb33cadb955876f8",
+    "customer_query": "looks like the widget for the weather is down still says sunset on mine but when I go in to the weather app it's fine",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "General inquiry addressable with clarifying questions and standard support resources.",
+    "reference_resolution": "Offer assistance and request iOS version and model details.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_193",
+    "conversation_id": "7957da814e5fa62f067d266b0b72f358",
+    "customer_query": "Ever since the new IOS update came my 6s has been freezing... y'all not low.... not happening https://t.co/paqeNI7RRP",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard OS bug can be resolved via force restart, network reset, or checking for supplemental updates.",
+    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_194",
+    "conversation_id": "supp_001",
+    "customer_query": "My 8-year-old child spent $450 on Roblox without my permission. How do I get a refund immediately?",
+    "gold_intent": "APP_STORE_AND_BILLING",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "High-value unauthorized minor in-app purchase refund request requires billing escalation.",
+    "reference_resolution": "Empathize, explain reportaproblem.apple.com process, advise turning on Ask to Buy, and invite to DM for billing team handoff.",
+    "difficulty": "HARD",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_195",
+    "conversation_id": "supp_002",
+    "customer_query": "How do I turn off the rotation lock? There's a little lock icon with an arrow around it at the top of my screen.",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Simple UI how-to query with deterministic, public self-service solution.",
+    "reference_resolution": "Swipe down from top right corner (or up from bottom) to open Control Center and tap the Portrait Orientation Lock icon.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_196",
+    "customer_query": "I woke up and my iPhone 7 battery expanded and popped the screen off the chassis! It is bulging and hot!",
+    "conversation_id": "supp_003",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "Physical thermal safety hazard (swollen lithium-ion battery) requires immediate safety protocol and service depot escalation.",
+    "reference_resolution": "Instruct customer to disconnect power immediately, do not puncture or press, and arrange expedited Genius Bar or express replacement.",
+    "difficulty": "HARD",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_197",
+    "conversation_id": "supp_004",
+    "customer_query": "Does Apple make a microwave? Trying to see if I can pair my AirPods to a smart oven.",
+    "gold_intent": "OUT_OF_SCOPE_OTHER",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Nonsense / out-of-scope inquiry that can be politely answered without human tier-2 cost.",
+    "reference_resolution": "Politely clarify that Apple does not produce microwaves or smart ovens, and share supported audio output devices.",
+    "difficulty": "EASY",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 4.5,
+      "actionability": 4.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_198",
+    "conversation_id": "supp_005",
+    "customer_query": "Someone changed the trusted phone number on my Apple ID and locked me out! I am receiving emails that my recovery key was changed!",
+    "gold_intent": "APPLE_ID_AND_ICLOUD",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "Critical account takeover / security breach requires urgent identity verification escalation.",
+    "reference_resolution": "Direct to iforgot.apple.com account recovery immediately and provide Apple Security support hotline numbers.",
+    "difficulty": "HARD",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 4.5,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_199",
+    "conversation_id": "supp_006",
+    "customer_query": "Since updating to iOS 11.1, my battery drops 1% every minute. What should I check?",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Post-update indexing battery drain can be investigated using on-device battery metrics.",
+    "reference_resolution": "Explain that post-update background indexing lasts 24-48 hours. Direct user to Settings > Battery to inspect high-drain apps.",
+    "difficulty": "MEDIUM",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 4.5,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    }
+  },
+  {
+    "id": "GOLD_200",
+    "conversation_id": "supp_007",
+    "customer_query": "This is the 4th time your update has bricked my phone! I lost all my wedding photos! You people are completely incompetent and I'm contacting a consumer protection attorney!",
+    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "High emotional distress, permanent data loss allegation, and legal threat require senior relations escalation.",
+    "reference_resolution": "Acknowledge distress with utmost empathy, do not debate fault, and immediately route to Executive / Senior Customer Relations.",
+    "difficulty": "HARD",
+    "human_rubric": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 5.0
+    }
+  }
+]
