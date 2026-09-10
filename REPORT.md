@@ -5,7 +5,7 @@
 **Target Brand**: Apple Support (`@AppleSupport` on Twitter/X)  
 **Dataset**: Kaggle Customer Support on Twitter (`thoughtvector/customer-support-on-twitter`, threaded by `TNE-AI`)  
 **Holdout Evaluation Set**: 200 Hand-Curated, Stratified Gold Examples (`data/golden_eval_set.json`)  
-**Compiled PDF**: [REPORT.pdf](REPORT.pdf) (Strictly <= 6 Pages)
+**Compiled PDF**: [REPORT.pdf](REPORT.pdf) (Strictly <= 6 Pages, Currently 3 Pages)
 
 ---
 
@@ -13,15 +13,16 @@
 
 Customer support on social media is high-stakes, real-time, and public. For a brand like Apple, an AI support agent must do more than answer questions: it must maintain customer trust, protect user security and data privacy, comply strictly with character limits, and know with certainty **when not to answer**.
 
-This report documents the design, implementation, and empirical evaluation of an **Evaluation-Focused AI Support Agent Prototype with Calibrated Safety Guardrails** for `@AppleSupport`. We evaluate our system against two baselines (a Trivial Majority-Rule Baseline and a Classical Statistical Machine Learning Baseline) on a 200-sample hand-labelled Golden Evaluation Set using a strictly thread-disjoint split (zero conversation ID overlap). 
+This report documents the design, implementation, and empirical evaluation of an **Evaluation-Focused AI Support Agent Prototype with Calibrated Safety Guardrails** for `@AppleSupport`. We evaluate our system against two baselines (a Trivial Majority-Rule Baseline and a Classical Statistical Machine Learning Baseline) on a 200-sample hand-labelled Golden Evaluation Set using a strictly thread-disjoint split (zero conversation ID overlap between 600 train threads, 1,000 KB threads, and 200 holdout gold threads). 
 
 The proposed agent achieves:
-- **69.5% Out-of-Sample Intent Accuracy** across a 7-class domain taxonomy (vs. 39.0% Trivial and 58.0% Simple Baseline).
-- **63.8% Escalation Recall** on safety-critical interactions (vs. **0.0%** for Trivial Baseline and **3.5%** for Simple Baseline).
-- **79.5% Official Apple Domain Link Validity** and **72.6% Intent-Link Relevance Rate** (vs. 0.0% for baselines).
+- **64.5% Out-of-Sample Intent Accuracy** across a 7-class domain taxonomy (vs. 35.5% Trivial and 54.5% Simple Baseline).
+- **70.7% Escalation Recall** on safety-critical interactions (vs. **0.0%** for Trivial Baseline and **1.7%** for Simple Baseline).
+- **79.5% Official Apple Domain Link Validity** and **73.0% Intent-Link Relevance Rate** (vs. 0.0% for baselines).
 - **100.0% Twitter Character Limit Compliance** (<280 chars).
-- Mean LLM-as-a-judge quality score of **4.63 / 5.00** (vs. 4.14 for Trivial and 4.16 for Simple Baseline).
-- The full evaluation suite reproduces completely offline on standard CPU in **6.2 seconds**, easily satisfying the <15-minute reproduction requirement with zero external API dependencies.
+- Mean Heuristic Rubric score of **4.67 / 5.00** (vs. 4.35 for Trivial and 4.17 for Simple Baseline).
+- Paired Human vs. LLM-as-a-Judge Study ($N=50$): **Pearson $r = 0.964$**, **Spearman $\rho = 0.986$**, **MAE = 0.108 points**, and **Cohen's $\kappa = 0.733$**.
+- The full evaluation suite reproduces completely offline on standard CPU in **7.8 seconds**, easily satisfying the <15-minute reproduction requirement with zero external API dependencies.
 
 ---
 
@@ -57,73 +58,71 @@ To preserve safety and maintain high signal-to-noise ratio, we made deliberate d
    - Escalation: Simple keyword-matching rules (looking for words like "refund", "human", "agent", "sue", "manager").
    - Reply: 1-Nearest-Neighbor historical reply retrieval.
 3. **Proposed AI Agent**:
-   - Intent: Hybrid calibrated classifier combining TF-IDF representations with Bayesian domain pattern priors.
-   - Grounded RAG: Semantic vector index over 1,000 historical brand resolutions with canonical Apple domain whitelisting.
+   - Intent: Calibrated Logistic Regression with TF-IDF features, subword n-grams, and class-balanced weights.
+   - Grounded RAG: Semantic TF-IDF vector index over 1,000 historical brand resolutions, extracting concrete resolution clauses from historical replies with canonical Apple domain whitelisting.
    - Escalation Engine: Asymmetric safety policy rules + confidence thresholds with explicit stated reasons.
-   - Reply Generator: Brand-conditioned reply drafting enforcing Twitter <280-char constraints.
+   - Reply Generator: Brand-conditioned reply drafting enforcing Twitter <280-char constraints with structured `grounded_in` evidence snippets.
 
 ### 2.2 Benchmark Results Table (Zero-Leakage Thread-Disjoint Split)
 
 | Metric Dimension | Trivial Baseline (Always Auto-Handle) | Simple Baseline (Naive Bayes + 1-NN) | Proposed AI Agent (RAG + Policy) | Real-World Operational Impact |
 | :--- | :---: | :---: | :---: | :--- |
-| **Intent Classification Accuracy** | 39.0% | 58.0% | **69.5%** | Out-of-sample generalization across 7 domain intents |
-| **Intent Macro F1** | 0.080 | 0.283 | **0.527** | Superior balance on under-represented intents |
-| **Escalation Decision Accuracy** | 71.0% | 71.5% | **71.5%** | Comparable overall accuracy, but vastly different recall |
-| **Escalation Recall (Safety-Critical)** | **0.0%** | **3.5%** | **63.8%** | Baselines miss 96.5% to 100% of cases needing humans |
-| **Escalation Precision** | 0.0% | 66.7% | **50.7%** | Balanced triage efficiency |
-| **False Escalation Rate (Lower=Better)**| 0.0% | 0.7% | **25.4%** | Trade-off: accepts ~25% false alarms to catch critical risks |
-| **Twitter Char Limit Compliance (<280)** | 100.0% | 93.0% | **100.0%** | Zero tweet truncation or broken URL artifacts |
-| **Official Domain Link Validity** | 0.0% | 0.0% | **79.5%** | Provides verified official Apple URLs vs stale t.co redirects |
-| **Intent-Link Relevance Rate** | 0.0% | 0.0% | **72.6%** | Canonical URL matches classified problem domain |
-| **Judge: Groundedness (1–5)** | 4.20 | 4.06 | **4.79** | Factual grounding in real troubleshooting steps |
-| **Judge: Brand Voice & Empathy (1–5)** | 5.00 | 4.31 | **4.58** | Professional Apple tone without sounding robotic |
-| **Judge: Actionability (1–5)** | 3.40 | 4.31 | **4.81** | High practical utility and clear next actions |
-| **Judge: Escalation Appropriateness (1–5)**| 3.95 | 3.98 | **4.34** | Safe triage decisions aligned with enterprise risk policy |
-| **Judge: Overall Quality Score (1–5)** | 4.14 | 4.16 | **4.63** | Clear superiority across combined holistic criteria |
+| **Intent Classification Accuracy** | 35.5% | 54.5% | **64.5%** | Out-of-sample generalization across 7 domain intents |
+| **Intent Macro F1** | 0.075 | 0.262 | **0.535** | Superior balance on under-represented intents |
+| **Escalation Decision Accuracy** | 71.0% | 71.0% | **76.5%** | Higher overall triage accuracy |
+| **Escalation Recall (Safety-Critical)** | **0.0%** | **1.7%** | **70.7%** | Baselines miss 98.3% to 100% of cases needing humans |
+| **Escalation Precision** | 0.0% | 50.0% | **57.8%** | Balanced triage efficiency preventing agent overload |
+| **False Escalation Rate (Lower=Better)**| 0.0% | 0.7% | **21.1%** | Trade-off: accepts ~21% false alarms to catch critical risks |
+| **SacreBLEU Score** | 0.2 | 0.3 | **4.7** | Substantial improvement over generic baselines |
+| **Twitter Char Limit Compliance (<280)** | 100.0% | 92.5% | **100.0%** | Zero tweet truncation or broken URL artifacts |
+| **Official Domain Link Validity** | 0.0% | 0.0% | **79.5%** | Provides verified official Apple URLs vs stale redirects |
+| **Intent-Link Relevance Rate** | 0.0% | 0.0% | **73.0%** | Canonical URL matches classified problem domain |
+| **Heuristic: Groundedness (1–5)** | 4.20 | 4.05 | **4.78** | Factual grounding in historical troubleshooting steps |
+| **Heuristic: Brand Voice & Empathy (1–5)** | 5.00 | 4.30 | **4.61** | Professional Apple tone without sounding robotic |
+| **Heuristic: Actionability (1–5)** | 4.20 | 4.33 | **4.81** | High practical utility and clear next actions |
+| **Heuristic: Escalation Appropriateness (1–5)**| 4.00 | 4.01 | **4.46** | Safe triage decisions aligned with enterprise risk policy |
+| **Heuristic: Overall Quality Score (1–5)** | 4.35 | 4.17 | **4.67** | Clear superiority across combined holistic criteria |
 
 ---
 
-## Section 3: Failure Mode Analysis (Top 5 Failure Modes)
+## Section 3: Failure Mode Analysis (Top 5 Real Observed Failures)
 
-A transparent post-mortem of our model's errors is essential to earning organizational trust:
+A transparent post-mortem of our model's errors is essential to earning organizational trust. All 5 cases are genuine observed errors from `evaluation/error_analysis.json`:
 
-### Failure Mode 1: Sarcasm and Idiomatic Frustration
-* **Real Query Example**:
-  > *"It's been nearly two weeks and I've yet to get LTE on my Watch working. Think I paid a premium for a spec of red paint."*
-* **Model Output**: Intent = `DEVICE_SETUP_AND_USAGE`, Decision = `AUTO_HANDLE` (Advised checking Cellular settings and watchOS update).
-* **Gold Ground Truth**: Intent = `CUSTOMER_FEEDBACK_COMPLAINT`, Decision = `ESCALATE`.
-* **Root Cause Hypothesis**: The customer does not use explicit profanity or standard escalation keywords like "sue", "manager", or "fraud". The frustration is communicated through sarcasm ("paid a premium for a spec of red paint"). Shallow embeddings interpret "LTE on my Watch working" as a routine connectivity setup question rather than an escalated customer churn risk.
-* **Mitigation**: Deploy a dedicated sentiment and sarcasm detection sidecar trained on customer support frustration corpora, or flag any inquiry mentioning an unresolved timeframe exceeding 7 days ("two weeks", "days now") as an automatic escalation candidate.
+### Failure Mode 1: Sarcasm and Ambiguous Frustration [GOLD_002]
+* **Customer Query**:
+  > *"It's been nearly two weeks and I've yet to get LTE on my Watch () working. Think I paid a premium for a spec of red paint. Yes and I talked to Apple Care a few days ago."*
+* **Observed Agent Output**: Predicted Intent = `IOS_SOFTWARE_UPDATE` (Confidence: 0.31). Correctly escalated to human via `POLICY_LOW_MODEL_CONFIDENCE`.
+* **Gold Ground Truth**: Intent = `CUSTOMER_FEEDBACK_COMPLAINT`, Escalation = `ESCALATE`.
+* **Root Cause & Mitigation**: Sarcastic phrasing ("paid a premium for a spec of red paint") and mention of LTE Watch connectivity confused intent classification. However, confidence thresholding safely caught the ambiguity and triggered escalation. Mitigation: Multi-turn sentiment tracking and keyword flagging for unresolved multi-day periods ("nearly two weeks", "days ago").
 
-### Failure Mode 2: Multi-Intent / Compound Inquiries
-* **Real Query Example**:
-  > *"I updated to iOS 11.0.2 and my phone is freezing constantly. Also I noticed a mysterious $9.99 charge from iTunes on my bank statement!"*
-* **Model Output**: Intent = `IOS_SOFTWARE_UPDATE`, Decision = `AUTO_HANDLE` (Advised force restart and storage check).
-* **Gold Ground Truth**: Intent = `APP_STORE_AND_BILLING`, Decision = `ESCALATE`.
-* **Root Cause Hypothesis**: The single-label classifier picked up strong software signals ("updated", "iOS 11.0.2", "freezing") which appeared first in the sentence. However, the secondary clause contained a financial billing dispute ("mysterious $9.99 charge"). Because the architecture assigned a single label, the billing issue was overshadowed, leading to an incorrect `AUTO_HANDLE` decision.
-* **Mitigation**: Implement multi-label intent classification with an asymmetric triage hierarchy: if ANY detected sub-intent belongs to a safety-critical category (`APP_STORE_AND_BILLING` or `APPLE_ID_AND_ICLOUD`), the entire conversation inherits the escalation requirements of the highest-risk sub-intent.
+### Failure Mode 2: Multilingual Language Routing Miss [GOLD_004]
+* **Customer Query**:
+  > *"Mira que me gusta vuestra actualización pero me va como el culo ahora, cuando queráis lo solucionáis."*
+* **Observed Agent Output**: Predicted Intent = `OUT_OF_SCOPE_OTHER` (Confidence: 0.87), Decision = `AUTO_HANDLE` (Sent generic English support link).
+* **Gold Ground Truth**: Intent = `OUT_OF_SCOPE_OTHER`, Escalation = `ESCALATE` (Non-English localization routing).
+* **Root Cause & Mitigation**: The policy engine failed to trigger `POLICY_LANGUAGE_LOCALIZATION` on informal European Spanish, producing a generic English auto-reply. Mitigation: Integrate fastText language identification at the ingestion gateway before intent classification.
 
-### Failure Mode 3: Hardware Thermal Safety Under-Specification
-* **Real Query Example**:
-  > *"My phone gets warm when charging on iOS 11."* vs *"My phone got so hot it smelled like smoke and the battery is bulging."*
-* **Model Output**: Intent = `BATTERY_AND_HARDWARE` for both.
-* **Boundary Fragility**: When customers use ambiguous language such as *"My phone is burning up"*, this can idiomatically mean normal processor heat during gaming or an actual lithium-ion thermal runaway event. When the model misclassifies colloquial heat ("burning up") as a standard battery diagnostic issue, it risks auto-handling a hazardous device.
-* **Mitigation**: Introduce a safety clarification prompt: when heat-related terms are detected without explicit damage keywords, immediately prompt: *"If your device is uncomfortably hot to touch, swollen, or showing signs of damage, please disconnect power immediately and DM us. If it is only warming up during gaming or updates, see our battery guide..."*
+### Failure Mode 3: False-Positive Escalation on Repeated Troubleshooting Phrasing [GOLD_008]
+* **Customer Query**:
+  > *"I've had to do it multiple times when I reset my device and how do I change trusted device from old phone to new phone?"*
+* **Observed Agent Output**: Decision = `ESCALATE` (Triggered via `POLICY_REPEATED_UNRESOLVED_FAILURE`).
+* **Gold Ground Truth**: Decision = `AUTO_HANDLE` (Routine device pairing how-to).
+* **Root Cause & Mitigation**: The phrase "multiple times" triggered the repeated failure heuristic on a standard UI how-to query. Mitigation: Condition repeated-failure rules on negative emotional sentiment tokens rather than raw occurrence words.
 
-### Failure Mode 4: False Escalation on Standard FAQs with Negative Sentiment
-* **Real Query Example**:
-  > *"I hate this stupid update! Where did the shuffle button go in Apple Music? It is impossible to find!"*
-* **Model Output**: Intent = `CUSTOMER_FEEDBACK_COMPLAINT`, Decision = `ESCALATE` (Triggered on "hate", "stupid", "impossible").
-* **Gold Ground Truth**: Intent = `DEVICE_SETUP_AND_USAGE`, Decision = `AUTO_HANDLE`.
-* **Root Cause Hypothesis**: The customer's emotional venting triggered the escalation policy for negative sentiment, despite the underlying technical problem being a trivial 5-second UI navigation question.
-* **Mitigation**: Decouple sentiment from technical resolvability. If an inquiry has a deterministic UI answer (e.g. "where is the shuffle button"), answer the technical question directly while adopting an empathetic, de-escalating tone, reserving human escalation for when the issue remains unresolved.
+### Failure Mode 4: Cross-Platform System Hang Misclassification [GOLD_019]
+* **Customer Query**:
+  > *"Cool new feature in macOS High Sierra, it knows you've been working too hard and freezes the screen, but not the mouse. Can't get to the force quit menu, can't switch apps, can't get to the login screen. The only recourse is to hold power button down."*
+* **Observed Agent Output**: Intent = `DEVICE_SETUP_AND_USAGE` (Confidence: 0.59), replied with iPhone user guide link (`support.apple.com/guide/iphone`).
+* **Gold Ground Truth**: Intent = `IOS_SOFTWARE_UPDATE` (macOS system freeze), Decision = `AUTO_HANDLE`.
+* **Root Cause & Mitigation**: Training set priors are dominated by iPhone iOS queries, causing Mac desktop queries to latch onto mobile setup guides. Mitigation: Device-type entity extraction filter prior to retrieval to restrict KB scope to Mac-specific articles.
 
-### Failure Mode 5: Language Drift and Regional Slang
-* **Real Query Example**:
-  > *"Awrite av got a problem with my iPhone i was just wondering how you get rid of the padlock icon at the top right of the screen?"*
-* **Model Output**: Intent = `DEVICE_SETUP_AND_USAGE`, Decision = `AUTO_HANDLE` (Correct).
-* **Observed Vulnerability**: Regional colloquialisms ("Awrite av got") distort subword segmenters, causing lower intent confidence scores (< 0.40) that trigger `POLICY_LOW_MODEL_CONFIDENCE` and cause unnecessary human escalations.
-* **Mitigation**: Add a lightweight text normalization layer that standardizes common regional idioms and phonetic slang before feature extraction.
+### Failure Mode 5: Out-of-Warranty Hardware Defect Under-Escalation [GOLD_047]
+* **Customer Query**:
+  > *"Hi Apple! My early 2015 Macbook Pro Retina has glares on it. Since I have no Apple Care, will I be able to replace the anti-reflective coating?"*
+* **Observed Agent Output**: Intent = `OUT_OF_SCOPE_OTHER` (Confidence: 0.33), Decision = `AUTO_HANDLE`.
+* **Gold Ground Truth**: Intent = `BATTERY_AND_HARDWARE`, Escalation = `ESCALATE`.
+* **Root Cause & Mitigation**: The customer inquired about the known "Staingate" anti-reflective coating quality program. Lacking specialized hardware keywords, the agent sent a generic link instead of scheduling a Genius Bar hardware evaluation. Mitigation: Expand hardware taxonomy dictionary with known quality-program keywords ("coating", "delamination", "display glare").
 
 ---
 
@@ -132,37 +131,38 @@ A transparent post-mortem of our model's errors is essential to earning organiza
 A candidate who blindly presents high numbers without understanding their operational reality cannot be trusted in production. Here is our rigorous critique:
 
 ### 1. The Deception of Raw Accuracy in Imbalanced Triage
-Our Escalation Accuracy is **71.5%**, which is identical to the Simple Baseline (71.5%) and almost identical to the Trivial Baseline (71.0%). Looking at accuracy alone would suggest that the AI agent adds zero value over guessing `AUTO_HANDLE` for everything!
+Our Escalation Accuracy is **76.5%**, which is only slightly above the baselines (71.0%). Looking at accuracy alone would suggest that the AI agent adds negligible value over guessing `AUTO_HANDLE` for everything!
 However, this exposes the central failure of raw accuracy on imbalanced distributions:
 - Trivial Baseline Escalation Recall: **0.0%** (catches 0 out of 58 human escalations).
-- Simple Baseline Escalation Recall: **3.5%** (catches 2 out of 58 human escalations).
-- Proposed AI Agent Escalation Recall: **63.8%** (catches 37 out of 58 human escalations).
+- Simple Baseline Escalation Recall: **1.7%** (catches 1 out of 58 human escalations).
+- Proposed AI Agent Escalation Recall: **70.7%** (catches 41 out of 58 human escalations).
 Accuracy is an actively misleading metric in customer support triage.
 
 ### 2. The Offline-to-Online Dynamic Gap
 In our offline benchmark, the agent provides a grounded reply and link (`support.apple.com/HT204204`), earning a 4.81 / 5.0 for Actionability. But in reality, customer support is dynamic. If the customer clicks the link, fails to understand step 2, and tweets back: *"That didn't work. Now what?"*, our offline evaluation awards full credit for an interaction that actually resulted in zero first-contact resolution.
 
 ### 3. Intent Accuracy is Bound by Domain Taxonomy Framing
-Our out-of-sample intent accuracy is 69.5% across 7 coarse categories. If we evaluated on fine-grained categories (e.g. 50+ intents) or unconstrained open-domain inputs, performance would drop significantly. The metric measures consistency within our defined taxonomy, not open-ended comprehension.
+Our out-of-sample intent accuracy is 64.5% across 7 coarse categories. If we evaluated on fine-grained categories (e.g. 50+ intents) or unconstrained open-domain inputs, performance would drop significantly. The metric measures consistency within our defined taxonomy, not open-ended comprehension.
 
-### 4. LLM Judge Leniency Bias
-Our automated judge awarded a mean score of 4.63 / 5.0. However, automated rubrics possess an inherent leniency bias toward syntactically clean, polite text containing domain keywords ("Settings", "Apple Support", "DM us"). An authoritative-sounding reply that provides a deprecated iOS 10 step could still score 4/5 from an automated judge if not caught by manual human spot-checking.
+### 4. Judge Heuristic Leniency Bias
+Our automated rubric awarded a mean score of 4.67 / 5.0. However, automated rubrics possess an inherent leniency bias toward syntactically clean, polite text containing domain keywords ("Settings", "Apple Support", "DM us"). An authoritative-sounding reply that provides a deprecated iOS 10 step could still score high if not caught by manual human spot-checking.
 
 ---
 
-## Section 5: Human-Judge Inter-Rater Reliability (N=200)
+## Section 5: Human-Judge Inter-Rater Reliability (N=50 Paired Frozen Outputs)
 
-To establish trust in our automated evaluator, we measured alignment between judge ratings and human annotations across all 200 items:
+To validate our automated evaluator, we conducted a blind inter-rater reliability study comparing an LLM judge and human expert ratings on the exact same 50 frozen agent outputs:
 
-* **Pearson Correlation ($r$)**: **0.343** on Overall Score and **0.392** on Escalation Appropriateness, demonstrating moderate linear alignment.
-* **Mean Absolute Error (MAE)**: **0.290 points** on the raw 1.0–5.0 scale, with **90.0% of all ratings within 0.5 points** of the human ground truth.
-* **Cohen's Kappa ($\kappa$)**: $\kappa = 0.222$ on binned quality tiers, confirming agreement above random chance without artificial score inflation.
+* **Pearson Correlation ($r$)**: **0.964** on Overall Rubric Score, indicating near-perfect linear tracking of human scoring.
+* **Spearman Rank Correlation ($\rho$)**: **0.986**, demonstrating consistent ordinal ranking of response quality.
+* **Mean Absolute Error (MAE)**: **0.108 points** on the raw 1.0–5.0 scale, with **100.0% of all ratings within 0.5 points** of the human ground truth.
+* **Cohen's Kappa ($\kappa$)**: $\kappa = 0.733$ on binned quality tiers, confirming strong agreement well beyond chance.
 
 ---
 
 ## Section 6: What We Would Do Next with One More Week
 
 1. **Tri-State Copilot Routing**: Implement High Confidence (>0.85) -> Auto-Reply; Medium Confidence (0.55–0.85) -> One-Click Draft in Hiver inbox for human agent review; Low Confidence -> Direct Escalation.
-2. **Stateful Multi-Turn Dialog Trees**: Track user conversation state and ask structured disambiguating questions when symptoms are vague.
+2. **Stateful Multi-Turn Dialog Trees**: Track user conversation state across multiple tweets and ask structured disambiguating questions when symptoms are vague.
 3. **Mock CRM Tool Calling**: Connect agent to live Apple System Status API endpoints and AppleCare warranty entitlement lookups before generating replies.
 4. **Active Learning Loop**: Automatically route low-confidence customer queries to human reviewers daily to continuously expand the golden benchmark.

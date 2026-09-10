@@ -41,8 +41,9 @@ A chronological record of 14 non-obvious technical and architectural decisions m
 
 ### 6. Dynamic Calibration of Retrieval Similarity Threshold
 * **Decision**: Lower the `min_retrieval_similarity` threshold from 0.20 to 0.06 after empirical percentile analysis.
-* **Rationale**: Due to the brevity of customer tweets (10–20 tokens) and high sparsity in TF-IDF representations, cosine similarities rarely exceed 0.25 even for highly relevant matches (median was 0.149). An aggressive 0.20 threshold caused an 85.2% false escalation rate. Setting the threshold to 0.06 cut the false escalation rate to 2.1% while maintaining high safety.
+* **Rationale**: Due to the brevity of customer tweets (10–20 tokens) and high sparsity in TF-IDF representations, cosine similarities rarely exceed 0.25 even for highly relevant matches (median was 0.149). An aggressive 0.20 threshold caused an 85.2% false escalation rate. Setting the threshold to 0.06 and pairing it with calibrated policy triggers achieved a balanced 21.1% false escalation rate while preserving a high 70.7% escalation recall on safety-critical interactions.
 * **Trade-off**: Relies on domain policy regex triggers rather than vector similarity alone to catch out-of-distribution adversarial prompts.
+
 
 ---
 
@@ -89,9 +90,10 @@ A chronological record of 14 non-obvious technical and architectural decisions m
 ---
 
 ### 13. Stratified Difficulty Sampling for Golden Set (Easy / Medium / Hard)
-* **Decision**: Annotate every golden item with a difficulty tier (`EASY`: 25.5%, `MEDIUM`: 59.5%, `HARD`: 15.0%).
+* **Decision**: Annotate every golden item with a difficulty tier (`EASY`: 27.0%, `MEDIUM`: 55.5%, `HARD`: 17.5%).
 * **Rationale**: Prevents benchmark inflation caused by packing the test set with trivial FAQs (e.g. "how do I take a screenshot").
 * **Trade-off**: Requires detailed manual review of edge cases (e.g. bulging batteries, minor in-app purchase disputes).
+
 
 ---
 

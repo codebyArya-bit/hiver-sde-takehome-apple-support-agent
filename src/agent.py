@@ -52,6 +52,7 @@ class AppleSupportAgent:
                 "escalation_decision": "AUTO_HANDLE",
                 "escalation_reason": "Empty or unintelligible message.",
                 "draft_reply": "Thanks for reaching out to Apple Support! How can we help you today?",
+                "grounded_in": [],
                 "retrieved_evidence": []
             }
 
@@ -76,8 +77,8 @@ class AppleSupportAgent:
         escalation_reason = esc_result["stated_reason"]
         policy_triggered = esc_result["policy_triggered"]
 
-        # 4. Grounded Reply Drafting
-        draft_reply = self.generator.generate_reply(
+        # 4. Grounded Reply Drafting with True Evidence Extraction
+        gen_result = self.generator.generate_reply(
             query=cleaned_text,
             intent=intent,
             escalation_decision=escalation_decision,
@@ -96,7 +97,9 @@ class AppleSupportAgent:
             "escalation_decision": escalation_decision,
             "escalation_reason": escalation_reason,
             "policy_triggered": policy_triggered,
-            "draft_reply": draft_reply,
-            "reply_length": len(draft_reply),
+            "draft_reply": gen_result["draft_reply"],
+            "reply_length": len(gen_result["draft_reply"]),
+            "grounded_in": gen_result["grounded_in"],
+            "extracted_action_used": gen_result["extracted_action_used"],
             "retrieved_evidence": retrieved_items
         }

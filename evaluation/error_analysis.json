@@ -1,0 +1,3038 @@
+[
+  {
+    "item_id": "GOLD_002",
+    "conversation_id": "4bc681d9c061d73ab15f975260aa2423",
+    "customer_query": "It's been nearly two weeks and I've yet to get LTE on my Watch () working. Think I paid a premium for a spec of red paint. Yes and I talked to Apple Care a few days ago.",
+    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.3127,
+    "intent_error": true,
+    "gold_escalation": "ESCALATE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": false,
+    "gold_escalation_reason": "Customer expresses ongoing frustration for two weeks after speaking to AppleCare; requires senior specialist.",
+    "agent_escalation_reason": "Model intent confidence is low (0.31 < 0.40); routing to human to prevent incorrect automated guidance.",
+    "policy_triggered": "POLICY_LOW_MODEL_CONFIDENCE",
+    "draft_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "grounded_in": [
+      {
+        "conversation_id": "ad5ae540b7fb1479e1fb921c8d178cf1",
+        "similarity": 0.1079,
+        "resolution_snippet": "We're happy to help. Reach us via DM to look at your service options. https://t.co/GDrqU22YpT"
+      },
+      {
+        "conversation_id": "5de208cee2812517b08d21b3d6654ab3",
+        "similarity": 0.0922,
+        "resolution_snippet": "We can help with the behaviors you're experiencing. Meet us in DM, and we'll partner together to get things wo"
+      },
+      {
+        "conversation_id": "d56f8723858e75b213f04efa16527108",
+        "similarity": 0.0902,
+        "resolution_snippet": "We'd like to look into this. DM us and we'll go from there. https://t.co/GDrqU22YpT Let us look into this with"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_004",
+    "conversation_id": "feeaaac8d95f2f447c65af4d006e5fcc",
+    "customer_query": "Mira que me gusta vuestra actualización pero me va como el culo ahora, cuando queráis lo solucionáis.",
+    "gold_intent": "OUT_OF_SCOPE_OTHER",
+    "predicted_intent": "OUT_OF_SCOPE_OTHER",
+    "intent_confidence": 0.8679,
+    "intent_error": false,
+    "gold_escalation": "ESCALATE",
+    "predicted_escalation": "AUTO_HANDLE",
+    "escalation_error": true,
+    "gold_escalation_reason": "Non-English inquiry requires routing to native language support specialist.",
+    "agent_escalation_reason": "General product inquiry addressable with standard public resources.",
+    "policy_triggered": "NONE_AUTO_HANDLED",
+    "draft_reply": "Thanks for reaching out! We're happy to guide you through this. You can find detailed resolution steps here: https://support.apple.com — let us know how it goes!",
+    "grounded_in": [
+      {
+        "conversation_id": "84834d3560fe6f8797dda06083433602",
+        "similarity": 0.2178,
+        "resolution_snippet": "We offer support via Twitter in English. Get help in Spanish here: https://t.co/IBIY3vMgPj or join https://t.c"
+      },
+      {
+        "conversation_id": "530e8a60f2cd6bffe4c02720da0d3d8a",
+        "similarity": 0.1606,
+        "resolution_snippet": "We offer support via Twitter in English. Get help in Spanish here: https://t.co/IBIY3vMgPj or join https://t.c"
+      },
+      {
+        "conversation_id": "19b5156dde60055fb36d64ed4d0135ab",
+        "similarity": 0.1087,
+        "resolution_snippet": "We offer support via Twitter in English. Get help in Spanish here: https://t.co/IBIY3vMgPj or join https://t.c"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_007",
+    "conversation_id": "295cf2292ad0403164e9c1c40068dfe0",
+    "customer_query": "iOS 11 fail https://t.co/7cHNcUM18P It's the worst....wish I could downgrade 😂 - system is much slower",
+    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.5513,
+    "intent_error": true,
+    "gold_escalation": "ESCALATE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": false,
+    "gold_escalation_reason": "High customer frustration or brand reputation risk requires empathetic senior human intervention.",
+    "agent_escalation_reason": "Customer expresses severe dissatisfaction, brand trust risk, or legal escalation requiring senior human care intervention.",
+    "policy_triggered": "POLICY_HIGH_DISTRESS_LEGAL",
+    "draft_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "grounded_in": [
+      {
+        "conversation_id": "e1f0914bf843c3f8491b97351a151394",
+        "similarity": 0.1336,
+        "resolution_snippet": "Hi there. We'd like to help. DM us and tell us more about the issues you're having. https://t.co/GDrqU22YpT"
+      },
+      {
+        "conversation_id": "b9c2b965420936ec1d9ffd8d18b0e601",
+        "similarity": 0.1159,
+        "resolution_snippet": "No it shouldn't. Could you Direct Message us so we can get more information? https://t.co/GDrqU22YpT"
+      },
+      {
+        "conversation_id": "1f7e18a597bdf837e8f527ae6c7c50cc",
+        "similarity": 0.1102,
+        "resolution_snippet": "Let's look into this together to make sure things are working correctly. Send us a DM with more information to"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_008",
+    "conversation_id": "0b10aef6de935a0e15cd9f4769ce096c",
+    "customer_query": "I've had to do it multiple times when I reset my device and how do I change trusted device from old phone to new phone?",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "predicted_intent": "DEVICE_SETUP_AND_USAGE",
+    "intent_confidence": 0.7796,
+    "intent_error": false,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": true,
+    "gold_escalation_reason": "Standard product usage and UI how-to query can be immediately answered with public steps.",
+    "agent_escalation_reason": "Customer indicates previous troubleshooting attempts have failed; direct escalation required to avoid circular frustration.",
+    "policy_triggered": "POLICY_REPEATED_UNRESOLVED_FAILURE",
+    "draft_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "grounded_in": [
+      {
+        "conversation_id": "410b07c9e6c27f893c1ef0b81de0e970",
+        "similarity": 0.1186,
+        "resolution_snippet": "Let's look at this together. Which device and software version are you using? https://t.co/GDrqU22YpT"
+      },
+      {
+        "conversation_id": "b518e60e696941fdf55498810af0c109",
+        "similarity": 0.1116,
+        "resolution_snippet": "Thanks for reaching out to us. We are always happy to help. Is your Netflix app up-to-date? https://t.co/GDrqU"
+      },
+      {
+        "conversation_id": "d8828aee4cc3f13559f3f800ad4938ee",
+        "similarity": 0.1061,
+        "resolution_snippet": "Let's get the battery issue straightened out for your device. DM us to get started. https://t.co/GDrqU22YpT"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_012",
+    "conversation_id": "66d8edd721e626acf58c39669330c796",
+    "customer_query": "Dis c'est normal que mon #iPhone5S chauffe énormément depuis l'installation de l'#iOS11 ? 🌡",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.7885,
+    "intent_error": false,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": true,
+    "gold_escalation_reason": "Standard iOS software troubleshooting steps (force restart, storage check, update) apply.",
+    "agent_escalation_reason": "Non-English message requires routing to a native-language support queue.",
+    "policy_triggered": "POLICY_LANGUAGE_LOCALIZATION",
+    "draft_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "grounded_in": [
+      {
+        "conversation_id": "2e5a6d2bb43c0b98f5b6d4b4fe554ec3",
+        "similarity": 0.1546,
+        "resolution_snippet": "We offer support via Twitter in English. Contact an advisor for help in your preferred language here: https://"
+      },
+      {
+        "conversation_id": "c19316e7be0bb7ee83ab5737bbf14150",
+        "similarity": 0.0983,
+        "resolution_snippet": "We offer support via Twitter in English. Get help in Spanish here: https://t.co/IBIY3vMgPj or join https://t.c"
+      },
+      {
+        "conversation_id": "022ed52c5ae9c43b03a3de4e1a8d092c",
+        "similarity": 0.0951,
+        "resolution_snippet": "We offer support via Twitter in English. Get help in Spanish here: https://t.co/IBIY3vMgPj or join https://t.c"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_018",
+    "conversation_id": "605559102ff2cf71fab6e2efb450701b",
+    "customer_query": "my iPhone 6s is slow as f*ck since I did the update to ios11 and after 1hour screen time it's empty #sucks All most all apps, it almost looks like they slow down all the old devices so everybody buy new phones",
+    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.6408,
+    "intent_error": true,
+    "gold_escalation": "ESCALATE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": false,
+    "gold_escalation_reason": "High customer frustration or brand reputation risk requires empathetic senior human intervention.",
+    "agent_escalation_reason": "Customer expresses severe dissatisfaction, brand trust risk, or legal escalation requiring senior human care intervention.",
+    "policy_triggered": "POLICY_HIGH_DISTRESS_LEGAL",
+    "draft_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "grounded_in": [
+      {
+        "conversation_id": "30d2db88b09949f0b7498b7e5bc2f900",
+        "similarity": 0.1922,
+        "resolution_snippet": "We released 11.0.2. Make sure there's a backup, then go ahead &amp; update your iPhone: https://t.co/80YRnjDFD"
+      },
+      {
+        "conversation_id": "7ee7a7ad43ae34e6219d2d2cd59ae948",
+        "similarity": 0.1332,
+        "resolution_snippet": "What kind of issues are you experiencing with your iPhone? We'd like to take a closer look at this with you."
+      },
+      {
+        "conversation_id": "c81d7cff4e0527953c47784d2098decb",
+        "similarity": 0.1228,
+        "resolution_snippet": "We'd like to help. Which device is this happening on?"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_019",
+    "conversation_id": "319e8206d45fdd668d1d4d30fbca763f",
+    "customer_query": "Cool new feature in macOS High Sierra, it knows you've been working too hard and freezes the screen, but not the mouse. Can't get to the force quit menu, can't switch apps, can't get to the login screen. The only recourse is to hold power button down.",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "predicted_intent": "DEVICE_SETUP_AND_USAGE",
+    "intent_confidence": 0.5923,
+    "intent_error": true,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "AUTO_HANDLE",
+    "escalation_error": false,
+    "gold_escalation_reason": "Standard iOS software troubleshooting steps (force restart, storage check, update) apply.",
+    "agent_escalation_reason": "Deterministic UI navigation and feature configuration instructions available.",
+    "policy_triggered": "NONE_AUTO_HANDLED",
+    "draft_reply": "We'd love to help you get this set up! Take a look at step-by-step guidance in the official iPhone User Guide here: https://support.apple.com/guide/iphone or DM us if you get stuck.",
+    "grounded_in": [
+      {
+        "conversation_id": "ed2390a90e74a7e0f7bede0fa84ed61c",
+        "similarity": 0.1612,
+        "resolution_snippet": "Let's look into this for you. We've received your DM, and we'll continue working with you there. https://t.co/"
+      },
+      {
+        "conversation_id": "75d0aaddb13039e2763030bb5ae33ab6",
+        "similarity": 0.1054,
+        "resolution_snippet": "That's a great question. Learn more about APFS and macOS High Sierra drive conversions here: https://t.co/4S5r"
+      },
+      {
+        "conversation_id": "e72f93ee7cdeb3d0448b6381c095c085",
+        "similarity": 0.1037,
+        "resolution_snippet": "We'd like to help you with your MacBook Pro. Can you DM us with the specifics of what has happened? https://t."
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_025",
+    "conversation_id": "72297cf8993e28f6d0a10f2f6985ff4c",
+    "customer_query": "Ever since I updated my iPhone the Bluetooth won't stay connected. My phone stays being trash.",
+    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.5246,
+    "intent_error": true,
+    "gold_escalation": "ESCALATE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": false,
+    "gold_escalation_reason": "High customer frustration or brand reputation risk requires empathetic senior human intervention.",
+    "agent_escalation_reason": "Customer expresses severe dissatisfaction, brand trust risk, or legal escalation requiring senior human care intervention.",
+    "policy_triggered": "POLICY_HIGH_DISTRESS_LEGAL",
+    "draft_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "grounded_in": [
+      {
+        "conversation_id": "2c950cf167152e1c26cab715b77fa349",
+        "similarity": 0.1786,
+        "resolution_snippet": "We want to help. Tell us a bit more about what's happening with your iPhone. Send us a DM. https://t.co/GDrqU2"
+      },
+      {
+        "conversation_id": "d054cb6d49b3b2a5a8262db68abdfc00",
+        "similarity": 0.1777,
+        "resolution_snippet": "We'd be happy to look into this with you. Can you provide us which device you're using? Have you updated to iO"
+      },
+      {
+        "conversation_id": "6d786b1c0299dacf71b5f6b9cca89406",
+        "similarity": 0.1521,
+        "resolution_snippet": "We've got some information in the iPhone User Guide for iOS 11 which may help: https://t.co/lkONec97gk Questio"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_026",
+    "conversation_id": "dad6f99320f1148de134bbdd5493f7bb",
+    "customer_query": "I am seeing an issue since Apple Watch iOS11 installation with heart beat data record on activities. Tested twice today. https://t.co/RkJK0d9OSN",
+    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.7507,
+    "intent_error": true,
+    "gold_escalation": "ESCALATE",
+    "predicted_escalation": "AUTO_HANDLE",
+    "escalation_error": true,
+    "gold_escalation_reason": "High customer frustration or brand reputation risk requires empathetic senior human intervention.",
+    "agent_escalation_reason": "Standard iOS software troubleshooting steps (restart, storage check, supplemental update) apply.",
+    "policy_triggered": "NONE_AUTO_HANDLED",
+    "draft_reply": "We're happy to help! Based on similar resolutions: Please check to see if you have any restrictions enabled under Settings &gt; General &gt; Restrictions. You can also review full troubleshooting steps here: https://support.apple.com/HT204204",
+    "grounded_in": [
+      {
+        "conversation_id": "fee6ee745c7ca4daa41679bbfd389e60",
+        "similarity": 0.1217,
+        "resolution_snippet": "We're here to help. Do you currently have a passcode on your Apple Watch? Did this issue just start happening?"
+      },
+      {
+        "conversation_id": "fb04a94f138228119deaa81246f48189",
+        "similarity": 0.1216,
+        "resolution_snippet": "We're glad you reached out! What kind of issue are you having with Twitter on the Apple Watch? Does the app no"
+      },
+      {
+        "conversation_id": "d0e7b10a74477e8ae8ddc067b57daf06",
+        "similarity": 0.1018,
+        "resolution_snippet": "We're certainly happy to take a look into this with you. Power your phone off and then on again, does the feat"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_030",
+    "conversation_id": "3446f8d981f789aaa148f31037a75220",
+    "customer_query": "The new iOS sucks. Emailing from the phone is now a pain. Charging the battery twice a day is not exciting. What else?",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "predicted_intent": "BATTERY_AND_HARDWARE",
+    "intent_confidence": 0.58,
+    "intent_error": false,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": true,
+    "gold_escalation_reason": "Standard on-device battery health diagnostic and power-saving optimization steps available.",
+    "agent_escalation_reason": "Customer expresses severe dissatisfaction, brand trust risk, or legal escalation requiring senior human care intervention.",
+    "policy_triggered": "POLICY_HIGH_DISTRESS_LEGAL",
+    "draft_reply": "We want to ensure your device is running safely. For physical hardware inspection or a Genius Bar appointment, check: https://support.apple.com/iphone/repair/battery-power or DM us your zip code.",
+    "grounded_in": [
+      {
+        "conversation_id": "91f5e999ddfc95fd52f5c94bbf6aef0c",
+        "similarity": 0.1576,
+        "resolution_snippet": "This is not to be expected. We want to help. Please tell us a bit more about this via DM. https://t.co/GDrqU22"
+      },
+      {
+        "conversation_id": "cf57812607c4e5f0f1c7513e8cc450c0",
+        "similarity": 0.127,
+        "resolution_snippet": "We'd be happy to help with these issues. DM us which model iPhone you have and will continue support with you "
+      },
+      {
+        "conversation_id": "45771a7abaaeb97ae43e6c3323eb2ab8",
+        "similarity": 0.1213,
+        "resolution_snippet": "We'd like to look into this with you. Please DM us more about what's happening with your iPhone. https://t.co/"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_031",
+    "conversation_id": "9e978401fa03e34539d54be495a86dff",
+    "customer_query": "I just updated the iOS on my iPad and know I can't find any of the signs on the keyboard It's not something you can help with, it's just how you guys chose to redesign the keyboard",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "predicted_intent": "OUT_OF_SCOPE_OTHER",
+    "intent_confidence": 0.3748,
+    "intent_error": true,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": true,
+    "gold_escalation_reason": "Standard iOS software troubleshooting steps (force restart, storage check, update) apply.",
+    "agent_escalation_reason": "Model intent confidence is low (0.37 < 0.40); routing to human to prevent incorrect automated guidance.",
+    "policy_triggered": "POLICY_LOW_MODEL_CONFIDENCE",
+    "draft_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "grounded_in": [
+      {
+        "conversation_id": "57fb4d03f137826f3e3e4779a0364d5e",
+        "similarity": 0.1724,
+        "resolution_snippet": "This is not to be expected. We want to help. Please join us in DM with the country you're in. We'll go from th"
+      },
+      {
+        "conversation_id": "82a644b198a4a16141d697a67ffb2267",
+        "similarity": 0.147,
+        "resolution_snippet": "We'd like to see if we can help with this. To get started, can you tell us more about the issue you're experie"
+      },
+      {
+        "conversation_id": "ac28d1a76a189a35e03fab5e86b01b37",
+        "similarity": 0.1423,
+        "resolution_snippet": "We're happy to see how we can help with your iPhone. To get started, what's going on with it?"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_032",
+    "conversation_id": "a3843f997fcd61391e707a47873c5a2e",
+    "customer_query": "real issues with making phone calls since the update. They can't hear me I can't hear them. Battery replaced, still going on! 6s just updated 10 mins ago to iOS 11.0.2 so I'll give this one 24hrs to see what it's like thanks to apple for doing the battery on recall!",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "predicted_intent": "BATTERY_AND_HARDWARE",
+    "intent_confidence": 0.5325,
+    "intent_error": false,
+    "gold_escalation": "ESCALATE",
+    "predicted_escalation": "AUTO_HANDLE",
+    "escalation_error": true,
+    "gold_escalation_reason": "Persistent battery failure despite replacement requires advanced hardware diagnostics.",
+    "agent_escalation_reason": "Standard on-device battery health diagnostic and power-saving optimization steps available.",
+    "policy_triggered": "NONE_AUTO_HANDLED",
+    "draft_reply": "We can help with your battery. Check Settings > Battery > Battery Health to inspect capacity and top battery-draining apps. Useful tips here: https://support.apple.com/iphone/repair/battery-power",
+    "grounded_in": [
+      {
+        "conversation_id": "ac28d1a76a189a35e03fab5e86b01b37",
+        "similarity": 0.1267,
+        "resolution_snippet": "We're happy to see how we can help with your iPhone. To get started, what's going on with it?"
+      },
+      {
+        "conversation_id": "f165ea09b64435f125b66ab637934023",
+        "similarity": 0.1081,
+        "resolution_snippet": "We want to help. What happens when you try? OK, thanks. We want to help. Can you tell us which iOS 11 version "
+      },
+      {
+        "conversation_id": "7b5e9c2f138a0a4e1f6e0dc469c0d5f4",
+        "similarity": 0.1031,
+        "resolution_snippet": "We'd like to see how we can help. To start, in Settings &gt; Sounds, if you drag the Ringer And Alerts slider "
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_033",
+    "conversation_id": "70d10bf1d5a4d0ba2ec87755c52708ff",
+    "customer_query": "My battery went from 35 to 25 in two second, WTF",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "predicted_intent": "BATTERY_AND_HARDWARE",
+    "intent_confidence": 0.9329,
+    "intent_error": false,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": true,
+    "gold_escalation_reason": "Standard on-device battery health diagnostic and power-saving optimization steps available.",
+    "agent_escalation_reason": "Customer expresses severe dissatisfaction, brand trust risk, or legal escalation requiring senior human care intervention.",
+    "policy_triggered": "POLICY_HIGH_DISTRESS_LEGAL",
+    "draft_reply": "We want to ensure your device is running safely. For physical hardware inspection or a Genius Bar appointment, check: https://support.apple.com/iphone/repair/battery-power or DM us your zip code.",
+    "grounded_in": [
+      {
+        "conversation_id": "512a21066b6ef4914ae0b4f09dfd0ada",
+        "similarity": 0.1192,
+        "resolution_snippet": "We want to make sure your iPhone works the way you expect it to. Let's get paired up in DM to get started. htt"
+      },
+      {
+        "conversation_id": "47b498820685e7c14fad656f88ead406",
+        "similarity": 0.1148,
+        "resolution_snippet": "We want to help with your battery. Is the battery mainly affected when using specific apps? Let us know to con"
+      },
+      {
+        "conversation_id": "1c533ed17380885eb19f5b88fc6c17c3",
+        "similarity": 0.1049,
+        "resolution_snippet": "What kind of battery issues have you noticed? DM us, and we'll find a solution together. https://t.co/GDrqU22Y"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_036",
+    "conversation_id": "0609174c75e6a0e1bb7393787517ea0c",
+    "customer_query": "New ios 11.0.2 still does not resolve Mail app issues!! Cannot connect to Microsoft office exchange without searching for ages Any resolution to this? 11.0.2 - iPhone 7 - still no mail via mail app - Outlook App works without issue No error message, just constant spinning dial whilst phone/app connecting to exchange. Must be a 30sec lag compared to instant pre new IOS The Mail app. Split between connected and WiFi. App works equally slowing via both. Ok thank you. I'll dm you. What info do you need? Code from back of phone?",
+    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.9358,
+    "intent_error": true,
+    "gold_escalation": "ESCALATE",
+    "predicted_escalation": "AUTO_HANDLE",
+    "escalation_error": true,
+    "gold_escalation_reason": "High customer frustration or brand reputation risk requires empathetic senior human intervention.",
+    "agent_escalation_reason": "Standard iOS software troubleshooting steps (restart, storage check, supplemental update) apply.",
+    "policy_triggered": "NONE_AUTO_HANDLED",
+    "draft_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "grounded_in": [
+      {
+        "conversation_id": "e5748f06492dabb173976d660a261247",
+        "similarity": 0.1457,
+        "resolution_snippet": "This is now in Settings &gt; Accounts &amp; Passwords &gt; Fetch New Data. Learn more about setting up mail ac"
+      },
+      {
+        "conversation_id": "4f6aea3724faf620b6c218b66ae7310d",
+        "similarity": 0.1196,
+        "resolution_snippet": "We'd like to gather some more information for better troubleshooting. Can you DM us the country you are locate"
+      },
+      {
+        "conversation_id": "a54a6eea3a3aaa61b2f0a3eb1773a8c2",
+        "similarity": 0.1096,
+        "resolution_snippet": "We'd like to help. DM us and we'll work from there. https://t.co/GDrqU22YpT"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_037",
+    "conversation_id": "a669859552d30cb3bcda717555569221",
+    "customer_query": "help https://t.co/ZpVmNgWPhg An now all me numbers have deleted this is a joke",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "predicted_intent": "OUT_OF_SCOPE_OTHER",
+    "intent_confidence": 0.6266,
+    "intent_error": true,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "AUTO_HANDLE",
+    "escalation_error": false,
+    "gold_escalation_reason": "General inquiry addressable with clarifying questions and standard support resources.",
+    "agent_escalation_reason": "General product inquiry addressable with standard public resources.",
+    "policy_triggered": "NONE_AUTO_HANDLED",
+    "draft_reply": "Thanks for reaching out! We're happy to guide you through this. You can find detailed resolution steps here: https://support.apple.com — let us know how it goes!",
+    "grounded_in": [
+      {
+        "conversation_id": "3467eef2b3eca5d9ba9242166169c90a",
+        "similarity": 0.1465,
+        "resolution_snippet": "We want you to be able to depend on your iPhone and we're here to help. DM us a bit about what's going on. htt"
+      },
+      {
+        "conversation_id": "5899aaf8f0cda573aa1e7e06a14f02a7",
+        "similarity": 0.1354,
+        "resolution_snippet": "We know how important your music is, and we'll be happy to help. Is the iCloud Music Library on under Settings"
+      },
+      {
+        "conversation_id": "82e47ff1191a0096f08d4c10da7b255b",
+        "similarity": 0.12,
+        "resolution_snippet": "We'd be happy to help. We notice \"Hey Siri\" is disabled, but she can still be summoned with the Home button. H"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_038",
+    "conversation_id": "dc89e8a959622bb503d796e9f866c9d4",
+    "customer_query": "Literally the worst update have done, not had any problems with my phone up n now the sounds faulty, phone crashes n restarts 24/7👍🏼😡",
+    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.4929,
+    "intent_error": true,
+    "gold_escalation": "ESCALATE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": false,
+    "gold_escalation_reason": "High customer frustration or brand reputation risk requires empathetic senior human intervention.",
+    "agent_escalation_reason": "Customer expresses severe dissatisfaction, brand trust risk, or legal escalation requiring senior human care intervention.",
+    "policy_triggered": "POLICY_HIGH_DISTRESS_LEGAL",
+    "draft_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "grounded_in": [
+      {
+        "conversation_id": "8a9037aa56c001685436da15c7f8e736",
+        "similarity": 0.1594,
+        "resolution_snippet": "We'll make sure to get this straightened out. DM us, and we'll see you there. https://t.co/GDrqU22YpT"
+      },
+      {
+        "conversation_id": "13b46c4d4c122dbb3b02fad622a506c0",
+        "similarity": 0.1065,
+        "resolution_snippet": "We're here to help. Let's take this to DM so we can better assist you. https://t.co/GDrqU22YpT"
+      },
+      {
+        "conversation_id": "d506889a69dd66494dbc32863912f9d2",
+        "similarity": 0.1053,
+        "resolution_snippet": "We'd like to help get you back to enjoying your iPhone. Can you tell us, in DM, what apps you're using when th"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_040",
+    "conversation_id": "0f372570f2843bb879597bfbc6d7f286",
+    "customer_query": "My WiFi seems to going funny since I've updated , any reported issues for it on iOS11.1? Have to keep turning off and on to get connection",
+    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.9016,
+    "intent_error": true,
+    "gold_escalation": "ESCALATE",
+    "predicted_escalation": "AUTO_HANDLE",
+    "escalation_error": true,
+    "gold_escalation_reason": "High customer frustration or brand reputation risk requires empathetic senior human intervention.",
+    "agent_escalation_reason": "Standard iOS software troubleshooting steps (restart, storage check, supplemental update) apply.",
+    "policy_triggered": "NONE_AUTO_HANDLED",
+    "draft_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "grounded_in": [
+      {
+        "conversation_id": "a14f14ae725e9312128c44b7986f2b61",
+        "similarity": 0.13,
+        "resolution_snippet": "We'd love to help you fix this problem! Have you tried turning off Wi-Fi, and turning it on again? Have you al"
+      },
+      {
+        "conversation_id": "8f9d875975015ce841a30e9ca9f060a1",
+        "similarity": 0.1204,
+        "resolution_snippet": "We want to help. After restarting, how long before it happens? Are you using a certain app when it becomes unr"
+      },
+      {
+        "conversation_id": "8883f5cc364159f357e4adc14239d891",
+        "similarity": 0.1179,
+        "resolution_snippet": "We can take a look at what's happening to find a solution. DM us with more details of what you're experiencing"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_045",
+    "conversation_id": "8477c7aaa298567ba175a46377f8f32e",
+    "customer_query": "So I've installed 11.0.3 and waited... still missing photos on iPad Air, it just won't sync. What next? Full restore from b/up",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.4588,
+    "intent_error": true,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "AUTO_HANDLE",
+    "escalation_error": false,
+    "gold_escalation_reason": "Standard on-device battery health diagnostic and power-saving optimization steps available.",
+    "agent_escalation_reason": "Standard iOS software troubleshooting steps (restart, storage check, supplemental update) apply.",
+    "policy_triggered": "NONE_AUTO_HANDLED",
+    "draft_reply": "We're happy to help! Based on similar resolutions: At this time, we'd like to have you backup and update to iOS 11.0.2 and let us know if that helps with the issue. You can also review full troubleshooting steps here: https://support.apple.com/HT204204",
+    "grounded_in": [
+      {
+        "conversation_id": "4247804dcfc6fb2e82cc84299f01728e",
+        "similarity": 0.1126,
+        "resolution_snippet": "We'd be happy to look into this. To start, can you let us know which device and software version you're using?"
+      },
+      {
+        "conversation_id": "17683915f18db161f76531e919972c4a",
+        "similarity": 0.1072,
+        "resolution_snippet": "We'll be happy to look into this with you. If you go to Settings &gt; General &gt; About, and look to Version,"
+      },
+      {
+        "conversation_id": "e79ea4226aaf2cf9957b98c14c33fcfc",
+        "similarity": 0.094,
+        "resolution_snippet": "There has been a new update released. You can update to iOS 11.0.2. We always recommend backing up your device"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_046",
+    "conversation_id": "7962107b6afcb2fd5e180d98e4f788e3",
+    "customer_query": "how the fuck do you \"not have Mac technicians available\" this is worse than when guitar center didn't have their \"guitar guy\" in",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "predicted_intent": "OUT_OF_SCOPE_OTHER",
+    "intent_confidence": 0.4734,
+    "intent_error": true,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "AUTO_HANDLE",
+    "escalation_error": false,
+    "gold_escalation_reason": "General inquiry addressable with clarifying questions and standard support resources.",
+    "agent_escalation_reason": "General product inquiry addressable with standard public resources.",
+    "policy_triggered": "NONE_AUTO_HANDLED",
+    "draft_reply": "Thanks for reaching out! We're happy to guide you through this. You can find detailed resolution steps here: https://support.apple.com — let us know how it goes!",
+    "grounded_in": [
+      {
+        "conversation_id": "2a308c10e48ea0caeefde65b4135c396",
+        "similarity": 0.1059,
+        "resolution_snippet": "Thanks for connecting with us. Let us know in DM when exactly this pop-up appeared and we'll go from there. ht"
+      },
+      {
+        "conversation_id": "7bf3c18bf8b2baaa03923894717617f1",
+        "similarity": 0.0843,
+        "resolution_snippet": "That's not the experience we want you to have. Send us a DM so we can look into this with you there. https://t"
+      },
+      {
+        "conversation_id": "d2c332764243d1c18a9662c6ff4469e3",
+        "similarity": 0.0821,
+        "resolution_snippet": "Do you subscribe to Apple Music? Is iCloud Music Library turned on? Check here: https://t.co/9VQ9VywZJ2 DM us "
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_047",
+    "conversation_id": "d4d395f8f3879cec9059f5caf2acb4b7",
+    "customer_query": "Hi Apple! My early 2015 Macbook Pro Retina has glares on it. Since I have no Apple Care, will I be able to get a free repair? Thanks so much but I've just made a Genius Bar reservation!",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "predicted_intent": "OUT_OF_SCOPE_OTHER",
+    "intent_confidence": 0.5005,
+    "intent_error": true,
+    "gold_escalation": "ESCALATE",
+    "predicted_escalation": "AUTO_HANDLE",
+    "escalation_error": true,
+    "gold_escalation_reason": "Physical hardware damage or repair booking requires in-person Genius Bar appointment or mail-in service.",
+    "agent_escalation_reason": "General product inquiry addressable with standard public resources.",
+    "policy_triggered": "NONE_AUTO_HANDLED",
+    "draft_reply": "Thanks for reaching out! We're happy to guide you through this. You can find detailed resolution steps here: https://support.apple.com — let us know how it goes!",
+    "grounded_in": [
+      {
+        "conversation_id": "011cac7ad4ca82478d264c9263e35e4d",
+        "similarity": 0.1243,
+        "resolution_snippet": "We're here to address your concerns. Let's team up in Direct Message using the link below. https://t.co/GDrqU2"
+      },
+      {
+        "conversation_id": "13e838cf584e3f5bf27756bc9146bf80",
+        "similarity": 0.116,
+        "resolution_snippet": "We've received your DM. We'll follow up with you there."
+      },
+      {
+        "conversation_id": "6ebee48fe169aa4fe224f04209e87278",
+        "similarity": 0.1146,
+        "resolution_snippet": "What is the reservation regarding? We're happy to help. You can also try using the following link: https://t.c"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_048",
+    "conversation_id": "4e0b80c6c31febbb290fd799dd348e6a",
+    "customer_query": "I'm on 11.0.2. No matter how many time I reset the settings or restart the phone my autocorrect etc wont work. Any fixes? I have an iPhone SE. Since the update predictive text and all other keyboard settings are not showing/working. Yes, still nothing https://t.co/cpqydKm3R4",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.8748,
+    "intent_error": false,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": true,
+    "gold_escalation_reason": "Standard iOS software troubleshooting steps (force restart, storage check, update) apply.",
+    "agent_escalation_reason": "Customer indicates previous troubleshooting attempts have failed; direct escalation required to avoid circular frustration.",
+    "policy_triggered": "POLICY_REPEATED_UNRESOLVED_FAILURE",
+    "draft_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "grounded_in": [
+      {
+        "conversation_id": "7efb1337347c0ae601f420f34ba38154",
+        "similarity": 0.1104,
+        "resolution_snippet": "These are not issues you should be experiencing. To provide the best support, may we get the iOS version on th"
+      },
+      {
+        "conversation_id": "903b96e4b198e11c8c59db91cc7bdf9e",
+        "similarity": 0.0945,
+        "resolution_snippet": "We are here to help you! Please try these steps: https://t.co/8MvHMFZ83h We've got an article that will help w"
+      },
+      {
+        "conversation_id": "7fad542701b55624dac8cc0fb2d1ba82",
+        "similarity": 0.0914,
+        "resolution_snippet": "Let's work to resolve this together. Tell us what exact issue is happening to not allow you to use your iPhone"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_053",
+    "conversation_id": "baeb9f62e3b2d046e0d8ffbf018da968",
+    "customer_query": "#iOS11 0.2 on 📱7. #Fail Poor battery. Poor WiFi. No speakerphone. Apps Freeze. Can't pause 🎧 in Control Centre. Thanks 🍎 Not!",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.6922,
+    "intent_error": true,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": true,
+    "gold_escalation_reason": "Standard on-device battery health diagnostic and power-saving optimization steps available.",
+    "agent_escalation_reason": "Customer expresses severe dissatisfaction, brand trust risk, or legal escalation requiring senior human care intervention.",
+    "policy_triggered": "POLICY_HIGH_DISTRESS_LEGAL",
+    "draft_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "grounded_in": [
+      {
+        "conversation_id": "18a4e48744cc9118e831d442c6aa8121",
+        "similarity": 0.1482,
+        "resolution_snippet": "We'd like to get this resolved for you. DM us and we'll take a closer look. https://t.co/GDrqU22YpT"
+      },
+      {
+        "conversation_id": "de344c00a3ff966ad78ba055ca90a170",
+        "similarity": 0.1362,
+        "resolution_snippet": "This can be expected behavior. Take a look here: https://t.co/G7BHuQnDS6 Let's meet in DM and we can explain f"
+      },
+      {
+        "conversation_id": "cbc74edb3387d5d674abd4681118f9e2",
+        "similarity": 0.1294,
+        "resolution_snippet": "We're here to help. Are you turning off Wi-Fi and Bluetooth in the Control Center, or through Settings on your"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_055",
+    "conversation_id": "a598f3a2f1e4b43f40608681fbfc29bb",
+    "customer_query": "Yo your iOS update is killing my battery life. Fix it I wish they would I gave up on my iPhone 7 Plus and sold it got a galaxy s8 plus. I still have this iPad mini that I have to have for work It would go all day easy and then some now I unplug it and watch the battery drop 2 hours later I have to charge it. That's what I'm dealing with",
+    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "predicted_intent": "BATTERY_AND_HARDWARE",
+    "intent_confidence": 0.4986,
+    "intent_error": true,
+    "gold_escalation": "ESCALATE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": false,
+    "gold_escalation_reason": "Customer details product abandonment (sold iPhone 7 Plus for Galaxy S8) and critical workplace iPad battery failure.",
+    "agent_escalation_reason": "Customer indicates previous troubleshooting attempts have failed; direct escalation required to avoid circular frustration.",
+    "policy_triggered": "POLICY_REPEATED_UNRESOLVED_FAILURE",
+    "draft_reply": "We want to ensure your device is running safely. For physical hardware inspection or a Genius Bar appointment, check: https://support.apple.com/iphone/repair/battery-power or DM us your zip code.",
+    "grounded_in": [
+      {
+        "conversation_id": "b712b99a4ab96d1175db1a789915f506",
+        "similarity": 0.1458,
+        "resolution_snippet": "We're happy to look into the battery life you're experiencing on iOS 11. Join us in DM with the iPhone model y"
+      },
+      {
+        "conversation_id": "57fb4d03f137826f3e3e4779a0364d5e",
+        "similarity": 0.1407,
+        "resolution_snippet": "This is not to be expected. We want to help. Please join us in DM with the country you're in. We'll go from th"
+      },
+      {
+        "conversation_id": "ac295e980d13cd65e7f5a8c58bf74886",
+        "similarity": 0.1346,
+        "resolution_snippet": "Hi. We're happy to take a closer look. DM us and tell us which device you're having issues with. https://t.co/"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_057",
+    "conversation_id": "2151845b4188b67b0cef081fe3565704",
+    "customer_query": "is there a reason some of my emojis are rendering in my mac? For instance, the taco emoji is a placeholder square. Thanks! https://t.co/p0L9JqtNUO",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "predicted_intent": "OUT_OF_SCOPE_OTHER",
+    "intent_confidence": 0.6021,
+    "intent_error": true,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "AUTO_HANDLE",
+    "escalation_error": false,
+    "gold_escalation_reason": "General inquiry addressable with clarifying questions and standard support resources.",
+    "agent_escalation_reason": "General product inquiry addressable with standard public resources.",
+    "policy_triggered": "NONE_AUTO_HANDLED",
+    "draft_reply": "Thanks for reaching out! We're happy to guide you through this. You can find detailed resolution steps here: https://support.apple.com — let us know how it goes!",
+    "grounded_in": [
+      {
+        "conversation_id": "428696cd9b58b0b81737e2b249d3705a",
+        "similarity": 0.1208,
+        "resolution_snippet": "Tell us a bit about what's going on with your Mac. We'd like to offer any assistance we can. When did you see "
+      },
+      {
+        "conversation_id": "15a57259cb8cc1b2ab6e48485770e83a",
+        "similarity": 0.0997,
+        "resolution_snippet": "We want to help. Does restarting your Mac have any impact on the issue? What happens when you try using the HD"
+      },
+      {
+        "conversation_id": "73fd30a884caff872dc380fd90307368",
+        "similarity": 0.0985,
+        "resolution_snippet": "Help is what we do best, you've come to the right place. What's going on with AirDrop? We'd be happy to look i"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_058",
+    "conversation_id": "e83fa3b8d7c865b7f6c4fdc6577265d1",
+    "customer_query": "seems your PowerBeats3 aren't much good. My pair has given up after a handful of uses! Seems it's a common fault as well. In asking friends 2 people have had the same and then looking at forums numerous people have experienced the same thing",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.5646,
+    "intent_error": true,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "AUTO_HANDLE",
+    "escalation_error": false,
+    "gold_escalation_reason": "General inquiry addressable with clarifying questions and standard support resources.",
+    "agent_escalation_reason": "Standard iOS software troubleshooting steps (restart, storage check, supplemental update) apply.",
+    "policy_triggered": "NONE_AUTO_HANDLED",
+    "draft_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "grounded_in": [
+      {
+        "conversation_id": "4ee9513e4ecc97423e06802e184256d7",
+        "similarity": 0.1028,
+        "resolution_snippet": "We'd like to help. So we are on the same page, which version of iOS do you have installed? Click here to join "
+      },
+      {
+        "conversation_id": "a1da729104ab261bf15dbc70abbb0075",
+        "similarity": 0.0947,
+        "resolution_snippet": "This is an unexpected behavior. Which iOS 11 version is your device currently running?"
+      },
+      {
+        "conversation_id": "cf8c2e632229ca969ca1938d5e674853",
+        "similarity": 0.0933,
+        "resolution_snippet": "iOS 11 should improve your iPhone's performance, and we can help. Have you had the chance to back up and updat"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_059",
+    "conversation_id": "ce9dc7fc98c542ada02c9bf2670d06cd",
+    "customer_query": "how do you delete apps on the Apple TV?!?!? I'm holding down on the app till it wiggles then holding down play and nope",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.5488,
+    "intent_error": true,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "AUTO_HANDLE",
+    "escalation_error": false,
+    "gold_escalation_reason": "General inquiry addressable with clarifying questions and standard support resources.",
+    "agent_escalation_reason": "Standard iOS software troubleshooting steps (restart, storage check, supplemental update) apply.",
+    "policy_triggered": "NONE_AUTO_HANDLED",
+    "draft_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "grounded_in": [
+      {
+        "conversation_id": "07626ae06a7c56b9ee6cfe8c2922c5db",
+        "similarity": 0.1535,
+        "resolution_snippet": "We'd like to get you over to our Apple TV team for assistance. Please follow the link to begin: https://t.co/I"
+      },
+      {
+        "conversation_id": "440e3c063d8318c976afb8067308b5a5",
+        "similarity": 0.1443,
+        "resolution_snippet": "We can take a look at it. Which device and what version of iOS are you currently using? In iOS 10, touch and h"
+      },
+      {
+        "conversation_id": "c052e85788d6c876ff0aeac071876179",
+        "similarity": 0.1192,
+        "resolution_snippet": "Reach out to our Apple TV experts for assistance, James. You can do that here: https://t.co/IBIY3vMgPj Our App"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_060",
+    "conversation_id": "91e1ef38d956c545996c6ce127e56c38",
+    "customer_query": "Idk if it's the new iOS update but my phone been lagging lately If you read the comments almost every post is about this shitty iOS 11 these guys here will make it seem like it is isolated",
+    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.9343,
+    "intent_error": true,
+    "gold_escalation": "ESCALATE",
+    "predicted_escalation": "AUTO_HANDLE",
+    "escalation_error": true,
+    "gold_escalation_reason": "High customer frustration or brand reputation risk requires empathetic senior human intervention.",
+    "agent_escalation_reason": "Standard iOS software troubleshooting steps (restart, storage check, supplemental update) apply.",
+    "policy_triggered": "NONE_AUTO_HANDLED",
+    "draft_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "grounded_in": [
+      {
+        "conversation_id": "d94aba749ec2ea5f01780edc4ac58745",
+        "similarity": 0.1361,
+        "resolution_snippet": "We would like to help speed up your device and get it working as it should. DM us the phone you are using and "
+      },
+      {
+        "conversation_id": "0cfe4243c6479c791b8b8c4b6adad161",
+        "similarity": 0.1088,
+        "resolution_snippet": "We'd like to help. Which iOS version are you having issues on? You can double-check with these steps: https://"
+      },
+      {
+        "conversation_id": "7c7805195f26959cc71528ac3ce86521",
+        "similarity": 0.0958,
+        "resolution_snippet": "We'd like to see if we can assist you with your iPhone. To begin, DM us your iPhone model and iOS version. We'"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_061",
+    "conversation_id": "66586e07e4255cb082bfa532046d4d1a",
+    "customer_query": "my phone won't change back to imessage and i've done everything possible to try fix this. help please? tried everything, still not working",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.4564,
+    "intent_error": true,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": true,
+    "gold_escalation_reason": "General inquiry addressable with clarifying questions and standard support resources.",
+    "agent_escalation_reason": "Customer indicates previous troubleshooting attempts have failed; direct escalation required to avoid circular frustration.",
+    "policy_triggered": "POLICY_REPEATED_UNRESOLVED_FAILURE",
+    "draft_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "grounded_in": [
+      {
+        "conversation_id": "6546c9f0e70339d6d1dcc09e215d8383",
+        "similarity": 0.129,
+        "resolution_snippet": "We'd like to help. So we know a little more about your iPhone, what version of iOS do you have installed? Than"
+      },
+      {
+        "conversation_id": "b2078f576917bfc10fc7c65913ab7916",
+        "similarity": 0.1099,
+        "resolution_snippet": "We want to make sure your iPhone charges. Try the steps in our article, and DM us the results: https://t.co/uq"
+      },
+      {
+        "conversation_id": "45ff712220805e4c9545cf0cc9fdfc75",
+        "similarity": 0.1084,
+        "resolution_snippet": "We'll do everything we can to help you with this. What steps have you tried on your own? Let's continue workin"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_063",
+    "conversation_id": "07074a20ffe924afc1f031cb0b2b4cf2",
+    "customer_query": "- iOS 11 &amp; .1 terrible! Battery life drops quicker than pound did after Brexit referendum! &amp; it crashes more than bumper cars!",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "predicted_intent": "BATTERY_AND_HARDWARE",
+    "intent_confidence": 0.3856,
+    "intent_error": false,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": true,
+    "gold_escalation_reason": "Standard on-device battery health diagnostic and power-saving optimization steps available.",
+    "agent_escalation_reason": "Customer expresses severe dissatisfaction, brand trust risk, or legal escalation requiring senior human care intervention.",
+    "policy_triggered": "POLICY_HIGH_DISTRESS_LEGAL",
+    "draft_reply": "We want to ensure your device is running safely. For physical hardware inspection or a Genius Bar appointment, check: https://support.apple.com/iphone/repair/battery-power or DM us your zip code.",
+    "grounded_in": [
+      {
+        "conversation_id": "2418a49e39f5d907a0e976602ba15bf2",
+        "similarity": 0.1343,
+        "resolution_snippet": "We're here to help. Send us a DM and we can look into some options for you. https://t.co/GDrqU22YpT"
+      },
+      {
+        "conversation_id": "b79243bb4284b3275c8c2b9497a654c7",
+        "similarity": 0.123,
+        "resolution_snippet": "We can help. Can you tell us which version of iOS 11 your device is on? That can be found in Settings &gt; Gen"
+      },
+      {
+        "conversation_id": "42a25a89a90a57b3ceb650be09cc0e3b",
+        "similarity": 0.1011,
+        "resolution_snippet": "We're more than happy to help you. Please meet us in DM so we can get some information and help you out! https"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_065",
+    "conversation_id": "d88c9d80d7ccb961f7ee415b7be1590d",
+    "customer_query": "Snapchat notification icon on Apple Watch is blanked out. Even after updating to OS 4.0.1.... I am still getting the notification as normal. But the icon is affected. The twitter notification is the same way.",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "predicted_intent": "DEVICE_SETUP_AND_USAGE",
+    "intent_confidence": 0.7906,
+    "intent_error": false,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": true,
+    "gold_escalation_reason": "Standard product usage and UI how-to query can be immediately answered with public steps.",
+    "agent_escalation_reason": "Customer indicates previous troubleshooting attempts have failed; direct escalation required to avoid circular frustration.",
+    "policy_triggered": "POLICY_REPEATED_UNRESOLVED_FAILURE",
+    "draft_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "grounded_in": [
+      {
+        "conversation_id": "bd6587c2a35cff3d450dfc35ab99d994",
+        "similarity": 0.1532,
+        "resolution_snippet": "Let's see how we can help. What're you seeing instead of the SnapChat icon when you receive a notification? Te"
+      },
+      {
+        "conversation_id": "bab4d2b21551fd3b881efb4f8c9c973b",
+        "similarity": 0.1507,
+        "resolution_snippet": "We're happy to help. Please meet us in DM and we'll go from there. https://t.co/GDrqU22YpT"
+      },
+      {
+        "conversation_id": "ac126ab686c32ee2e83e13dc76a266f2",
+        "similarity": 0.1185,
+        "resolution_snippet": "Let us look into this for you. Join us in DM so we can better assist you: https://t.co/GDrqU22YpT"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_066",
+    "conversation_id": "fa144fa2d8e9613ea77dd5e859c1d918",
+    "customer_query": "Hey Why did you release #ios11 with so many bugs? I love #iphone and #iOS but this is the worst iOS update yet. We deserve better. https://t.co/w83ZuJX78m I agree it sure is the worst",
+    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.4899,
+    "intent_error": true,
+    "gold_escalation": "ESCALATE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": false,
+    "gold_escalation_reason": "High customer frustration or brand reputation risk requires empathetic senior human intervention.",
+    "agent_escalation_reason": "Customer expresses severe dissatisfaction, brand trust risk, or legal escalation requiring senior human care intervention.",
+    "policy_triggered": "POLICY_HIGH_DISTRESS_LEGAL",
+    "draft_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "grounded_in": [
+      {
+        "conversation_id": "e1f0914bf843c3f8491b97351a151394",
+        "similarity": 0.2207,
+        "resolution_snippet": "Hi there. We'd like to help. DM us and tell us more about the issues you're having. https://t.co/GDrqU22YpT"
+      },
+      {
+        "conversation_id": "7daf7896ddfac363a557e0c4567d6591",
+        "similarity": 0.1507,
+        "resolution_snippet": "We'd love to help you with this. Are you a public beta tester or a developer? You can send your answer in a DM"
+      },
+      {
+        "conversation_id": "7c7805195f26959cc71528ac3ce86521",
+        "similarity": 0.131,
+        "resolution_snippet": "We'd like to see if we can assist you with your iPhone. To begin, DM us your iPhone model and iOS version. We'"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_069",
+    "conversation_id": "9dd8592ff9fa3881d49190d6f59fc210",
+    "customer_query": "why has #HighSierra destroyed blank background PNG images in Photos? Some now inconsistently have square, white BGs It's inconsistent. Some have white BG in Preview where it didn't before, others show blank BG in Preview but have BG after import to Photos GIFs are consistent but Preview can't export to GIF.",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "predicted_intent": "APPLE_ID_AND_ICLOUD",
+    "intent_confidence": 0.4361,
+    "intent_error": true,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": true,
+    "gold_escalation_reason": "Standard on-device battery health diagnostic and power-saving optimization steps available.",
+    "agent_escalation_reason": "Apple Id And Icloud inquiries involve sensitive PII and account security.",
+    "policy_triggered": "POLICY_SENSITIVE_DOMAIN",
+    "draft_reply": "Account security is our top priority. Please head to https://iforgot.apple.com to securely verify and recover your Apple ID. If you're still locked out, DM us to assist further.",
+    "grounded_in": [
+      {
+        "conversation_id": "b21946c2834c2772be091d934b11ed89",
+        "similarity": 0.1303,
+        "resolution_snippet": "Let's see if we can find out. What device are you using? How are you trying to preview songs? Are you previewi"
+      },
+      {
+        "conversation_id": "73adab5790bada803ec6382abe93f6ab",
+        "similarity": 0.0951,
+        "resolution_snippet": "We're happy to help. Can you view the photos on the device you took them with, or is that where you're unable "
+      },
+      {
+        "conversation_id": "36ea7c4ba8631992b484beca3146c4c5",
+        "similarity": 0.0873,
+        "resolution_snippet": "Let's work together to get your photos back. Do you use iCloud Photo Library to manage your photos? Were these"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_072",
+    "conversation_id": "5ecb6fc9bbc932234e8cbb499725cea6",
+    "customer_query": "I've never been so disappointed in an iOS rollout. This update has basically made my iphone unusable. Even 11.0.1 didn't help! Bluetooth issue, speakerphone issue, lag issue when switching apple apps, half updated apps issue. Beyond upset with failed Apple's iOS 11.",
+    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.9459,
+    "intent_error": true,
+    "gold_escalation": "ESCALATE",
+    "predicted_escalation": "AUTO_HANDLE",
+    "escalation_error": true,
+    "gold_escalation_reason": "High customer frustration or brand reputation risk requires empathetic senior human intervention.",
+    "agent_escalation_reason": "Standard iOS software troubleshooting steps (restart, storage check, supplemental update) apply.",
+    "policy_triggered": "NONE_AUTO_HANDLED",
+    "draft_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "grounded_in": [
+      {
+        "conversation_id": "c7fb7257f637695847454f793ecde7f0",
+        "similarity": 0.1433,
+        "resolution_snippet": "We're here for you! Please DM us with specific issues you've been seeing, your iPhone model, and country. We'l"
+      },
+      {
+        "conversation_id": "a33f5c4c56912d77daefd7a7e07de2a9",
+        "similarity": 0.1143,
+        "resolution_snippet": "We're happy to help. Is your iPhone running slow when using specific apps? Have you tried any steps to resolve"
+      },
+      {
+        "conversation_id": "ad1f79077f508bd4756a7d65ffa09165",
+        "similarity": 0.1113,
+        "resolution_snippet": "We're here to help. Can you provide us with more details on your iPhone issue? Let's take that SIM out and the"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_073",
+    "conversation_id": "196cd5b8300ff04a0ec76cd7239453b7",
+    "customer_query": "battery life is terrible since iOS11. Why does 5min of background in mail use 10%? https://t.co/BB7OJIh2B8",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "predicted_intent": "BATTERY_AND_HARDWARE",
+    "intent_confidence": 0.4314,
+    "intent_error": false,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": true,
+    "gold_escalation_reason": "Standard on-device battery health diagnostic and power-saving optimization steps available.",
+    "agent_escalation_reason": "Customer expresses severe dissatisfaction, brand trust risk, or legal escalation requiring senior human care intervention.",
+    "policy_triggered": "POLICY_HIGH_DISTRESS_LEGAL",
+    "draft_reply": "We want to ensure your device is running safely. For physical hardware inspection or a Genius Bar appointment, check: https://support.apple.com/iphone/repair/battery-power or DM us your zip code.",
+    "grounded_in": [
+      {
+        "conversation_id": "a9ef4dd12008b79ca641496e3e10a847",
+        "similarity": 0.1557,
+        "resolution_snippet": "We're happy to take a look at your battery with you as well. Let us know via DM which device you have, then we"
+      },
+      {
+        "conversation_id": "bcc621727210dfc29578b8fa8c5c5e0e",
+        "similarity": 0.1294,
+        "resolution_snippet": "Battery life is important, and we're here for you. To get started, which device are you experiencing this on? "
+      },
+      {
+        "conversation_id": "e489d3749fc714333436a92d920c3c33",
+        "similarity": 0.1191,
+        "resolution_snippet": "Hey, we can take a closer look into the battery life. Send us a DM and we'll work together from there. https:/"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_074",
+    "conversation_id": "3e0834d7c3e9c294cf273964570829c5",
+    "customer_query": "hey! My music app doesn't work after iOS 11 update, it crashes right after I open the app. need support. Alright thanks I've sent a DM. Bless.",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.9549,
+    "intent_error": false,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": true,
+    "gold_escalation_reason": "Standard iOS software troubleshooting steps (force restart, storage check, update) apply.",
+    "agent_escalation_reason": "Customer already initiated private conversation; routing directly to Twitter DM specialist queue.",
+    "policy_triggered": "POLICY_PRIVATE_MESSAGE_TRANSFER",
+    "draft_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "grounded_in": [
+      {
+        "conversation_id": "4f219807e0161ab2cd214f7959b1854c",
+        "similarity": 0.1409,
+        "resolution_snippet": "We'd like to assist with this. Was your music all in the Music app?"
+      },
+      {
+        "conversation_id": "abb68937294b9483c89786c0110553e3",
+        "similarity": 0.1376,
+        "resolution_snippet": "What kind of issue are you having with Netflix? We'd love to help."
+      },
+      {
+        "conversation_id": "7aa527f4f05729d230ca51987b4a0c5e",
+        "similarity": 0.1034,
+        "resolution_snippet": "We know how important it is for your iPhone to work. We can help. DM us details of your issue, and we'll look "
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_077",
+    "conversation_id": "8b280b7384b4d2d1de5f4587382301b9",
+    "customer_query": "This new #iPhone update is some bs. Phone hasn't been acting right since I did it. #iPhone update is killing my battery life. Thanks",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.5915,
+    "intent_error": true,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "AUTO_HANDLE",
+    "escalation_error": false,
+    "gold_escalation_reason": "Standard on-device battery health diagnostic and power-saving optimization steps available.",
+    "agent_escalation_reason": "Standard iOS software troubleshooting steps (restart, storage check, supplemental update) apply.",
+    "policy_triggered": "NONE_AUTO_HANDLED",
+    "draft_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "grounded_in": [
+      {
+        "conversation_id": "32cd4bf8c2ae33de933945b100141395",
+        "similarity": 0.1785,
+        "resolution_snippet": "We'd love to help out with your battery. Let's check out this article first:"
+      },
+      {
+        "conversation_id": "5f0f62805830b1021beaf5904c9440d4",
+        "similarity": 0.177,
+        "resolution_snippet": "We'd love to help you with your iPhone! Which iOS version did you update to? What kind of trouble are you havi"
+      },
+      {
+        "conversation_id": "ac295e980d13cd65e7f5a8c58bf74886",
+        "similarity": 0.1587,
+        "resolution_snippet": "Hi. We're happy to take a closer look. DM us and tell us which device you're having issues with. https://t.co/"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_078",
+    "conversation_id": "11154cc9c7a17501e32cc6a019fb7192",
+    "customer_query": "left house from 100% battery Life when I went workplace just 20 minuets journey battery gone 90% #Apple hate #iOS11 fixed f*** iOS 11.0.2",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "predicted_intent": "BATTERY_AND_HARDWARE",
+    "intent_confidence": 0.5486,
+    "intent_error": false,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": true,
+    "gold_escalation_reason": "Standard on-device battery health diagnostic and power-saving optimization steps available.",
+    "agent_escalation_reason": "Customer expresses severe dissatisfaction, brand trust risk, or legal escalation requiring senior human care intervention.",
+    "policy_triggered": "POLICY_HIGH_DISTRESS_LEGAL",
+    "draft_reply": "We want to ensure your device is running safely. For physical hardware inspection or a Genius Bar appointment, check: https://support.apple.com/iphone/repair/battery-power or DM us your zip code.",
+    "grounded_in": [
+      {
+        "conversation_id": "6c3db135c3ba3dfc011b74b07e039683",
+        "similarity": 0.1255,
+        "resolution_snippet": "We'd be happy to assist you with this. Please reach out to us via DM and we'll get started. https://t.co/GDrqU"
+      },
+      {
+        "conversation_id": "63982b9cee5484def7619af996de3798",
+        "similarity": 0.1237,
+        "resolution_snippet": "We can help take a look into your iPhone battery life. Send us a DM to let us know if you're on the latest upd"
+      },
+      {
+        "conversation_id": "f01e74c72959cfecb9ccbbc762ad376d",
+        "similarity": 0.1128,
+        "resolution_snippet": "We're here to help. When did you first encounter the battery drainage issue on your iOS device? Thanks for tha"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_079",
+    "conversation_id": "7cc2e17086de01fe69e943226e8eb9b6",
+    "customer_query": "new update is terrible. My brand new iPhone keeps freezing repeatedly. I've had an iPhone for years, never happened iPhone 7, yes 11.0.02 iPhone 6 Plus from 11.0.1 to 11.0.2 to try &amp; combat issues but still suffering lockups -can't swipe to answer calls -very laggy in general.",
+    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.6039,
+    "intent_error": true,
+    "gold_escalation": "ESCALATE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": false,
+    "gold_escalation_reason": "High customer frustration or brand reputation risk requires empathetic senior human intervention.",
+    "agent_escalation_reason": "Customer expresses severe dissatisfaction, brand trust risk, or legal escalation requiring senior human care intervention.",
+    "policy_triggered": "POLICY_HIGH_DISTRESS_LEGAL",
+    "draft_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "grounded_in": [
+      {
+        "conversation_id": "7bf3c18bf8b2baaa03923894717617f1",
+        "similarity": 0.1571,
+        "resolution_snippet": "That's not the experience we want you to have. Send us a DM so we can look into this with you there. https://t"
+      },
+      {
+        "conversation_id": "bd3b5a22eb02c4245c31ff751f29fde4",
+        "similarity": 0.1422,
+        "resolution_snippet": "We'd love to help with your new iPhone. To start, send us a DM with more details on the behavior you're experi"
+      },
+      {
+        "conversation_id": "967316b1e5bc919c7bb3c506c4a958b1",
+        "similarity": 0.1127,
+        "resolution_snippet": "We'd love to help you with your iPhone! Which iOS version did you update to and what issues are you having? Le"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_084",
+    "conversation_id": "171d21af78f87591f09d44a0fed2332c",
+    "customer_query": "why has outlook been blocked with the new macOS High Sierra update on my Mac? Says unsupported but no way of updating app!?",
+    "gold_intent": "APPLE_ID_AND_ICLOUD",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.788,
+    "intent_error": true,
+    "gold_escalation": "ESCALATE",
+    "predicted_escalation": "AUTO_HANDLE",
+    "escalation_error": true,
+    "gold_escalation_reason": "Account recovery, credential resets, and 2FA authentication cannot be safely resolved over public social channels.",
+    "agent_escalation_reason": "Standard iOS software troubleshooting steps (restart, storage check, supplemental update) apply.",
+    "policy_triggered": "NONE_AUTO_HANDLED",
+    "draft_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "grounded_in": [
+      {
+        "conversation_id": "e72f93ee7cdeb3d0448b6381c095c085",
+        "similarity": 0.2577,
+        "resolution_snippet": "We'd like to help you with your MacBook Pro. Can you DM us with the specifics of what has happened? https://t."
+      },
+      {
+        "conversation_id": "15a57259cb8cc1b2ab6e48485770e83a",
+        "similarity": 0.1431,
+        "resolution_snippet": "We want to help. Does restarting your Mac have any impact on the issue? What happens when you try using the HD"
+      },
+      {
+        "conversation_id": "8d0f2afc16e74e436cb9f5ae90735a14",
+        "similarity": 0.1401,
+        "resolution_snippet": "Look here for suggestions: https://t.co/gjEpsAIkF5 For more help, contact our Apple TV team here: https://t.co"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_089",
+    "conversation_id": "1d0c4a0a5daed60c94b9b2106d1106d7",
+    "customer_query": "The experience can be tough sometimes. Any help https://t.co/r2LJkpUHqH",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "predicted_intent": "OUT_OF_SCOPE_OTHER",
+    "intent_confidence": 0.6938,
+    "intent_error": true,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "AUTO_HANDLE",
+    "escalation_error": false,
+    "gold_escalation_reason": "General inquiry addressable with clarifying questions and standard support resources.",
+    "agent_escalation_reason": "General product inquiry addressable with standard public resources.",
+    "policy_triggered": "NONE_AUTO_HANDLED",
+    "draft_reply": "Thanks for reaching out! We're happy to guide you through this. You can find detailed resolution steps here: https://support.apple.com — let us know how it goes!",
+    "grounded_in": [
+      {
+        "conversation_id": "d15a754bf32a22c5ca585a872fe53995",
+        "similarity": 0.2084,
+        "resolution_snippet": "This is not the experience we want for you. Please let us know if we can be of assistance via DM. https://t.co"
+      },
+      {
+        "conversation_id": "0facb914d160fa03c32fcd45a4c5a04c",
+        "similarity": 0.1226,
+        "resolution_snippet": "That's not the experience we want for you, and we're here to help. Send us a DM, and we'll meet you there. htt"
+      },
+      {
+        "conversation_id": "32dfd7a8cbb92884eeee6ab35e8813f4",
+        "similarity": 0.1192,
+        "resolution_snippet": "That's not the experience we want for you, and we're here to help. To get started, DM us more info about what'"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_092",
+    "conversation_id": "fdf020fcfcca7ed8cbd0d5132a57eb9a",
+    "customer_query": "iOS 11 sucks!!! iPhone switches off af 70% battery. Calls not gettting through. Too many probs. Is that how you revolutionize? 11.0.2 ! I keep it updated all the time. What's wrong ?",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "predicted_intent": "BATTERY_AND_HARDWARE",
+    "intent_confidence": 0.3738,
+    "intent_error": false,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": true,
+    "gold_escalation_reason": "Standard on-device battery health diagnostic and power-saving optimization steps available.",
+    "agent_escalation_reason": "Customer expresses severe dissatisfaction, brand trust risk, or legal escalation requiring senior human care intervention.",
+    "policy_triggered": "POLICY_HIGH_DISTRESS_LEGAL",
+    "draft_reply": "We want to ensure your device is running safely. For physical hardware inspection or a Genius Bar appointment, check: https://support.apple.com/iphone/repair/battery-power or DM us your zip code.",
+    "grounded_in": [
+      {
+        "conversation_id": "c3c7c91fccc59faa5b43e52b1bcd06d2",
+        "similarity": 0.1039,
+        "resolution_snippet": "Making sure your iPhone is running smoothly is important to us. Meet us in DM with more details so we can assi"
+      },
+      {
+        "conversation_id": "e370d818f53df8e61836dcdcd4826ac4",
+        "similarity": 0.1018,
+        "resolution_snippet": "We want iOS 11 to work seamlessly with your device. What apps are you having issues with? Have you updated to "
+      },
+      {
+        "conversation_id": "092026fe961a00305cab4eec032c947f",
+        "similarity": 0.0964,
+        "resolution_snippet": "We'd like to work with you to address those concerns. Let's continue our conversation in DM. https://t.co/GDrq"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_093",
+    "conversation_id": "cb57b7cc7e9d7bcc6e9c8e97c5ae0b8d",
+    "customer_query": "This IOS 11.0.2 update is trash. get it together! Phone has been freezing all day, apps tripping. I'm livid. https://t.co/RhSUtLZu6l Yes I've restarted my phone numerous times today &amp; I'm still having issues after the update. Apps freezing (Instagram, Kik, vsco &amp; Facebook)",
+    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.7145,
+    "intent_error": true,
+    "gold_escalation": "ESCALATE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": false,
+    "gold_escalation_reason": "High customer frustration or brand reputation risk requires empathetic senior human intervention.",
+    "agent_escalation_reason": "Customer expresses severe dissatisfaction, brand trust risk, or legal escalation requiring senior human care intervention.",
+    "policy_triggered": "POLICY_HIGH_DISTRESS_LEGAL",
+    "draft_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "grounded_in": [
+      {
+        "conversation_id": "e370d818f53df8e61836dcdcd4826ac4",
+        "similarity": 0.1671,
+        "resolution_snippet": "We want iOS 11 to work seamlessly with your device. What apps are you having issues with? Have you updated to "
+      },
+      {
+        "conversation_id": "86d0cc2d78932b94380fd0960f378cc7",
+        "similarity": 0.1525,
+        "resolution_snippet": "We want to help. What issues are you experiencing with your iPhone? Thanks for reaching out. We're here to hel"
+      },
+      {
+        "conversation_id": "f5da749e8e6fcf505376389c4b0c1150",
+        "similarity": 0.1367,
+        "resolution_snippet": "We'd love to help you with your iPhone! Which iOS version did you update to? What kind of trouble are you havi"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_099",
+    "conversation_id": "b0ae19787c5c9eb79d6c275025345eba",
+    "customer_query": "Ever since the update my Mom and I's phones haven't been working correctly. Text/Siri aren't working. Who do we contact? Oh, we didn't get notified of that update but I went in and found it. I'll see if that helps. Thanks! Sorry one more question. My phone brightness keeps diming on and off even with auto off. It shows the brightness still all the way up when I check it. Is that a battery issue? This has been happening a while before the update",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.7259,
+    "intent_error": true,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "AUTO_HANDLE",
+    "escalation_error": false,
+    "gold_escalation_reason": "Standard on-device battery health diagnostic and power-saving optimization steps available.",
+    "agent_escalation_reason": "Standard iOS software troubleshooting steps (restart, storage check, supplemental update) apply.",
+    "policy_triggered": "NONE_AUTO_HANDLED",
+    "draft_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "grounded_in": [
+      {
+        "conversation_id": "9171fcdc1012ed7953cf1f762131e84c",
+        "similarity": 0.1386,
+        "resolution_snippet": "We want you to have a reliable iPhone. Have you tried backing up and updating to iOS 11.0.2 to see if that hel"
+      },
+      {
+        "conversation_id": "f5da749e8e6fcf505376389c4b0c1150",
+        "similarity": 0.1337,
+        "resolution_snippet": "We'd love to help you with your iPhone! Which iOS version did you update to? What kind of trouble are you havi"
+      },
+      {
+        "conversation_id": "23e0dc4471733aeba6212b90dfd35362",
+        "similarity": 0.1225,
+        "resolution_snippet": "Thanks for reaching out. We want to help. Are you updated to iOS 11.0.2? You can update to iOS 11.0.2. We reco"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_100",
+    "conversation_id": "e389eb57efc577ba2b722aef7fb41830",
+    "customer_query": "your update sucks. FaceTime doesn't work anymore. One of the main reasons to have an iPhone.. I downloaded 11.0.2 and it still doesn't work. There is no connection even when in perfect WiFi",
+    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.6519,
+    "intent_error": true,
+    "gold_escalation": "ESCALATE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": false,
+    "gold_escalation_reason": "High customer frustration or brand reputation risk requires empathetic senior human intervention.",
+    "agent_escalation_reason": "Customer expresses severe dissatisfaction, brand trust risk, or legal escalation requiring senior human care intervention.",
+    "policy_triggered": "POLICY_HIGH_DISTRESS_LEGAL",
+    "draft_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "grounded_in": [
+      {
+        "conversation_id": "8e2bcb2fc10b6abf05ac3c5e1a6dc129",
+        "similarity": 0.163,
+        "resolution_snippet": "We'd like to look into this. DM us and we'll work from there. https://t.co/GDrqU22YpT"
+      },
+      {
+        "conversation_id": "e50ca8e61df1a3329d349221f3485178",
+        "similarity": 0.1508,
+        "resolution_snippet": "We'd like to help with your new Apple Watch. Please DM us which watchOS version you have and we'll help there."
+      },
+      {
+        "conversation_id": "b41d90c35fe7fd0e886a6dad1c387d41",
+        "similarity": 0.118,
+        "resolution_snippet": "What music app are you trying to use? Also, what version of iOS are you currently running? When did this first"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_101",
+    "conversation_id": "6128bcddfcdf6c9d0d62c6f9a683e517",
+    "customer_query": "screen went black. Reset photo came back. WTF? https://t.co/yABpvf2NEn Sorry. I hard restart? Held down button on right and down volume button",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "predicted_intent": "OUT_OF_SCOPE_OTHER",
+    "intent_confidence": 0.5158,
+    "intent_error": true,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": true,
+    "gold_escalation_reason": "Standard on-device battery health diagnostic and power-saving optimization steps available.",
+    "agent_escalation_reason": "Customer expresses severe dissatisfaction, brand trust risk, or legal escalation requiring senior human care intervention.",
+    "policy_triggered": "POLICY_HIGH_DISTRESS_LEGAL",
+    "draft_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "grounded_in": [
+      {
+        "conversation_id": "49150a36c5cebfc738536a5fb1d820b5",
+        "similarity": 0.109,
+        "resolution_snippet": "We're happy to see if we can help with this. To start, which device are you experiencing this on?"
+      },
+      {
+        "conversation_id": "20f1f159ec726928684b12a9dc8dee4a",
+        "similarity": 0.1001,
+        "resolution_snippet": "We'd like to look into this with you. Are you seeing this issue in multiple locations or just using one wirele"
+      },
+      {
+        "conversation_id": "227bb4b5398bdb1b5792188869f6fcd7",
+        "similarity": 0.0919,
+        "resolution_snippet": "Hi there. We understand how important it is that you're able to access your apps as you'd expect. Have you res"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_103",
+    "conversation_id": "7e16f85e0cf205e7c2c24c60657aa778",
+    "customer_query": "An iPhone that I bought 5 months ago shouldn't have its battery go from 100 to 93 in 12 MINUTES. What the hell! #ios11 Awesome, thanks, I already did :)",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "predicted_intent": "BATTERY_AND_HARDWARE",
+    "intent_confidence": 0.5562,
+    "intent_error": false,
+    "gold_escalation": "ESCALATE",
+    "predicted_escalation": "AUTO_HANDLE",
+    "escalation_error": true,
+    "gold_escalation_reason": "Persistent battery failure despite replacement requires advanced hardware diagnostics.",
+    "agent_escalation_reason": "Standard on-device battery health diagnostic and power-saving optimization steps available.",
+    "policy_triggered": "NONE_AUTO_HANDLED",
+    "draft_reply": "We can help with your battery. Check Settings > Battery > Battery Health to inspect capacity and top battery-draining apps. Useful tips here: https://support.apple.com/iphone/repair/battery-power",
+    "grounded_in": [
+      {
+        "conversation_id": "0732722f0d4399083c0a1b8d05cea31e",
+        "similarity": 0.1979,
+        "resolution_snippet": "We'd like to help. What's the exact iOS version do you have installed? Its located at Settings &gt; General &g"
+      },
+      {
+        "conversation_id": "6c3db135c3ba3dfc011b74b07e039683",
+        "similarity": 0.1523,
+        "resolution_snippet": "We'd be happy to assist you with this. Please reach out to us via DM and we'll get started. https://t.co/GDrqU"
+      },
+      {
+        "conversation_id": "f01e74c72959cfecb9ccbbc762ad376d",
+        "similarity": 0.1128,
+        "resolution_snippet": "We're here to help. When did you first encounter the battery drainage issue on your iOS device? Thanks for tha"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_106",
+    "conversation_id": "e61b16a8092402413d6a0f01e9eb9e1c",
+    "customer_query": "SOME ASSHOLE HACKED INTO MY ITUNES AND BOUGHT A BUNCH OF EMO MUSIC WTF https://t.co/PNqNuP8m9b pls answer my rep is at stake",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "predicted_intent": "APP_STORE_AND_BILLING",
+    "intent_confidence": 0.6957,
+    "intent_error": true,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": true,
+    "gold_escalation_reason": "General inquiry addressable with clarifying questions and standard support resources.",
+    "agent_escalation_reason": "Customer expresses severe dissatisfaction, brand trust risk, or legal escalation requiring senior human care intervention.",
+    "policy_triggered": "POLICY_HIGH_DISTRESS_LEGAL",
+    "draft_reply": "We understand billing concerns need swift attention. For security, please visit https://reportaproblem.apple.com to review charges and request a refund, or DM us to connect with a billing specialist.",
+    "grounded_in": [
+      {
+        "conversation_id": "f86292fa961868f67ebe9a3dbc218970",
+        "similarity": 0.1452,
+        "resolution_snippet": "We're here to help! Please DM the details. https://t.co/GDrqU22YpT"
+      },
+      {
+        "conversation_id": "49150a36c5cebfc738536a5fb1d820b5",
+        "similarity": 0.0866,
+        "resolution_snippet": "We're happy to see if we can help with this. To start, which device are you experiencing this on?"
+      },
+      {
+        "conversation_id": "cf8c2e632229ca969ca1938d5e674853",
+        "similarity": 0.0828,
+        "resolution_snippet": "iOS 11 should improve your iPhone's performance, and we can help. Have you had the chance to back up and updat"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_107",
+    "conversation_id": "22b64c79cfc67383ddcf88eb6c59721c",
+    "customer_query": "Hey this new update sucks ! Phone freezing, battery dead, all bad. First time ever considering",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.4901,
+    "intent_error": true,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": true,
+    "gold_escalation_reason": "Standard on-device battery health diagnostic and power-saving optimization steps available.",
+    "agent_escalation_reason": "Customer expresses severe dissatisfaction, brand trust risk, or legal escalation requiring senior human care intervention.",
+    "policy_triggered": "POLICY_HIGH_DISTRESS_LEGAL",
+    "draft_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "grounded_in": [
+      {
+        "conversation_id": "c7e46f01175f51faba4614d3947201ce",
+        "similarity": 0.1168,
+        "resolution_snippet": "We want you to enjoy your iPhone and the iOS features introduced in updates. Join us in a DM so we can dive in"
+      },
+      {
+        "conversation_id": "cbbcaa7434375ef0e680d2a7891f336e",
+        "similarity": 0.1073,
+        "resolution_snippet": "We'd be happy to take a look into this with you. Could you please send us a DM so we can gather some info? htt"
+      },
+      {
+        "conversation_id": "e2738021e842094a8023342712d3cb2f",
+        "similarity": 0.1001,
+        "resolution_snippet": "Let's be sure your iPhone is working well with iOS 11. Have you had the chance to backup and update to iOS 11."
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_110",
+    "conversation_id": "9ef5a95434d1ffbd0c6216dd7c74334d",
+    "customer_query": "S/O to iOS 11 for turning my two month old iPhone 7 into a piece of shit",
+    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.8553,
+    "intent_error": true,
+    "gold_escalation": "ESCALATE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": false,
+    "gold_escalation_reason": "High customer frustration or brand reputation risk requires empathetic senior human intervention.",
+    "agent_escalation_reason": "Customer expresses severe dissatisfaction, brand trust risk, or legal escalation requiring senior human care intervention.",
+    "policy_triggered": "POLICY_HIGH_DISTRESS_LEGAL",
+    "draft_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "grounded_in": [
+      {
+        "conversation_id": "4c3182aaf243068f7c8f1e4d8f1d9bc4",
+        "similarity": 0.1894,
+        "resolution_snippet": "We want you to get the most out of your iPhone. We can help! Send us a DM and we'll look into this further wit"
+      },
+      {
+        "conversation_id": "410b07c9e6c27f893c1ef0b81de0e970",
+        "similarity": 0.1276,
+        "resolution_snippet": "Let's look at this together. Which device and software version are you using? https://t.co/GDrqU22YpT"
+      },
+      {
+        "conversation_id": "091c6beeb02274d6d28bede0a3484951",
+        "similarity": 0.1222,
+        "resolution_snippet": "We're here to help. DM us which model iPhone you're using and if you've updated to 11.0.2 and we'll get starte"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_111",
+    "conversation_id": "ea91bf58d3712691b09950a423a97574",
+    "customer_query": "If a business has definitely had a name change and located at the same address, how long does it take for that to be changed in the Maps App?",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "predicted_intent": "APPLE_ID_AND_ICLOUD",
+    "intent_confidence": 0.6028,
+    "intent_error": true,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": true,
+    "gold_escalation_reason": "General inquiry addressable with clarifying questions and standard support resources.",
+    "agent_escalation_reason": "Apple Id And Icloud inquiries involve sensitive PII and account security.",
+    "policy_triggered": "POLICY_SENSITIVE_DOMAIN",
+    "draft_reply": "Account security is our top priority. Please head to https://iforgot.apple.com to securely verify and recover your Apple ID. If you're still locked out, DM us to assist further.",
+    "grounded_in": [
+      {
+        "conversation_id": "abcc1372f7bf3d7af53e5950fc8f69e3",
+        "similarity": 0.1019,
+        "resolution_snippet": "Let's take a look into this together. To clarify, you're unable to enter in your passcode after the update? Th"
+      },
+      {
+        "conversation_id": "3171ae616af291d6627a9346b3fb0855",
+        "similarity": 0.0977,
+        "resolution_snippet": "We're here to help. How long does a full charge usually last on your device? Let us know in DM. https://t.co/G"
+      },
+      {
+        "conversation_id": "8e075b4e231aa8503a2c0433524786f8",
+        "similarity": 0.0925,
+        "resolution_snippet": "Let's help get this sorted. Is the behavior occurring at random or when using a specific application on your W"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_112",
+    "conversation_id": "3f041c4dfc23ee460ca9a69193e3fca8",
+    "customer_query": "I'm trying to get Apple care for my watch but I can't open the diagnostics. I open the link but it doesn't open anything :( https://t.co/PCr1wBmMk2",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.3772,
+    "intent_error": true,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": true,
+    "gold_escalation_reason": "General inquiry addressable with clarifying questions and standard support resources.",
+    "agent_escalation_reason": "Model intent confidence is low (0.38 < 0.40); routing to human to prevent incorrect automated guidance.",
+    "policy_triggered": "POLICY_LOW_MODEL_CONFIDENCE",
+    "draft_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "grounded_in": [
+      {
+        "conversation_id": "fb04a94f138228119deaa81246f48189",
+        "similarity": 0.1491,
+        "resolution_snippet": "We're glad you reached out! What kind of issue are you having with Twitter on the Apple Watch? Does the app no"
+      },
+      {
+        "conversation_id": "20217b876227cd1b35edd61cce3590bd",
+        "similarity": 0.1031,
+        "resolution_snippet": "Let's take a look at this together. What do you do to make the lock screen respond again? Are you trying to un"
+      },
+      {
+        "conversation_id": "ac126ab686c32ee2e83e13dc76a266f2",
+        "similarity": 0.0912,
+        "resolution_snippet": "Let us look into this for you. Join us in DM so we can better assist you: https://t.co/GDrqU22YpT"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_115",
+    "conversation_id": "c8348dd2b8ddc1a429a1efb8caf6c1de",
+    "customer_query": "fix this my phone has been dying faster since I updated",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.6854,
+    "intent_error": true,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "AUTO_HANDLE",
+    "escalation_error": false,
+    "gold_escalation_reason": "Standard on-device battery health diagnostic and power-saving optimization steps available.",
+    "agent_escalation_reason": "Standard iOS software troubleshooting steps (restart, storage check, supplemental update) apply.",
+    "policy_triggered": "NONE_AUTO_HANDLED",
+    "draft_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "grounded_in": [
+      {
+        "conversation_id": "2c950cf167152e1c26cab715b77fa349",
+        "similarity": 0.2499,
+        "resolution_snippet": "We want to help. Tell us a bit more about what's happening with your iPhone. Send us a DM. https://t.co/GDrqU2"
+      },
+      {
+        "conversation_id": "1f523060c083caf6bb349112ce87606f",
+        "similarity": 0.1722,
+        "resolution_snippet": "Thanks for reaching out! We've received your DM. Look for a reply there shortly."
+      },
+      {
+        "conversation_id": "fc738368daaee2c85a3a0701c2908354",
+        "similarity": 0.1712,
+        "resolution_snippet": "Thanks for reaching out. Which iPhone model are we working with? Have you had a chance to update to iOS 11.0.2"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_119",
+    "conversation_id": "5a3dc337db175ea7b3cf06939c8a96fd",
+    "customer_query": "Cupertino, we have a problem. Batt fully charged @ 930am, dead by 330. ⚡️\"iOS11 can suck your battery dry 🔋\" Here's the msg: batt drains 3x as fast, no volume control Oh, and Bluetooth no longer syncs with devices. Great going, guys! What's to look into? Your developers dropped the ball w/ this update. Back to the drawing board and fix the problems!",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.5595,
+    "intent_error": true,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "AUTO_HANDLE",
+    "escalation_error": false,
+    "gold_escalation_reason": "Standard battery usage diagnostic and power-saving troubleshooting steps apply.",
+    "agent_escalation_reason": "Standard iOS software troubleshooting steps (restart, storage check, supplemental update) apply.",
+    "policy_triggered": "NONE_AUTO_HANDLED",
+    "draft_reply": "We're happy to help! Based on similar resolutions: To disable Wi-Fi and Bluetooth, you must visit Settings. You can also review full troubleshooting steps here: https://support.apple.com/HT204204",
+    "grounded_in": [
+      {
+        "conversation_id": "299fe827a0ee1e9d789e122ef24ebff0",
+        "similarity": 0.1925,
+        "resolution_snippet": "Let's look into this for you. Send us a DM with more information about what you are experiencing. https://t.co"
+      },
+      {
+        "conversation_id": "dc22311071df6a9314d756625a292a45",
+        "similarity": 0.1045,
+        "resolution_snippet": "Great question! To disable Wi-Fi and Bluetooth, you must visit Settings. Learn more here: https://t.co/G7BHuQn"
+      },
+      {
+        "conversation_id": "cbc74edb3387d5d674abd4681118f9e2",
+        "similarity": 0.1012,
+        "resolution_snippet": "We're here to help. Are you turning off Wi-Fi and Bluetooth in the Control Center, or through Settings on your"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_121",
+    "conversation_id": "767bf9921d4ee3ba6b1b3a21551e2554",
+    "customer_query": "hi updated my phone today, when I play music from Spotify, soundcloud etc they do not show in my control centre?",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "predicted_intent": "OUT_OF_SCOPE_OTHER",
+    "intent_confidence": 0.4736,
+    "intent_error": true,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "AUTO_HANDLE",
+    "escalation_error": false,
+    "gold_escalation_reason": "Standard iOS software troubleshooting steps (force restart, storage check, update) apply.",
+    "agent_escalation_reason": "General product inquiry addressable with standard public resources.",
+    "policy_triggered": "NONE_AUTO_HANDLED",
+    "draft_reply": "Thanks for reaching out! We're happy to guide you through this. You can find detailed resolution steps here: https://support.apple.com — let us know how it goes!",
+    "grounded_in": [
+      {
+        "conversation_id": "e94da3fd0f42946b03da80ff8cf0fe72",
+        "similarity": 0.1498,
+        "resolution_snippet": "We'd like to hear more about what's happening. Does this happen with texts or iMessage?"
+      },
+      {
+        "conversation_id": "473dce54692791110b612005f4b05b01",
+        "similarity": 0.1211,
+        "resolution_snippet": "Hi there. Playing your music is very important. Are you able to play music from the native Music App on your c"
+      },
+      {
+        "conversation_id": "18a4e48744cc9118e831d442c6aa8121",
+        "similarity": 0.1002,
+        "resolution_snippet": "We'd like to get this resolved for you. DM us and we'll take a closer look. https://t.co/GDrqU22YpT"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_122",
+    "conversation_id": "45d20aada41fe399181f68bf58ee8951",
+    "customer_query": "I'm tired of my phone dying fast. Fix this issue!",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.6307,
+    "intent_error": true,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "AUTO_HANDLE",
+    "escalation_error": false,
+    "gold_escalation_reason": "Standard on-device battery health diagnostic and power-saving optimization steps available.",
+    "agent_escalation_reason": "Standard iOS software troubleshooting steps (restart, storage check, supplemental update) apply.",
+    "policy_triggered": "NONE_AUTO_HANDLED",
+    "draft_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "grounded_in": [
+      {
+        "conversation_id": "f62a834b8cc5752803bed9aec31d5de0",
+        "similarity": 0.1886,
+        "resolution_snippet": "We're here for you and would like to help. Tell us what type of device you're using via DM. We'll take it from"
+      },
+      {
+        "conversation_id": "0550fd737f0eac5a1752e61ea53e0256",
+        "similarity": 0.1725,
+        "resolution_snippet": "Check out the Audio &amp; Charge cables we have available here: https://t.co/i1UvwNbTE3"
+      },
+      {
+        "conversation_id": "94a4677696149253f099b5aec922edfb",
+        "similarity": 0.0991,
+        "resolution_snippet": "We'd like to look into this with you. Which iPhone are you using? Thank you for confirming the device for us. "
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_123",
+    "conversation_id": "d6ffb8fb403fd71aa05131cca9f8ec9e",
+    "customer_query": "Anyone else having portrait/landscape orientation issues in the new iOS? Portrait mode lock function doesn't seem to work. (cc: )",
+    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.5036,
+    "intent_error": true,
+    "gold_escalation": "ESCALATE",
+    "predicted_escalation": "AUTO_HANDLE",
+    "escalation_error": true,
+    "gold_escalation_reason": "High customer frustration or brand reputation risk requires empathetic senior human intervention.",
+    "agent_escalation_reason": "Standard iOS software troubleshooting steps (restart, storage check, supplemental update) apply.",
+    "policy_triggered": "NONE_AUTO_HANDLED",
+    "draft_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "grounded_in": [
+      {
+        "conversation_id": "0239c4ab8cad5b4a1f9cd3690b7593b3",
+        "similarity": 0.1421,
+        "resolution_snippet": "Portrait mode is available on iPhone 7 Plus and iPhone 8 Plus. Find out more information here: https://t.co/dr"
+      },
+      {
+        "conversation_id": "6da11700cbfbd3dd8dfb614a6e9212f4",
+        "similarity": 0.1178,
+        "resolution_snippet": "We'd like to help out with your updates! Please send us a DM and we'll look into this together to save you a t"
+      },
+      {
+        "conversation_id": "60a731c14056947daa454f4696bad04d",
+        "similarity": 0.1154,
+        "resolution_snippet": "Since noticing this, have you had a chance to restart your device? It may seem like a simple step, but can res"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_127",
+    "conversation_id": "bb7cacd75eeefa4a0930ded31dfd484a",
+    "customer_query": "My battery has become the worst after updating to IOS 11.0.1",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "predicted_intent": "BATTERY_AND_HARDWARE",
+    "intent_confidence": 0.3684,
+    "intent_error": false,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": true,
+    "gold_escalation_reason": "Standard on-device battery health diagnostic and power-saving optimization steps available.",
+    "agent_escalation_reason": "Customer expresses severe dissatisfaction, brand trust risk, or legal escalation requiring senior human care intervention.",
+    "policy_triggered": "POLICY_HIGH_DISTRESS_LEGAL",
+    "draft_reply": "We want to ensure your device is running safely. For physical hardware inspection or a Genius Bar appointment, check: https://support.apple.com/iphone/repair/battery-power or DM us your zip code.",
+    "grounded_in": [
+      {
+        "conversation_id": "32dfd7a8cbb92884eeee6ab35e8813f4",
+        "similarity": 0.2253,
+        "resolution_snippet": "That's not the experience we want for you, and we're here to help. To get started, DM us more info about what'"
+      },
+      {
+        "conversation_id": "9171fcdc1012ed7953cf1f762131e84c",
+        "similarity": 0.1997,
+        "resolution_snippet": "We want you to have a reliable iPhone. Have you tried backing up and updating to iOS 11.0.2 to see if that hel"
+      },
+      {
+        "conversation_id": "c8706133019e16f5854d5376e6c7d5a5",
+        "similarity": 0.1986,
+        "resolution_snippet": "What kind of issues are you having? We'd love to help out."
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_128",
+    "conversation_id": "a9f55616f04bc4d42200ab35302f6d60",
+    "customer_query": "Pq meu celular diminuiu a qualidade das fotos da galeria ?",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "predicted_intent": "OUT_OF_SCOPE_OTHER",
+    "intent_confidence": 0.7001,
+    "intent_error": true,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "AUTO_HANDLE",
+    "escalation_error": false,
+    "gold_escalation_reason": "General inquiry addressable with clarifying questions and standard support resources.",
+    "agent_escalation_reason": "General product inquiry addressable with standard public resources.",
+    "policy_triggered": "NONE_AUTO_HANDLED",
+    "draft_reply": "Thanks for reaching out! We're happy to guide you through this. You can find detailed resolution steps here: https://support.apple.com — let us know how it goes!",
+    "grounded_in": [
+      {
+        "conversation_id": "87188a3c7d544e86ea117fb3210cfe8c",
+        "similarity": 0.2091,
+        "resolution_snippet": "Since our Twitter support is available in English, get help at https://t.co/IBIY3vMgPj or join https://t.co/pv"
+      },
+      {
+        "conversation_id": "d7b98614ef1e6d656f583b79482409b0",
+        "similarity": 0.2044,
+        "resolution_snippet": "Since our Twitter support is available in English, get help at https://t.co/IBIY3vMgPj or join https://t.co/pv"
+      },
+      {
+        "conversation_id": "0a4b53ac1039d4529b3dbfa305b2a8ec",
+        "similarity": 0.1828,
+        "resolution_snippet": "Since our Twitter support is available in English, get help at https://t.co/IBIY3vMgPj or join https://t.co/pv"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_129",
+    "conversation_id": "c5b57a5a13e1b7164ea3d9dc4545f548",
+    "customer_query": "updating to #ios11 big mistake. Phone keeps crashing. Apps don't work. And I am on a 6s! I hate it. 😡",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.8948,
+    "intent_error": false,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": true,
+    "gold_escalation_reason": "Standard iOS software troubleshooting steps (force restart, storage check, update) apply.",
+    "agent_escalation_reason": "Customer expresses severe dissatisfaction, brand trust risk, or legal escalation requiring senior human care intervention.",
+    "policy_triggered": "POLICY_HIGH_DISTRESS_LEGAL",
+    "draft_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "grounded_in": [
+      {
+        "conversation_id": "ca3ec6ca1759aae60abb789559d45f1b",
+        "similarity": 0.1504,
+        "resolution_snippet": "We're behind you 100%, and want your device back to reliable again. Just DM your country &amp; iPhone model an"
+      },
+      {
+        "conversation_id": "c5d4e9f412ebca5dc4fa265b1afc4a7b",
+        "similarity": 0.1482,
+        "resolution_snippet": "What version of iOS are you currently running? Let us know and we'll go from there. Thank you. Please DM and t"
+      },
+      {
+        "conversation_id": "4c82c865d504f0197a4d64515e56d2ba",
+        "similarity": 0.1333,
+        "resolution_snippet": "That's not what we want to hear. We'd like to help your device work as it should. DM us what you are experienc"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_131",
+    "conversation_id": "a085a252fb4d6007b21382610d7e21ab",
+    "customer_query": "- https://t.co/jbcpYvd2Ws: Hey is my iphone suddenly being 100% wrong about everything",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "predicted_intent": "OUT_OF_SCOPE_OTHER",
+    "intent_confidence": 0.5712,
+    "intent_error": true,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "AUTO_HANDLE",
+    "escalation_error": false,
+    "gold_escalation_reason": "General inquiry addressable with clarifying questions and standard support resources.",
+    "agent_escalation_reason": "General product inquiry addressable with standard public resources.",
+    "policy_triggered": "NONE_AUTO_HANDLED",
+    "draft_reply": "Thanks for reaching out! We're happy to guide you through this. You can find detailed resolution steps here: https://support.apple.com — let us know how it goes!",
+    "grounded_in": [
+      {
+        "conversation_id": "160e81b53273618d8ab2ab9401ee0fc7",
+        "similarity": 0.1088,
+        "resolution_snippet": "We can help! Send us over a DM with the iOS version installed on your iPhone, and we'll take it from there. ht"
+      },
+      {
+        "conversation_id": "bab4d2b21551fd3b881efb4f8c9c973b",
+        "similarity": 0.1032,
+        "resolution_snippet": "We're happy to help. Please meet us in DM and we'll go from there. https://t.co/GDrqU22YpT"
+      },
+      {
+        "conversation_id": "7e957b29c0efe65247545466a3d4f290",
+        "similarity": 0.098,
+        "resolution_snippet": "We want you to be able to rely on your iPhone. We'll do all we can to help. Let's start with what iOS version "
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_132",
+    "conversation_id": "6d08401c57f75d61299c549ea72ffbdf",
+    "customer_query": "can y'all fix the damn podcast app",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "predicted_intent": "APPLE_ID_AND_ICLOUD",
+    "intent_confidence": 0.3362,
+    "intent_error": true,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": true,
+    "gold_escalation_reason": "General inquiry addressable with clarifying questions and standard support resources.",
+    "agent_escalation_reason": "Apple Id And Icloud inquiries involve sensitive PII and account security.",
+    "policy_triggered": "POLICY_SENSITIVE_DOMAIN",
+    "draft_reply": "Account security is our top priority. Please head to https://iforgot.apple.com to securely verify and recover your Apple ID. If you're still locked out, DM us to assist further.",
+    "grounded_in": [
+      {
+        "conversation_id": "6d786b1c0299dacf71b5f6b9cca89406",
+        "similarity": 0.1793,
+        "resolution_snippet": "We've got some information in the iPhone User Guide for iOS 11 which may help: https://t.co/lkONec97gk Questio"
+      },
+      {
+        "conversation_id": "040100678dbe43e618bd0af9c6863638",
+        "similarity": 0.1446,
+        "resolution_snippet": "Thanks for reaching out to us. Can you please clarify the technical issue that you are having? That way we can"
+      },
+      {
+        "conversation_id": "901d01e6981a4dec836e87da43fbcfda",
+        "similarity": 0.1208,
+        "resolution_snippet": "We're here to help. Please provide feedback about our Podcast App here: https://t.co/oWzjJxkvlC"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_135",
+    "conversation_id": "548a4d165ef9051a0deb56082b48d504",
+    "customer_query": "this #iPhone update totally sucks. I use my phone for work and you have made my day horrible with this. What's up?!",
+    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.5685,
+    "intent_error": true,
+    "gold_escalation": "ESCALATE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": false,
+    "gold_escalation_reason": "High customer frustration or brand reputation risk requires empathetic senior human intervention.",
+    "agent_escalation_reason": "Customer expresses severe dissatisfaction, brand trust risk, or legal escalation requiring senior human care intervention.",
+    "policy_triggered": "POLICY_HIGH_DISTRESS_LEGAL",
+    "draft_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "grounded_in": [
+      {
+        "conversation_id": "142b82bf0e16d8d6d0963f1208592ca6",
+        "similarity": 0.1227,
+        "resolution_snippet": "We're here for you! Send us a DM, and we'll take a closer look together there. https://t.co/GDrqU22YpT"
+      },
+      {
+        "conversation_id": "65dab28b8febe7159a489556655437d8",
+        "similarity": 0.1181,
+        "resolution_snippet": "Hello. We're glad to help with this. Have you tried any of the steps here: https://t.co/JMbUWh4fsj Let us know"
+      },
+      {
+        "conversation_id": "e370d818f53df8e61836dcdcd4826ac4",
+        "similarity": 0.1111,
+        "resolution_snippet": "We want iOS 11 to work seamlessly with your device. What apps are you having issues with? Have you updated to "
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_136",
+    "conversation_id": "d0d4c901d774779d369915cc1b027981",
+    "customer_query": "⬇️ my iPhone 📱 battery 🔋 drains quickly after iOS 11 update ugh 😑 FYI 🤦🏻‍♀️😭😭😭 https://t.co/m0C6MIgLXo Yes, earlier today 📱🔋 I'm experiencing the same thing as many other people, I left for work phone at 100% ten hours later it's at 20% 😳 bad update 😡",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.7018,
+    "intent_error": true,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "AUTO_HANDLE",
+    "escalation_error": false,
+    "gold_escalation_reason": "Standard on-device battery health diagnostic and power-saving optimization steps available.",
+    "agent_escalation_reason": "Standard iOS software troubleshooting steps (restart, storage check, supplemental update) apply.",
+    "policy_triggered": "NONE_AUTO_HANDLED",
+    "draft_reply": "We're happy to help! Based on similar resolutions: Let's create a backup and update to see if this helps. You can also review full troubleshooting steps here: https://support.apple.com/HT204204",
+    "grounded_in": [
+      {
+        "conversation_id": "63982b9cee5484def7619af996de3798",
+        "similarity": 0.1892,
+        "resolution_snippet": "We can help take a look into your iPhone battery life. Send us a DM to let us know if you're on the latest upd"
+      },
+      {
+        "conversation_id": "5e893f522724b69f660cac0410a1a584",
+        "similarity": 0.16,
+        "resolution_snippet": "We know how important battery life is. We'd like to help out. Which iOS version are you running on your device"
+      },
+      {
+        "conversation_id": "6e71eaf975b2b4a333666248bd61bd1b",
+        "similarity": 0.1246,
+        "resolution_snippet": "We want to help out with your iPhone. Can you describe the exact behavior you are experiencing?"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_144",
+    "conversation_id": "cb3847e6c448b8eeb3a2374cbc7e4b6d",
+    "customer_query": "Seems like is against making quality products Sent my 7 in to get it repaired and one day in the loaner they gave me is having issues It crashed while I was sending a text and now that it's back on it won't connect to wifi. Taking it to the Apple store now :/",
+    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.6539,
+    "intent_error": true,
+    "gold_escalation": "ESCALATE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": false,
+    "gold_escalation_reason": "High customer frustration or brand reputation risk requires empathetic senior human intervention.",
+    "agent_escalation_reason": "Customer indicates previous troubleshooting attempts have failed; direct escalation required to avoid circular frustration.",
+    "policy_triggered": "POLICY_REPEATED_UNRESOLVED_FAILURE",
+    "draft_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "grounded_in": [
+      {
+        "conversation_id": "6ee3dfd8b6080abe4710897181c1f887",
+        "similarity": 0.1034,
+        "resolution_snippet": "We'd like to hear more about your Apple Store experience. Let's continue chatting via DM. https://t.co/GDrqU22"
+      },
+      {
+        "conversation_id": "9c753981e30a77787412a8c901998df9",
+        "similarity": 0.1003,
+        "resolution_snippet": "We'd like to see what we can do, Gabe. Let us know via DM what's going on with your iPhone and we'll get start"
+      },
+      {
+        "conversation_id": "f56a03c6c8e14e7cd841f85567dd1d83",
+        "similarity": 0.0973,
+        "resolution_snippet": "We're here to help you with your iPhone. DM us if you still experience any issues. https://t.co/GDrqU2kzhr"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_145",
+    "conversation_id": "a3141a2b45c293ae37edacb4695ed9bf",
+    "customer_query": "yI'm trying to activate touch passcode but it's not working with update 11.2 could you please help me urgent ??? Yes, it's ok but why it's hang when I switch between home pages. Is the latest update is useful. Or have a problems ? Thank in advance I'm usually update my phone through ITunes",
+    "gold_intent": "APPLE_ID_AND_ICLOUD",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.5602,
+    "intent_error": true,
+    "gold_escalation": "ESCALATE",
+    "predicted_escalation": "AUTO_HANDLE",
+    "escalation_error": true,
+    "gold_escalation_reason": "Account recovery, credential resets, and 2FA authentication cannot be safely resolved over public social channels.",
+    "agent_escalation_reason": "Standard iOS software troubleshooting steps (restart, storage check, supplemental update) apply.",
+    "policy_triggered": "NONE_AUTO_HANDLED",
+    "draft_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "grounded_in": [
+      {
+        "conversation_id": "7e957b29c0efe65247545466a3d4f290",
+        "similarity": 0.1326,
+        "resolution_snippet": "We want you to be able to rely on your iPhone. We'll do all we can to help. Let's start with what iOS version "
+      },
+      {
+        "conversation_id": "9bf7b822ca6948a05473cd796daad3fd",
+        "similarity": 0.1108,
+        "resolution_snippet": "What issues are you having with the latest update? Let us know in DM. https://t.co/GDrqU22YpT"
+      },
+      {
+        "conversation_id": "25a7be7953b054b78bddf50246ba86ff",
+        "similarity": 0.1065,
+        "resolution_snippet": "We want your Mac to always work as expected. Does the Touch Bar work in any apps outside of Messages? Let's tr"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_146",
+    "conversation_id": "998c3c18398e4e674a5acdf3d7904949",
+    "customer_query": "My 📱 is 6s and since i run the IOS 11 with all the fix bug issues my📱 is keep lagging",
+    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.8362,
+    "intent_error": true,
+    "gold_escalation": "ESCALATE",
+    "predicted_escalation": "AUTO_HANDLE",
+    "escalation_error": true,
+    "gold_escalation_reason": "High customer frustration or brand reputation risk requires empathetic senior human intervention.",
+    "agent_escalation_reason": "Standard iOS software troubleshooting steps (restart, storage check, supplemental update) apply.",
+    "policy_triggered": "NONE_AUTO_HANDLED",
+    "draft_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "grounded_in": [
+      {
+        "conversation_id": "c4491ad3a92eab3a7df15950c88331f4",
+        "similarity": 0.146,
+        "resolution_snippet": "We'd love to help you out! Please send us a DM to get started. https://t.co/GDrqU22YpT"
+      },
+      {
+        "conversation_id": "95a0bad45f60287e02a952e00db5e6ff",
+        "similarity": 0.1005,
+        "resolution_snippet": "We surely want you to be able to enjoy your device. Which device is this happening on &amp; which version of i"
+      },
+      {
+        "conversation_id": "54aacabd318a48864a6d765d1a1fbf7f",
+        "similarity": 0.0958,
+        "resolution_snippet": "Say hello to the all-new App Store in iOS 11. With expert recommendations and daily picks to help you find you"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_147",
+    "conversation_id": "ade08e34f83daf752ff1a9f0d3a38c57",
+    "customer_query": "Пришло фишинговое письмо от имени New phishing emails began to come from your name, I think you should know about it. https://t.co/DzsrpCqdce",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "predicted_intent": "OUT_OF_SCOPE_OTHER",
+    "intent_confidence": 0.6566,
+    "intent_error": true,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "AUTO_HANDLE",
+    "escalation_error": false,
+    "gold_escalation_reason": "General inquiry addressable with clarifying questions and standard support resources.",
+    "agent_escalation_reason": "General product inquiry addressable with standard public resources.",
+    "policy_triggered": "NONE_AUTO_HANDLED",
+    "draft_reply": "Thanks for reaching out! We're happy to guide you through this. You can find detailed resolution steps here: https://support.apple.com — let us know how it goes!",
+    "grounded_in": [
+      {
+        "conversation_id": "6aaebbc51b8a82fd5ccb9cef62406d4b",
+        "similarity": 0.1052,
+        "resolution_snippet": "We know how important it is to have reliable battery life, so we'd love to help with any issues. Please DM us "
+      },
+      {
+        "conversation_id": "ebf67125668f47337da984c13b65dbfc",
+        "similarity": 0.0805,
+        "resolution_snippet": "We can definitely look into this with you. What happens specifically when you update your apps?"
+      },
+      {
+        "conversation_id": "88079312fc164ac3cb2bf96f02035f55",
+        "similarity": 0.0802,
+        "resolution_snippet": "Have you already updated to our latest release, iOS 11.0.2? https://t.co/ahjigcvFRG Let us know in DM. https:/"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_148",
+    "conversation_id": "d90fd1f77972a52cb1fff1a912062070",
+    "customer_query": "The new update caused my iPhone to cut off and not come back on but I had to figure it out to make it work I fixed the issue myself thanks",
+    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.8436,
+    "intent_error": true,
+    "gold_escalation": "ESCALATE",
+    "predicted_escalation": "AUTO_HANDLE",
+    "escalation_error": true,
+    "gold_escalation_reason": "High customer frustration or brand reputation risk requires empathetic senior human intervention.",
+    "agent_escalation_reason": "Standard iOS software troubleshooting steps (restart, storage check, supplemental update) apply.",
+    "policy_triggered": "NONE_AUTO_HANDLED",
+    "draft_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "grounded_in": [
+      {
+        "conversation_id": "459869c08320939a29c4edc6b4f0fb66",
+        "similarity": 0.1213,
+        "resolution_snippet": "We'd love to help out with that. Can you send us a DM with some additional details? Thanks! https://t.co/GDrqU"
+      },
+      {
+        "conversation_id": "802e1e2220aed2df05fa7e6913baef7d",
+        "similarity": 0.1121,
+        "resolution_snippet": "Let's work together to find out what is happening. Reach out to us in DM and we'll help. https://t.co/GDrqU22Y"
+      },
+      {
+        "conversation_id": "b518e60e696941fdf55498810af0c109",
+        "similarity": 0.105,
+        "resolution_snippet": "Thanks for reaching out to us. We are always happy to help. Is your Netflix app up-to-date? https://t.co/GDrqU"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_149",
+    "conversation_id": "2d3935494e9837950dcc09a9e13e35d5",
+    "customer_query": "how can I send emails to the trash now instead of the archived option in the Apple Mail App iPhone 6S Plus Yes. I click on it but I only get the option to archive. Not to delete the email or emails",
+    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "predicted_intent": "DEVICE_SETUP_AND_USAGE",
+    "intent_confidence": 0.4313,
+    "intent_error": true,
+    "gold_escalation": "ESCALATE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": false,
+    "gold_escalation_reason": "High customer frustration or brand reputation risk requires empathetic senior human intervention.",
+    "agent_escalation_reason": "Customer expresses severe dissatisfaction, brand trust risk, or legal escalation requiring senior human care intervention.",
+    "policy_triggered": "POLICY_HIGH_DISTRESS_LEGAL",
+    "draft_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "grounded_in": [
+      {
+        "conversation_id": "8dc9dc92c0dccc9c9a8af1fb0d7eca15",
+        "similarity": 0.1702,
+        "resolution_snippet": "Constantly checking your emails in case you miss something important? Customize your Mail settings to choose h"
+      },
+      {
+        "conversation_id": "31054037cf83f0a3337be7ece6f93cf7",
+        "similarity": 0.1251,
+        "resolution_snippet": "We want you to get the most out of your iPhone's performance. We can help! Have you updated to iOS 11.0.2?"
+      },
+      {
+        "conversation_id": "e5748f06492dabb173976d660a261247",
+        "similarity": 0.1058,
+        "resolution_snippet": "This is now in Settings &gt; Accounts &amp; Passwords &gt; Fetch New Data. Learn more about setting up mail ac"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_154",
+    "conversation_id": "cb255f9223bd6bcae9c80551853b23f9",
+    "customer_query": "Hey thanks for the shit update that makes my phone crash or freeze every ten minutes.",
+    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.921,
+    "intent_error": true,
+    "gold_escalation": "ESCALATE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": false,
+    "gold_escalation_reason": "High customer frustration or brand reputation risk requires empathetic senior human intervention.",
+    "agent_escalation_reason": "Customer expresses severe dissatisfaction, brand trust risk, or legal escalation requiring senior human care intervention.",
+    "policy_triggered": "POLICY_HIGH_DISTRESS_LEGAL",
+    "draft_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "grounded_in": [
+      {
+        "conversation_id": "9dfe3aadb0306a469e412c69ed5c2c52",
+        "similarity": 0.1595,
+        "resolution_snippet": "We're here to help. How are your podcasts out of order? Let us know in DM. https://t.co/GDrqU22YpT"
+      },
+      {
+        "conversation_id": "c2dc944dc2040e02bfcb32f9ce9f6f49",
+        "similarity": 0.1188,
+        "resolution_snippet": "We'd like to help. In DM, please share a few details with us about the issue you're experiencing. https://t.co"
+      },
+      {
+        "conversation_id": "8f067bace077744f5a4175c00f2d3d5f",
+        "similarity": 0.1003,
+        "resolution_snippet": "That's not to be expected. We want to help. Have you updated to the latest iOS version 11.0.2? Let us know if "
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_155",
+    "conversation_id": "47fabcf900d9c18366e57a1f63fc0357",
+    "customer_query": "I want all MY music back on my phone. Why do I constantly have to download it from the cloud.",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "predicted_intent": "APPLE_ID_AND_ICLOUD",
+    "intent_confidence": 0.3613,
+    "intent_error": true,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": true,
+    "gold_escalation_reason": "General inquiry addressable with clarifying questions and standard support resources.",
+    "agent_escalation_reason": "Apple Id And Icloud inquiries involve sensitive PII and account security.",
+    "policy_triggered": "POLICY_SENSITIVE_DOMAIN",
+    "draft_reply": "Account security is our top priority. Please head to https://iforgot.apple.com to securely verify and recover your Apple ID. If you're still locked out, DM us to assist further.",
+    "grounded_in": [
+      {
+        "conversation_id": "f5173f7a7c3c92fccfda127c1216dc74",
+        "similarity": 0.1411,
+        "resolution_snippet": "We'll be happy to assist. Do you have enough free space on your iPhone for the game?"
+      },
+      {
+        "conversation_id": "d2c332764243d1c18a9662c6ff4469e3",
+        "similarity": 0.1237,
+        "resolution_snippet": "Do you subscribe to Apple Music? Is iCloud Music Library turned on? Check here: https://t.co/9VQ9VywZJ2 DM us "
+      },
+      {
+        "conversation_id": "14e7d0fa2ff0c47c3ce4a9a2f9d7e6ba",
+        "similarity": 0.1119,
+        "resolution_snippet": "We want to help. Please join us in DM to continue. https://t.co/GDrqU22YpT Got it, thanks! So we can provide y"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_157",
+    "conversation_id": "45ce2099ecb349d15b334ea3bb9d61b9",
+    "customer_query": "why when i put my phone on do not disturb, motherfuckers can still disturb me? uhh, yes! i've never NOT been disturbed since i've had the 7+😒 &amp; what ios got to do w/ do not disturb?😕",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.4037,
+    "intent_error": false,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": true,
+    "gold_escalation_reason": "Standard iOS software troubleshooting steps (force restart, storage check, update) apply.",
+    "agent_escalation_reason": "Customer expresses severe dissatisfaction, brand trust risk, or legal escalation requiring senior human care intervention.",
+    "policy_triggered": "POLICY_HIGH_DISTRESS_LEGAL",
+    "draft_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "grounded_in": [
+      {
+        "conversation_id": "e94da3fd0f42946b03da80ff8cf0fe72",
+        "similarity": 0.1931,
+        "resolution_snippet": "We'd like to hear more about what's happening. Does this happen with texts or iMessage?"
+      },
+      {
+        "conversation_id": "be276ed706ba2317eb774c1d78bec694",
+        "similarity": 0.1856,
+        "resolution_snippet": "Thanks for reaching out! What happens when you try to use the feature? We'd be happy to help you troubleshoot "
+      },
+      {
+        "conversation_id": "3f6f5291b059081f2f08bc9dd08aa403",
+        "similarity": 0.1131,
+        "resolution_snippet": "We want to help you. DM us, so we can look into this with you. https://t.co/GDrqU22YpT"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_160",
+    "conversation_id": "d29931e47066b50bc3960e9091ba643e",
+    "customer_query": "Welp, iOS 11.0.2 has officially ruined my battery. Have charged my iPhone 7 three times today. will 11.0.3 resolve?",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "predicted_intent": "BATTERY_AND_HARDWARE",
+    "intent_confidence": 0.3407,
+    "intent_error": true,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": true,
+    "gold_escalation_reason": "Clarifying whether upcoming iOS update resolves battery drain and advising current optimization steps.",
+    "agent_escalation_reason": "Model intent confidence is low (0.34 < 0.40); routing to human to prevent incorrect automated guidance.",
+    "policy_triggered": "POLICY_LOW_MODEL_CONFIDENCE",
+    "draft_reply": "We want to ensure your device is running safely. For physical hardware inspection or a Genius Bar appointment, check: https://support.apple.com/iphone/repair/battery-power or DM us your zip code.",
+    "grounded_in": [
+      {
+        "conversation_id": "ca3ec6ca1759aae60abb789559d45f1b",
+        "similarity": 0.1454,
+        "resolution_snippet": "We're behind you 100%, and want your device back to reliable again. Just DM your country &amp; iPhone model an"
+      },
+      {
+        "conversation_id": "1edc5b1a325ffd9e847ebddc23f01165",
+        "similarity": 0.1391,
+        "resolution_snippet": "We'd love to help you with your iPhone! Which iOS version did you update to? What kind of trouble are you havi"
+      },
+      {
+        "conversation_id": "5c926b892147bf2781b997c249d9a9b1",
+        "similarity": 0.1229,
+        "resolution_snippet": "Let's take a closer look at this together. Send us a DM with more details below and we'll go from there. https"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_164",
+    "conversation_id": "faf305d20c6e75a1b675d0509be63046",
+    "customer_query": "what have you done to my iPad? Keeps going sleep while I'm using it and repeatedly takes screenshots for no apparent reason 11.0.2",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.5564,
+    "intent_error": true,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "AUTO_HANDLE",
+    "escalation_error": false,
+    "gold_escalation_reason": "Standard on-device battery health diagnostic and power-saving optimization steps available.",
+    "agent_escalation_reason": "Standard iOS software troubleshooting steps (restart, storage check, supplemental update) apply.",
+    "policy_triggered": "NONE_AUTO_HANDLED",
+    "draft_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "grounded_in": [
+      {
+        "conversation_id": "86fc79a4a1c28f8b2a26d742b735c459",
+        "similarity": 0.1389,
+        "resolution_snippet": "We're happy to help. What have you tried so far in an attempt to resolve it? Thanks."
+      },
+      {
+        "conversation_id": "5dee73c802322885b89c4a79244b7f81",
+        "similarity": 0.1319,
+        "resolution_snippet": "Let's take a look into what happened with your screenshots. Do you have any photos deleted too or just screens"
+      },
+      {
+        "conversation_id": "0d8b38c5221fa7a15f5bc146b50c9fe5",
+        "similarity": 0.1191,
+        "resolution_snippet": "Thanks for reaching out. Are you seeing a network activity icon in your status bar, or can you tell us more in"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_165",
+    "conversation_id": "2d895a4204d41e2c092a2cdc260c8ada",
+    "customer_query": "pls fix this https://t.co/rmWr5aMZe4 iPhone 8, iOS 11.0.1, if I scroll to another page and then come back my apps show up again, I haven't been able to deliberately (1/2) Replicate the issue but it happens often (2/2)",
+    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.8742,
+    "intent_error": true,
+    "gold_escalation": "ESCALATE",
+    "predicted_escalation": "AUTO_HANDLE",
+    "escalation_error": true,
+    "gold_escalation_reason": "High customer frustration or brand reputation risk requires empathetic senior human intervention.",
+    "agent_escalation_reason": "Standard iOS software troubleshooting steps (restart, storage check, supplemental update) apply.",
+    "policy_triggered": "NONE_AUTO_HANDLED",
+    "draft_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "grounded_in": [
+      {
+        "conversation_id": "f42c12c152ea50e818b44dbfb93cce34",
+        "similarity": 0.1282,
+        "resolution_snippet": "Let's discuss your options for your battery and help with your software updates. Please DM us with the link be"
+      },
+      {
+        "conversation_id": "a14f14ae725e9312128c44b7986f2b61",
+        "similarity": 0.1092,
+        "resolution_snippet": "We'd love to help you fix this problem! Have you tried turning off Wi-Fi, and turning it on again? Have you al"
+      },
+      {
+        "conversation_id": "e3724d57041eee879605f1602f4a44f5",
+        "similarity": 0.095,
+        "resolution_snippet": "We'd like to help. We want to get to each question, first has your iPhone been able to complete the update yet"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_167",
+    "conversation_id": "0107be903c1436adef1d571659858ce3",
+    "customer_query": "your system was down @ UnionSquare store in SF so couldn't get new phone during my appt. Can you tell me when it's up again?",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "predicted_intent": "OUT_OF_SCOPE_OTHER",
+    "intent_confidence": 0.4801,
+    "intent_error": true,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "AUTO_HANDLE",
+    "escalation_error": false,
+    "gold_escalation_reason": "General inquiry addressable with clarifying questions and standard support resources.",
+    "agent_escalation_reason": "General product inquiry addressable with standard public resources.",
+    "policy_triggered": "NONE_AUTO_HANDLED",
+    "draft_reply": "Thanks for reaching out! We're happy to guide you through this. You can find detailed resolution steps here: https://support.apple.com — let us know how it goes!",
+    "grounded_in": [
+      {
+        "conversation_id": "ba6e1126c8dde3f2e30025c29fed199b",
+        "similarity": 0.1249,
+        "resolution_snippet": "Hi, we'd be happy to help with whatever you're experiencing. Send us a DM, we'll pick it up from there. https:"
+      },
+      {
+        "conversation_id": "8871a42e7c36c1d0cc3972b511657d66",
+        "similarity": 0.1192,
+        "resolution_snippet": "Let's see how we can help. Can you tell us what the issue was? Thanks."
+      },
+      {
+        "conversation_id": "34e57064ee94a91bf8a7205638ffa560",
+        "similarity": 0.1078,
+        "resolution_snippet": "We'd be happy to look into this with you. Please reach out to us via DM and we'll get started. https://t.co/GD"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_170",
+    "conversation_id": "e281201e1acc5238185e677f0fb1976b",
+    "customer_query": "My MacBook Pro dies whenever it's under 60% battery. The bat. % also jumps around a little. Is it a battery problem? Don't refer me. Thanks! Nope just randomly not a specific program. That makes me think it's the battery Also, it never dies when it's plugged in to the charger. It's died over and over for months now but always only when it's not plugged in.",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "predicted_intent": "BATTERY_AND_HARDWARE",
+    "intent_confidence": 0.9174,
+    "intent_error": false,
+    "gold_escalation": "ESCALATE",
+    "predicted_escalation": "AUTO_HANDLE",
+    "escalation_error": true,
+    "gold_escalation_reason": "MacBook randomly shutting down below 60% battery for months indicates battery degradation or logic board fault requiring hardware inspection.",
+    "agent_escalation_reason": "Standard on-device battery health diagnostic and power-saving optimization steps available.",
+    "policy_triggered": "NONE_AUTO_HANDLED",
+    "draft_reply": "We can help with your battery. Check Settings > Battery > Battery Health to inspect capacity and top battery-draining apps. Useful tips here: https://support.apple.com/iphone/repair/battery-power",
+    "grounded_in": [
+      {
+        "conversation_id": "2364811080f41504fb03fcad2671435a",
+        "similarity": 0.1464,
+        "resolution_snippet": "Let's see what we can do. Is it plugged in to a charger or a computer currently? Thanks. Thanks for checking. "
+      },
+      {
+        "conversation_id": "90b08eccb2dff36f369f0dda50ef68cd",
+        "similarity": 0.1378,
+        "resolution_snippet": "We'd be happy to look into your battery concerns. DM us your model iPhone and the iOS version installed to sta"
+      },
+      {
+        "conversation_id": "d89e78fc5acc63fe81248d356ad3f45d",
+        "similarity": 0.0814,
+        "resolution_snippet": "We'd love to work this out with you. Any USB devices attached currently? Please DM us. https://t.co/GDrqU22YpT"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_171",
+    "conversation_id": "f95708027adda52e4e9e2937443cd6ac",
+    "customer_query": "That feeling when your battery is on 3% 😯 Well us Apple iPhone owners don't have to worry about exploding phones 🙊 Potentially carrying around a ticking time bomb #PhoneWar However since updating IOS, my battery is terrible 🤦‍♀️",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "predicted_intent": "BATTERY_AND_HARDWARE",
+    "intent_confidence": 0.6783,
+    "intent_error": false,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": true,
+    "gold_escalation_reason": "Standard on-device battery health diagnostic and power-saving optimization steps available.",
+    "agent_escalation_reason": "Customer expresses severe dissatisfaction, brand trust risk, or legal escalation requiring senior human care intervention.",
+    "policy_triggered": "POLICY_HIGH_DISTRESS_LEGAL",
+    "draft_reply": "We want to ensure your device is running safely. For physical hardware inspection or a Genius Bar appointment, check: https://support.apple.com/iphone/repair/battery-power or DM us your zip code.",
+    "grounded_in": [
+      {
+        "conversation_id": "a9ef4dd12008b79ca641496e3e10a847",
+        "similarity": 0.1413,
+        "resolution_snippet": "We're happy to take a look at your battery with you as well. Let us know via DM which device you have, then we"
+      },
+      {
+        "conversation_id": "b7efdf7578296403387c3df7abc03df8",
+        "similarity": 0.1341,
+        "resolution_snippet": "We want to help with your battery. Have you tried these steps? https://t.co/bivpdfBNJ6"
+      },
+      {
+        "conversation_id": "557a9cc935bd8ea0b0c3c9979b27d6b0",
+        "similarity": 0.127,
+        "resolution_snippet": "We're here to help! Send us a DM,using the link below. Tell us, what's happening with your iPhone since updati"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_172",
+    "conversation_id": "04d40adf775ff1e17d48554005543fd4",
+    "customer_query": "Is there a way to undo an iPhone update... hating on the new iOS 11 😩 just sucks the life out of my battery! #iPhoneProblems",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.4535,
+    "intent_error": true,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": true,
+    "gold_escalation_reason": "Standard on-device battery health diagnostic and power-saving optimization steps available.",
+    "agent_escalation_reason": "Customer expresses severe dissatisfaction, brand trust risk, or legal escalation requiring senior human care intervention.",
+    "policy_triggered": "POLICY_HIGH_DISTRESS_LEGAL",
+    "draft_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "grounded_in": [
+      {
+        "conversation_id": "1c34790dc216b192e2c31080c0c7e1ea",
+        "similarity": 0.19,
+        "resolution_snippet": "We're here for you. Which iPhone and software version are you using? Let's figure out what's going on. Send us"
+      },
+      {
+        "conversation_id": "160e81b53273618d8ab2ab9401ee0fc7",
+        "similarity": 0.1596,
+        "resolution_snippet": "We can help! Send us over a DM with the iOS version installed on your iPhone, and we'll take it from there. ht"
+      },
+      {
+        "conversation_id": "bd3b5a22eb02c4245c31ff751f29fde4",
+        "similarity": 0.148,
+        "resolution_snippet": "We'd love to help with your new iPhone. To start, send us a DM with more details on the behavior you're experi"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_173",
+    "conversation_id": "6c717fa1156c00a72a37462fb9bbbb07",
+    "customer_query": "holy shit...the new iOS fucks up everything. Are you trying to screw this thing up?",
+    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.543,
+    "intent_error": true,
+    "gold_escalation": "ESCALATE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": false,
+    "gold_escalation_reason": "High customer frustration or brand reputation risk requires empathetic senior human intervention.",
+    "agent_escalation_reason": "Customer expresses severe dissatisfaction, brand trust risk, or legal escalation requiring senior human care intervention.",
+    "policy_triggered": "POLICY_HIGH_DISTRESS_LEGAL",
+    "draft_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "grounded_in": [
+      {
+        "conversation_id": "20217b876227cd1b35edd61cce3590bd",
+        "similarity": 0.1832,
+        "resolution_snippet": "Let's take a look at this together. What do you do to make the lock screen respond again? Are you trying to un"
+      },
+      {
+        "conversation_id": "d126c7489964e162ccf36faa69079084",
+        "similarity": 0.1531,
+        "resolution_snippet": "We understand how important your iPhone battery life is. We can help! Send us a DM and we'll take it from ther"
+      },
+      {
+        "conversation_id": "b21946c2834c2772be091d934b11ed89",
+        "similarity": 0.1458,
+        "resolution_snippet": "Let's see if we can find out. What device are you using? How are you trying to preview songs? Are you previewi"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_174",
+    "conversation_id": "942c066b2341d5187b96d55239e662a8",
+    "customer_query": "It's insane that devices mess up with a new release. I paid $60 to get my camera fixed less than a month ago and now I'm having the same problems. Seriously!",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "predicted_intent": "BATTERY_AND_HARDWARE",
+    "intent_confidence": 0.7287,
+    "intent_error": true,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "AUTO_HANDLE",
+    "escalation_error": false,
+    "gold_escalation_reason": "General inquiry addressable with clarifying questions and standard support resources.",
+    "agent_escalation_reason": "Standard on-device battery health diagnostic and power-saving optimization steps available.",
+    "policy_triggered": "NONE_AUTO_HANDLED",
+    "draft_reply": "We can help with your battery. Check Settings > Battery > Battery Health to inspect capacity and top battery-draining apps. Useful tips here: https://support.apple.com/iphone/repair/battery-power",
+    "grounded_in": [
+      {
+        "conversation_id": "b5be32480209f5c135356dc5cffdd760",
+        "similarity": 0.1277,
+        "resolution_snippet": "We want to help. What happens when you try to use the camera? What is your iPhone model? Let us know to contin"
+      },
+      {
+        "conversation_id": "5de208cee2812517b08d21b3d6654ab3",
+        "similarity": 0.1273,
+        "resolution_snippet": "We can help with the behaviors you're experiencing. Meet us in DM, and we'll partner together to get things wo"
+      },
+      {
+        "conversation_id": "91ca9e93f5c17a6e9ab94026abb3d67a",
+        "similarity": 0.1058,
+        "resolution_snippet": "We're here to help. Let's take this to DM so we can better assist you. https://t.co/GDrqU22YpT"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_177",
+    "conversation_id": "13137c2710c539e48bf274d6485deb32",
+    "customer_query": "please can you stop my phone from being glitchy 😭 stupid IOS update So I update my phone yesterday and the touch screen isn't working properly, I've restarted it numerous times and it's still not ok ☹️",
+    "gold_intent": "IOS_SOFTWARE_UPDATE",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.9471,
+    "intent_error": false,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": true,
+    "gold_escalation_reason": "Standard iOS software troubleshooting steps (force restart, storage check, update) apply.",
+    "agent_escalation_reason": "Customer expresses severe dissatisfaction, brand trust risk, or legal escalation requiring senior human care intervention.",
+    "policy_triggered": "POLICY_HIGH_DISTRESS_LEGAL",
+    "draft_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "grounded_in": [
+      {
+        "conversation_id": "b532ea3442f49fbdead50f9b639a3c5f",
+        "similarity": 0.1292,
+        "resolution_snippet": "We know it's important to have your iPhone working properly. Please send us a DM so we can assist. https://t.c"
+      },
+      {
+        "conversation_id": "b81f2e962771b7501163530bf6890338",
+        "similarity": 0.127,
+        "resolution_snippet": "We'd be happy to look into what's going on. To start, can you let us know which device and software version yo"
+      },
+      {
+        "conversation_id": "99bf09e4ffe4c24d0ea6507032667bed",
+        "similarity": 0.1184,
+        "resolution_snippet": "Hi there, just to make sure we're on the same page. Are you experiencing an issue with the response of the tou"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_182",
+    "conversation_id": "84020c50b658d1bc78a49774db402403",
+    "customer_query": "Yo I didn't pay $900 to have my phone be glitching after not even 6 months. Quit your shit.",
+    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.5125,
+    "intent_error": true,
+    "gold_escalation": "ESCALATE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": false,
+    "gold_escalation_reason": "High customer frustration or brand reputation risk requires empathetic senior human intervention.",
+    "agent_escalation_reason": "Customer expresses severe dissatisfaction, brand trust risk, or legal escalation requiring senior human care intervention.",
+    "policy_triggered": "POLICY_HIGH_DISTRESS_LEGAL",
+    "draft_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "grounded_in": [
+      {
+        "conversation_id": "0176f16327965da04ee40c41cc4df2e5",
+        "similarity": 0.1017,
+        "resolution_snippet": "We want to help. Are you using the Apple brand Lightning to USB cable and power adapter? Have you tried to res"
+      },
+      {
+        "conversation_id": "f62a834b8cc5752803bed9aec31d5de0",
+        "similarity": 0.1015,
+        "resolution_snippet": "We're here for you and would like to help. Tell us what type of device you're using via DM. We'll take it from"
+      },
+      {
+        "conversation_id": "9d27b5056cca250ca099fb725757bb4b",
+        "similarity": 0.101,
+        "resolution_snippet": "We're here to help. Which iOS version do you have? Is this happening with any other requests from Siri? Let us"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_185",
+    "conversation_id": "7c8ba2ff3175d736c9071e402ca750b5",
+    "customer_query": "hey i need to restore my iphone 5 but all the firmwares are unsigned.... https://t.co/LQ7cUYwWt7",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "predicted_intent": "OUT_OF_SCOPE_OTHER",
+    "intent_confidence": 0.401,
+    "intent_error": true,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "AUTO_HANDLE",
+    "escalation_error": false,
+    "gold_escalation_reason": "General inquiry addressable with clarifying questions and standard support resources.",
+    "agent_escalation_reason": "General product inquiry addressable with standard public resources.",
+    "policy_triggered": "NONE_AUTO_HANDLED",
+    "draft_reply": "Thanks for reaching out! We're happy to guide you through this. You can find detailed resolution steps here: https://support.apple.com — let us know how it goes!",
+    "grounded_in": [
+      {
+        "conversation_id": "0a52b7b21cebed688bbea06a101bd0e4",
+        "similarity": 0.2021,
+        "resolution_snippet": "Sure thing. This article will walk you through how to restore your iPhone to factory settings: https://t.co/sw"
+      },
+      {
+        "conversation_id": "471344813c91529a93f746dcb6803e77",
+        "similarity": 0.1126,
+        "resolution_snippet": "Time Machine makes automatic backups, so it's easy to restore your #Mac or go back in time to find individual "
+      },
+      {
+        "conversation_id": "92143d066a04331bfaaf7ba3bcbf6b3a",
+        "similarity": 0.1105,
+        "resolution_snippet": "We want to help. Send us a DM and we'll go from there. https://t.co/GDrqU22YpT"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_190",
+    "conversation_id": "1a308325d9c7280c9c42d1e162cae549",
+    "customer_query": "my phone dies faster because of the stupid update.. fix this shit",
+    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.8698,
+    "intent_error": true,
+    "gold_escalation": "ESCALATE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": false,
+    "gold_escalation_reason": "High customer frustration or brand reputation risk requires empathetic senior human intervention.",
+    "agent_escalation_reason": "Customer expresses severe dissatisfaction, brand trust risk, or legal escalation requiring senior human care intervention.",
+    "policy_triggered": "POLICY_HIGH_DISTRESS_LEGAL",
+    "draft_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "grounded_in": [
+      {
+        "conversation_id": "160e81b53273618d8ab2ab9401ee0fc7",
+        "similarity": 0.1697,
+        "resolution_snippet": "We can help! Send us over a DM with the iOS version installed on your iPhone, and we'll take it from there. ht"
+      },
+      {
+        "conversation_id": "eb2ea0eee33a3fde802e4727bd51b35d",
+        "similarity": 0.1476,
+        "resolution_snippet": "We're here for you! Let us know in DM which iPhone you're using and the iOS version installed to get started, "
+      },
+      {
+        "conversation_id": "4c3182aaf243068f7c8f1e4d8f1d9bc4",
+        "similarity": 0.1295,
+        "resolution_snippet": "We want you to get the most out of your iPhone. We can help! Send us a DM and we'll look into this further wit"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_192",
+    "conversation_id": "2659c66e7ee0b926cb33cadb955876f8",
+    "customer_query": "looks like the widget for the weather is down still says sunset on mine but when I go in to the weather app it's fine",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.4237,
+    "intent_error": true,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "AUTO_HANDLE",
+    "escalation_error": false,
+    "gold_escalation_reason": "General inquiry addressable with clarifying questions and standard support resources.",
+    "agent_escalation_reason": "Standard iOS software troubleshooting steps (restart, storage check, supplemental update) apply.",
+    "policy_triggered": "NONE_AUTO_HANDLED",
+    "draft_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "grounded_in": [
+      {
+        "conversation_id": "87e7489c308f5c8e18ee0840504539f2",
+        "similarity": 0.1252,
+        "resolution_snippet": "We are here to help. DM us which iOS device you are using and we can take a look at this. https://t.co/GDrqU22"
+      },
+      {
+        "conversation_id": "74f6873f814ca04e7a97d4bbb1e6e9e5",
+        "similarity": 0.1072,
+        "resolution_snippet": "We want your apps to work as expected. DM us details on the issues you're having and we'll continue support th"
+      },
+      {
+        "conversation_id": "f5173f7a7c3c92fccfda127c1216dc74",
+        "similarity": 0.0957,
+        "resolution_snippet": "We'll be happy to assist. Do you have enough free space on your iPhone for the game?"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_194",
+    "conversation_id": "f0d8627aaa32db1d5af320bbed5d3e51",
+    "customer_query": "#ios11 drains the battery really fast!!😰😭 had to charge 2 x a day compared to just 1 before the update @115858 same w/ my husbands ip7 😭",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.4001,
+    "intent_error": true,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "AUTO_HANDLE",
+    "escalation_error": false,
+    "gold_escalation_reason": "Standard power optimization and battery diagnostic guide can resolve rapid drain.",
+    "agent_escalation_reason": "Standard iOS software troubleshooting steps (restart, storage check, supplemental update) apply.",
+    "policy_triggered": "NONE_AUTO_HANDLED",
+    "draft_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "grounded_in": [
+      {
+        "conversation_id": "6cef25fd3cdc1810542564faeb07583b",
+        "similarity": 0.1432,
+        "resolution_snippet": "We're happy to help. Try these tips for battery life, and let us know if you still have an issue: https://t.co"
+      },
+      {
+        "conversation_id": "b712b99a4ab96d1175db1a789915f506",
+        "similarity": 0.135,
+        "resolution_snippet": "We're happy to look into the battery life you're experiencing on iOS 11. Join us in DM with the iPhone model y"
+      },
+      {
+        "conversation_id": "80b733be944328a3f36e837f31ee50bd",
+        "similarity": 0.1174,
+        "resolution_snippet": "We want to help. Have you tried any steps here? https://t.co/bivpdfBNJ6 Are you using an Apple-certified cable"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_196",
+    "conversation_id": "a344ec87129977ba4e55c43525c75f29",
+    "customer_query": "iOS 11 sucks! Always having to reboot now; apps are constantly crashing. Fix or I'll switch to android.",
+    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.7565,
+    "intent_error": true,
+    "gold_escalation": "ESCALATE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": false,
+    "gold_escalation_reason": "Customer threatening churn and expressing severe dissatisfaction over crashing apps requires senior empathetic escalation.",
+    "agent_escalation_reason": "Customer expresses severe dissatisfaction, brand trust risk, or legal escalation requiring senior human care intervention.",
+    "policy_triggered": "POLICY_HIGH_DISTRESS_LEGAL",
+    "draft_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "grounded_in": [
+      {
+        "conversation_id": "067c0ef1df796bd6eec6002d8c7932e4",
+        "similarity": 0.1193,
+        "resolution_snippet": "We understand how vital the battery is. Let's work together. Did you update to iOS 11.0.2? Send us a DM with y"
+      },
+      {
+        "conversation_id": "76e13483443ecb0c9da53544750d8320",
+        "similarity": 0.1031,
+        "resolution_snippet": "Thanks for reaching out, we'd be happy to look into this. To start, can you let us know which device and iOS v"
+      },
+      {
+        "conversation_id": "625aca183ba936742b251b3cf35ca915",
+        "similarity": 0.0991,
+        "resolution_snippet": "We want you to enjoy iOS 11. We can help! Send us a DM and let us know what's happening specifically. We'll go"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_197",
+    "conversation_id": "3b11aa4792502dae5c0d85168cf98a04",
+    "customer_query": "Upgraded to iOS 11.0.2 & Apple Music lost everything I've added to my library... also won't let me add anything. How do I fix?",
+    "gold_intent": "APP_STORE_AND_BILLING",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.4399,
+    "intent_error": true,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "AUTO_HANDLE",
+    "escalation_error": false,
+    "gold_escalation_reason": "iCloud Music Library sync toggle and Apple Music account status check can resolve missing library items.",
+    "agent_escalation_reason": "Standard iOS software troubleshooting steps (restart, storage check, supplemental update) apply.",
+    "policy_triggered": "NONE_AUTO_HANDLED",
+    "draft_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "grounded_in": [
+      {
+        "conversation_id": "ee27c765f9a3269dd392e2ac9ac6b57c",
+        "similarity": 0.117,
+        "resolution_snippet": "We understand how vital the battery is. Let's work together. Did you update to iOS 11.0.2? Send us a DM with y"
+      },
+      {
+        "conversation_id": "1f523060c083caf6bb349112ce87606f",
+        "similarity": 0.1164,
+        "resolution_snippet": "Thanks for reaching out! We've received your DM. Look for a reply there shortly."
+      },
+      {
+        "conversation_id": "77265e429edc6a7b8633b384e903d270",
+        "similarity": 0.1137,
+        "resolution_snippet": "We want to help you. Send us a DM with more info on when this happened. https://t.co/GDrqU22YpT"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_198",
+    "conversation_id": "6b33856bb02261e07cdd1265304759c1",
+    "customer_query": "fuck u my phone just went from 20% to 5% u done fucked everyone up w ios 11",
+    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.8375,
+    "intent_error": true,
+    "gold_escalation": "ESCALATE",
+    "predicted_escalation": "AUTO_HANDLE",
+    "escalation_error": true,
+    "gold_escalation_reason": "Abusive language and severe customer hostility require immediate human de-escalation.",
+    "agent_escalation_reason": "Standard iOS software troubleshooting steps (restart, storage check, supplemental update) apply.",
+    "policy_triggered": "NONE_AUTO_HANDLED",
+    "draft_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "grounded_in": [
+      {
+        "conversation_id": "47b498820685e7c14fad656f88ead406",
+        "similarity": 0.1579,
+        "resolution_snippet": "We want to help with your battery. Is the battery mainly affected when using specific apps? Let us know to con"
+      },
+      {
+        "conversation_id": "17dbf9695b4e5b75923b575996fd1850",
+        "similarity": 0.0884,
+        "resolution_snippet": "We have some great steps on our website that can help maximize your battery life. Check it out here: https://t"
+      },
+      {
+        "conversation_id": "cf8c2e632229ca969ca1938d5e674853",
+        "similarity": 0.0856,
+        "resolution_snippet": "iOS 11 should improve your iPhone's performance, and we can help. Have you had the chance to back up and updat"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_199",
+    "conversation_id": "971c7328ada1a33481b6066bd37e5bfe",
+    "customer_query": "upgrade to iOS 11 caused a brand new IPhone to draw all battery in 5 hrs without using the phone! WTF",
+    "gold_intent": "BATTERY_AND_HARDWARE",
+    "predicted_intent": "BATTERY_AND_HARDWARE",
+    "intent_confidence": 0.5163,
+    "intent_error": false,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "ESCALATE",
+    "escalation_error": true,
+    "gold_escalation_reason": "Post-update background indexing and battery diagnostic steps address new device battery drain.",
+    "agent_escalation_reason": "Customer expresses severe dissatisfaction, brand trust risk, or legal escalation requiring senior human care intervention.",
+    "policy_triggered": "POLICY_HIGH_DISTRESS_LEGAL",
+    "draft_reply": "We want to ensure your device is running safely. For physical hardware inspection or a Genius Bar appointment, check: https://support.apple.com/iphone/repair/battery-power or DM us your zip code.",
+    "grounded_in": [
+      {
+        "conversation_id": "bd3b5a22eb02c4245c31ff751f29fde4",
+        "similarity": 0.2184,
+        "resolution_snippet": "We'd love to help with your new iPhone. To start, send us a DM with more details on the behavior you're experi"
+      },
+      {
+        "conversation_id": "5e12d55b03efde6fdad0f190f3e457e2",
+        "similarity": 0.1393,
+        "resolution_snippet": "Thanks for reaching out. Let's look into this together. Send us a DM with more details about your issue. We'll"
+      },
+      {
+        "conversation_id": "967316b1e5bc919c7bb3c506c4a958b1",
+        "similarity": 0.1155,
+        "resolution_snippet": "We'd love to help you with your iPhone! Which iOS version did you update to and what issues are you having? Le"
+      }
+    ]
+  },
+  {
+    "item_id": "GOLD_200",
+    "conversation_id": "cfe4a343f0260c4465f7e49eccb46bf8",
+    "customer_query": "get rid of this for me I don't want it!!!!! https://t.co/c9eA2JwCmu",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "predicted_intent": "OUT_OF_SCOPE_OTHER",
+    "intent_confidence": 0.5891,
+    "intent_error": true,
+    "gold_escalation": "AUTO_HANDLE",
+    "predicted_escalation": "AUTO_HANDLE",
+    "escalation_error": false,
+    "gold_escalation_reason": "Simple iPad Dock customization and app removal instructions resolve the user request.",
+    "agent_escalation_reason": "General product inquiry addressable with standard public resources.",
+    "policy_triggered": "NONE_AUTO_HANDLED",
+    "draft_reply": "Thanks for reaching out! We're happy to guide you through this. You can find detailed resolution steps here: https://support.apple.com — let us know how it goes!",
+    "grounded_in": [
+      {
+        "conversation_id": "749756fbdec17b0a8d94090526ae2b4e",
+        "similarity": 0.2,
+        "resolution_snippet": "We're happy to help with your iPhone. DM us the model, iOS"
+      },
+      {
+        "conversation_id": "ceb42088bf6d792cf7187be791755bab",
+        "similarity": 0.1873,
+        "resolution_snippet": "We're here to help! Your iPhone is not infected. Follow these steps to get rid of that pop-up: https://t.co/qr"
+      },
+      {
+        "conversation_id": "2184838e8315247a9f815280bc992b33",
+        "similarity": 0.0847,
+        "resolution_snippet": "Certainly not what we want you to experience. Please DM us and we'll do all we can to get to the bottom of thi"
+      }
+    ]
+  }
+]

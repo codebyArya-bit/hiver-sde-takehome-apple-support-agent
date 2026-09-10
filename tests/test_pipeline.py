@@ -85,7 +85,7 @@ def test_escalation_engine_policies():
 
 def test_reply_generator_twitter_length_limit():
     gen = GroundedReplyGenerator()
-    reply = gen.generate_reply(
+    res = gen.generate_reply(
         query="My phone is freezing after the latest iOS update",
         intent="IOS_SOFTWARE_UPDATE",
         escalation_decision="AUTO_HANDLE",
@@ -93,8 +93,9 @@ def test_reply_generator_twitter_length_limit():
         retrieved_resolutions=[],
         standard_link="https://support.apple.com/HT204204"
     )
-    assert len(reply) <= 280
-    assert "https://" in reply
+    reply_text = res["draft_reply"]
+    assert len(reply_text) <= 280
+    assert "https://" in reply_text
 
 def test_metrics_calculation():
     y_true = ["IOS_SOFTWARE_UPDATE", "BATTERY_AND_HARDWARE"]
@@ -107,3 +108,82 @@ def test_metrics_calculation():
     esc_res = calculate_escalation_metrics(esc_true, esc_pred)
     assert esc_res["accuracy"] == 1.0
     assert esc_res["escalation_recall"] == 1.0
+
+def test_zero_data_leakage():
+    import json
+    with open("data/processed/apple_train_set.json", "r", encoding="utf-8") as f:
+        train = json.load(f)
+    with open("data/processed/apple_support_kb.json", "r", encoding="utf-8") as f:
+        kb = json.load(f)
+    with open("data/golden_eval_set.json", "r", encoding="utf-8") as f:
+        gold = json.load(f)
+
+    train_cids = {x.get("conversation_id") or x.get("id") for x in train}
+    kb_cids = {x.get("conversation_id") or x.get("id") for x in kb}
+    gold_cids = {x.get("conversation_id") or x.get("id") for x in gold}
+
+    # Assert strict zero overlap
+    assert len(train_cids.intersection(gold_cids)) == 0, "Data leakage between Train and Gold set!"
+    assert len(kb_cids.intersection(gold_cids)) == 0, "Data leakage between KB and Gold set!"
+    assert len(gold) == 200, "Golden evaluation set must have exactly 200 items"
+
+def test_sacrebleu_layout_and_generation_metrics():
+    hypotheses = ["Check your settings at https://support.apple.com/HT204204 to fix this issue."]
+    references = ["Please go to Settings > Battery and visit https://support.apple.com/HT204204 for steps."]
+    intents = ["BATTERY_AND_HARDWARE"]
+    
+    # Verifies that SacreBLEU receives 1D list and executes without shape error
+    metrics = calculate_generation_metrics(hypotheses, references, target_intents=intents)
+    assert "bleu" in metrics
+    assert metrics["bleu"] >= 0.0
+    assert metrics["char_limit_compliance_pct"] == 100.0
+    assert metrics["official_domain_validity_pct"] == 100.0
+
+def test_rag_historical_evidence_extraction():
+    gen = GroundedReplyGenerator()
+    hist_resolutions = [
+        {
+            "conversation_id": "conv_test_123",
+            "historical_reply": "Hi! We'd recommend force restarting your device and updating to the latest iOS.",
+            "similarity": 0.85
+        }
+    ]
+    res = gen.generate_reply(
+        query="My iPhone is lagging after the update",
+        intent="IOS_SOFTWARE_UPDATE",
+        escalation_decision="AUTO_HANDLE",
+        escalation_reason="Standard software update troubleshooting.",
+        retrieved_resolutions=hist_resolutions,
+        standard_link="https://support.apple.com/HT204204"
+    )
+    assert len(res["draft_reply"]) <= 280
+    assert len(res["grounded_in"]) > 0
+    assert res["grounded_in"][0]["conversation_id"] == "conv_test_123"
+    assert "resolution_snippet" in res["grounded_in"][0]
+
+def test_end_to_end_agent_processing():
+    agent = AppleSupportAgent()
+    agent.initialize()
+    
+    result = agent.process_message("My battery goes from 100 to 20 in 30 minutes, this is unusable!")
+    assert "intent" in result
+    assert "intent_confidence" in result
+    assert "escalation_decision" in result
+    assert result["escalation_decision"] in ["AUTO_HANDLE", "ESCALATE"]
+    assert "escalation_reason" in result
+    assert "draft_reply" in result
+    assert len(result["draft_reply"]) <= 280
+    assert "grounded_in" in result
+    assert isinstance(result["grounded_in"], list)
+
+def test_human_judge_agreement_stats():
+    from evaluation.human_agreement import calculate_agreement_metrics
+    human_scores = [4.5, 3.5, 5.0, 4.0, 3.0]
+    judge_scores = [4.5, 3.6, 4.8, 4.0, 3.2]
+    stats = calculate_agreement_metrics(human_scores, judge_scores, metric_name="Overall Rubric Score")
+    assert "pearson_r" in stats
+    assert stats["pearson_r"] > 0.90
+    assert stats["mae"] < 0.20
+
+
+

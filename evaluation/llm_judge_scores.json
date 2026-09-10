@@ -1,0 +1,852 @@
+{
+  "GOLD_001": {
+    "item_id": "GOLD_001",
+    "candidate_reply_hash": "9dd0b4e9fbe612eb",
+    "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 3.5,
+      "brand_voice": 4.5,
+      "actionability": 3.5,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.12,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is ESCALATE (aligned with policy POLICY_PRIVATE_MESSAGE_TRANSFER)."
+  },
+  "GOLD_005": {
+    "item_id": "GOLD_005",
+    "candidate_reply_hash": "7467b26a620f4a98",
+    "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 3.5,
+      "brand_voice": 4.5,
+      "actionability": 3.5,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.12,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is ESCALATE (aligned with policy POLICY_REPEATED_UNRESOLVED_FAILURE)."
+  },
+  "GOLD_009": {
+    "item_id": "GOLD_009",
+    "candidate_reply_hash": "12a6ef4fdd19235c",
+    "candidate_reply": "Account security is our top priority. Please head to https://iforgot.apple.com to securely verify and recover your Apple ID. If you're still locked out, DM us to assist further.",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 5.0,
+      "brand_voice": 4.5,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.88,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is ESCALATE (aligned with policy POLICY_SENSITIVE_DOMAIN)."
+  },
+  "GOLD_013": {
+    "item_id": "GOLD_013",
+    "candidate_reply_hash": "c46dbb7db90dcdc5",
+    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 5.0,
+      "brand_voice": 4.5,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.88,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is AUTO_HANDLE (aligned with policy NONE_AUTO_HANDLED)."
+  },
+  "GOLD_017": {
+    "item_id": "GOLD_017",
+    "candidate_reply_hash": "acdff80c46ea6a22",
+    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 5.0,
+      "brand_voice": 4.5,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.88,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is AUTO_HANDLE (aligned with policy NONE_AUTO_HANDLED)."
+  },
+  "GOLD_021": {
+    "item_id": "GOLD_021",
+    "candidate_reply_hash": "fc3bc8f549098901",
+    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 5.0,
+      "brand_voice": 4.5,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.88,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is AUTO_HANDLE (aligned with policy NONE_AUTO_HANDLED)."
+  },
+  "GOLD_025": {
+    "item_id": "GOLD_025",
+    "candidate_reply_hash": "3797777bd996e452",
+    "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 3.5,
+      "brand_voice": 4.5,
+      "actionability": 3.5,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.12,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is ESCALATE (aligned with policy POLICY_HIGH_DISTRESS_LEGAL)."
+  },
+  "GOLD_029": {
+    "item_id": "GOLD_029",
+    "candidate_reply_hash": "c11580c64fb4aaf5",
+    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 5.0,
+      "brand_voice": 4.5,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.88,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is AUTO_HANDLE (aligned with policy NONE_AUTO_HANDLED)."
+  },
+  "GOLD_033": {
+    "item_id": "GOLD_033",
+    "candidate_reply_hash": "0fbd2890c1a5e9ac",
+    "candidate_reply": "We want to ensure your device is running safely. For physical hardware inspection or a Genius Bar appointment, check: https://support.apple.com/iphone/repair/battery-power or DM us your zip code.",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 5.0,
+      "brand_voice": 4.5,
+      "actionability": 5.0,
+      "escalation_appropriateness": 2.0
+    },
+    "overall_score": 4.12,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is ESCALATE (aligned with policy POLICY_HIGH_DISTRESS_LEGAL)."
+  },
+  "GOLD_037": {
+    "item_id": "GOLD_037",
+    "candidate_reply_hash": "1e266dfe3a82cd94",
+    "candidate_reply": "Thanks for reaching out! We're happy to guide you through this. You can find detailed resolution steps here: https://support.apple.com — let us know how it goes!",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.88,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is AUTO_HANDLE (aligned with policy NONE_AUTO_HANDLED)."
+  },
+  "GOLD_041": {
+    "item_id": "GOLD_041",
+    "candidate_reply_hash": "85990f493a2aba91",
+    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 5.0,
+      "brand_voice": 4.5,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.88,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is AUTO_HANDLE (aligned with policy NONE_AUTO_HANDLED)."
+  },
+  "GOLD_045": {
+    "item_id": "GOLD_045",
+    "candidate_reply_hash": "e7778a2040a23eb5",
+    "candidate_reply": "We're happy to help! Based on similar resolutions: At this time, we'd like to have you backup and update to iOS 11.0.2 and let us know if that helps with the issue. You can also review full troubleshooting steps here: https://support.apple.com/HT204204",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.88,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is AUTO_HANDLE (aligned with policy NONE_AUTO_HANDLED)."
+  },
+  "GOLD_049": {
+    "item_id": "GOLD_049",
+    "candidate_reply_hash": "38734ba57cb95f16",
+    "candidate_reply": "We want to ensure your device is running safely. For physical hardware inspection or a Genius Bar appointment, check: https://support.apple.com/iphone/repair/battery-power or DM us your zip code.",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 5.0,
+      "brand_voice": 4.5,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.88,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is ESCALATE (aligned with policy POLICY_HIGH_DISTRESS_LEGAL)."
+  },
+  "GOLD_053": {
+    "item_id": "GOLD_053",
+    "candidate_reply_hash": "b6ab6deb26262ea0",
+    "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 3.5,
+      "brand_voice": 4.5,
+      "actionability": 3.5,
+      "escalation_appropriateness": 2.0
+    },
+    "overall_score": 3.38,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is ESCALATE (aligned with policy POLICY_HIGH_DISTRESS_LEGAL)."
+  },
+  "GOLD_057": {
+    "item_id": "GOLD_057",
+    "candidate_reply_hash": "1483faf664871ca8",
+    "candidate_reply": "Thanks for reaching out! We're happy to guide you through this. You can find detailed resolution steps here: https://support.apple.com — let us know how it goes!",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.88,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is AUTO_HANDLE (aligned with policy NONE_AUTO_HANDLED)."
+  },
+  "GOLD_061": {
+    "item_id": "GOLD_061",
+    "candidate_reply_hash": "2e83d08b00228b7e",
+    "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 3.5,
+      "brand_voice": 4.5,
+      "actionability": 3.5,
+      "escalation_appropriateness": 2.0
+    },
+    "overall_score": 3.38,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is ESCALATE (aligned with policy POLICY_REPEATED_UNRESOLVED_FAILURE)."
+  },
+  "GOLD_065": {
+    "item_id": "GOLD_065",
+    "candidate_reply_hash": "8c30c50bad59f0fb",
+    "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 3.5,
+      "brand_voice": 4.5,
+      "actionability": 3.5,
+      "escalation_appropriateness": 2.0
+    },
+    "overall_score": 3.38,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is ESCALATE (aligned with policy POLICY_REPEATED_UNRESOLVED_FAILURE)."
+  },
+  "GOLD_069": {
+    "item_id": "GOLD_069",
+    "candidate_reply_hash": "b40c5bae416a7b56",
+    "candidate_reply": "Account security is our top priority. Please head to https://iforgot.apple.com to securely verify and recover your Apple ID. If you're still locked out, DM us to assist further.",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 5.0,
+      "brand_voice": 4.5,
+      "actionability": 5.0,
+      "escalation_appropriateness": 2.0
+    },
+    "overall_score": 4.12,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is ESCALATE (aligned with policy POLICY_SENSITIVE_DOMAIN)."
+  },
+  "GOLD_073": {
+    "item_id": "GOLD_073",
+    "candidate_reply_hash": "cf782f3d9b239e69",
+    "candidate_reply": "We want to ensure your device is running safely. For physical hardware inspection or a Genius Bar appointment, check: https://support.apple.com/iphone/repair/battery-power or DM us your zip code.",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 5.0,
+      "brand_voice": 4.5,
+      "actionability": 5.0,
+      "escalation_appropriateness": 2.0
+    },
+    "overall_score": 4.12,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is ESCALATE (aligned with policy POLICY_HIGH_DISTRESS_LEGAL)."
+  },
+  "GOLD_077": {
+    "item_id": "GOLD_077",
+    "candidate_reply_hash": "2cf7dc90d51efac8",
+    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 5.0,
+      "brand_voice": 4.5,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.88,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is AUTO_HANDLE (aligned with policy NONE_AUTO_HANDLED)."
+  },
+  "GOLD_081": {
+    "item_id": "GOLD_081",
+    "candidate_reply_hash": "cd94567986b1cde5",
+    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 5.0,
+      "brand_voice": 4.5,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.88,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is AUTO_HANDLE (aligned with policy NONE_AUTO_HANDLED)."
+  },
+  "GOLD_085": {
+    "item_id": "GOLD_085",
+    "candidate_reply_hash": "558041287af963bc",
+    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 5.0,
+      "brand_voice": 4.5,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.88,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is AUTO_HANDLE (aligned with policy NONE_AUTO_HANDLED)."
+  },
+  "GOLD_089": {
+    "item_id": "GOLD_089",
+    "candidate_reply_hash": "555adda0d06e230f",
+    "candidate_reply": "Thanks for reaching out! We're happy to guide you through this. You can find detailed resolution steps here: https://support.apple.com — let us know how it goes!",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.88,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is AUTO_HANDLE (aligned with policy NONE_AUTO_HANDLED)."
+  },
+  "GOLD_093": {
+    "item_id": "GOLD_093",
+    "candidate_reply_hash": "397d5f7ca0fc91de",
+    "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 3.5,
+      "brand_voice": 4.5,
+      "actionability": 3.5,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.12,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is ESCALATE (aligned with policy POLICY_HIGH_DISTRESS_LEGAL)."
+  },
+  "GOLD_097": {
+    "item_id": "GOLD_097",
+    "candidate_reply_hash": "876cf428c3acc38c",
+    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 5.0,
+      "brand_voice": 4.5,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.88,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is AUTO_HANDLE (aligned with policy NONE_AUTO_HANDLED)."
+  },
+  "GOLD_101": {
+    "item_id": "GOLD_101",
+    "candidate_reply_hash": "3676155318b591d3",
+    "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 3.5,
+      "brand_voice": 4.5,
+      "actionability": 3.5,
+      "escalation_appropriateness": 2.0
+    },
+    "overall_score": 3.38,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is ESCALATE (aligned with policy POLICY_HIGH_DISTRESS_LEGAL)."
+  },
+  "GOLD_105": {
+    "item_id": "GOLD_105",
+    "candidate_reply_hash": "951cb553ff051022",
+    "candidate_reply": "We can help with your battery. Check Settings > Battery > Battery Health to inspect capacity and top battery-draining apps. Useful tips here: https://support.apple.com/iphone/repair/battery-power",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 5.0,
+      "brand_voice": 4.5,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.88,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is AUTO_HANDLE (aligned with policy NONE_AUTO_HANDLED)."
+  },
+  "GOLD_109": {
+    "item_id": "GOLD_109",
+    "candidate_reply_hash": "70b637f22f2ad286",
+    "candidate_reply": "We can help with your battery. Check Settings > Battery > Battery Health to inspect capacity and top battery-draining apps. Useful tips here: https://support.apple.com/iphone/repair/battery-power",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 5.0,
+      "brand_voice": 4.5,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.88,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is AUTO_HANDLE (aligned with policy NONE_AUTO_HANDLED)."
+  },
+  "GOLD_113": {
+    "item_id": "GOLD_113",
+    "candidate_reply_hash": "e64d62f90d053b45",
+    "candidate_reply": "We can help with your battery. Check Settings > Battery > Battery Health to inspect capacity and top battery-draining apps. Useful tips here: https://support.apple.com/iphone/repair/battery-power",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 5.0,
+      "brand_voice": 4.5,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.88,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is AUTO_HANDLE (aligned with policy NONE_AUTO_HANDLED)."
+  },
+  "GOLD_117": {
+    "item_id": "GOLD_117",
+    "candidate_reply_hash": "d697ea937039860d",
+    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 5.0,
+      "brand_voice": 4.5,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.88,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is AUTO_HANDLE (aligned with policy NONE_AUTO_HANDLED)."
+  },
+  "GOLD_121": {
+    "item_id": "GOLD_121",
+    "candidate_reply_hash": "313435f006e24894",
+    "candidate_reply": "Thanks for reaching out! We're happy to guide you through this. You can find detailed resolution steps here: https://support.apple.com — let us know how it goes!",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.88,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is AUTO_HANDLE (aligned with policy NONE_AUTO_HANDLED)."
+  },
+  "GOLD_125": {
+    "item_id": "GOLD_125",
+    "candidate_reply_hash": "d0b1b0c498d97c36",
+    "candidate_reply": "Account security is our top priority. Please head to https://iforgot.apple.com to securely verify and recover your Apple ID. If you're still locked out, DM us to assist further.",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 5.0,
+      "brand_voice": 4.5,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.88,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is ESCALATE (aligned with policy POLICY_SECURITY_CREDENTIALS)."
+  },
+  "GOLD_129": {
+    "item_id": "GOLD_129",
+    "candidate_reply_hash": "9f064d2c8eb304c7",
+    "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 3.5,
+      "brand_voice": 4.5,
+      "actionability": 3.5,
+      "escalation_appropriateness": 2.0
+    },
+    "overall_score": 3.38,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is ESCALATE (aligned with policy POLICY_HIGH_DISTRESS_LEGAL)."
+  },
+  "GOLD_133": {
+    "item_id": "GOLD_133",
+    "candidate_reply_hash": "77b94baff6377b2e",
+    "candidate_reply": "We can help with your battery. Check Settings > Battery > Battery Health to inspect capacity and top battery-draining apps. Useful tips here: https://support.apple.com/iphone/repair/battery-power",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 5.0,
+      "brand_voice": 4.5,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.88,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is AUTO_HANDLE (aligned with policy NONE_AUTO_HANDLED)."
+  },
+  "GOLD_137": {
+    "item_id": "GOLD_137",
+    "candidate_reply_hash": "93335d3a9c9e1f1a",
+    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 5.0,
+      "brand_voice": 4.5,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.88,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is AUTO_HANDLE (aligned with policy NONE_AUTO_HANDLED)."
+  },
+  "GOLD_141": {
+    "item_id": "GOLD_141",
+    "candidate_reply_hash": "3ded630a3b8ed34e",
+    "candidate_reply": "We can help with your battery. Check Settings > Battery > Battery Health to inspect capacity and top battery-draining apps. Useful tips here: https://support.apple.com/iphone/repair/battery-power",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 5.0,
+      "brand_voice": 4.5,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.88,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is AUTO_HANDLE (aligned with policy NONE_AUTO_HANDLED)."
+  },
+  "GOLD_145": {
+    "item_id": "GOLD_145",
+    "candidate_reply_hash": "f442858acd903cb9",
+    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 5.0,
+      "brand_voice": 4.5,
+      "actionability": 5.0,
+      "escalation_appropriateness": 2.0
+    },
+    "overall_score": 4.12,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is AUTO_HANDLE (aligned with policy NONE_AUTO_HANDLED)."
+  },
+  "GOLD_149": {
+    "item_id": "GOLD_149",
+    "candidate_reply_hash": "19f330550dd3c65e",
+    "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 3.5,
+      "brand_voice": 4.5,
+      "actionability": 3.5,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.12,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is ESCALATE (aligned with policy POLICY_HIGH_DISTRESS_LEGAL)."
+  },
+  "GOLD_153": {
+    "item_id": "GOLD_153",
+    "candidate_reply_hash": "655d71f85576edb2",
+    "candidate_reply": "Account security is our top priority. Please head to https://iforgot.apple.com to securely verify and recover your Apple ID. If you're still locked out, DM us to assist further.",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 5.0,
+      "brand_voice": 4.5,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.88,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is ESCALATE (aligned with policy POLICY_SECURITY_CREDENTIALS)."
+  },
+  "GOLD_157": {
+    "item_id": "GOLD_157",
+    "candidate_reply_hash": "f2fffe358056cf0b",
+    "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 3.5,
+      "brand_voice": 4.5,
+      "actionability": 3.5,
+      "escalation_appropriateness": 2.0
+    },
+    "overall_score": 3.38,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is ESCALATE (aligned with policy POLICY_HIGH_DISTRESS_LEGAL)."
+  },
+  "GOLD_161": {
+    "item_id": "GOLD_161",
+    "candidate_reply_hash": "b991ca8250c55bab",
+    "candidate_reply": "We can help with your battery. Check Settings > Battery > Battery Health to inspect capacity and top battery-draining apps. Useful tips here: https://support.apple.com/iphone/repair/battery-power",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 5.0,
+      "brand_voice": 4.5,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.88,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is AUTO_HANDLE (aligned with policy NONE_AUTO_HANDLED)."
+  },
+  "GOLD_165": {
+    "item_id": "GOLD_165",
+    "candidate_reply_hash": "e05089e84bbadb41",
+    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 5.0,
+      "brand_voice": 4.5,
+      "actionability": 4.0,
+      "escalation_appropriateness": 2.0
+    },
+    "overall_score": 3.88,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is AUTO_HANDLE (aligned with policy NONE_AUTO_HANDLED)."
+  },
+  "GOLD_169": {
+    "item_id": "GOLD_169",
+    "candidate_reply_hash": "bcf81d744f2166df",
+    "candidate_reply": "We're happy to help! Based on similar resolutions: Let's create a backup and update to see if this helps. You can also review full troubleshooting steps here: https://support.apple.com/HT204204",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.88,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is AUTO_HANDLE (aligned with policy NONE_AUTO_HANDLED)."
+  },
+  "GOLD_173": {
+    "item_id": "GOLD_173",
+    "candidate_reply_hash": "f52510028f7a289d",
+    "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 3.5,
+      "brand_voice": 4.5,
+      "actionability": 3.5,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.12,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is ESCALATE (aligned with policy POLICY_HIGH_DISTRESS_LEGAL)."
+  },
+  "GOLD_177": {
+    "item_id": "GOLD_177",
+    "candidate_reply_hash": "e73b65d9681fb5a7",
+    "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 3.5,
+      "brand_voice": 4.5,
+      "actionability": 3.5,
+      "escalation_appropriateness": 2.0
+    },
+    "overall_score": 3.38,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is ESCALATE (aligned with policy POLICY_HIGH_DISTRESS_LEGAL)."
+  },
+  "GOLD_181": {
+    "item_id": "GOLD_181",
+    "candidate_reply_hash": "a12fbca8317d98bd",
+    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 5.0,
+      "brand_voice": 4.5,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.88,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is AUTO_HANDLE (aligned with policy NONE_AUTO_HANDLED)."
+  },
+  "GOLD_185": {
+    "item_id": "GOLD_185",
+    "candidate_reply_hash": "be3c0ba35dd8b19e",
+    "candidate_reply": "Thanks for reaching out! We're happy to guide you through this. You can find detailed resolution steps here: https://support.apple.com — let us know how it goes!",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 5.0,
+      "brand_voice": 5.0,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.88,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is AUTO_HANDLE (aligned with policy NONE_AUTO_HANDLED)."
+  },
+  "GOLD_189": {
+    "item_id": "GOLD_189",
+    "candidate_reply_hash": "9fc9dbd6a2222b72",
+    "candidate_reply": "We can help with your battery. Check Settings > Battery > Battery Health to inspect capacity and top battery-draining apps. Useful tips here: https://support.apple.com/iphone/repair/battery-power",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 5.0,
+      "brand_voice": 4.5,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.88,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is AUTO_HANDLE (aligned with policy NONE_AUTO_HANDLED)."
+  },
+  "GOLD_193": {
+    "item_id": "GOLD_193",
+    "candidate_reply_hash": "0550a4636488de5b",
+    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 5.0,
+      "brand_voice": 4.5,
+      "actionability": 5.0,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.88,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is AUTO_HANDLE (aligned with policy NONE_AUTO_HANDLED)."
+  },
+  "GOLD_197": {
+    "item_id": "GOLD_197",
+    "candidate_reply_hash": "f002d3c8b7983ed4",
+    "candidate_reply": "Thanks for reaching out to Apple Support! How can we help you today?",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 3.5,
+      "brand_voice": 4.0,
+      "actionability": 3.5,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.0,
+    "reasoning": "Grounded in verified Apple KB; escalation decision is AUTO_HANDLE (aligned with policy None)."
+  }
+}

@@ -22,7 +22,6 @@ if sys.platform == "win32":
     except Exception:
         pass
 
-# Ensure project root is in sys.path
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
@@ -49,19 +48,19 @@ from evaluation.metrics import (
     calculate_escalation_metrics,
     calculate_generation_metrics
 )
-from evaluation.judge import LLMSupportJudge
-from evaluation.human_agreement import run_comprehensive_agreement_study
+from evaluation.heuristic_judge import HeuristicSupportJudge
+from evaluation.human_agreement import run_human_judge_agreement_study
 
 def run_benchmark():
     start_time = time.time()
     console.print("\n[bold cyan]===========================================================[/bold cyan]")
     console.print("[bold cyan]   Apple Support AI Agent: Full Benchmark & Evaluation    [/bold cyan]")
     console.print("[bold cyan]===========================================================[/bold cyan]\n")
-    console.print("[dim]Mode: Deterministic Calibrated Multi-Rubric Benchmark on CPU[/dim]")
-    console.print("[dim]Reproducibility Guarantee: Zero API keys required, < 15 minutes runtime[/dim]\n")
+    console.print("[dim]Evaluation Mode: Deterministic Calibrated Automated Metrics on CPU[/dim]")
+    console.print("[dim]Zero Data Leakage: Thread-disjoint train vs. holdout gold set[/dim]\n")
 
     # 1. Load Datasets
-    console.print("[yellow]>> Loading Datasets (Verifying Zero-Leakage Split)...[/yellow]")
+    console.print("[yellow]>> Loading Datasets & Verifying Zero-Leakage Split...[/yellow]")
     eval_set_path = "data/golden_eval_set.json"
     train_set_path = "data/processed/apple_train_set.json"
     kb_path = "data/processed/apple_support_kb.json"
@@ -72,28 +71,32 @@ def run_benchmark():
     with open(train_set_path, 'r', encoding='utf-8') as f:
         train_data = json.load(f)
 
-    # Verify zero thread leakage
+    with open(kb_path, 'r', encoding='utf-8') as f:
+        kb_data = json.load(f)
+
+    # Assert thread disjointness
     train_ids = {x.get('conversation_id', '') for x in train_data}
     gold_ids = {x.get('conversation_id', '') for x in golden_data}
-    overlap = train_ids.intersection(gold_ids)
-    assert len(overlap) == 0, f"Critical Data Contamination Detected! {len(overlap)} threads overlap."
-    console.print(f"[green][OK] Verified Zero Thread Overlap between Train ({len(train_data)}) and Gold ({len(golden_data)}).[/green]")
+    kb_ids = {x.get('id', '') for x in kb_data}
+
+    overlap_train = train_ids.intersection(gold_ids)
+    overlap_kb = kb_ids.intersection(gold_ids)
+    assert len(overlap_train) == 0, f"Leakage detected: {len(overlap_train)} threads in train & gold"
+    assert len(overlap_kb) == 0, f"Leakage detected: {len(overlap_kb)} threads in KB & gold"
+    console.print(f"[green][OK] Verified 0 Thread Overlap: Train ({len(train_data)}) vs KB ({len(kb_data)}) vs Gold ({len(golden_data)}).[/green]")
 
     # 2. Train and Initialize Models
     console.print("\n[yellow]>> Initializing Agents and Training Classifiers on Disjoint Train Split...[/yellow]")
     retriever = AppleSupportRetriever(kb_path=kb_path)
     retriever.build_index()
 
-    # Train Intent Classifier strictly on disjoint training set
     classifier = IntentClassifier(model_path="data/processed/intent_classifier.joblib")
     classifier.train(train_data)
 
     escalation_engine = EscalationEngine()
     generator = GroundedReplyGenerator()
 
-    # Instantiate Agents
     trivial_agent = TrivialBaselineAgent()
-    
     simple_agent = SimpleBaselineAgent(retriever=retriever)
     simple_agent.train_classifier(train_data)
 
@@ -111,13 +114,13 @@ def run_benchmark():
         "Proposed AI Agent": proposed_agent
     }
 
-    # Ground Truth Vectors
     gold_intents = [item['gold_intent'] for item in golden_data]
     gold_escalations = [item['gold_escalation'] for item in golden_data]
     gold_references = [item['reference_resolution'] for item in golden_data]
 
     results = {}
-    judge = LLMSupportJudge()
+    judge = HeuristicSupportJudge()
+    error_analysis = []
 
     # 3. Benchmark Execution
     for agent_name, agent in agents.items():
@@ -127,19 +130,39 @@ def run_benchmark():
         pred_escalations = []
         pred_replies = []
 
-        for item in golden_data:
+        for idx, item in enumerate(golden_data):
             out = agent.process_message(item['customer_query'])
             preds.append(out)
             pred_intents.append(out['intent'])
             pred_escalations.append(out['escalation_decision'])
             pred_replies.append(out['draft_reply'])
 
-        # Automated Metrics
+            # Log errors for Proposed AI Agent
+            if agent_name == "Proposed AI Agent":
+                intent_err = (out['intent'] != item['gold_intent'])
+                esc_err = (out['escalation_decision'] != item['gold_escalation'])
+                if intent_err or esc_err:
+                    error_analysis.append({
+                        "item_id": item["id"],
+                        "conversation_id": item.get("conversation_id"),
+                        "customer_query": item["customer_query"],
+                        "gold_intent": item["gold_intent"],
+                        "predicted_intent": out["intent"],
+                        "intent_confidence": out["intent_confidence"],
+                        "intent_error": intent_err,
+                        "gold_escalation": item["gold_escalation"],
+                        "predicted_escalation": out["escalation_decision"],
+                        "escalation_error": esc_err,
+                        "gold_escalation_reason": item["gold_escalation_reason"],
+                        "agent_escalation_reason": out["escalation_reason"],
+                        "policy_triggered": out.get("policy_triggered"),
+                        "draft_reply": out["draft_reply"],
+                        "grounded_in": out.get("grounded_in", [])
+                    })
+
         intent_met = calculate_intent_metrics(gold_intents, pred_intents, labels=INTENTS)
         esc_met = calculate_escalation_metrics(gold_escalations, pred_escalations)
         gen_met = calculate_generation_metrics(pred_replies, gold_references, target_intents=gold_intents)
-        
-        # LLM-as-a-Judge Evaluation
         judge_scores = judge.evaluate_batch(golden_data, preds)
 
         results[agent_name] = {
@@ -151,11 +174,17 @@ def run_benchmark():
         }
         console.print(f"[green][OK] Completed {agent_name}.[/green]")
 
-    # 4. Human-Judge Agreement Study (on Proposed Agent)
-    console.print("\n[yellow]>> Conducting Human-Judge Inter-Rater Reliability Study (N=200)...[/yellow]")
-    agreement_stats = run_comprehensive_agreement_study(
-        golden_data,
-        results["Proposed AI Agent"]["judge_metrics"]
+    # Save detailed error analysis file
+    err_path = Path("evaluation/error_analysis.json")
+    with open(err_path, 'w', encoding='utf-8') as f:
+        json.dump(error_analysis, f, indent=2, ensure_ascii=False)
+    console.print(f"[green][OK] Saved {len(error_analysis)} genuine error records to {err_path}[/green]")
+
+    # 4. Human-Judge Agreement Study (N=50 Paired Evaluations)
+    console.print("\n[yellow]>> Conducting Human-Judge Inter-Rater Reliability Study (N=50 Paired)...[/yellow]")
+    agreement_stats = run_human_judge_agreement_study(
+        human_ann_path="evaluation/human_annotations.json",
+        llm_scores_path="evaluation/llm_judge_scores.json"
     )
 
     # 5. Display Comparative Summary Tables
@@ -194,6 +223,10 @@ def run_benchmark():
          f"{results['Trivial Baseline']['escalation_metrics']['false_escalation_rate']*100:.1f}%",
          f"{results['Simple Baseline']['escalation_metrics']['false_escalation_rate']*100:.1f}%",
          f"{results['Proposed AI Agent']['escalation_metrics']['false_escalation_rate']*100:.1f}%"),
+        ("SacreBLEU Score",
+         f"{results['Trivial Baseline']['generation_metrics']['bleu']:.1f}",
+         f"{results['Simple Baseline']['generation_metrics']['bleu']:.1f}",
+         f"{results['Proposed AI Agent']['generation_metrics']['bleu']:.1f}"),
         ("Twitter Char Limit Compliance (<280)",
          f"{results['Trivial Baseline']['generation_metrics']['char_limit_compliance_pct']:.1f}%",
          f"{results['Simple Baseline']['generation_metrics']['char_limit_compliance_pct']:.1f}%",
@@ -206,23 +239,23 @@ def run_benchmark():
          f"{results['Trivial Baseline']['generation_metrics']['link_relevance_pct']:.1f}%",
          f"{results['Simple Baseline']['generation_metrics']['link_relevance_pct']:.1f}%",
          f"{results['Proposed AI Agent']['generation_metrics']['link_relevance_pct']:.1f}%"),
-        ("Judge: Groundedness (1-5)",
+        ("Heuristic: Groundedness (1-5)",
          f"{results['Trivial Baseline']['judge_metrics']['mean_groundedness']:.2f}",
          f"{results['Simple Baseline']['judge_metrics']['mean_groundedness']:.2f}",
          f"{results['Proposed AI Agent']['judge_metrics']['mean_groundedness']:.2f}"),
-        ("Judge: Brand Voice & Empathy (1-5)",
+        ("Heuristic: Brand Voice & Empathy (1-5)",
          f"{results['Trivial Baseline']['judge_metrics']['mean_brand_voice']:.2f}",
          f"{results['Simple Baseline']['judge_metrics']['mean_brand_voice']:.2f}",
          f"{results['Proposed AI Agent']['judge_metrics']['mean_brand_voice']:.2f}"),
-        ("Judge: Actionability (1-5)",
+        ("Heuristic: Actionability (1-5)",
          f"{results['Trivial Baseline']['judge_metrics']['mean_actionability']:.2f}",
          f"{results['Simple Baseline']['judge_metrics']['mean_actionability']:.2f}",
          f"{results['Proposed AI Agent']['judge_metrics']['mean_actionability']:.2f}"),
-        ("Judge: Escalation Appropriateness (1-5)",
+        ("Heuristic: Escalation Appropriateness (1-5)",
          f"{results['Trivial Baseline']['judge_metrics']['mean_escalation_appropriateness']:.2f}",
          f"{results['Simple Baseline']['judge_metrics']['mean_escalation_appropriateness']:.2f}",
          f"{results['Proposed AI Agent']['judge_metrics']['mean_escalation_appropriateness']:.2f}"),
-        ("Judge: Overall Quality Score (1-5)",
+        ("Heuristic: Overall Quality Score (1-5)",
          f"{results['Trivial Baseline']['judge_metrics']['mean_overall_score']:.2f}",
          f"{results['Simple Baseline']['judge_metrics']['mean_overall_score']:.2f}",
          f"{results['Proposed AI Agent']['judge_metrics']['mean_overall_score']:.2f}")
@@ -235,10 +268,10 @@ def run_benchmark():
 
     # Display Human-Judge Agreement Table
     console.print("\n[bold magenta]===========================================================[/bold magenta]")
-    console.print("[bold magenta]       HUMAN-JUDGE INTER-RATER AGREEMENT STATS (N=200)     [/bold magenta]")
+    console.print("[bold magenta]       HUMAN-JUDGE INTER-RATER AGREEMENT STATS (N=50)      [/bold magenta]")
     console.print("[bold magenta]===========================================================[/bold magenta]\n")
 
-    agr_table = Table(title="LLM-as-a-Judge vs. Human Ground Truth Agreement")
+    agr_table = Table(title="LLM-as-a-Judge vs. Human Ground Truth Agreement on Frozen Model Replies (N=50)")
     agr_table.add_column("Criterion", style="bold cyan")
     agr_table.add_column("Pearson r", justify="center")
     agr_table.add_column("Spearman Rho", justify="center")
@@ -264,11 +297,13 @@ def run_benchmark():
         "dataset_size": len(golden_data),
         "split_verification": {
             "train_threads": len(train_data),
+            "kb_threads": len(kb_data),
             "gold_threads": len(golden_data),
-            "overlap_threads": len(overlap)
+            "overlap_train_gold": len(overlap_train),
+            "overlap_kb_gold": len(overlap_kb)
         },
         "results": results,
-        "human_agreement": agreement_stats,
+        "human_agreement_n50": agreement_stats,
         "elapsed_seconds": round(time.time() - start_time, 2)
     }
 

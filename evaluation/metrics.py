@@ -141,9 +141,8 @@ def calculate_generation_metrics(
     validity_rate = valid_links / len(predictions) if predictions else 0.0
     relevance_rate = (relevant_links / valid_links) if valid_links > 0 else 0.0
 
-    # 3. SacreBLEU
-    refs_for_bleu = [[r] for r in references]
-    bleu_score = sacrebleu.corpus_bleu(predictions, refs_for_bleu)
+    # 3. SacreBLEU (expects list of reference streams: [references])
+    bleu_score = sacrebleu.corpus_bleu(predictions, [references])
 
     # 4. Token overlap
     def ngrams(text, n):

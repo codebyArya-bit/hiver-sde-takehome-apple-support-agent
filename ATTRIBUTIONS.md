@@ -43,8 +43,10 @@ This document transparently lists all datasets, external software libraries, dom
 
 ## 4. Software Libraries & Open Source Tools
 * **Core Machine Learning**: `scikit-learn` (v1.7.2), `numpy` (v2.3.3), `scipy` (v1.16.2), `joblib` (v1.5.2).
-* **Deep Learning & NLP**: `torch` (v2.8.0), `transformers` (v4.57.0), `datasets` (v4.1.1), `sacrebleu` (v2.5.1).
+* **NLP & Evaluation Metrics**: `sacrebleu` (v2.5.1), `pydantic` (v2.12.3), `pypdf` (v6.4.0).
 * **CLI & Rendering**: `rich` (v14.1.0), `tabulate` (v0.9.0).
+
+
 * **Testing**: `pytest` (v8.4.2).
 * **Document Generation**: `reportlab` (v4.4.5).
 
