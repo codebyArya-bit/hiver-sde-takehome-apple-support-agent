@@ -63,7 +63,7 @@ Each item in `data/golden_eval_set.json` was manually verified and annotated wit
 
 ### Separation of Inter-Rater Reliability Protocol
 To ensure genuine inter-rater reliability, rubric scoring is not assigned a priori to the query. Instead:
-- Frozen agent responses to 50 golden items were independently scored by:
-  1. A human expert annotator blind to model internals (`evaluation/human_annotations.json`).
-  2. An LLM judge operating under the identical multi-dimensional rubric (`evaluation/llm_judge_scores.json`).
-- Agreement is measured on the exact same candidate outputs, achieving **Pearson $r = 0.964$**, **Spearman $\rho = 0.986$**, **MAE = 0.108 points**, and **Cohen's $\kappa = 0.733$**.
+- Frozen agent responses to 50 golden items were scored by:
+  1. The candidate author manually scoring 50 frozen outputs using the same rubric without viewing LLM ratings (`evaluation/human_annotations.json`).
+  2. Gemini 2.5 Flash operating under the identical multi-dimensional rubric (`evaluation/llm_judge_scores.json`).
+- Agreement is measured on the exact same candidate outputs, achieving **Pearson $r = 0.920$**, **Spearman $\rho = 0.766$**, **MAE = 0.226 points** (100% within 0.5 points), and **Cohen's $\kappa = 1.000$** on binary Escalation Appropriateness (with Cohen's $\kappa$ reported as N/A on uniform categories rather than artificial 1.0 substitutions). 100% of pairs match cryptographic SHA256 input hashes.

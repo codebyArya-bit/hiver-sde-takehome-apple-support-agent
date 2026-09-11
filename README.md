@@ -74,9 +74,9 @@ Evaluated across the **200 hand-audited holdout Golden Evaluation Set** (`data/g
 | **Intent Macro F1** | 0.075 | 0.264 | **0.476** | Balanced performance across minority and majority intents |
 | **Brier Calibration Score (Lower=Better)** | 1.000 | 0.795 | **0.605** | Superior statistical probability calibration directly from model |
 | **Expected Calibration Error (ECE)** | 0.355 | 0.360 | **0.049** | Highly calibrated confidence (predicted confidence tracks empirical accuracy) |
-| **Escalation Decision Accuracy** | 74.0% | 75.0% | **71.0%** | Lower raw accuracy due to safety-biased escalation, traded for high recall |
+| **Escalation Decision Accuracy** | 74.0% | 75.0% | **71.0%** | Lower raw accuracy due to safety-biased escalation, but much higher recall on cases requiring humans |
 | **Escalation Recall (Safety-Critical)** | **0.0%** | **3.9%** | **69.2%** | Catches 36 of 52 escalations; baselines miss 96% to 100% |
-| **Escalation Precision** | 0.0% | 100.0% | **46.2%** | Trade-off: accepts ~28% false alarms to achieve 69.2% recall on safety cases |
+| **Escalation Precision** | 0.0% | 100.0% | **46.2%** | Trade-off: 28.4% false escalation rate on auto-handle queries in exchange for 69.2% safety recall |
 | **Escalation F2 Score (Recall-Weighted)** | 0.000 | 0.048 | **0.629** | Recall weighted 2x vs. precision, reflecting enterprise safety priority |
 | **False Escalation Rate (Lower=Better)**| 0.0% | 0.0% | **28.4%** | Trade-off: accepts ~28% false alarms to protect customer accounts |
 | **Illustrative 5:1 Risk Penalty (5*FN + 1*FP)** | 260 | 250 | **122** | Illustrative offline penalty reduced by over 51% |
@@ -97,6 +97,7 @@ The candidate manually scored 50 frozen outputs using the same rubric without vi
 - **Pearson Correlation ($r$)**: **0.920** (Strong linear tracking)
 - **Spearman Rank Correlation ($\rho$)**: **0.766** (Consistent ordinal quality ranking)
 - **Mean Absolute Error (MAE)**: **0.226 points** on a 1–5 scale (**100.0% within 0.5 points**)
+- **Groundedness Agreement**: 100% of ratings within 0.5 points with MAE = 0.360. Restricted score variance (both raters awarding >4.0 due to verified Apple URLs) accounts for lower linear variance ($r=0.156$) while absolute agreement remains high.
 - **Cryptographic Hash Verification**: 100% of evaluated pairs match candidate SHA256 input hashes, ensuring both rating files refer to the same frozen outputs and preventing accidental reuse of ratings when model outputs change.
 
 ---
@@ -125,7 +126,7 @@ The candidate manually scored 50 frozen outputs using the same rubric without vi
                | (Taxonomy: Battery/Hardware, OS/Software Bug,     |
                |  Apple ID/iCloud, Billing/Store, How-To/Setup,   |
                |  Feedback/Rant, Out-of-Scope/Spam)               |
-               | - Calibrated Logistic Regression (ECE = 0.054)   |
+               | - Calibrated Logistic Regression (ECE = 0.049)   |
                +--------------------------------------------------+
                                          |
                         +----------------+----------------+

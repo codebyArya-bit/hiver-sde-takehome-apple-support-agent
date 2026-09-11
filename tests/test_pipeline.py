@@ -185,6 +185,15 @@ def test_human_judge_agreement_stats():
     assert stats["pearson_r"] > 0.90
     assert stats["mae"] < 0.20
 
+    # Verify statistical correctness: when score categories have zero variation,
+    # Cohen's Kappa must evaluate to None / undefined rather than falsely substituting 1.0.
+    uniform_human = [5.0, 5.0, 5.0, 5.0]
+    uniform_judge = [5.0, 5.0, 5.0, 5.0]
+    uniform_stats = calculate_agreement_metrics(uniform_human, uniform_judge, metric_name="Uniform Test")
+    assert uniform_stats["cohens_kappa"] is None, (
+        f"Undefined Cohen's Kappa on uniform scores must be None, got {uniform_stats['cohens_kappa']}"
+    )
+
 def test_human_llm_hash_integrity():
     import json
     from pathlib import Path

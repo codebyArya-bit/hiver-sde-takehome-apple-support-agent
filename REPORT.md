@@ -16,14 +16,14 @@ Customer support on social media is high-stakes, real-time, and public. For a br
 This report documents the design, implementation, and empirical evaluation of an **Evaluation-Focused AI Support Agent Prototype with Calibrated Safety Guardrails** for `@AppleSupport`. We evaluate our system against two baselines (a Trivial Majority-Rule Baseline and a Classical Statistical Machine Learning Baseline) on a 200-sample hand-audited Golden Evaluation Set. The holdout gold set is strictly thread-disjoint from both the 600 training threads and the 1,000 historical KB retrieval corpus (with training threads contained within the KB corpus).
 
 The proposed agent achieves:
-- **62.5% Out-of-Sample Intent Accuracy** across a 7-class domain taxonomy (vs. 36.0% Trivial and 55.0% Simple Baseline).
-- **Calibrated Confidence**: Expected Calibration Error (ECE) of **0.054** (vs. 0.360 Trivial and 0.355 Simple) and Brier Score of **0.602** (vs. 1.000 Trivial and 0.787 Simple).
+- **62.0% Out-of-Sample Intent Accuracy** across a 7-class domain taxonomy (vs. 35.5% Trivial and 54.5% Simple Baseline).
+- **Calibrated Confidence**: Expected Calibration Error (ECE) of **0.049** (vs. 0.355 Trivial and 0.360 Simple) and Brier Score of **0.605** (vs. 1.000 Trivial and 0.795 Simple).
 - **69.2% Escalation Recall** on safety-critical interactions (catching 36 of 52 escalations, vs. **0.0%** for Trivial Baseline and **3.9%** for Simple Baseline).
 - **0.629 Escalation F2 Score** and a **51%+ reduction in the illustrative Weighted Risk-Cost Penalty** (122 vs. 260 Trivial and 250 Simple Baseline).
 - **79.5% Official Apple Domain Inclusion Rate** and **75.8% Intent-Link Relevance Rate** (vs. 0.0% for baselines).
 - **100.0% Twitter Character Limit Compliance** (<280 chars).
-- Mean Heuristic Rubric score of **4.65 / 5.00** (vs. 4.38 for Trivial and 4.23 for Simple Baseline).
-- Paired Human vs. LLM-as-a-Judge Study ($N=50$): **Pearson $r = 0.934$**, **Spearman $\rho = 0.735$**, **MAE = 0.237 points** (100.0% within 0.5 points), with cryptographic SHA256 input hash verification across all evaluated pairs.
+- Mean Heuristic Rubric score of **4.65 / 5.00** (vs. 4.39 for Trivial and 4.23 for Simple Baseline).
+- Paired Human vs. LLM-as-a-Judge Study ($N=50$): **Pearson $r = 0.920$**, **Spearman $\rho = 0.766$**, **MAE = 0.226 points** (100.0% within 0.5 points), with cryptographic SHA256 input hash verification across all evaluated pairs.
 - The full evaluation suite reproduces completely offline on standard CPU in **~6 seconds**, easily satisfying the <15-minute reproduction requirement with zero external API dependencies.
 
 ---
@@ -69,13 +69,13 @@ To preserve safety and maintain high signal-to-noise ratio, we made deliberate d
 
 | Metric Dimension | Trivial Baseline (Always Auto-Handle) | Simple Baseline (Naive Bayes + 1-NN) | Proposed AI Agent (RAG + Policy) | Real-World Operational Impact |
 | :--- | :---: | :---: | :---: | :--- |
-| **Intent Classification Accuracy** | 35.5% | 55.0% | **62.0%** | Out-of-sample generalization across 7 domain intents |
-| **Intent Macro F1** | 0.075 | 0.267 | **0.476** | Balanced performance across minority and majority intents |
-| **Brier Calibration Score (Lower=Better)** | 1.000 | 0.787 | **0.605** | Superior statistical probability calibration directly from model |
-| **Expected Calibration Error (ECE)** | 0.355 | 0.355 | **0.049** | Highly calibrated confidence (predicted confidence tracks empirical accuracy) |
-| **Escalation Decision Accuracy** | 74.0% | 75.0% | **71.0%** | Lower raw accuracy due to safety-biased escalation, traded for high recall |
+| **Intent Classification Accuracy** | 35.5% | 54.5% | **62.0%** | Out-of-sample generalization across 7 domain intents |
+| **Intent Macro F1** | 0.075 | 0.264 | **0.476** | Balanced performance across minority and majority intents |
+| **Brier Calibration Score (Lower=Better)** | 1.000 | 0.795 | **0.605** | Superior statistical probability calibration directly from model |
+| **Expected Calibration Error (ECE)** | 0.355 | 0.360 | **0.049** | Highly calibrated confidence (predicted confidence tracks empirical accuracy) |
+| **Escalation Decision Accuracy** | 74.0% | 75.0% | **71.0%** | Lower raw accuracy due to safety-biased escalation, but much higher recall on cases requiring humans |
 | **Escalation Recall (Safety-Critical)** | **0.0%** | **3.9%** | **69.2%** | Catches 36 of 52 escalations; baselines miss 96% to 100% |
-| **Escalation Precision** | 0.0% | 100.0% | **46.2%** | Trade-off: accepts ~28% false alarms to achieve 69.2% recall on safety cases |
+| **Escalation Precision** | 0.0% | 100.0% | **46.2%** | Trade-off: 28.4% false escalation rate on auto-handle queries in exchange for 69.2% safety recall |
 | **Escalation F2 Score (Recall-Weighted)** | 0.000 | 0.048 | **0.629** | Recall weighted 2x vs. precision, reflecting enterprise safety priority |
 | **False Escalation Rate (Lower=Better)**| 0.0% | 0.0% | **28.4%** | Trade-off: accepts ~28% false alarms to protect customer accounts |
 | **Illustrative 5:1 Risk Penalty (5*FN + 1*FP)** | 260 | 250 | **122** | Illustrative offline penalty reduced by over 51% |
@@ -86,7 +86,7 @@ To preserve safety and maintain high signal-to-noise ratio, we made deliberate d
 | **Heuristic: Groundedness (1–5)** | 4.20 | 4.06 | **4.78** | Factual grounding in verified historical resolution precedents |
 | **Heuristic: Brand Voice & Empathy (1–5)** | 5.00 | 4.36 | **4.58** | Professional, empathetic Apple tone within single-tweet limits |
 | **Heuristic: Actionability (1–5)** | 4.20 | 4.33 | **4.80** | Concrete step-by-step guidance and canonical navigation paths |
-| **Heuristic: Escalation Appropriateness (1–5)**| 4.14 | 4.17 | **4.42** | Safe triage decisions aligned with safety and compliance policies |
+| **Heuristic: Escalation Appropriateness (1–5)**| 4.14 | 4.18 | **4.42** | Safe triage decisions aligned with safety and compliance policies |
 | **Heuristic: Overall Quality Score (1–5)** | 4.39 | 4.23 | **4.65** | Holistic quality superiority over both baselines |
 
 ---
@@ -165,6 +165,7 @@ To evaluate automated rubric reliability, we conducted an inter-rater agreement 
 * **Spearman Rank Correlation ($\rho$)**: **0.766**, demonstrating consistent ordinal ranking of response quality.
 * **Mean Absolute Error (MAE)**: **0.226 points** on the raw 1.0–5.0 scale, with **100.0% of all ratings within 0.5 points** of human ground truth.
 * **Cohen's $\kappa$ Handling**: Cohen's Kappa is undefined/NaN on dimensions where both evaluators assign uniform high scores (e.g., Actionability, Brand Voice), which is safely reported as N/A rather than using artificial 1.0 substitutions. On binary Escalation Appropriateness, agreement is $\kappa = 1.000$.
+* **Groundedness Score Distribution**: Both the human evaluator and the LLM judge scored candidate replies high on grounding (mean ratings 4.60 and 4.96 respectively, with 100% within 0.5 points and MAE = 0.360), because candidate responses consistently cite valid official Apple support URLs and verbatim Apple steps. This low score variance naturally produces a modest Pearson correlation ($r=0.156$), while absolute error confirms close agreement.
 * **Cryptographic Hash Verification**: 100% of evaluated pairs match candidate SHA256 input hashes (`item_id`, `query`, `gold_intent`, `gold_escalation`, `candidate_reply`, `candidate_escalation`, `rubric_version`), ensuring that both rating files refer strictly to identical candidate responses and preventing accidental reuse of ratings when model outputs change.
 
 ---
