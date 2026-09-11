@@ -60,8 +60,9 @@ DOMAIN_PATTERNS = {
 
 class IntentClassifier:
     """
-    Calibrated intent classifier combining n-gram TF-IDF representations
-    with calibrated logistic scoring and domain pattern boosting.
+    Calibrated intent classifier combining word bigram TF-IDF representations
+    with CalibratedClassifierCV (sigmoid calibration). Domain patterns are
+    surfaced purely as diagnostic interpretability signals without altering probabilities.
     """
     def __init__(self, model_path: str = "data/processed/intent_classifier.joblib"):
         self.model_path = Path(model_path)

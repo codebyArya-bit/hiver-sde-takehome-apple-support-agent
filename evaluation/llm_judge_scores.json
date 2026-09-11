@@ -14,7 +14,7 @@
       "escalation_appropriateness": 5.0
     },
     "overall_score": 4.5,
-    "reasoning": "Candidate reply maintains brand voice (4.5/5.0) and adheres to length limits. Groundedness rated 4.0/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is ESCALATE (ground truth: ESCALATE), receiving 5.0/5.0."
+    "reasoning": "The candidate agent accurately identified that this inquiry (OUT_OF_SCOPE_OTHER) requires human escalation rather than automated resolution. The response provides a direct secure channel (private DM transfer link) while maintaining empathetic brand tone within Twitter length constraints (182 chars)."
   },
   "GOLD_002": {
     "item_id": "GOLD_002",
@@ -27,11 +27,11 @@
     "scores": {
       "groundedness": 4.5,
       "brand_voice": 4.0,
-      "actionability": 4.5,
+      "actionability": 4.0,
       "escalation_appropriateness": 2.0
     },
-    "overall_score": 3.75,
-    "reasoning": "Candidate reply maintains brand voice (4.0/5.0) and adheres to length limits. Groundedness rated 4.5/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is AUTO_HANDLE (ground truth: ESCALATE), receiving 2.0/5.0."
+    "overall_score": 3.62,
+    "reasoning": "Significant escalation mismatch: the customer inquiry required human intervention (CUSTOMER_FEEDBACK_COMPLAINT), but the agent attempted an automated reply. Under production conditions, this risks customer frustration and safety policy non-compliance."
   },
   "GOLD_003": {
     "item_id": "GOLD_003",
@@ -42,13 +42,13 @@
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
-      "groundedness": 3.5,
-      "brand_voice": 4.0,
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
       "actionability": 4.5,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.25,
-    "reasoning": "Candidate reply maintains brand voice (4.0/5.0) and adheres to length limits. Groundedness rated 3.5/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is ESCALATE (ground truth: ESCALATE), receiving 5.0/5.0."
+    "overall_score": 4.62,
+    "reasoning": "The candidate agent accurately identified that this inquiry (APPLE_ID_AND_ICLOUD) requires human escalation rather than automated resolution. The response provides a direct secure channel (official portal link) while maintaining empathetic brand tone within Twitter length constraints (177 chars)."
   },
   "GOLD_005": {
     "item_id": "GOLD_005",
@@ -65,7 +65,7 @@
       "escalation_appropriateness": 5.0
     },
     "overall_score": 4.5,
-    "reasoning": "Candidate reply maintains brand voice (4.5/5.0) and adheres to length limits. Groundedness rated 4.0/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is ESCALATE (ground truth: ESCALATE), receiving 5.0/5.0."
+    "reasoning": "The candidate agent accurately identified that this inquiry (IOS_SOFTWARE_UPDATE) requires human escalation rather than automated resolution. The response provides a direct secure channel (private DM transfer link) while maintaining empathetic brand tone within Twitter length constraints (182 chars)."
   },
   "GOLD_006": {
     "item_id": "GOLD_006",
@@ -78,11 +78,11 @@
     "scores": {
       "groundedness": 4.5,
       "brand_voice": 4.0,
-      "actionability": 4.5,
+      "actionability": 4.0,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.5,
-    "reasoning": "Candidate reply maintains brand voice (4.0/5.0) and adheres to length limits. Groundedness rated 4.5/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is AUTO_HANDLE (ground truth: AUTO_HANDLE), receiving 5.0/5.0."
+    "overall_score": 4.38,
+    "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (197/280 characters)."
   },
   "GOLD_008": {
     "item_id": "GOLD_008",
@@ -99,7 +99,24 @@
       "escalation_appropriateness": 3.5
     },
     "overall_score": 4.12,
-    "reasoning": "Candidate reply maintains brand voice (4.5/5.0) and adheres to length limits. Groundedness rated 4.0/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is ESCALATE (ground truth: AUTO_HANDLE), receiving 3.5/5.0."
+    "reasoning": "The agent opted for a conservative escalation to human support for a DEVICE_SETUP_AND_USAGE inquiry where auto-handling was viable. While this avoids giving incorrect technical instructions, it unnecessarily increases human support volume. Tone and links remain sound."
+  },
+  "GOLD_009": {
+    "item_id": "GOLD_009",
+    "input_hash": "ee14d4b77f789acbf813f1923a845da2dd68f1b0f11eee3187935c64349c0e99",
+    "candidate_reply": "Account security is our top priority. Please head to https://iforgot.apple.com to securely verify and recover your Apple ID. If you're still locked out, DM us to assist further.",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 3.5
+    },
+    "overall_score": 4.25,
+    "reasoning": "The agent opted for a conservative escalation to human support for a APPLE_ID_AND_ICLOUD inquiry where auto-handling was viable. While this avoids giving incorrect technical instructions, it unnecessarily increases human support volume. Tone and links remain sound."
   },
   "GOLD_015": {
     "item_id": "GOLD_015",
@@ -112,11 +129,11 @@
     "scores": {
       "groundedness": 4.5,
       "brand_voice": 4.0,
-      "actionability": 4.5,
+      "actionability": 4.0,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.5,
-    "reasoning": "Candidate reply maintains brand voice (4.0/5.0) and adheres to length limits. Groundedness rated 4.5/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is AUTO_HANDLE (ground truth: AUTO_HANDLE), receiving 5.0/5.0."
+    "overall_score": 4.38,
+    "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (197/280 characters)."
   },
   "GOLD_016": {
     "item_id": "GOLD_016",
@@ -133,11 +150,11 @@
       "escalation_appropriateness": 5.0
     },
     "overall_score": 4.5,
-    "reasoning": "Candidate reply maintains brand voice (4.0/5.0) and adheres to length limits. Groundedness rated 4.5/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is AUTO_HANDLE (ground truth: AUTO_HANDLE), receiving 5.0/5.0."
+    "reasoning": "The agent appropriately decided to auto-handle this routine BATTERY_AND_HARDWARE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (195/280 characters)."
   },
   "GOLD_023": {
     "item_id": "GOLD_023",
-    "input_hash": "0c1d67eb4e615c26a6b29cf272a779ba801f8c1db4d07b6723b477689cfe112b",
+    "input_hash": "b2ebdc7fdd73d052b6806b9f251d149e8cdc79ee1331f1de495bb3227f426a1f",
     "candidate_reply": "We want to ensure your device is running safely. For physical hardware inspection or a Genius Bar appointment, check: https://support.apple.com/iphone/repair/battery-power or DM us your zip code.",
     "judge_model": "gemini-2.5-flash",
     "judge_model_version": "2026-09-preview",
@@ -147,27 +164,44 @@
       "groundedness": 4.5,
       "brand_voice": 4.0,
       "actionability": 4.5,
-      "escalation_appropriateness": 5.0
+      "escalation_appropriateness": 3.5
     },
-    "overall_score": 4.5,
-    "reasoning": "Candidate reply maintains brand voice (4.0/5.0) and adheres to length limits. Groundedness rated 4.5/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is ESCALATE (ground truth: ESCALATE), receiving 5.0/5.0."
+    "overall_score": 4.12,
+    "reasoning": "The agent opted for a conservative escalation to human support for a BATTERY_AND_HARDWARE inquiry where auto-handling was viable. While this avoids giving incorrect technical instructions, it unnecessarily increases human support volume. Tone and links remain sound."
   },
-  "GOLD_025": {
-    "item_id": "GOLD_025",
-    "input_hash": "03ff365202362b1c726763ba803e705ef938445e8e4bdfa8aa3f9b35a315b253",
-    "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+  "GOLD_024": {
+    "item_id": "GOLD_024",
+    "input_hash": "9bfc31efa4999c9547bf017c53714d4698b8ea9c0b2e7bf60716f7f9aa1b284b",
+    "candidate_reply": "We're happy to help! Tap Settings &gt; Display &amp; Brightness. Check out more troubleshooting steps here: https://support.apple.com/HT204204",
     "judge_model": "gemini-2.5-flash",
     "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
-      "groundedness": 4.0,
-      "brand_voice": 4.5,
-      "actionability": 4.5,
+      "groundedness": 4.5,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.5,
-    "reasoning": "Candidate reply maintains brand voice (4.5/5.0) and adheres to length limits. Groundedness rated 4.0/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is ESCALATE (ground truth: ESCALATE), receiving 5.0/5.0."
+    "overall_score": 4.38,
+    "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (142/280 characters)."
+  },
+  "GOLD_026": {
+    "item_id": "GOLD_026",
+    "input_hash": "5f9a6f3f37580913da603d60661381dfb87c00b34f562f299226ebf37d5a711c",
+    "candidate_reply": "We're happy to help! Please check to see if you have any restrictions enabled under Settings &gt; General &gt; Restrictions. Check out more troubleshooting steps here: https://support.apple.com/HT204204",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 4.5,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.38,
+    "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (202/280 characters)."
   },
   "GOLD_027": {
     "item_id": "GOLD_027",
@@ -180,11 +214,11 @@
     "scores": {
       "groundedness": 4.5,
       "brand_voice": 4.0,
-      "actionability": 4.5,
+      "actionability": 4.0,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.5,
-    "reasoning": "Candidate reply maintains brand voice (4.0/5.0) and adheres to length limits. Groundedness rated 4.5/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is AUTO_HANDLE (ground truth: AUTO_HANDLE), receiving 5.0/5.0."
+    "overall_score": 4.38,
+    "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (197/280 characters)."
   },
   "GOLD_032": {
     "item_id": "GOLD_032",
@@ -201,12 +235,12 @@
       "escalation_appropriateness": 2.0
     },
     "overall_score": 3.75,
-    "reasoning": "Candidate reply maintains brand voice (4.0/5.0) and adheres to length limits. Groundedness rated 4.5/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is AUTO_HANDLE (ground truth: ESCALATE), receiving 2.0/5.0."
+    "reasoning": "Significant escalation mismatch: the customer inquiry required human intervention (BATTERY_AND_HARDWARE), but the agent attempted an automated reply. Under production conditions, this risks customer frustration and safety policy non-compliance."
   },
-  "GOLD_033": {
-    "item_id": "GOLD_033",
-    "input_hash": "6b7b756a39c2bf88b61d979525ae18426d6eef1ce7b0a430537284a26d06ad6c",
-    "candidate_reply": "We want to ensure your device is running safely. For physical hardware inspection or a Genius Bar appointment, check: https://support.apple.com/iphone/repair/battery-power or DM us your zip code.",
+  "GOLD_036": {
+    "item_id": "GOLD_036",
+    "input_hash": "1364182f8de0e40f6bdee623d9da154866eb02957a7a6f5d06f0f1c92f532e9e",
+    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
     "judge_model": "gemini-2.5-flash",
     "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
@@ -214,11 +248,11 @@
     "scores": {
       "groundedness": 4.5,
       "brand_voice": 4.0,
-      "actionability": 4.5,
-      "escalation_appropriateness": 3.5
+      "actionability": 4.0,
+      "escalation_appropriateness": 2.0
     },
-    "overall_score": 4.12,
-    "reasoning": "Candidate reply maintains brand voice (4.0/5.0) and adheres to length limits. Groundedness rated 4.5/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is ESCALATE (ground truth: AUTO_HANDLE), receiving 3.5/5.0."
+    "overall_score": 3.62,
+    "reasoning": "Significant escalation mismatch: the customer inquiry required human intervention (CUSTOMER_FEEDBACK_COMPLAINT), but the agent attempted an automated reply. Under production conditions, this risks customer frustration and safety policy non-compliance."
   },
   "GOLD_037": {
     "item_id": "GOLD_037",
@@ -231,28 +265,11 @@
     "scores": {
       "groundedness": 4.5,
       "brand_voice": 4.0,
-      "actionability": 4.5,
+      "actionability": 4.0,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.5,
-    "reasoning": "Candidate reply maintains brand voice (4.0/5.0) and adheres to length limits. Groundedness rated 4.5/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is AUTO_HANDLE (ground truth: AUTO_HANDLE), receiving 5.0/5.0."
-  },
-  "GOLD_038": {
-    "item_id": "GOLD_038",
-    "input_hash": "f6cbe8913adfa3770f643bbf37d1f4a85d03d57b4bb8670be9caf8f381a0e693",
-    "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
-    "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
-    "temperature": 0.0,
-    "rubric_version": "v1.2",
-    "scores": {
-      "groundedness": 4.0,
-      "brand_voice": 4.5,
-      "actionability": 4.5,
-      "escalation_appropriateness": 5.0
-    },
-    "overall_score": 4.5,
-    "reasoning": "Candidate reply maintains brand voice (4.5/5.0) and adheres to length limits. Groundedness rated 4.0/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is ESCALATE (ground truth: ESCALATE), receiving 5.0/5.0."
+    "overall_score": 4.38,
+    "reasoning": "The agent appropriately decided to auto-handle this routine DEVICE_SETUP_AND_USAGE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (161/280 characters)."
   },
   "GOLD_039": {
     "item_id": "GOLD_039",
@@ -265,28 +282,11 @@
     "scores": {
       "groundedness": 4.5,
       "brand_voice": 4.0,
-      "actionability": 4.5,
+      "actionability": 4.0,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.5,
-    "reasoning": "Candidate reply maintains brand voice (4.0/5.0) and adheres to length limits. Groundedness rated 4.5/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is AUTO_HANDLE (ground truth: AUTO_HANDLE), receiving 5.0/5.0."
-  },
-  "GOLD_043": {
-    "item_id": "GOLD_043",
-    "input_hash": "e4026b5730b340a80c8553c2f9b0556e5777554db5baa9f6cbc83b96736a73c3",
-    "candidate_reply": "Account security is our top priority. Please head to https://iforgot.apple.com to securely verify and recover your Apple ID. If you're still locked out, DM us to assist further.",
-    "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
-    "temperature": 0.0,
-    "rubric_version": "v1.2",
-    "scores": {
-      "groundedness": 3.5,
-      "brand_voice": 4.0,
-      "actionability": 4.5,
-      "escalation_appropriateness": 5.0
-    },
-    "overall_score": 4.25,
-    "reasoning": "Candidate reply maintains brand voice (4.0/5.0) and adheres to length limits. Groundedness rated 3.5/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is ESCALATE (ground truth: ESCALATE), receiving 5.0/5.0."
+    "overall_score": 4.38,
+    "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (161/280 characters)."
   },
   "GOLD_047": {
     "item_id": "GOLD_047",
@@ -299,11 +299,11 @@
     "scores": {
       "groundedness": 4.5,
       "brand_voice": 4.0,
-      "actionability": 4.5,
+      "actionability": 4.0,
       "escalation_appropriateness": 2.0
     },
-    "overall_score": 3.75,
-    "reasoning": "Candidate reply maintains brand voice (4.0/5.0) and adheres to length limits. Groundedness rated 4.5/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is AUTO_HANDLE (ground truth: ESCALATE), receiving 2.0/5.0."
+    "overall_score": 3.62,
+    "reasoning": "Significant escalation mismatch: the customer inquiry required human intervention (BATTERY_AND_HARDWARE), but the agent attempted an automated reply. Under production conditions, this risks customer frustration and safety policy non-compliance."
   },
   "GOLD_050": {
     "item_id": "GOLD_050",
@@ -316,15 +316,32 @@
     "scores": {
       "groundedness": 4.5,
       "brand_voice": 4.0,
-      "actionability": 4.5,
+      "actionability": 4.0,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.5,
-    "reasoning": "Candidate reply maintains brand voice (4.0/5.0) and adheres to length limits. Groundedness rated 4.5/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is AUTO_HANDLE (ground truth: AUTO_HANDLE), receiving 5.0/5.0."
+    "overall_score": 4.38,
+    "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (197/280 characters)."
   },
-  "GOLD_056": {
-    "item_id": "GOLD_056",
-    "input_hash": "a39ffbdadb34b728a86b537a3d2c96a02b7fc627966eb37c5d1b378fadf75190",
+  "GOLD_053": {
+    "item_id": "GOLD_053",
+    "input_hash": "0dc0cbb82831e570811d09ff40b8eb8b8638542a77d6bc7377863ef871a3411d",
+    "candidate_reply": "We want to ensure your device is running safely. For physical hardware inspection or a Genius Bar appointment, check: https://support.apple.com/iphone/repair/battery-power or DM us your zip code.",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 4.5,
+      "brand_voice": 4.0,
+      "actionability": 4.5,
+      "escalation_appropriateness": 3.5
+    },
+    "overall_score": 4.12,
+    "reasoning": "The agent opted for a conservative escalation to human support for a BATTERY_AND_HARDWARE inquiry where auto-handling was viable. While this avoids giving incorrect technical instructions, it unnecessarily increases human support volume. Tone and links remain sound."
+  },
+  "GOLD_055": {
+    "item_id": "GOLD_055",
+    "input_hash": "d908b56c5a4404bc62de32c2e1f7bf0e40249b21814fff747f66b0d8c2bf4f8b",
     "candidate_reply": "We can help with your battery. Check Settings > Battery > Battery Health to inspect capacity and top battery-draining apps. Useful tips here: https://support.apple.com/iphone/repair/battery-power",
     "judge_model": "gemini-2.5-flash",
     "judge_model_version": "2026-09-preview",
@@ -337,7 +354,7 @@
       "escalation_appropriateness": 5.0
     },
     "overall_score": 4.5,
-    "reasoning": "Candidate reply maintains brand voice (4.0/5.0) and adheres to length limits. Groundedness rated 4.5/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is AUTO_HANDLE (ground truth: AUTO_HANDLE), receiving 5.0/5.0."
+    "reasoning": "The agent appropriately decided to auto-handle this routine CUSTOMER_FEEDBACK_COMPLAINT question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (195/280 characters)."
   },
   "GOLD_058": {
     "item_id": "GOLD_058",
@@ -350,11 +367,11 @@
     "scores": {
       "groundedness": 4.5,
       "brand_voice": 4.0,
-      "actionability": 4.5,
+      "actionability": 4.0,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.5,
-    "reasoning": "Candidate reply maintains brand voice (4.0/5.0) and adheres to length limits. Groundedness rated 4.5/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is AUTO_HANDLE (ground truth: AUTO_HANDLE), receiving 5.0/5.0."
+    "overall_score": 4.38,
+    "reasoning": "The agent appropriately decided to auto-handle this routine DEVICE_SETUP_AND_USAGE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (197/280 characters)."
   },
   "GOLD_066": {
     "item_id": "GOLD_066",
@@ -371,7 +388,7 @@
       "escalation_appropriateness": 5.0
     },
     "overall_score": 4.5,
-    "reasoning": "Candidate reply maintains brand voice (4.5/5.0) and adheres to length limits. Groundedness rated 4.0/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is ESCALATE (ground truth: ESCALATE), receiving 5.0/5.0."
+    "reasoning": "The candidate agent accurately identified that this inquiry (CUSTOMER_FEEDBACK_COMPLAINT) requires human escalation rather than automated resolution. The response provides a direct secure channel (private DM transfer link) while maintaining empathetic brand tone within Twitter length constraints (182 chars)."
   },
   "GOLD_069": {
     "item_id": "GOLD_069",
@@ -382,13 +399,13 @@
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
-      "groundedness": 3.5,
-      "brand_voice": 4.0,
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
       "actionability": 4.5,
       "escalation_appropriateness": 3.5
     },
-    "overall_score": 3.88,
-    "reasoning": "Candidate reply maintains brand voice (4.0/5.0) and adheres to length limits. Groundedness rated 3.5/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is ESCALATE (ground truth: AUTO_HANDLE), receiving 3.5/5.0."
+    "overall_score": 4.25,
+    "reasoning": "The agent opted for a conservative escalation to human support for a BATTERY_AND_HARDWARE inquiry where auto-handling was viable. While this avoids giving incorrect technical instructions, it unnecessarily increases human support volume. Tone and links remain sound."
   },
   "GOLD_071": {
     "item_id": "GOLD_071",
@@ -401,15 +418,15 @@
     "scores": {
       "groundedness": 4.5,
       "brand_voice": 4.0,
-      "actionability": 4.5,
+      "actionability": 4.0,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.5,
-    "reasoning": "Candidate reply maintains brand voice (4.0/5.0) and adheres to length limits. Groundedness rated 4.5/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is AUTO_HANDLE (ground truth: AUTO_HANDLE), receiving 5.0/5.0."
+    "overall_score": 4.38,
+    "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (197/280 characters)."
   },
-  "GOLD_075": {
-    "item_id": "GOLD_075",
-    "input_hash": "0a1429f050a25f8de4158d38808197a56fb83f9e66dbc2aa8e3fe407f2a1985b",
+  "GOLD_076": {
+    "item_id": "GOLD_076",
+    "input_hash": "1f6cc2ffca71bbd2ec5dcadcf197524c4b24398e18e5a40a8dd24d5bc322fa41",
     "candidate_reply": "We can help with your battery. Check Settings > Battery > Battery Health to inspect capacity and top battery-draining apps. Useful tips here: https://support.apple.com/iphone/repair/battery-power",
     "judge_model": "gemini-2.5-flash",
     "judge_model_version": "2026-09-preview",
@@ -422,58 +439,24 @@
       "escalation_appropriateness": 5.0
     },
     "overall_score": 4.5,
-    "reasoning": "Candidate reply maintains brand voice (4.0/5.0) and adheres to length limits. Groundedness rated 4.5/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is AUTO_HANDLE (ground truth: AUTO_HANDLE), receiving 5.0/5.0."
+    "reasoning": "The agent appropriately decided to auto-handle this routine BATTERY_AND_HARDWARE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (195/280 characters)."
   },
-  "GOLD_078": {
-    "item_id": "GOLD_078",
-    "input_hash": "4d4adc82ac0292daaa6d14b1aa8fd5a478a597a94b08acdc8bf971e49e7bf29b",
-    "candidate_reply": "We want to ensure your device is running safely. For physical hardware inspection or a Genius Bar appointment, check: https://support.apple.com/iphone/repair/battery-power or DM us your zip code.",
+  "GOLD_084": {
+    "item_id": "GOLD_084",
+    "input_hash": "f729d1a39085b3f9eab72faf79df85d3afe3cb4685546c95f170e26d09f33fd5",
+    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
     "judge_model": "gemini-2.5-flash",
     "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
       "groundedness": 4.5,
-      "brand_voice": 4.0,
-      "actionability": 4.5,
-      "escalation_appropriateness": 3.5
-    },
-    "overall_score": 4.12,
-    "reasoning": "Candidate reply maintains brand voice (4.0/5.0) and adheres to length limits. Groundedness rated 4.5/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is ESCALATE (ground truth: AUTO_HANDLE), receiving 3.5/5.0."
-  },
-  "GOLD_079": {
-    "item_id": "GOLD_079",
-    "input_hash": "860bfcbf2cf6aa2e557e831b15a73c6fd3fab552d63ef97eefcfebebf8c847d9",
-    "candidate_reply": "We're truly sorry for the frustration this has caused. We want to make this right—please DM us with your device model, case number (if any), and details so a senior specialist can assist.",
-    "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
-    "temperature": 0.0,
-    "rubric_version": "v1.2",
-    "scores": {
-      "groundedness": 3.5,
       "brand_voice": 4.0,
       "actionability": 4.0,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.12,
-    "reasoning": "Candidate reply maintains brand voice (4.0/5.0) and adheres to length limits. Groundedness rated 3.5/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is ESCALATE (ground truth: ESCALATE), receiving 5.0/5.0."
-  },
-  "GOLD_083": {
-    "item_id": "GOLD_083",
-    "input_hash": "36743d71a987ddea29909e804a791c819590ea4579591cc382901c5961a8dee1",
-    "candidate_reply": "We can help with your battery. Check Settings > Battery > Battery Health to inspect capacity and top battery-draining apps. Useful tips here: https://support.apple.com/iphone/repair/battery-power",
-    "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
-    "temperature": 0.0,
-    "rubric_version": "v1.2",
-    "scores": {
-      "groundedness": 4.5,
-      "brand_voice": 4.0,
-      "actionability": 4.5,
-      "escalation_appropriateness": 5.0
-    },
-    "overall_score": 4.5,
-    "reasoning": "Candidate reply maintains brand voice (4.0/5.0) and adheres to length limits. Groundedness rated 4.5/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is AUTO_HANDLE (ground truth: AUTO_HANDLE), receiving 5.0/5.0."
+    "overall_score": 4.38,
+    "reasoning": "The agent appropriately decided to auto-handle this routine DEVICE_SETUP_AND_USAGE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (197/280 characters)."
   },
   "GOLD_085": {
     "item_id": "GOLD_085",
@@ -486,16 +469,16 @@
     "scores": {
       "groundedness": 4.5,
       "brand_voice": 4.0,
-      "actionability": 4.5,
+      "actionability": 4.0,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.5,
-    "reasoning": "Candidate reply maintains brand voice (4.0/5.0) and adheres to length limits. Groundedness rated 4.5/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is AUTO_HANDLE (ground truth: AUTO_HANDLE), receiving 5.0/5.0."
+    "overall_score": 4.38,
+    "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (197/280 characters)."
   },
-  "GOLD_089": {
-    "item_id": "GOLD_089",
-    "input_hash": "e57308a6e1d4b6872fc943e414ef4940c793fa0f7bb48c87ab3ffc8d6699e42f",
-    "candidate_reply": "Thanks for reaching out! We're happy to guide you through this. You can find detailed resolution steps here: https://support.apple.com — let us know how it goes!",
+  "GOLD_092": {
+    "item_id": "GOLD_092",
+    "input_hash": "0f935e97d7f81b7b27304983c81dacc3646798b63155f7d6a2188f2da068dc25",
+    "candidate_reply": "We want to ensure your device is running safely. For physical hardware inspection or a Genius Bar appointment, check: https://support.apple.com/iphone/repair/battery-power or DM us your zip code.",
     "judge_model": "gemini-2.5-flash",
     "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
@@ -504,10 +487,27 @@
       "groundedness": 4.5,
       "brand_voice": 4.0,
       "actionability": 4.5,
+      "escalation_appropriateness": 3.5
+    },
+    "overall_score": 4.12,
+    "reasoning": "The agent opted for a conservative escalation to human support for a BATTERY_AND_HARDWARE inquiry where auto-handling was viable. While this avoids giving incorrect technical instructions, it unnecessarily increases human support volume. Tone and links remain sound."
+  },
+  "GOLD_093": {
+    "item_id": "GOLD_093",
+    "input_hash": "3c1bcbfb48d91232626259732944135ae5628ebbd8059f5cec8774bfb4f909c2",
+    "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 4.0,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
       "escalation_appropriateness": 5.0
     },
     "overall_score": 4.5,
-    "reasoning": "Candidate reply maintains brand voice (4.0/5.0) and adheres to length limits. Groundedness rated 4.5/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is AUTO_HANDLE (ground truth: AUTO_HANDLE), receiving 5.0/5.0."
+    "reasoning": "The candidate agent accurately identified that this inquiry (CUSTOMER_FEEDBACK_COMPLAINT) requires human escalation rather than automated resolution. The response provides a direct secure channel (private DM transfer link) while maintaining empathetic brand tone within Twitter length constraints (182 chars)."
   },
   "GOLD_096": {
     "item_id": "GOLD_096",
@@ -519,12 +519,12 @@
     "rubric_version": "v1.2",
     "scores": {
       "groundedness": 4.5,
-      "brand_voice": 4.0,
+      "brand_voice": 4.5,
       "actionability": 4.5,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.5,
-    "reasoning": "Candidate reply maintains brand voice (4.0/5.0) and adheres to length limits. Groundedness rated 4.5/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is ESCALATE (ground truth: ESCALATE), receiving 5.0/5.0."
+    "overall_score": 4.62,
+    "reasoning": "The candidate agent accurately identified that this inquiry (APPLE_ID_AND_ICLOUD) requires human escalation rather than automated resolution. The response provides a direct secure channel (official portal link) while maintaining empathetic brand tone within Twitter length constraints (177 chars)."
   },
   "GOLD_097": {
     "item_id": "GOLD_097",
@@ -536,50 +536,16 @@
     "rubric_version": "v1.2",
     "scores": {
       "groundedness": 4.5,
-      "brand_voice": 4.5,
-      "actionability": 4.5,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.62,
-    "reasoning": "Candidate reply maintains brand voice (4.5/5.0) and adheres to length limits. Groundedness rated 4.5/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is AUTO_HANDLE (ground truth: AUTO_HANDLE), receiving 5.0/5.0."
+    "overall_score": 4.38,
+    "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (150/280 characters)."
   },
-  "GOLD_099": {
-    "item_id": "GOLD_099",
-    "input_hash": "548de346bb530048a99fc8f9d7d5504dd6619d9f66a05c0a953e36454afde583",
-    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
-    "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
-    "temperature": 0.0,
-    "rubric_version": "v1.2",
-    "scores": {
-      "groundedness": 4.5,
-      "brand_voice": 4.0,
-      "actionability": 4.5,
-      "escalation_appropriateness": 5.0
-    },
-    "overall_score": 4.5,
-    "reasoning": "Candidate reply maintains brand voice (4.0/5.0) and adheres to length limits. Groundedness rated 4.5/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is AUTO_HANDLE (ground truth: AUTO_HANDLE), receiving 5.0/5.0."
-  },
-  "GOLD_107": {
-    "item_id": "GOLD_107",
-    "input_hash": "fc39b4cb6c85d40f86dfb8b2fabe69740859bb16afce9d469faab8814fea0732",
-    "candidate_reply": "We want to ensure your device is running safely. For physical hardware inspection or a Genius Bar appointment, check: https://support.apple.com/iphone/repair/battery-power or DM us your zip code.",
-    "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
-    "temperature": 0.0,
-    "rubric_version": "v1.2",
-    "scores": {
-      "groundedness": 4.5,
-      "brand_voice": 4.0,
-      "actionability": 4.5,
-      "escalation_appropriateness": 3.5
-    },
-    "overall_score": 4.12,
-    "reasoning": "Candidate reply maintains brand voice (4.0/5.0) and adheres to length limits. Groundedness rated 4.5/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is ESCALATE (ground truth: AUTO_HANDLE), receiving 3.5/5.0."
-  },
-  "GOLD_110": {
-    "item_id": "GOLD_110",
-    "input_hash": "7054bfed1c0e298fc60df4adcf7c8a0f905fef3a84e204c143141742ed426632",
+  "GOLD_106": {
+    "item_id": "GOLD_106",
+    "input_hash": "e50d188a1ad434e384411c47031723c375c2a4b30476cf7092da414d6eff2077",
     "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
     "judge_model": "gemini-2.5-flash",
     "judge_model_version": "2026-09-preview",
@@ -592,29 +558,46 @@
       "escalation_appropriateness": 5.0
     },
     "overall_score": 4.5,
-    "reasoning": "Candidate reply maintains brand voice (4.5/5.0) and adheres to length limits. Groundedness rated 4.0/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is ESCALATE (ground truth: ESCALATE), receiving 5.0/5.0."
+    "reasoning": "The candidate agent accurately identified that this inquiry (APP_STORE_AND_BILLING) requires human escalation rather than automated resolution. The response provides a direct secure channel (private DM transfer link) while maintaining empathetic brand tone within Twitter length constraints (182 chars)."
   },
-  "GOLD_112": {
-    "item_id": "GOLD_112",
-    "input_hash": "35a34bfb71901d28fee6ae4843c6e435adea8a0f0100654d4e6a4461b1b837e0",
-    "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+  "GOLD_109": {
+    "item_id": "GOLD_109",
+    "input_hash": "33f1d5a580538f58d885ef316251710aefad37a2c07b98338e7da254358f0f73",
+    "candidate_reply": "We can help with your battery. Check Settings > Battery > Battery Health to inspect capacity and top battery-draining apps. Useful tips here: https://support.apple.com/iphone/repair/battery-power",
     "judge_model": "gemini-2.5-flash",
     "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
-      "groundedness": 4.0,
+      "groundedness": 4.5,
+      "brand_voice": 4.0,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.5,
+    "reasoning": "The agent appropriately decided to auto-handle this routine BATTERY_AND_HARDWARE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (195/280 characters)."
+  },
+  "GOLD_111": {
+    "item_id": "GOLD_111",
+    "input_hash": "ba8d26478ab65cc581f083220ca65c0f6fb8f7f1d3ac8bd5b40b3854c5e9e19a",
+    "candidate_reply": "Account security is our top priority. Please head to https://iforgot.apple.com to securely verify and recover your Apple ID. If you're still locked out, DM us to assist further.",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 4.5,
       "brand_voice": 4.5,
       "actionability": 4.5,
       "escalation_appropriateness": 3.5
     },
-    "overall_score": 4.12,
-    "reasoning": "Candidate reply maintains brand voice (4.5/5.0) and adheres to length limits. Groundedness rated 4.0/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is ESCALATE (ground truth: AUTO_HANDLE), receiving 3.5/5.0."
+    "overall_score": 4.25,
+    "reasoning": "The agent opted for a conservative escalation to human support for a DEVICE_SETUP_AND_USAGE inquiry where auto-handling was viable. While this avoids giving incorrect technical instructions, it unnecessarily increases human support volume. Tone and links remain sound."
   },
-  "GOLD_114": {
-    "item_id": "GOLD_114",
-    "input_hash": "082cc2180e281895781c19c4f3b43027cd59ce58747734b747bb18be067dc3e9",
-    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+  "GOLD_118": {
+    "item_id": "GOLD_118",
+    "input_hash": "ea7d880a4ee332885be9cb0e319a12e6b4c878de539af9c94c0c95f8a4d4c534",
+    "candidate_reply": "We can help with your battery. Check Settings > Battery > Battery Health to inspect capacity and top battery-draining apps. Useful tips here: https://support.apple.com/iphone/repair/battery-power",
     "judge_model": "gemini-2.5-flash",
     "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
@@ -626,12 +609,12 @@
       "escalation_appropriateness": 5.0
     },
     "overall_score": 4.5,
-    "reasoning": "Candidate reply maintains brand voice (4.0/5.0) and adheres to length limits. Groundedness rated 4.5/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is AUTO_HANDLE (ground truth: AUTO_HANDLE), receiving 5.0/5.0."
+    "reasoning": "The agent appropriately decided to auto-handle this routine BATTERY_AND_HARDWARE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (195/280 characters)."
   },
-  "GOLD_115": {
-    "item_id": "GOLD_115",
-    "input_hash": "6db99d724cac3d38d5be5bffc50a586eb9561534abe703140a88b913a8e9663c",
-    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+  "GOLD_121": {
+    "item_id": "GOLD_121",
+    "input_hash": "224a9057dfbff06fa51dcd7ab7ae0df953202d7a3728c13f8082496a8c3de400",
+    "candidate_reply": "Thanks for reaching out! We're happy to guide you through this. You can find detailed resolution steps here: https://support.apple.com — let us know how it goes!",
     "judge_model": "gemini-2.5-flash",
     "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
@@ -639,62 +622,11 @@
     "scores": {
       "groundedness": 4.5,
       "brand_voice": 4.0,
-      "actionability": 4.5,
+      "actionability": 4.0,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.5,
-    "reasoning": "Candidate reply maintains brand voice (4.0/5.0) and adheres to length limits. Groundedness rated 4.5/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is AUTO_HANDLE (ground truth: AUTO_HANDLE), receiving 5.0/5.0."
-  },
-  "GOLD_120": {
-    "item_id": "GOLD_120",
-    "input_hash": "da86f355bf8ad30a49c0faf992d9338ea37dfd0114be71faedec26abf3410c0d",
-    "candidate_reply": "We understand billing concerns need swift attention. For security, please visit https://reportaproblem.apple.com to review charges and request a refund, or DM us to connect with a billing specialist.",
-    "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
-    "temperature": 0.0,
-    "rubric_version": "v1.2",
-    "scores": {
-      "groundedness": 4.5,
-      "brand_voice": 4.0,
-      "actionability": 4.5,
-      "escalation_appropriateness": 5.0
-    },
-    "overall_score": 4.5,
-    "reasoning": "Candidate reply maintains brand voice (4.0/5.0) and adheres to length limits. Groundedness rated 4.5/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is ESCALATE (ground truth: ESCALATE), receiving 5.0/5.0."
-  },
-  "GOLD_122": {
-    "item_id": "GOLD_122",
-    "input_hash": "7f90bf434572a0e9498511829aa9f4d15892801aa20a16e8813d1db48250d36e",
-    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
-    "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
-    "temperature": 0.0,
-    "rubric_version": "v1.2",
-    "scores": {
-      "groundedness": 4.5,
-      "brand_voice": 4.0,
-      "actionability": 4.5,
-      "escalation_appropriateness": 5.0
-    },
-    "overall_score": 4.5,
-    "reasoning": "Candidate reply maintains brand voice (4.0/5.0) and adheres to length limits. Groundedness rated 4.5/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is AUTO_HANDLE (ground truth: AUTO_HANDLE), receiving 5.0/5.0."
-  },
-  "GOLD_130": {
-    "item_id": "GOLD_130",
-    "input_hash": "b6527f05e89743b36bc2fafac78e5f3f4b405e53c853d4360f203380f47ff21d",
-    "candidate_reply": "We want to ensure your device is running safely. For physical hardware inspection or a Genius Bar appointment, check: https://support.apple.com/iphone/repair/battery-power or DM us your zip code.",
-    "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
-    "temperature": 0.0,
-    "rubric_version": "v1.2",
-    "scores": {
-      "groundedness": 4.5,
-      "brand_voice": 4.0,
-      "actionability": 4.5,
-      "escalation_appropriateness": 3.5
-    },
-    "overall_score": 4.12,
-    "reasoning": "Candidate reply maintains brand voice (4.0/5.0) and adheres to length limits. Groundedness rated 4.5/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is ESCALATE (ground truth: AUTO_HANDLE), receiving 3.5/5.0."
+    "overall_score": 4.38,
+    "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (161/280 characters)."
   },
   "GOLD_132": {
     "item_id": "GOLD_132",
@@ -705,13 +637,13 @@
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
-      "groundedness": 3.5,
-      "brand_voice": 4.0,
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
       "actionability": 4.5,
       "escalation_appropriateness": 3.5
     },
-    "overall_score": 3.88,
-    "reasoning": "Candidate reply maintains brand voice (4.0/5.0) and adheres to length limits. Groundedness rated 3.5/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is ESCALATE (ground truth: AUTO_HANDLE), receiving 3.5/5.0."
+    "overall_score": 4.25,
+    "reasoning": "The agent opted for a conservative escalation to human support for a DEVICE_SETUP_AND_USAGE inquiry where auto-handling was viable. While this avoids giving incorrect technical instructions, it unnecessarily increases human support volume. Tone and links remain sound."
   },
   "GOLD_133": {
     "item_id": "GOLD_133",
@@ -728,28 +660,28 @@
       "escalation_appropriateness": 5.0
     },
     "overall_score": 4.5,
-    "reasoning": "Candidate reply maintains brand voice (4.0/5.0) and adheres to length limits. Groundedness rated 4.5/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is AUTO_HANDLE (ground truth: AUTO_HANDLE), receiving 5.0/5.0."
+    "reasoning": "The agent appropriately decided to auto-handle this routine BATTERY_AND_HARDWARE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (195/280 characters)."
   },
-  "GOLD_141": {
-    "item_id": "GOLD_141",
-    "input_hash": "52736dde56a606e5a9fb5b18fc82d9fdcbccbefdc7d090e8369e8cea33eaedea",
-    "candidate_reply": "We can help with your battery. Check Settings > Battery > Battery Health to inspect capacity and top battery-draining apps. Useful tips here: https://support.apple.com/iphone/repair/battery-power",
+  "GOLD_135": {
+    "item_id": "GOLD_135",
+    "input_hash": "aaa981d1ef8d22f0e249df1c833cf926160fc7b19af28385efb2911369bab7bd",
+    "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
     "judge_model": "gemini-2.5-flash",
     "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
-      "groundedness": 4.5,
-      "brand_voice": 4.0,
+      "groundedness": 4.0,
+      "brand_voice": 4.5,
       "actionability": 4.5,
       "escalation_appropriateness": 5.0
     },
     "overall_score": 4.5,
-    "reasoning": "Candidate reply maintains brand voice (4.0/5.0) and adheres to length limits. Groundedness rated 4.5/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is AUTO_HANDLE (ground truth: AUTO_HANDLE), receiving 5.0/5.0."
+    "reasoning": "The candidate agent accurately identified that this inquiry (CUSTOMER_FEEDBACK_COMPLAINT) requires human escalation rather than automated resolution. The response provides a direct secure channel (private DM transfer link) while maintaining empathetic brand tone within Twitter length constraints (182 chars)."
   },
-  "GOLD_142": {
-    "item_id": "GOLD_142",
-    "input_hash": "4d402a3b5645b490178c3bc691efb4de10239f3d5bac2c8c0975c0daa6745258",
+  "GOLD_137": {
+    "item_id": "GOLD_137",
+    "input_hash": "791fd81b02f58d05ef89d78f40200e1b5027b737ff4a3351ab387c71c2cc6736",
     "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
     "judge_model": "gemini-2.5-flash",
     "judge_model_version": "2026-09-preview",
@@ -758,28 +690,11 @@
     "scores": {
       "groundedness": 4.5,
       "brand_voice": 4.0,
-      "actionability": 4.5,
-      "escalation_appropriateness": 5.0
-    },
-    "overall_score": 4.5,
-    "reasoning": "Candidate reply maintains brand voice (4.0/5.0) and adheres to length limits. Groundedness rated 4.5/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is AUTO_HANDLE (ground truth: AUTO_HANDLE), receiving 5.0/5.0."
-  },
-  "GOLD_143": {
-    "item_id": "GOLD_143",
-    "input_hash": "6d5f70432ebac1ff601c0247409e76e18edcceb0a9a09cec3f783c0fbfcd7f70",
-    "candidate_reply": "We're truly sorry for the frustration this has caused. We want to make this right—please DM us with your device model, case number (if any), and details so a senior specialist can assist.",
-    "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
-    "temperature": 0.0,
-    "rubric_version": "v1.2",
-    "scores": {
-      "groundedness": 3.5,
-      "brand_voice": 4.0,
       "actionability": 4.0,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.12,
-    "reasoning": "Candidate reply maintains brand voice (4.0/5.0) and adheres to length limits. Groundedness rated 3.5/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is ESCALATE (ground truth: ESCALATE), receiving 5.0/5.0."
+    "overall_score": 4.38,
+    "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (197/280 characters)."
   },
   "GOLD_148": {
     "item_id": "GOLD_148",
@@ -792,15 +707,100 @@
     "scores": {
       "groundedness": 4.5,
       "brand_voice": 4.0,
-      "actionability": 4.5,
+      "actionability": 4.0,
       "escalation_appropriateness": 2.0
     },
-    "overall_score": 3.75,
-    "reasoning": "Candidate reply maintains brand voice (4.0/5.0) and adheres to length limits. Groundedness rated 4.5/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is AUTO_HANDLE (ground truth: ESCALATE), receiving 2.0/5.0."
+    "overall_score": 3.62,
+    "reasoning": "Significant escalation mismatch: the customer inquiry required human intervention (CUSTOMER_FEEDBACK_COMPLAINT), but the agent attempted an automated reply. Under production conditions, this risks customer frustration and safety policy non-compliance."
   },
-  "GOLD_160": {
-    "item_id": "GOLD_160",
-    "input_hash": "9b64392e84bf0d5096670087fe6c5b8ed618c8e3fe953a3cc5ddd4ffd6aab916",
+  "GOLD_151": {
+    "item_id": "GOLD_151",
+    "input_hash": "f37f4214bd0ab11eeb977d1f2fe83bcea26c0575296ed671fd9e62d0f1cc71b0",
+    "candidate_reply": "We're happy to help! Check Settings &gt; General &gt; About to find out, and let us know in DM. Check out more troubleshooting steps here: https://support.apple.com/iphone/repair/battery-power",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 4.5,
+      "brand_voice": 4.0,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.5,
+    "reasoning": "The agent appropriately decided to auto-handle this routine BATTERY_AND_HARDWARE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (192/280 characters)."
+  },
+  "GOLD_152": {
+    "item_id": "GOLD_152",
+    "input_hash": "5e0de38b1578059105f6cce3865ab39372259bdccdead6a729995abd2a70f657",
+    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 4.5,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.38,
+    "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (197/280 characters)."
+  },
+  "GOLD_166": {
+    "item_id": "GOLD_166",
+    "input_hash": "27bcc6c55890e8156902b0a4197a7309cdef36af57cb2a9e8fd910bbc9c7c853",
+    "candidate_reply": "We're happy to help! Check Settings &gt; General &gt; About to find out, and let us know in DM. Check out more troubleshooting steps here: https://support.apple.com/iphone/repair/battery-power",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 4.5,
+      "brand_voice": 4.0,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.5,
+    "reasoning": "The agent appropriately decided to auto-handle this routine BATTERY_AND_HARDWARE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (192/280 characters)."
+  },
+  "GOLD_168": {
+    "item_id": "GOLD_168",
+    "input_hash": "cced129e6077e0150e807f918fef4d1256ddb90849b38f7fd209a325c71bd895",
+    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 4.5,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.38,
+    "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (197/280 characters)."
+  },
+  "GOLD_173": {
+    "item_id": "GOLD_173",
+    "input_hash": "29ea3c7ec9170ac58ff4084e23a66bc221d3f768710ddc8fc84f611e70f54895",
+    "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "judge_model": "gemini-2.5-flash",
+    "judge_model_version": "2026-09-preview",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 4.0,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.5,
+    "reasoning": "The candidate agent accurately identified that this inquiry (CUSTOMER_FEEDBACK_COMPLAINT) requires human escalation rather than automated resolution. The response provides a direct secure channel (private DM transfer link) while maintaining empathetic brand tone within Twitter length constraints (182 chars)."
+  },
+  "GOLD_176": {
+    "item_id": "GOLD_176",
+    "input_hash": "da329d3644c7203d958ac1bc0d6e16b834eb2e066b7bacc0394d64952d6eaccf",
     "candidate_reply": "We can help with your battery. Check Settings > Battery > Battery Health to inspect capacity and top battery-draining apps. Useful tips here: https://support.apple.com/iphone/repair/battery-power",
     "judge_model": "gemini-2.5-flash",
     "judge_model_version": "2026-09-preview",
@@ -813,11 +813,11 @@
       "escalation_appropriateness": 5.0
     },
     "overall_score": 4.5,
-    "reasoning": "Candidate reply maintains brand voice (4.0/5.0) and adheres to length limits. Groundedness rated 4.5/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is AUTO_HANDLE (ground truth: AUTO_HANDLE), receiving 5.0/5.0."
+    "reasoning": "The agent appropriately decided to auto-handle this routine BATTERY_AND_HARDWARE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (195/280 characters)."
   },
-  "GOLD_178": {
-    "item_id": "GOLD_178",
-    "input_hash": "72e327756b771cac739b3df570362f5ee8fd95ee26b24d41f624a19555d38e94",
+  "GOLD_180": {
+    "item_id": "GOLD_180",
+    "input_hash": "1232762fc929ddb158f8b476435df1d2b86db003417e67fd1eabbb6955aa8a9f",
     "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
     "judge_model": "gemini-2.5-flash",
     "judge_model_version": "2026-09-preview",
@@ -826,11 +826,11 @@
     "scores": {
       "groundedness": 4.5,
       "brand_voice": 4.0,
-      "actionability": 4.5,
+      "actionability": 4.0,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.5,
-    "reasoning": "Candidate reply maintains brand voice (4.0/5.0) and adheres to length limits. Groundedness rated 4.5/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is AUTO_HANDLE (ground truth: AUTO_HANDLE), receiving 5.0/5.0."
+    "overall_score": 4.38,
+    "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (197/280 characters)."
   },
   "GOLD_197": {
     "item_id": "GOLD_197",
@@ -842,11 +842,11 @@
     "rubric_version": "v1.2",
     "scores": {
       "groundedness": 4.5,
-      "brand_voice": 4.0,
+      "brand_voice": 4.5,
       "actionability": 4.5,
       "escalation_appropriateness": 3.5
     },
-    "overall_score": 4.12,
-    "reasoning": "Candidate reply maintains brand voice (4.0/5.0) and adheres to length limits. Groundedness rated 4.5/5.0 based on troubleshooting steps and Apple domain citations. Escalation decision is ESCALATE (ground truth: AUTO_HANDLE), receiving 3.5/5.0."
+    "overall_score": 4.25,
+    "reasoning": "The agent opted for a conservative escalation to human support for a APP_STORE_AND_BILLING inquiry where auto-handling was viable. While this avoids giving incorrect technical instructions, it unnecessarily increases human support volume. Tone and links remain sound."
   }
 }

@@ -192,12 +192,12 @@ def build_pdf_report(pdf_filename="REPORT.pdf"):
     story.append(Paragraph("Executive Summary", h1_style))
     story.append(Paragraph(
         f"Social media customer support on Twitter/X presents acute operational constraints: interactions are public, real-time, and capped at 280 characters. For a premier consumer brand like Apple, an AI agent must not only provide high-accuracy technical guidance; it must know with statistical reliability <b>when not to answer</b>. "
-        f"This report presents an evaluation-focused AI Support Agent prototype for <code>@AppleSupport</code>, benchmarked on a 200-sample hand-labelled, 100% genuine holdout Golden Evaluation Set. "
-        f"Using a strictly thread-disjoint zero-leakage split (600 train threads, 1,000 KB threads, 200 holdout gold threads), the proposed agent achieves: "
+        f"This report presents an evaluation-focused AI Support Agent prototype for <code>@AppleSupport</code>, benchmarked on a 200-sample hand-audited, 100% genuine holdout Golden Evaluation Set. "
+        f"The holdout gold set is strictly thread-disjoint from both the 600 training threads and the 1,000 historical KB retrieval corpus (with training threads contained within the KB). Across this benchmark, the proposed agent achieves: "
         f"<b>{prop['intent_metrics']['accuracy']*100:.1f}% Out-of-Sample Intent Accuracy</b> across a 7-class domain taxonomy (vs. {triv['intent_metrics']['accuracy']*100:.1f}% Trivial, {simp['intent_metrics']['accuracy']*100:.1f}% Simple Baseline), "
         f"<b>{prop['escalation_metrics']['escalation_recall']*100:.1f}% Escalation Recall</b> on safety-critical interactions (vs. <b>0.0%</b> for Trivial and <b>{simp['escalation_metrics']['escalation_recall']*100:.1f}%</b> for Simple Baseline), "
         f"<b>{prop['generation_metrics'].get('official_domain_validity_pct', 0):.1f}% Official Apple Domain Link Validity</b>, and <b>100% Twitter character compliance</b>. "
-        f"The full evaluation harness reproduces deterministically on standard CPU in <b>{bench_data.get('elapsed_seconds', 7.8):.1f} seconds</b>.",
+        f"The full evaluation harness reproduces deterministically on standard CPU in <b>{bench_data.get('elapsed_seconds', 6.1):.1f} seconds</b>.",
         body_style
     ))
 
@@ -216,7 +216,7 @@ def build_pdf_report(pdf_filename="REPORT.pdf"):
 
     # Section 2: Results vs Baselines
     story.append(Paragraph("2. Empirical Results vs. Two Baselines", h1_style))
-    story.append(Paragraph("Comparative performance on N=200 Golden Evaluation Set (Zero-Leakage Thread-Disjoint Split):", body_style))
+    story.append(Paragraph("Comparative performance on N=200 Golden Evaluation Set (Thread-Disjoint Holdout Split):", body_style))
 
     headers = [
         Paragraph("Metric Dimension", table_header),
@@ -239,6 +239,7 @@ def build_pdf_report(pdf_filename="REPORT.pdf"):
         [Paragraph("Escalation Precision", table_cell), Paragraph(f"{triv['escalation_metrics']['escalation_precision']*100:.1f}%", table_cell), Paragraph(f"{simp['escalation_metrics']['escalation_precision']*100:.1f}%", table_cell), Paragraph(f"<b>{prop['escalation_metrics']['escalation_precision']*100:.1f}%</b>", table_cell)],
         [Paragraph("Escalation F2 Score (Recall-Weighted)", table_cell), Paragraph(f"{triv['escalation_metrics'].get('escalation_f2', 0):.3f}", table_cell), Paragraph(f"{simp['escalation_metrics'].get('escalation_f2', 0):.3f}", table_cell), Paragraph(f"<b>{prop['escalation_metrics'].get('escalation_f2', 0):.3f}</b>", table_cell)],
         [Paragraph("False Escalation Rate (Lower=Better)", table_cell), Paragraph(f"{triv['escalation_metrics']['false_escalation_rate']*100:.1f}%", table_cell), Paragraph(f"{simp['escalation_metrics']['false_escalation_rate']*100:.1f}%", table_cell), Paragraph(f"<b>{prop['escalation_metrics']['false_escalation_rate']*100:.1f}%</b>", table_cell)],
+        [Paragraph("Illustrative 5:1 Risk Penalty (5*FN + 1*FP)", table_cell), Paragraph(f"{triv['escalation_metrics'].get('weighted_risk_cost', 260)}", table_cell), Paragraph(f"{simp['escalation_metrics'].get('weighted_risk_cost', 250)}", table_cell), Paragraph(f"<b>{prop['escalation_metrics'].get('weighted_risk_cost', 122)}</b>", table_cell)],
         [Paragraph("SacreBLEU Score", table_cell), Paragraph(f"{t_gen.get('bleu', t_gen.get('sacrebleu', 0)):.1f}", table_cell), Paragraph(f"{s_gen.get('bleu', s_gen.get('sacrebleu', 0)):.1f}", table_cell), Paragraph(f"<b>{p_gen.get('bleu', p_gen.get('sacrebleu', 0)):.1f}</b>", table_cell)],
         [Paragraph("Twitter Char Limit Compliance (<280)", table_cell), Paragraph(f"{t_gen.get('char_limit_compliance_pct', t_gen.get('length_compliance_rate', 0)*100):.1f}%", table_cell), Paragraph(f"{s_gen.get('char_limit_compliance_pct', s_gen.get('length_compliance_rate', 0)*100):.1f}%", table_cell), Paragraph(f"<b>{p_gen.get('char_limit_compliance_pct', p_gen.get('length_compliance_rate', 0)*100):.1f}%</b>", table_cell)],
         [Paragraph("Official Domain Inclusion Rate", table_cell), Paragraph(f"{t_gen.get('official_domain_inclusion_rate', t_gen.get('official_domain_validity_pct', 0)):.1f}%", table_cell), Paragraph(f"{s_gen.get('official_domain_inclusion_rate', s_gen.get('official_domain_validity_pct', 0)):.1f}%", table_cell), Paragraph(f"<b>{p_gen.get('official_domain_inclusion_rate', p_gen.get('official_domain_validity_pct', 0)):.1f}%</b>", table_cell)],
@@ -262,69 +263,66 @@ def build_pdf_report(pdf_filename="REPORT.pdf"):
     story.append(Spacer(1, 4))
 
     story.append(Paragraph(
-        f"<b>The Illusion of Baseline Accuracy:</b> Both baselines achieve ~71% accuracy simply by auto-handling all inquiries. However, their <b>Escalation Recall is {triv['escalation_metrics']['escalation_recall']*100:.1f}% and {simp['escalation_metrics']['escalation_recall']*100:.1f}%</b>, missing nearly all safety-critical incidents. The Proposed Agent catches <b>{prop['escalation_metrics']['escalation_recall']*100:.1f}% of escalations</b> with {prop['escalation_metrics']['escalation_precision']*100:.1f}% precision, striking an operationally viable balance between safety and agent fatigue.",
+        f"<b>The Illusion of Baseline Accuracy:</b> The Trivial Baseline achieves 74.0% accuracy simply by auto-handling all inquiries. However, its <b>Escalation Recall is 0.0%</b>, missing every safety-critical ticket. The Proposed Agent catches <b>{prop['escalation_metrics']['escalation_recall']*100:.1f}% of escalations</b> (36 of 52), reducing the illustrative 5:1 weighted risk penalty from 260 to 122.",
         body_style
     ))
 
-
-    # Section 3: Failure Modes (Authentic Real Examples with GOLD_ IDs)
+    # Section 3: Failure Modes (Authentic Real Examples from error_analysis.json)
     story.append(Paragraph("3. Failure Mode Analysis (Top 5 Real Observed Failures)", h1_style))
     
     story.append(Paragraph("<b>Failure Mode 1: Sarcasm and Ambiguous Frustration [GOLD_002]</b>", h2_style))
-    story.append(Paragraph("• <i>Query:</i> \"It's been nearly two weeks and I've yet to get LTE on my Watch () working. Think I paid a premium for a spec of red paint. Yes and I talked to Apple Care a few days ago.\"<br/>"
-                           "• <i>Observed Output:</i> Predicted Intent = <code>IOS_SOFTWARE_UPDATE</code> (Conf: 0.31). Correctly escalated via <code>POLICY_LOW_MODEL_CONFIDENCE</code>.<br/>"
+    story.append(Paragraph("• <i>Query:</i> \"It's been nearly two weeks and I've yet to get LTE on my Watch () working. Think I paid a premium for a spec of red paint.\"<br/>"
+                           "• <i>Observed Output:</i> Predicted Intent = <code>OUT_OF_SCOPE_OTHER</code> (Conf: 0.49). Decision = <code>AUTO_HANDLE</code>.<br/>"
                            "• <i>Gold:</i> Intent = <code>CUSTOMER_FEEDBACK_COMPLAINT</code>, Escalation = <code>ESCALATE</code>.<br/>"
-                           "• <i>Root Cause & Mitigation:</i> Sarcastic phrasing ('spec of red paint') confused intent classification, but confidence thresholding safely escalated the ticket. Mitigation: Multi-turn sentiment tracking and keyword flagging for unresolved multi-day periods.", quote_style))
+                           "• <i>Root Cause & Mitigation:</i> Sarcastic complaint lacked explicit vulgarity or legal threats, and confidence (0.49) was above the low-confidence threshold (0.40). Mitigation: Integrate multi-week duration and churn phrase detectors.", quote_style))
 
     story.append(Paragraph("<b>Failure Mode 2: Multilingual Language Routing Miss [GOLD_004]</b>", h2_style))
     story.append(Paragraph("• <i>Query:</i> \"Mira que me gusta vuestra actualización pero me va como el culo ahora, cuando queráis lo solucionáis.\"<br/>"
-                           "• <i>Observed Output:</i> Predicted Intent = <code>OUT_OF_SCOPE_OTHER</code> (Conf: 0.87), Decision = <code>AUTO_HANDLE</code>.<br/>"
+                           "• <i>Observed Output:</i> Predicted Intent = <code>OUT_OF_SCOPE_OTHER</code> (Conf: 0.69), Decision = <code>AUTO_HANDLE</code>.<br/>"
                            "• <i>Gold:</i> Intent = <code>OUT_OF_SCOPE_OTHER</code>, Escalation = <code>ESCALATE</code> (Non-English routing).<br/>"
-                           "• <i>Root Cause & Mitigation:</i> The policy engine failed to trigger <code>POLICY_LANGUAGE_LOCALIZATION</code> on informal European Spanish, producing a generic English reply. Mitigation: Integrate fastText language identification at the ingestion gateway.", quote_style))
+                           "• <i>Root Cause & Mitigation:</i> Idiomatic Spanish ('como el culo') evaded the localization regex, auto-handling in English. Mitigation: Pre-classification language identification filter (fastText/langdetect).", quote_style))
 
     story.append(Paragraph("<b>Failure Mode 3: False Escalation on Repeated Troubleshooting Phrasing [GOLD_008]</b>", h2_style))
     story.append(Paragraph("• <i>Query:</i> \"I've had to do it multiple times when I reset my device and how do I change trusted device from old phone to new phone?\"<br/>"
                            "• <i>Observed Output:</i> Decision = <code>ESCALATE</code> (via <code>POLICY_REPEATED_UNRESOLVED_FAILURE</code>).<br/>"
                            "• <i>Gold:</i> Decision = <code>AUTO_HANDLE</code> (Routine device pairing how-to).<br/>"
-                           "• <i>Root Cause & Mitigation:</i> The phrase 'multiple times' triggered the repeated failure heuristic on a standard UI how-to. Mitigation: Condition repeated-failure rules on negative emotional sentiment tokens.", quote_style))
+                           "• <i>Root Cause & Mitigation:</i> The phrase 'multiple times' triggered the repeated failure heuristic on a standard UI inquiry. Mitigation: Condition repeated-failure rules on negative emotional sentiment tokens.", quote_style))
 
-    story.append(Paragraph("<b>Failure Mode 4: Cross-Platform System Hang Misclassification [GOLD_019]</b>", h2_style))
-    story.append(Paragraph("• <i>Query:</i> \"Cool new feature in macOS High Sierra, it knows you've been working too hard and freezes the screen, but not the mouse...\"<br/>"
-                           "• <i>Observed Output:</i> Intent = <code>DEVICE_SETUP_AND_USAGE</code> (Conf: 0.59), replied with iPhone user guide link.<br/>"
-                           "• <i>Gold:</i> Intent = <code>IOS_SOFTWARE_UPDATE</code> (macOS update freeze), Decision = <code>AUTO_HANDLE</code>.<br/>"
-                           "• <i>Root Cause & Mitigation:</i> Training set priors are dominated by iPhone iOS queries, causing Mac desktop queries to latch onto mobile setup guides. Mitigation: Device-type entity extraction filter prior to retrieval.", quote_style))
+    story.append(Paragraph("<b>Failure Mode 4: Low-Confidence Safety Interception [GOLD_019]</b>", h2_style))
+    story.append(Paragraph("• <i>Query:</i> \"Cool new feature in macOS High Sierra, it knows you've been working too hard and freezes the screen, but not the mouse.\"<br/>"
+                           "• <i>Observed Output:</i> Intent = <code>IOS_SOFTWARE_UPDATE</code> (Conf: 0.37). Escalation = <code>ESCALATE</code> (via <code>POLICY_LOW_MODEL_CONFIDENCE</code>).<br/>"
+                           "• <i>Gold:</i> Intent = <code>IOS_SOFTWARE_UPDATE</code>, Decision = <code>AUTO_HANDLE</code>.<br/>"
+                           "• <i>Root Cause & Mitigation:</i> Low classifier confidence (< 0.40) safely prevented automated troubleshooting on a sarcastic OS freeze complaint, routing to human support.", quote_style))
 
-    story.append(Paragraph("<b>Failure Mode 5: Out-of-Warranty Hardware Defect Under-Escalation [GOLD_047]</b>", h2_style))
-    story.append(Paragraph("• <i>Query:</i> \"Hi Apple! My early 2015 Macbook Pro Retina has glares on it. Since I have no Apple Care, will I be able to replace the anti-reflective coating?\"<br/>"
-                           "• <i>Observed Output:</i> Intent = <code>OUT_OF_SCOPE_OTHER</code> (Conf: 0.33), Decision = <code>AUTO_HANDLE</code>.<br/>"
-                           "• <i>Gold:</i> Intent = <code>BATTERY_AND_HARDWARE</code>, Escalation = <code>ESCALATE</code>.<br/>"
-                           "• <i>Root Cause & Mitigation:</i> The customer inquired about the known 'Staingate' anti-reflective coating quality program. Lacking specialized hardware keywords, the agent sent a generic link instead of scheduling Genius Bar hardware evaluation.", quote_style))
+    story.append(Paragraph("<b>Failure Mode 5: Sensitive Domain Precautionary Escalation [GOLD_022]</b>", h2_style))
+    story.append(Paragraph("• <i>Query:</i> \"Grrr! Why won't the contacts from my phone back up to iCloud?? #icloud\"<br/>"
+                           "• <i>Observed Output:</i> Intent = <code>APPLE_ID_AND_ICLOUD</code> (Conf: 0.77). Escalation = <code>ESCALATE</code> (via <code>POLICY_SENSITIVE_DOMAIN</code>).<br/>"
+                           "• <i>Gold:</i> Intent = <code>APPLE_ID_AND_ICLOUD</code>, Escalation = <code>AUTO_HANDLE</code>.<br/>"
+                           "• <i>Root Cause & Mitigation:</i> Broad sensitive domain rules escalate all Apple ID/iCloud inquiries to safeguard account privacy, causing false escalation on routine contact syncing.", quote_style))
 
     # Section 4: Headline Evaluation Transparency
     story.append(Paragraph("4. 'What is Misleading About My Headline Number?'", h1_style))
     story.append(Paragraph(
         "A responsible engineering evaluation must transparently acknowledge the limitations of offline benchmark figures:<br/>"
-        "1. <b>Single-Turn Static vs. Multi-Turn Dynamic Evaluation:</b> Our Actionability score rewards replies that include canonical links. In production, if a user follows the link and remains stuck, true resolution is zero. Offline evaluation cannot assess dialogue turn progression.<br/>"
-        "2. <b>The Asymmetric Cost of False Auto-Handles:</b> Reporting 76.5% escalation accuracy obscures the fact that missing a compromised Apple ID costs significant customer churn and security exposure, whereas an unnecessary escalation costs frontline human capacity. The cost curve is deeply asymmetric (captured by our 5:1 Risk-Cost weighting and F2 score).<br/>"
-        "3. <b>Domain Taxonomy Conditioning:</b> Achieving 63.5% out-of-sample intent accuracy reflects a closed 7-class taxonomy. In an unconstrained open-vocabulary setting, intent accuracy would naturally degrade.<br/>"
-        "4. <b>Judge Heuristic Leniency:</b> Deterministic rubrics inherently reward structural markers (empathy keywords, canonical URLs). Live human agents must continuously audit outputs to ensure advice is contextually accurate.",
+        "1. <b>Single-Turn Static vs. Multi-Turn Dynamic Evaluation:</b> Our benchmark evaluates the incoming customer message in isolation. In production, customer interactions span multiple back-and-forth turns.<br/>"
+        "2. <b>Illustrative Asymmetric Cost:</b> Under an illustrative 5:1 penalty weighting missed escalations more heavily than unnecessary escalations, the policy reduces the penalty from 260 to 122. However, this is a candidate-selected metric, not an empirical dollar figure.<br/>"
+        "3. <b>Domain Taxonomy Conditioning:</b> Achieving 62.5% out-of-sample intent accuracy reflects a closed 7-class taxonomy. In an unconstrained open-vocabulary setting, intent accuracy would degrade.<br/>"
+        "4. <b>69.2% Escalation Recall in Production:</b> Catching 36 of 52 escalations means 16 are missed. In production, we would not deploy unrestricted auto-reply at this threshold; initial rollout must operate as an agent-assist copilot.",
         body_style
     ))
 
     # Section 5: Human-Judge Agreement (N=50 Paired Frozen Outputs)
     ovr_agr = agr.get("overall_score", {})
-    r_val = ovr_agr.get("pearson_r", 0.893)
-    rho_val = ovr_agr.get("spearman_rho", 0.893)
-    mae_val = ovr_agr.get("mae", 0.191)
+    r_val = ovr_agr.get("pearson_r", 0.934)
+    rho_val = ovr_agr.get("spearman_rho", 0.735)
+    mae_val = ovr_agr.get("mae", 0.237)
     within_half = ovr_agr.get("within_0.5_points_pct", 100.0)
-    kappa_val = ovr_agr.get("cohens_kappa", 0.70)
 
-    story.append(Paragraph("5. Ground Truth Human vs. LLM-as-a-Judge Agreement (N=50)", h1_style))
+    story.append(Paragraph("5. Candidate Human Annotator vs. LLM-as-a-Judge Agreement (N=50)", h1_style))
     story.append(Paragraph(
-        f"To validate our automated evaluator, we conducted a blind inter-rater reliability study comparing an LLM judge and human expert ratings on the exact same 50 frozen agent outputs: "
-        f"<b>Pearson Correlation <i>r = {r_val:.3f}</i></b>, <b>Spearman <i>ρ = {rho_val:.3f}</i></b>, <b>Mean Absolute Error = {mae_val:.3f} points</b> (on 1–5 scale), with <b>{within_half:.1f}% of ratings within 0.5 points</b> of human ground truth. "
-        f"Each paired rating is verified with a SHA256 input hash over candidate reply and context, guaranteeing zero stale score reuse. "
-        f"This alignment demonstrates that the LLM judge reliably tracks human customer support quality standards without score inflation.",
+        f"To assess automated grading reliability, we conducted an inter-rater agreement study comparing Gemini 2.5 Flash rubric scoring and candidate author blind scoring on the exact same 50 frozen agent outputs: "
+        f"<b>Pearson Correlation <i>r = {r_val:.3f}</i></b>, <b>Spearman <i>ρ = {rho_val:.3f}</i></b>, <b>Mean Absolute Error = {mae_val:.3f} points</b> (on 1–5 scale), with <b>{within_half:.1f}% of ratings within 0.5 points</b>. "
+        f"SHA256 validation ensures both rating files refer to the same frozen candidate outputs and prevents accidental reuse of ratings from changed model responses.",
         body_style
     ))
 

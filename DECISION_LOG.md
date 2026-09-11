@@ -21,7 +21,7 @@ A chronological record of 14 non-obvious technical and architectural decisions m
 ### 3. Asymmetric Metric Optimization: Prioritizing Safety Recall Over Precision in Escalation
 * **Decision**: Prioritize **Escalation Recall** (catching issues needing human agents) as a tier-1 critical metric, accepting a slight false escalation penalty over any risk of false auto-handling. Formalized via **Escalation F2 Score** and a **5:1 Weighted Risk-Cost Penalty** (5 points for a missed safety escalation vs. 1 point for an unnecessary escalation).
 * **Rationale**: In customer support operations, an unnecessary human escalation consumes frontline agent capacity and extends response backlogs; conversely, an automated hallucination or failure to escalate on an account takeover, damaged battery, or billing dispute creates severe customer harm, security exposure, and brand trust erosion. Under-escalation is safety-catastrophic; over-escalation is an operational capacity trade-off.
-* **Trade-off**: The agent routes ambiguous and safety-boundary queries to human specialists rather than aggressively attempting to auto-resolve everything, resulting in a false escalation rate of ~24.6% while achieving a 65.5% escalation recall and cutting total risk penalty by more than half.
+* **Trade-off**: The agent routes ambiguous and safety-boundary queries to human specialists rather than aggressively attempting to auto-resolve everything, resulting in a false escalation rate of ~28.4% while achieving a 69.2% escalation recall and cutting the illustrative risk penalty from 260 to 122.
 
 ---
 
@@ -33,9 +33,9 @@ A chronological record of 14 non-obvious technical and architectural decisions m
 ---
 
 ### 5. Separate KB Indexing from Evaluation Candidates (Anti-Contamination Partition)
-* **Decision**: Strictly partition the scraped conversations into 600 training threads, 1,000 historical KB entries, and 200 holdout golden evaluation examples with zero thread overlap across splits.
+* **Decision**: Partition the scraped conversations such that the 200 holdout golden evaluation examples have zero thread overlap with both the 600 training threads and the 1,000 historical KB entries (the 600 classifier training threads are included within the 1,000 KB entries).
 * **Rationale**: Evaluating RAG systems on data present in the vector index produces artificially inflated ROUGE/BLEU scores and circular evaluation. Keeping the golden set completely out of the retrieval index tests true out-of-sample generalization.
-* **Trade-off**: Slightly smaller retrieval database (1,000 documents instead of 1,200).
+* **Trade-off**: Gold set isolation ensures zero data contamination during holdout evaluation.
 
 ---
 
@@ -99,5 +99,5 @@ A chronological record of 14 non-obvious technical and architectural decisions m
 
 ### 14. Measuring Human-Judge Agreement via Inter-Rater Reliability (Pearson, Spearman, Kappa, MAE)
 * **Decision**: Include authentic mathematical inter-rater agreement statistics in the automated evaluation harness with cryptographic SHA256 input hash assertions.
-* **Rationale**: An automated judge cannot be trusted unless its scoring distribution demonstrably aligns with human expert grading. By hashing the exact evaluation payload (`item_id`, `query`, `gold_intent`, `gold_escalation`, `candidate_reply`, `candidate_escalation`, `rubric_version`), the evaluation harness cryptographically guarantees that human and LLM ratings evaluate the exact same candidate output, preventing stale or synthetic score reuse.
+* **Rationale**: An automated judge cannot be trusted unless its scoring distribution demonstrably aligns with human grading. By hashing the exact evaluation payload (`item_id`, `query`, `gold_intent`, `gold_escalation`, `candidate_reply`, `candidate_escalation`, `rubric_version`), the evaluation harness ensures that both human ratings and LLM ratings refer to the exact same frozen candidate outputs, preventing accidental reuse of ratings when model responses change.
 * **Trade-off**: Requires maintaining paired human and LLM evaluation sets with strict hash verification that fails loudly on any candidate text discrepancy.

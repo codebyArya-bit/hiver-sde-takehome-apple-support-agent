@@ -1,5 +1,5 @@
 {
-  "execution_timestamp": "2026-09-11T11:32:25Z",
+  "execution_timestamp": "2026-09-11T13:07:36Z",
   "dataset_size": 200,
   "split_verification": {
     "train_threads": 600,
@@ -11,13 +11,13 @@
   "results": {
     "Trivial Baseline": {
       "intent_metrics": {
-        "accuracy": 0.355,
-        "macro_f1": 0.0749,
-        "macro_precision": 0.0507,
+        "accuracy": 0.36,
+        "macro_f1": 0.0756,
+        "macro_precision": 0.0514,
         "macro_recall": 0.1429,
-        "weighted_f1": 0.186,
+        "weighted_f1": 0.1906,
         "brier_score": 1.0,
-        "expected_calibration_error": 0.355,
+        "expected_calibration_error": 0.36,
         "per_class": {
           "BATTERY_AND_HARDWARE": {
             "precision": 0.0,
@@ -26,22 +26,22 @@
             "support": 55
           },
           "IOS_SOFTWARE_UPDATE": {
-            "precision": 0.355,
+            "precision": 0.36,
             "recall": 1.0,
-            "f1": 0.524,
-            "support": 71
+            "f1": 0.5294,
+            "support": 72
           },
           "APPLE_ID_AND_ICLOUD": {
             "precision": 0.0,
             "recall": 0.0,
             "f1": 0.0,
-            "support": 12
+            "support": 9
           },
           "APP_STORE_AND_BILLING": {
             "precision": 0.0,
             "recall": 0.0,
             "f1": 0.0,
-            "support": 4
+            "support": 6
           },
           "DEVICE_SETUP_AND_USAGE": {
             "precision": 0.0,
@@ -74,7 +74,7 @@
           ],
           [
             0,
-            71,
+            72,
             0,
             0,
             0,
@@ -83,7 +83,7 @@
           ],
           [
             0,
-            12,
+            9,
             0,
             0,
             0,
@@ -92,7 +92,7 @@
           ],
           [
             0,
-            4,
+            6,
             0,
             0,
             0,
@@ -138,22 +138,22 @@
         ]
       },
       "escalation_metrics": {
-        "accuracy": 0.71,
+        "accuracy": 0.74,
         "escalation_recall": 0.0,
         "escalation_precision": 0.0,
         "escalation_f1": 0.0,
         "escalation_f2": 0.0,
         "false_escalation_rate": 0.0,
-        "weighted_risk_cost": 290,
+        "weighted_risk_cost": 260,
         "true_positives_escalate": 0,
-        "false_negatives_missed_escalate": 58,
+        "false_negatives_missed_escalate": 52,
         "false_positives_unnecessary_escalate": 0,
-        "true_negatives_correct_autohandle": 142
+        "true_negatives_correct_autohandle": 148
       },
       "generation_metrics": {
-        "bleu": 0.22,
-        "rouge_1_recall": 0.1652,
-        "rouge_2_recall": 0.0133,
+        "bleu": 0.21,
+        "rouge_1_recall": 0.1514,
+        "rouge_2_recall": 0.0114,
         "char_limit_compliance_pct": 100.0,
         "official_domain_inclusion_rate": 0.0,
         "official_domain_validity_pct": 0.0,
@@ -163,8 +163,8 @@
         "mean_groundedness": 4.2,
         "mean_brand_voice": 5.0,
         "mean_actionability": 4.2,
-        "mean_escalation_appropriateness": 4.02,
-        "mean_overall_score": 4.36,
+        "mean_escalation_appropriateness": 4.13,
+        "mean_overall_score": 4.38,
         "individual_scores": [
           {
             "groundedness": 4.2,
@@ -226,8 +226,8 @@
             "groundedness": 4.2,
             "brand_voice": 5.0,
             "actionability": 4.2,
-            "escalation_appropriateness": 1.0,
-            "overall_score": 3.6
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.6
           },
           {
             "groundedness": 4.2,
@@ -317,41 +317,6 @@
             "groundedness": 4.2,
             "brand_voice": 5.0,
             "actionability": 4.2,
-            "escalation_appropriateness": 1.0,
-            "overall_score": 3.6
-          },
-          {
-            "groundedness": 4.2,
-            "brand_voice": 5.0,
-            "actionability": 4.2,
-            "escalation_appropriateness": 2.0,
-            "overall_score": 3.85
-          },
-          {
-            "groundedness": 4.2,
-            "brand_voice": 5.0,
-            "actionability": 4.2,
-            "escalation_appropriateness": 5.0,
-            "overall_score": 4.6
-          },
-          {
-            "groundedness": 4.2,
-            "brand_voice": 5.0,
-            "actionability": 4.2,
-            "escalation_appropriateness": 2.0,
-            "overall_score": 3.85
-          },
-          {
-            "groundedness": 4.2,
-            "brand_voice": 5.0,
-            "actionability": 4.2,
-            "escalation_appropriateness": 1.0,
-            "overall_score": 3.6
-          },
-          {
-            "groundedness": 4.2,
-            "brand_voice": 5.0,
-            "actionability": 4.2,
             "escalation_appropriateness": 5.0,
             "overall_score": 4.6
           },
@@ -361,62 +326,6 @@
             "actionability": 4.2,
             "escalation_appropriateness": 5.0,
             "overall_score": 4.6
-          },
-          {
-            "groundedness": 4.2,
-            "brand_voice": 5.0,
-            "actionability": 4.2,
-            "escalation_appropriateness": 5.0,
-            "overall_score": 4.6
-          },
-          {
-            "groundedness": 4.2,
-            "brand_voice": 5.0,
-            "actionability": 4.2,
-            "escalation_appropriateness": 5.0,
-            "overall_score": 4.6
-          },
-          {
-            "groundedness": 4.2,
-            "brand_voice": 5.0,
-            "actionability": 4.2,
-            "escalation_appropriateness": 5.0,
-            "overall_score": 4.6
-          },
-          {
-            "groundedness": 4.2,
-            "brand_voice": 5.0,
-            "actionability": 4.2,
-            "escalation_appropriateness": 1.0,
-            "overall_score": 3.6
-          },
-          {
-            "groundedness": 4.2,
-            "brand_voice": 5.0,
-            "actionability": 4.2,
-            "escalation_appropriateness": 5.0,
-            "overall_score": 4.6
-          },
-          {
-            "groundedness": 4.2,
-            "brand_voice": 5.0,
-            "actionability": 4.2,
-            "escalation_appropriateness": 5.0,
-            "overall_score": 4.6
-          },
-          {
-            "groundedness": 4.2,
-            "brand_voice": 5.0,
-            "actionability": 4.2,
-            "escalation_appropriateness": 5.0,
-            "overall_score": 4.6
-          },
-          {
-            "groundedness": 4.2,
-            "brand_voice": 5.0,
-            "actionability": 4.2,
-            "escalation_appropriateness": 1.0,
-            "overall_score": 3.6
           },
           {
             "groundedness": 4.2,
@@ -443,8 +352,22 @@
             "groundedness": 4.2,
             "brand_voice": 5.0,
             "actionability": 4.2,
-            "escalation_appropriateness": 1.0,
-            "overall_score": 3.6
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.6
+          },
+          {
+            "groundedness": 4.2,
+            "brand_voice": 5.0,
+            "actionability": 4.2,
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.6
+          },
+          {
+            "groundedness": 4.2,
+            "brand_voice": 5.0,
+            "actionability": 4.2,
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.6
           },
           {
             "groundedness": 4.2,
@@ -492,8 +415,8 @@
             "groundedness": 4.2,
             "brand_voice": 5.0,
             "actionability": 4.2,
-            "escalation_appropriateness": 2.0,
-            "overall_score": 3.85
+            "escalation_appropriateness": 1.0,
+            "overall_score": 3.6
           },
           {
             "groundedness": 4.2,
@@ -508,27 +431,6 @@
             "actionability": 4.2,
             "escalation_appropriateness": 2.0,
             "overall_score": 3.85
-          },
-          {
-            "groundedness": 4.2,
-            "brand_voice": 5.0,
-            "actionability": 4.2,
-            "escalation_appropriateness": 5.0,
-            "overall_score": 4.6
-          },
-          {
-            "groundedness": 4.2,
-            "brand_voice": 5.0,
-            "actionability": 4.2,
-            "escalation_appropriateness": 5.0,
-            "overall_score": 4.6
-          },
-          {
-            "groundedness": 4.2,
-            "brand_voice": 5.0,
-            "actionability": 4.2,
-            "escalation_appropriateness": 5.0,
-            "overall_score": 4.6
           },
           {
             "groundedness": 4.2,
@@ -548,43 +450,8 @@
             "groundedness": 4.2,
             "brand_voice": 5.0,
             "actionability": 4.2,
-            "escalation_appropriateness": 2.0,
-            "overall_score": 3.85
-          },
-          {
-            "groundedness": 4.2,
-            "brand_voice": 5.0,
-            "actionability": 4.2,
             "escalation_appropriateness": 5.0,
             "overall_score": 4.6
-          },
-          {
-            "groundedness": 4.2,
-            "brand_voice": 5.0,
-            "actionability": 4.2,
-            "escalation_appropriateness": 5.0,
-            "overall_score": 4.6
-          },
-          {
-            "groundedness": 4.2,
-            "brand_voice": 5.0,
-            "actionability": 4.2,
-            "escalation_appropriateness": 5.0,
-            "overall_score": 4.6
-          },
-          {
-            "groundedness": 4.2,
-            "brand_voice": 5.0,
-            "actionability": 4.2,
-            "escalation_appropriateness": 5.0,
-            "overall_score": 4.6
-          },
-          {
-            "groundedness": 4.2,
-            "brand_voice": 5.0,
-            "actionability": 4.2,
-            "escalation_appropriateness": 2.0,
-            "overall_score": 3.85
           },
           {
             "groundedness": 4.2,
@@ -627,83 +494,6 @@
             "actionability": 4.2,
             "escalation_appropriateness": 2.0,
             "overall_score": 3.85
-          },
-          {
-            "groundedness": 4.2,
-            "brand_voice": 5.0,
-            "actionability": 4.2,
-            "escalation_appropriateness": 2.0,
-            "overall_score": 3.85
-          },
-          {
-            "groundedness": 4.2,
-            "brand_voice": 5.0,
-            "actionability": 4.2,
-            "escalation_appropriateness": 5.0,
-            "overall_score": 4.6
-          },
-          {
-            "groundedness": 4.2,
-            "brand_voice": 5.0,
-            "actionability": 4.2,
-            "escalation_appropriateness": 5.0,
-            "overall_score": 4.6
-          },
-          {
-            "groundedness": 4.2,
-            "brand_voice": 5.0,
-            "actionability": 4.2,
-            "escalation_appropriateness": 5.0,
-            "overall_score": 4.6
-          },
-          {
-            "groundedness": 4.2,
-            "brand_voice": 5.0,
-            "actionability": 4.2,
-            "escalation_appropriateness": 5.0,
-            "overall_score": 4.6
-          },
-          {
-            "groundedness": 4.2,
-            "brand_voice": 5.0,
-            "actionability": 4.2,
-            "escalation_appropriateness": 2.0,
-            "overall_score": 3.85
-          },
-          {
-            "groundedness": 4.2,
-            "brand_voice": 5.0,
-            "actionability": 4.2,
-            "escalation_appropriateness": 5.0,
-            "overall_score": 4.6
-          },
-          {
-            "groundedness": 4.2,
-            "brand_voice": 5.0,
-            "actionability": 4.2,
-            "escalation_appropriateness": 5.0,
-            "overall_score": 4.6
-          },
-          {
-            "groundedness": 4.2,
-            "brand_voice": 5.0,
-            "actionability": 4.2,
-            "escalation_appropriateness": 5.0,
-            "overall_score": 4.6
-          },
-          {
-            "groundedness": 4.2,
-            "brand_voice": 5.0,
-            "actionability": 4.2,
-            "escalation_appropriateness": 5.0,
-            "overall_score": 4.6
-          },
-          {
-            "groundedness": 4.2,
-            "brand_voice": 5.0,
-            "actionability": 4.2,
-            "escalation_appropriateness": 5.0,
-            "overall_score": 4.6
           },
           {
             "groundedness": 4.2,
@@ -793,8 +583,218 @@
             "groundedness": 4.2,
             "brand_voice": 5.0,
             "actionability": 4.2,
-            "escalation_appropriateness": 1.0,
-            "overall_score": 3.6
+            "escalation_appropriateness": 2.0,
+            "overall_score": 3.85
+          },
+          {
+            "groundedness": 4.2,
+            "brand_voice": 5.0,
+            "actionability": 4.2,
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.6
+          },
+          {
+            "groundedness": 4.2,
+            "brand_voice": 5.0,
+            "actionability": 4.2,
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.6
+          },
+          {
+            "groundedness": 4.2,
+            "brand_voice": 5.0,
+            "actionability": 4.2,
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.6
+          },
+          {
+            "groundedness": 4.2,
+            "brand_voice": 5.0,
+            "actionability": 4.2,
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.6
+          },
+          {
+            "groundedness": 4.2,
+            "brand_voice": 5.0,
+            "actionability": 4.2,
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.6
+          },
+          {
+            "groundedness": 4.2,
+            "brand_voice": 5.0,
+            "actionability": 4.2,
+            "escalation_appropriateness": 2.0,
+            "overall_score": 3.85
+          },
+          {
+            "groundedness": 4.2,
+            "brand_voice": 5.0,
+            "actionability": 4.2,
+            "escalation_appropriateness": 2.0,
+            "overall_score": 3.85
+          },
+          {
+            "groundedness": 4.2,
+            "brand_voice": 5.0,
+            "actionability": 4.2,
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.6
+          },
+          {
+            "groundedness": 4.2,
+            "brand_voice": 5.0,
+            "actionability": 4.2,
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.6
+          },
+          {
+            "groundedness": 4.2,
+            "brand_voice": 5.0,
+            "actionability": 4.2,
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.6
+          },
+          {
+            "groundedness": 4.2,
+            "brand_voice": 5.0,
+            "actionability": 4.2,
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.6
+          },
+          {
+            "groundedness": 4.2,
+            "brand_voice": 5.0,
+            "actionability": 4.2,
+            "escalation_appropriateness": 2.0,
+            "overall_score": 3.85
+          },
+          {
+            "groundedness": 4.2,
+            "brand_voice": 5.0,
+            "actionability": 4.2,
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.6
+          },
+          {
+            "groundedness": 4.2,
+            "brand_voice": 5.0,
+            "actionability": 4.2,
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.6
+          },
+          {
+            "groundedness": 4.2,
+            "brand_voice": 5.0,
+            "actionability": 4.2,
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.6
+          },
+          {
+            "groundedness": 4.2,
+            "brand_voice": 5.0,
+            "actionability": 4.2,
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.6
+          },
+          {
+            "groundedness": 4.2,
+            "brand_voice": 5.0,
+            "actionability": 4.2,
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.6
+          },
+          {
+            "groundedness": 4.2,
+            "brand_voice": 5.0,
+            "actionability": 4.2,
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.6
+          },
+          {
+            "groundedness": 4.2,
+            "brand_voice": 5.0,
+            "actionability": 4.2,
+            "escalation_appropriateness": 2.0,
+            "overall_score": 3.85
+          },
+          {
+            "groundedness": 4.2,
+            "brand_voice": 5.0,
+            "actionability": 4.2,
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.6
+          },
+          {
+            "groundedness": 4.2,
+            "brand_voice": 5.0,
+            "actionability": 4.2,
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.6
+          },
+          {
+            "groundedness": 4.2,
+            "brand_voice": 5.0,
+            "actionability": 4.2,
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.6
+          },
+          {
+            "groundedness": 4.2,
+            "brand_voice": 5.0,
+            "actionability": 4.2,
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.6
+          },
+          {
+            "groundedness": 4.2,
+            "brand_voice": 5.0,
+            "actionability": 4.2,
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.6
+          },
+          {
+            "groundedness": 4.2,
+            "brand_voice": 5.0,
+            "actionability": 4.2,
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.6
+          },
+          {
+            "groundedness": 4.2,
+            "brand_voice": 5.0,
+            "actionability": 4.2,
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.6
+          },
+          {
+            "groundedness": 4.2,
+            "brand_voice": 5.0,
+            "actionability": 4.2,
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.6
+          },
+          {
+            "groundedness": 4.2,
+            "brand_voice": 5.0,
+            "actionability": 4.2,
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.6
+          },
+          {
+            "groundedness": 4.2,
+            "brand_voice": 5.0,
+            "actionability": 4.2,
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.6
+          },
+          {
+            "groundedness": 4.2,
+            "brand_voice": 5.0,
+            "actionability": 4.2,
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.6
           },
           {
             "groundedness": 4.2,
@@ -905,8 +905,8 @@
             "groundedness": 4.2,
             "brand_voice": 5.0,
             "actionability": 4.2,
-            "escalation_appropriateness": 5.0,
-            "overall_score": 4.6
+            "escalation_appropriateness": 1.0,
+            "overall_score": 3.6
           },
           {
             "groundedness": 4.2,
@@ -947,8 +947,8 @@
             "groundedness": 4.2,
             "brand_voice": 5.0,
             "actionability": 4.2,
-            "escalation_appropriateness": 5.0,
-            "overall_score": 4.6
+            "escalation_appropriateness": 1.0,
+            "overall_score": 3.6
           },
           {
             "groundedness": 4.2,
@@ -1178,8 +1178,8 @@
             "groundedness": 4.2,
             "brand_voice": 5.0,
             "actionability": 4.2,
-            "escalation_appropriateness": 1.0,
-            "overall_score": 3.6
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.6
           },
           {
             "groundedness": 4.2,
@@ -1201,41 +1201,6 @@
             "actionability": 4.2,
             "escalation_appropriateness": 2.0,
             "overall_score": 3.85
-          },
-          {
-            "groundedness": 4.2,
-            "brand_voice": 5.0,
-            "actionability": 4.2,
-            "escalation_appropriateness": 2.0,
-            "overall_score": 3.85
-          },
-          {
-            "groundedness": 4.2,
-            "brand_voice": 5.0,
-            "actionability": 4.2,
-            "escalation_appropriateness": 5.0,
-            "overall_score": 4.6
-          },
-          {
-            "groundedness": 4.2,
-            "brand_voice": 5.0,
-            "actionability": 4.2,
-            "escalation_appropriateness": 5.0,
-            "overall_score": 4.6
-          },
-          {
-            "groundedness": 4.2,
-            "brand_voice": 5.0,
-            "actionability": 4.2,
-            "escalation_appropriateness": 5.0,
-            "overall_score": 4.6
-          },
-          {
-            "groundedness": 4.2,
-            "brand_voice": 5.0,
-            "actionability": 4.2,
-            "escalation_appropriateness": 1.0,
-            "overall_score": 3.6
           },
           {
             "groundedness": 4.2,
@@ -1276,6 +1241,41 @@
             "groundedness": 4.2,
             "brand_voice": 5.0,
             "actionability": 4.2,
+            "escalation_appropriateness": 2.0,
+            "overall_score": 3.85
+          },
+          {
+            "groundedness": 4.2,
+            "brand_voice": 5.0,
+            "actionability": 4.2,
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.6
+          },
+          {
+            "groundedness": 4.2,
+            "brand_voice": 5.0,
+            "actionability": 4.2,
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.6
+          },
+          {
+            "groundedness": 4.2,
+            "brand_voice": 5.0,
+            "actionability": 4.2,
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.6
+          },
+          {
+            "groundedness": 4.2,
+            "brand_voice": 5.0,
+            "actionability": 4.2,
+            "escalation_appropriateness": 1.0,
+            "overall_score": 3.6
+          },
+          {
+            "groundedness": 4.2,
+            "brand_voice": 5.0,
+            "actionability": 4.2,
             "escalation_appropriateness": 5.0,
             "overall_score": 4.6
           },
@@ -1381,8 +1381,8 @@
             "groundedness": 4.2,
             "brand_voice": 5.0,
             "actionability": 4.2,
-            "escalation_appropriateness": 5.0,
-            "overall_score": 4.6
+            "escalation_appropriateness": 2.0,
+            "overall_score": 3.85
           },
           {
             "groundedness": 4.2,
@@ -1603,37 +1603,37 @@
     },
     "Simple Baseline": {
       "intent_metrics": {
-        "accuracy": 0.54,
-        "macro_f1": 0.2578,
-        "macro_precision": 0.2869,
-        "macro_recall": 0.2962,
-        "weighted_f1": 0.4403,
-        "brier_score": 0.8118,
-        "expected_calibration_error": 0.365,
+        "accuracy": 0.55,
+        "macro_f1": 0.267,
+        "macro_precision": 0.2908,
+        "macro_recall": 0.3029,
+        "weighted_f1": 0.4506,
+        "brier_score": 0.7874,
+        "expected_calibration_error": 0.355,
         "per_class": {
           "BATTERY_AND_HARDWARE": {
-            "precision": 0.8,
-            "recall": 0.7273,
-            "f1": 0.7619,
+            "precision": 0.82,
+            "recall": 0.7455,
+            "f1": 0.781,
             "support": 55
           },
           "IOS_SOFTWARE_UPDATE": {
-            "precision": 0.4583,
-            "recall": 0.9296,
-            "f1": 0.614,
-            "support": 71
+            "precision": 0.4653,
+            "recall": 0.9306,
+            "f1": 0.6204,
+            "support": 72
           },
           "APPLE_ID_AND_ICLOUD": {
             "precision": 0.5,
-            "recall": 0.0833,
-            "f1": 0.1429,
-            "support": 12
+            "recall": 0.1111,
+            "f1": 0.1818,
+            "support": 9
           },
           "APP_STORE_AND_BILLING": {
             "precision": 0.0,
             "recall": 0.0,
             "f1": 0.0,
-            "support": 4
+            "support": 6
           },
           "DEVICE_SETUP_AND_USAGE": {
             "precision": 0.0,
@@ -1656,8 +1656,8 @@
         },
         "confusion_matrix": [
           [
-            40,
-            13,
+            41,
+            12,
             1,
             0,
             0,
@@ -1666,7 +1666,7 @@
           ],
           [
             5,
-            66,
+            67,
             0,
             0,
             0,
@@ -1674,8 +1674,8 @@
             0
           ],
           [
-            1,
-            10,
+            0,
+            8,
             1,
             0,
             0,
@@ -1684,7 +1684,7 @@
           ],
           [
             0,
-            3,
+            5,
             0,
             0,
             0,
@@ -1730,22 +1730,22 @@
         ]
       },
       "escalation_metrics": {
-        "accuracy": 0.71,
-        "escalation_recall": 0.0172,
-        "escalation_precision": 0.5,
-        "escalation_f1": 0.0333,
-        "escalation_f2": 0.0214,
-        "false_escalation_rate": 0.007,
-        "weighted_risk_cost": 286,
-        "true_positives_escalate": 1,
-        "false_negatives_missed_escalate": 57,
-        "false_positives_unnecessary_escalate": 1,
-        "true_negatives_correct_autohandle": 141
+        "accuracy": 0.75,
+        "escalation_recall": 0.0385,
+        "escalation_precision": 1.0,
+        "escalation_f1": 0.0741,
+        "escalation_f2": 0.0476,
+        "false_escalation_rate": 0.0,
+        "weighted_risk_cost": 250,
+        "true_positives_escalate": 2,
+        "false_negatives_missed_escalate": 50,
+        "false_positives_unnecessary_escalate": 0,
+        "true_negatives_correct_autohandle": 148
       },
       "generation_metrics": {
-        "bleu": 0.34,
+        "bleu": 0.36,
         "rouge_1_recall": 0.0931,
-        "rouge_2_recall": 0.001,
+        "rouge_2_recall": 0.0013,
         "char_limit_compliance_pct": 95.0,
         "official_domain_inclusion_rate": 0.0,
         "official_domain_validity_pct": 0.0,
@@ -1755,8 +1755,8 @@
         "mean_groundedness": 4.06,
         "mean_brand_voice": 4.36,
         "mean_actionability": 4.33,
-        "mean_escalation_appropriateness": 4.03,
-        "mean_overall_score": 4.2,
+        "mean_escalation_appropriateness": 4.17,
+        "mean_overall_score": 4.23,
         "individual_scores": [
           {
             "groundedness": 4.0,
@@ -1818,8 +1818,8 @@
             "groundedness": 4.0,
             "brand_voice": 4.5,
             "actionability": 4.3,
-            "escalation_appropriateness": 1.0,
-            "overall_score": 3.45
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.45
           },
           {
             "groundedness": 4.2,
@@ -1909,15 +1909,15 @@
             "groundedness": 4.2,
             "brand_voice": 4.0,
             "actionability": 5.0,
-            "escalation_appropriateness": 1.0,
-            "overall_score": 3.55
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.55
           },
           {
             "groundedness": 4.0,
             "brand_voice": 4.0,
             "actionability": 3.5,
-            "escalation_appropriateness": 2.0,
-            "overall_score": 3.38
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.12
           },
           {
             "groundedness": 4.2,
@@ -1937,8 +1937,8 @@
             "groundedness": 4.2,
             "brand_voice": 4.5,
             "actionability": 5.0,
-            "escalation_appropriateness": 1.0,
-            "overall_score": 3.67
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.67
           },
           {
             "groundedness": 4.2,
@@ -2056,8 +2056,8 @@
             "groundedness": 4.0,
             "brand_voice": 4.0,
             "actionability": 4.3,
-            "escalation_appropriateness": 1.0,
-            "overall_score": 3.33
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.33
           },
           {
             "groundedness": 4.0,
@@ -2140,8 +2140,8 @@
             "groundedness": 4.2,
             "brand_voice": 4.5,
             "actionability": 5.0,
-            "escalation_appropriateness": 2.0,
-            "overall_score": 3.92
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.67
           },
           {
             "groundedness": 4.2,
@@ -2343,8 +2343,8 @@
             "groundedness": 4.2,
             "brand_voice": 4.5,
             "actionability": 5.0,
-            "escalation_appropriateness": 1.0,
-            "overall_score": 3.67
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.67
           },
           {
             "groundedness": 4.0,
@@ -2385,8 +2385,8 @@
             "groundedness": 4.0,
             "brand_voice": 4.5,
             "actionability": 3.5,
-            "escalation_appropriateness": 1.0,
-            "overall_score": 3.25
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.25
           },
           {
             "groundedness": 4.2,
@@ -2497,8 +2497,8 @@
             "groundedness": 4.0,
             "brand_voice": 5.0,
             "actionability": 3.5,
-            "escalation_appropriateness": 3.5,
-            "overall_score": 4.0
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.38
           },
           {
             "groundedness": 4.0,
@@ -2539,8 +2539,8 @@
             "groundedness": 4.0,
             "brand_voice": 3.0,
             "actionability": 5.0,
-            "escalation_appropriateness": 5.0,
-            "overall_score": 4.25
+            "escalation_appropriateness": 1.0,
+            "overall_score": 3.25
           },
           {
             "groundedness": 4.0,
@@ -2770,8 +2770,8 @@
             "groundedness": 4.2,
             "brand_voice": 4.5,
             "actionability": 5.0,
-            "escalation_appropriateness": 1.0,
-            "overall_score": 3.67
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.67
           },
           {
             "groundedness": 4.0,
@@ -2973,8 +2973,8 @@
             "groundedness": 4.0,
             "brand_voice": 4.5,
             "actionability": 3.5,
-            "escalation_appropriateness": 5.0,
-            "overall_score": 4.25
+            "escalation_appropriateness": 2.0,
+            "overall_score": 3.5
           },
           {
             "groundedness": 4.0,
@@ -3252,37 +3252,37 @@
     },
     "Proposed AI Agent": {
       "intent_metrics": {
-        "accuracy": 0.61,
-        "macro_f1": 0.493,
-        "macro_precision": 0.7362,
-        "macro_recall": 0.5647,
-        "weighted_f1": 0.5774,
-        "brier_score": 0.6154,
-        "expected_calibration_error": 0.0541,
+        "accuracy": 0.625,
+        "macro_f1": 0.4739,
+        "macro_precision": 0.7352,
+        "macro_recall": 0.5564,
+        "weighted_f1": 0.5911,
+        "brier_score": 0.6023,
+        "expected_calibration_error": 0.054,
         "per_class": {
           "BATTERY_AND_HARDWARE": {
-            "precision": 0.8824,
-            "recall": 0.8182,
-            "f1": 0.8491,
+            "precision": 0.9216,
+            "recall": 0.8545,
+            "f1": 0.8868,
             "support": 55
           },
           "IOS_SOFTWARE_UPDATE": {
-            "precision": 0.602,
-            "recall": 0.831,
-            "f1": 0.6982,
-            "support": 71
+            "precision": 0.6224,
+            "recall": 0.8472,
+            "f1": 0.7176,
+            "support": 72
           },
           "APPLE_ID_AND_ICLOUD": {
-            "precision": 0.6,
-            "recall": 0.75,
+            "precision": 0.5333,
+            "recall": 0.8889,
             "f1": 0.6667,
-            "support": 12
+            "support": 9
           },
           "APP_STORE_AND_BILLING": {
             "precision": 1.0,
-            "recall": 0.75,
-            "f1": 0.8571,
-            "support": 4
+            "recall": 0.5,
+            "f1": 0.6667,
+            "support": 6
           },
           "DEVICE_SETUP_AND_USAGE": {
             "precision": 1.0,
@@ -3305,8 +3305,8 @@
         },
         "confusion_matrix": [
           [
-            45,
-            7,
+            47,
+            5,
             1,
             0,
             0,
@@ -3315,17 +3315,17 @@
           ],
           [
             3,
-            59,
+            61,
             0,
             0,
             0,
             0,
-            9
+            8
           ],
           [
             0,
-            2,
-            9,
+            0,
+            8,
             0,
             0,
             0,
@@ -3333,30 +3333,30 @@
           ],
           [
             0,
-            0,
+            1,
             1,
             3,
             0,
             0,
-            0
+            1
           ],
           [
-            1,
-            6,
+            0,
+            8,
             3,
             0,
             1,
             0,
-            12
+            11
           ],
           [
+            1,
+            22,
             2,
-            23,
-            1,
             0,
             0,
             3,
-            3
+            4
           ],
           [
             0,
@@ -3379,32 +3379,32 @@
         ]
       },
       "escalation_metrics": {
-        "accuracy": 0.725,
-        "escalation_recall": 0.6552,
-        "escalation_precision": 0.5205,
-        "escalation_f1": 0.5802,
-        "escalation_f2": 0.623,
-        "false_escalation_rate": 0.2465,
-        "weighted_risk_cost": 135,
-        "true_positives_escalate": 38,
-        "false_negatives_missed_escalate": 20,
-        "false_positives_unnecessary_escalate": 35,
-        "true_negatives_correct_autohandle": 107
+        "accuracy": 0.71,
+        "escalation_recall": 0.6923,
+        "escalation_precision": 0.4615,
+        "escalation_f1": 0.5538,
+        "escalation_f2": 0.6294,
+        "false_escalation_rate": 0.2838,
+        "weighted_risk_cost": 122,
+        "true_positives_escalate": 36,
+        "false_negatives_missed_escalate": 16,
+        "false_positives_unnecessary_escalate": 42,
+        "true_negatives_correct_autohandle": 106
       },
       "generation_metrics": {
-        "bleu": 4.49,
-        "rouge_1_recall": 0.2731,
-        "rouge_2_recall": 0.1178,
+        "bleu": 4.06,
+        "rouge_1_recall": 0.265,
+        "rouge_2_recall": 0.1148,
         "char_limit_compliance_pct": 100.0,
-        "official_domain_inclusion_rate": 80.5,
-        "official_domain_validity_pct": 80.5,
-        "link_relevance_pct": 74.84
+        "official_domain_inclusion_rate": 79.5,
+        "official_domain_validity_pct": 79.5,
+        "link_relevance_pct": 75.79
       },
       "judge_metrics": {
-        "mean_groundedness": 4.79,
+        "mean_groundedness": 4.78,
         "mean_brand_voice": 4.58,
         "mean_actionability": 4.8,
-        "mean_escalation_appropriateness": 4.4,
+        "mean_escalation_appropriateness": 4.42,
         "mean_overall_score": 4.65,
         "individual_scores": [
           {
@@ -3467,8 +3467,8 @@
             "groundedness": 5.0,
             "brand_voice": 4.5,
             "actionability": 5.0,
-            "escalation_appropriateness": 5.0,
-            "overall_score": 4.88
+            "escalation_appropriateness": 3.5,
+            "overall_score": 4.5
           },
           {
             "groundedness": 5.0,
@@ -3558,15 +3558,15 @@
             "groundedness": 5.0,
             "brand_voice": 4.5,
             "actionability": 5.0,
-            "escalation_appropriateness": 5.0,
-            "overall_score": 4.88
+            "escalation_appropriateness": 3.5,
+            "overall_score": 4.5
           },
           {
             "groundedness": 5.0,
             "brand_voice": 4.0,
             "actionability": 5.0,
-            "escalation_appropriateness": 5.0,
-            "overall_score": 4.75
+            "escalation_appropriateness": 3.5,
+            "overall_score": 4.38
           },
           {
             "groundedness": 5.0,
@@ -3586,8 +3586,8 @@
             "groundedness": 5.0,
             "brand_voice": 5.0,
             "actionability": 5.0,
-            "escalation_appropriateness": 1.0,
-            "overall_score": 4.0
+            "escalation_appropriateness": 5.0,
+            "overall_score": 5.0
           },
           {
             "groundedness": 5.0,
@@ -3705,8 +3705,8 @@
             "groundedness": 5.0,
             "brand_voice": 4.5,
             "actionability": 5.0,
-            "escalation_appropriateness": 5.0,
-            "overall_score": 4.88
+            "escalation_appropriateness": 3.5,
+            "overall_score": 4.5
           },
           {
             "groundedness": 4.0,
@@ -3789,8 +3789,8 @@
             "groundedness": 5.0,
             "brand_voice": 4.5,
             "actionability": 5.0,
-            "escalation_appropriateness": 2.0,
-            "overall_score": 4.12
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.88
           },
           {
             "groundedness": 5.0,
@@ -3968,11 +3968,11 @@
             "overall_score": 4.88
           },
           {
-            "groundedness": 5.0,
-            "brand_voice": 4.5,
-            "actionability": 5.0,
-            "escalation_appropriateness": 5.0,
-            "overall_score": 4.88
+            "groundedness": 4.0,
+            "brand_voice": 5.0,
+            "actionability": 4.3,
+            "escalation_appropriateness": 3.5,
+            "overall_score": 4.2
           },
           {
             "groundedness": 5.0,
@@ -3992,8 +3992,8 @@
             "groundedness": 5.0,
             "brand_voice": 4.5,
             "actionability": 5.0,
-            "escalation_appropriateness": 1.0,
-            "overall_score": 3.88
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.88
           },
           {
             "groundedness": 5.0,
@@ -4034,8 +4034,8 @@
             "groundedness": 5.0,
             "brand_voice": 4.5,
             "actionability": 5.0,
-            "escalation_appropriateness": 5.0,
-            "overall_score": 4.88
+            "escalation_appropriateness": 3.5,
+            "overall_score": 4.5
           },
           {
             "groundedness": 4.0,
@@ -4146,8 +4146,8 @@
             "groundedness": 4.0,
             "brand_voice": 5.0,
             "actionability": 4.3,
-            "escalation_appropriateness": 3.5,
-            "overall_score": 4.2
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.58
           },
           {
             "groundedness": 5.0,
@@ -4188,8 +4188,8 @@
             "groundedness": 4.0,
             "brand_voice": 5.0,
             "actionability": 4.3,
-            "escalation_appropriateness": 3.5,
-            "overall_score": 4.2
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.58
           },
           {
             "groundedness": 5.0,
@@ -4235,10 +4235,10 @@
           },
           {
             "groundedness": 5.0,
-            "brand_voice": 4.5,
+            "brand_voice": 4.0,
             "actionability": 5.0,
-            "escalation_appropriateness": 5.0,
-            "overall_score": 4.88
+            "escalation_appropriateness": 3.5,
+            "overall_score": 4.38
           },
           {
             "groundedness": 5.0,
@@ -4416,11 +4416,11 @@
             "overall_score": 4.88
           },
           {
-            "groundedness": 5.0,
-            "brand_voice": 4.5,
-            "actionability": 5.0,
-            "escalation_appropriateness": 1.0,
-            "overall_score": 3.88
+            "groundedness": 4.0,
+            "brand_voice": 5.0,
+            "actionability": 4.3,
+            "escalation_appropriateness": 3.5,
+            "overall_score": 4.2
           },
           {
             "groundedness": 5.0,
@@ -4522,10 +4522,10 @@
           },
           {
             "groundedness": 5.0,
-            "brand_voice": 4.5,
+            "brand_voice": 4.0,
             "actionability": 5.0,
-            "escalation_appropriateness": 5.0,
-            "overall_score": 4.88
+            "escalation_appropriateness": 3.5,
+            "overall_score": 4.38
           },
           {
             "groundedness": 5.0,
@@ -4622,8 +4622,8 @@
             "groundedness": 5.0,
             "brand_voice": 4.0,
             "actionability": 5.0,
-            "escalation_appropriateness": 3.5,
-            "overall_score": 4.38
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.75
           },
           {
             "groundedness": 5.0,
@@ -4760,10 +4760,10 @@
           },
           {
             "groundedness": 5.0,
-            "brand_voice": 4.5,
+            "brand_voice": 4.0,
             "actionability": 5.0,
-            "escalation_appropriateness": 5.0,
-            "overall_score": 4.88
+            "escalation_appropriateness": 3.5,
+            "overall_score": 4.38
           },
           {
             "groundedness": 5.0,
@@ -5054,49 +5054,49 @@
     "groundedness": {
       "metric_name": "Groundedness & Correctness",
       "sample_size": 50,
-      "mae": 0.14,
-      "rmse": 0.283,
-      "pearson_r": 0.643,
-      "pearson_p_value": 4.767177733885977e-07,
-      "spearman_rho": 0.791,
-      "spearman_p_value": 7.909143490194984e-12,
-      "within_0.5_points_pct": 98.0,
+      "mae": 0.0,
+      "rmse": 0.0,
+      "pearson_r": 1.0,
+      "pearson_p_value": 0.0,
+      "spearman_rho": 1.0,
+      "spearman_p_value": 0.0,
+      "within_0.5_points_pct": 100.0,
       "within_1.0_points_pct": 100.0,
-      "cohens_kappa": NaN
+      "cohens_kappa": 1.0
     },
     "brand_voice": {
       "metric_name": "Brand Voice & Empathy",
       "sample_size": 50,
-      "mae": 0.16,
-      "rmse": 0.283,
-      "pearson_r": 0.294,
-      "pearson_p_value": 0.03839721587615678,
-      "spearman_rho": 0.284,
-      "spearman_p_value": 0.04563540974750235,
+      "mae": 0.33,
+      "rmse": 0.406,
+      "pearson_r": 0.818,
+      "pearson_p_value": 4.152870838126947e-13,
+      "spearman_rho": 0.799,
+      "spearman_p_value": 3.562488692538329e-12,
       "within_0.5_points_pct": 100.0,
       "within_1.0_points_pct": 100.0,
-      "cohens_kappa": NaN
+      "cohens_kappa": 1.0
     },
     "actionability": {
       "metric_name": "Actionability & Quality",
       "sample_size": 50,
-      "mae": 0.55,
-      "rmse": 0.711,
-      "pearson_r": 0.191,
-      "pearson_p_value": 0.18280473670471775,
-      "spearman_rho": 0.202,
-      "spearman_p_value": 0.15983298506015364,
-      "within_0.5_points_pct": 62.0,
-      "within_1.0_points_pct": 96.0,
-      "cohens_kappa": 0.0
+      "mae": 0.56,
+      "rmse": 0.64,
+      "pearson_r": 0.538,
+      "pearson_p_value": 5.68370547949148e-05,
+      "spearman_rho": 0.571,
+      "spearman_p_value": 1.4761203669286824e-05,
+      "within_0.5_points_pct": 74.0,
+      "within_1.0_points_pct": 100.0,
+      "cohens_kappa": 1.0
     },
     "escalation_appropriateness": {
       "metric_name": "Escalation Appropriateness",
       "sample_size": 50,
-      "mae": 0.04,
-      "rmse": 0.141,
+      "mae": 0.05,
+      "rmse": 0.158,
       "pearson_r": 0.997,
-      "pearson_p_value": 2.5831334976874307e-54,
+      "pearson_p_value": 4.8550198367702475e-55,
       "spearman_rho": 1.0,
       "spearman_p_value": 0.0,
       "within_0.5_points_pct": 100.0,
@@ -5106,16 +5106,16 @@
     "overall_score": {
       "metric_name": "Overall Rubric Score",
       "sample_size": 50,
-      "mae": 0.191,
-      "rmse": 0.238,
-      "pearson_r": 0.893,
-      "pearson_p_value": 2.6382242008317628e-18,
-      "spearman_rho": 0.81,
-      "spearman_p_value": 1.057794412355301e-12,
+      "mae": 0.237,
+      "rmse": 0.26,
+      "pearson_r": 0.934,
+      "pearson_p_value": 4.00859686301933e-23,
+      "spearman_rho": 0.735,
+      "spearman_p_value": 1.194511459038492e-09,
       "within_0.5_points_pct": 100.0,
       "within_1.0_points_pct": 100.0,
-      "cohens_kappa": -0.014
+      "cohens_kappa": -0.029
     }
   },
-  "elapsed_seconds": 5.85
+  "elapsed_seconds": 8.24
 }

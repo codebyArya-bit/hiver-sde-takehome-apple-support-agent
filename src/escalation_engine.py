@@ -15,15 +15,21 @@ from typing import Dict, Any, Optional
 ESCALATION_POLICIES = [
     {
         "id": "POLICY_FINANCIAL_TRANSACTION",
-        "intent": "APP_STORE_AND_BILLING",
-        "regex": r'\b(refund|refunds|charge|charges|charged|charging|subscription|subscriptions|receipt|credit card|bank|purchased?|money back|unauthorized|stolen card|apple store charge)\b',
+        "intent": None,
+        "regex": r'\b(refund|refunds|charge|charges|charged|charging|subscription|subscriptions|receipt|credit card|bank|purchased?|money back|unauthorized|stolen card|apple store charge|billing dispute)\b',
         "reason": "Financial transactions, billing disputes, and refund requests require authenticated access to the user's Apple ID billing portal."
     },
     {
         "id": "POLICY_SECURITY_CREDENTIALS",
-        "intent": "APPLE_ID_AND_ICLOUD",
-        "regex": r'\b(locked|lockout|passcode|password|two[- ]factor|2fa|verification code|compromised|hacked|stolen phone|stolen device|activation lock)\b',
+        "intent": None,
+        "regex": r'\b(locked|lockout|passcode|password|two[- ]factor|2fa|verification code|compromised|hacked|stolen phone|stolen device|activation lock|account takeover|unauthorized purchase)\b',
         "reason": "Account recovery, credential resets, and 2FA authentication cannot be safely resolved over public social channels."
+    },
+    {
+        "id": "POLICY_PII_EXPOSURE",
+        "intent": None,
+        "regex": r'(\b\d{3}-\d{2}-\d{4}\b|\b\d{4}[ -]?\d{4}[ -]?\d{4}[ -]?\d{4}\b|\bssn\b|\bsocial security\b|\bcvv\b)',
+        "reason": "Sensitive personally identifiable information (PII) or payment card details detected in public interaction; immediate escalation required."
     },
     {
         "id": "POLICY_HARDWARE_DAMAGE_SAFETY",
@@ -40,7 +46,7 @@ ESCALATION_POLICIES = [
     {
         "id": "POLICY_HIGH_DISTRESS_LEGAL",
         "intent": None,
-        "regex": r'\b(sue|lawyer|attorney|fraud|scam|unacceptable|furious|disgusted|worst service|supervisor|manager|escalate|livid|trash|sucks|worst|terrible|hate|shit|stupid|fail|disgusted|motherfuckers?|wtf)\b',
+        "regex": r'\b(sue|lawyer|attorney|fraud|scam|unacceptable|furious|disgusted|worst service|supervisor|manager|escalate|livid|trash|sucks|worst|terrible|hate|shit|stupid|fail|motherfuckers?|wtf|paperweight|switching|boycott|leaving apple)\b',
         "reason": "Customer expresses severe dissatisfaction, brand trust risk, or legal escalation requiring senior human care intervention."
     },
     {

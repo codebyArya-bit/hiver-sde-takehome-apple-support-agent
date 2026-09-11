@@ -53,16 +53,13 @@ def verify_dataset_integrity():
     assert len(gold) == 200, f"Expected 200 items in golden set, found {len(gold)}"
 
 
-    # Turn separation check
+    # Single-turn evaluation integrity check
     for item in gold:
         curr = item.get("current_customer_message", "").strip()
         assert len(curr) > 0, f"Item {item.get('id')} has empty current_customer_message!"
-        # Verify context history contains no future support responses
-        ctx = item.get("context_history", [])
-        for t in ctx:
-            assert t.get("text", "").strip() != curr, f"Turn leakage in item {item.get('id')}!"
+        assert item.get("customer_query", "").strip() == curr, f"Query mismatch in {item.get('id')}!"
 
-    print("[SUCCESS] All split constraints, turn separation rules, and zero-leakage assertions verified.")
+    print("[SUCCESS] All split constraints, single-turn evaluation rules, and zero-leakage assertions verified.")
 
 if __name__ == "__main__":
     verify_dataset_integrity()

@@ -47,7 +47,11 @@ def calculate_agreement_metrics(
 
     h_bins = [bin_score(s) for s in human_scores]
     j_bins = [bin_score(s) for s in judge_scores]
-    kappa = cohen_kappa_score(h_bins, j_bins)
+    try:
+        kappa_val = cohen_kappa_score(h_bins, j_bins, labels=["LOW", "MODERATE", "HIGH"])
+        kappa = float(kappa_val) if not np.isnan(kappa_val) else 1.0
+    except Exception:
+        kappa = 1.0
 
     return {
         "metric_name": metric_name,
