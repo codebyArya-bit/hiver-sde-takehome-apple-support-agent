@@ -127,13 +127,17 @@ def run_benchmark():
         console.print(f"[yellow]>> Evaluating {agent_name}...[/yellow]")
         preds = []
         pred_intents = []
+        pred_probs = []
         pred_escalations = []
         pred_replies = []
 
         for idx, item in enumerate(golden_data):
-            out = agent.process_message(item['customer_query'])
+            msg = item.get("current_customer_message") or item.get("customer_query")
+            ctx = item.get("context_history", [])
+            out = agent.process_message(msg, context_history=ctx)
             preds.append(out)
             pred_intents.append(out['intent'])
+            pred_probs.append(out.get('intent_probabilities', out.get('probabilities', {})))
             pred_escalations.append(out['escalation_decision'])
             pred_replies.append(out['draft_reply'])
 
@@ -145,7 +149,7 @@ def run_benchmark():
                     error_analysis.append({
                         "item_id": item["id"],
                         "conversation_id": item.get("conversation_id"),
-                        "customer_query": item["customer_query"],
+                        "customer_query": msg,
                         "gold_intent": item["gold_intent"],
                         "predicted_intent": out["intent"],
                         "intent_confidence": out["intent_confidence"],
@@ -153,14 +157,15 @@ def run_benchmark():
                         "gold_escalation": item["gold_escalation"],
                         "predicted_escalation": out["escalation_decision"],
                         "escalation_error": esc_err,
-                        "gold_escalation_reason": item["gold_escalation_reason"],
+                        "gold_escalation_reason": item.get("gold_escalation_reason", ""),
                         "agent_escalation_reason": out["escalation_reason"],
                         "policy_triggered": out.get("policy_triggered"),
                         "draft_reply": out["draft_reply"],
-                        "grounded_in": out.get("grounded_in", [])
+                        "grounded_in": out.get("grounded_in", []),
+                        "used_evidence": out.get("used_evidence", [])
                     })
 
-        intent_met = calculate_intent_metrics(gold_intents, pred_intents, labels=INTENTS)
+        intent_met = calculate_intent_metrics(gold_intents, pred_intents, labels=INTENTS, y_probs=pred_probs)
         esc_met = calculate_escalation_metrics(gold_escalations, pred_escalations)
         gen_met = calculate_generation_metrics(pred_replies, gold_references, target_intents=gold_intents)
         judge_scores = judge.evaluate_batch(golden_data, preds)
@@ -184,7 +189,8 @@ def run_benchmark():
     console.print("\n[yellow]>> Conducting Human-Judge Inter-Rater Reliability Study (N=50 Paired)...[/yellow]")
     agreement_stats = run_human_judge_agreement_study(
         human_ann_path="evaluation/human_annotations.json",
-        llm_scores_path="evaluation/llm_judge_scores.json"
+        llm_scores_path="evaluation/llm_judge_scores.json",
+        frozen_subset_path="data/frozen_eval_subset_n50.json"
     )
 
     # 5. Display Comparative Summary Tables
@@ -198,31 +204,54 @@ def run_benchmark():
     summary_table.add_column("Simple Baseline\n(Naive Bayes + 1-NN)", justify="center", style="yellow")
     summary_table.add_column("Proposed AI Agent\n(Calibrated RAG + Policy)", justify="center", style="bold green")
 
+    def fmt_stat(val, pct=False, dec=3):
+        if val is None:
+            return "N/A"
+        if pct:
+            return f"{val * 100:.1f}%"
+        return f"{val:.{dec}f}"
+
     rows = [
         ("Intent Accuracy (Out-of-Sample)", 
-         f"{results['Trivial Baseline']['intent_metrics']['accuracy']*100:.1f}%",
-         f"{results['Simple Baseline']['intent_metrics']['accuracy']*100:.1f}%",
-         f"{results['Proposed AI Agent']['intent_metrics']['accuracy']*100:.1f}%"),
+         fmt_stat(results['Trivial Baseline']['intent_metrics']['accuracy'], pct=True),
+         fmt_stat(results['Simple Baseline']['intent_metrics']['accuracy'], pct=True),
+         fmt_stat(results['Proposed AI Agent']['intent_metrics']['accuracy'], pct=True)),
         ("Intent Macro F1",
-         f"{results['Trivial Baseline']['intent_metrics']['macro_f1']:.3f}",
-         f"{results['Simple Baseline']['intent_metrics']['macro_f1']:.3f}",
-         f"{results['Proposed AI Agent']['intent_metrics']['macro_f1']:.3f}"),
+         fmt_stat(results['Trivial Baseline']['intent_metrics']['macro_f1']),
+         fmt_stat(results['Simple Baseline']['intent_metrics']['macro_f1']),
+         fmt_stat(results['Proposed AI Agent']['intent_metrics']['macro_f1'])),
+        ("Brier Score (Calibration, Lower is Better)",
+         fmt_stat(results['Trivial Baseline']['intent_metrics'].get('brier_score')),
+         fmt_stat(results['Simple Baseline']['intent_metrics'].get('brier_score')),
+         fmt_stat(results['Proposed AI Agent']['intent_metrics'].get('brier_score'))),
+        ("Expected Calibration Error (ECE)",
+         fmt_stat(results['Trivial Baseline']['intent_metrics'].get('expected_calibration_error')),
+         fmt_stat(results['Simple Baseline']['intent_metrics'].get('expected_calibration_error')),
+         fmt_stat(results['Proposed AI Agent']['intent_metrics'].get('expected_calibration_error'))),
         ("Escalation Accuracy",
-         f"{results['Trivial Baseline']['escalation_metrics']['accuracy']*100:.1f}%",
-         f"{results['Simple Baseline']['escalation_metrics']['accuracy']*100:.1f}%",
-         f"{results['Proposed AI Agent']['escalation_metrics']['accuracy']*100:.1f}%"),
+         fmt_stat(results['Trivial Baseline']['escalation_metrics']['accuracy'], pct=True),
+         fmt_stat(results['Simple Baseline']['escalation_metrics']['accuracy'], pct=True),
+         fmt_stat(results['Proposed AI Agent']['escalation_metrics']['accuracy'], pct=True)),
         ("Escalation Recall (Safety-Critical)",
-         f"{results['Trivial Baseline']['escalation_metrics']['escalation_recall']*100:.1f}%",
-         f"{results['Simple Baseline']['escalation_metrics']['escalation_recall']*100:.1f}%",
-         f"{results['Proposed AI Agent']['escalation_metrics']['escalation_recall']*100:.1f}%"),
+         fmt_stat(results['Trivial Baseline']['escalation_metrics']['escalation_recall'], pct=True),
+         fmt_stat(results['Simple Baseline']['escalation_metrics']['escalation_recall'], pct=True),
+         fmt_stat(results['Proposed AI Agent']['escalation_metrics']['escalation_recall'], pct=True)),
         ("Escalation Precision",
-         f"{results['Trivial Baseline']['escalation_metrics']['escalation_precision']*100:.1f}%",
-         f"{results['Simple Baseline']['escalation_metrics']['escalation_precision']*100:.1f}%",
-         f"{results['Proposed AI Agent']['escalation_metrics']['escalation_precision']*100:.1f}%"),
+         fmt_stat(results['Trivial Baseline']['escalation_metrics']['escalation_precision'], pct=True),
+         fmt_stat(results['Simple Baseline']['escalation_metrics']['escalation_precision'], pct=True),
+         fmt_stat(results['Proposed AI Agent']['escalation_metrics']['escalation_precision'], pct=True)),
+        ("Escalation F2 Score (Recall-Weighted)",
+         fmt_stat(results['Trivial Baseline']['escalation_metrics']['escalation_f2']),
+         fmt_stat(results['Simple Baseline']['escalation_metrics']['escalation_f2']),
+         fmt_stat(results['Proposed AI Agent']['escalation_metrics']['escalation_f2'])),
         ("False Escalation Rate (Lower is Better)",
-         f"{results['Trivial Baseline']['escalation_metrics']['false_escalation_rate']*100:.1f}%",
-         f"{results['Simple Baseline']['escalation_metrics']['false_escalation_rate']*100:.1f}%",
-         f"{results['Proposed AI Agent']['escalation_metrics']['false_escalation_rate']*100:.1f}%"),
+         fmt_stat(results['Trivial Baseline']['escalation_metrics']['false_escalation_rate'], pct=True),
+         fmt_stat(results['Simple Baseline']['escalation_metrics']['false_escalation_rate'], pct=True),
+         fmt_stat(results['Proposed AI Agent']['escalation_metrics']['false_escalation_rate'], pct=True)),
+        ("Weighted Risk-Cost Penalty (5*FN + 1*FP)",
+         str(results['Trivial Baseline']['escalation_metrics']['weighted_risk_cost']),
+         str(results['Simple Baseline']['escalation_metrics']['weighted_risk_cost']),
+         str(results['Proposed AI Agent']['escalation_metrics']['weighted_risk_cost'])),
         ("SacreBLEU Score",
          f"{results['Trivial Baseline']['generation_metrics']['bleu']:.1f}",
          f"{results['Simple Baseline']['generation_metrics']['bleu']:.1f}",
@@ -231,10 +260,10 @@ def run_benchmark():
          f"{results['Trivial Baseline']['generation_metrics']['char_limit_compliance_pct']:.1f}%",
          f"{results['Simple Baseline']['generation_metrics']['char_limit_compliance_pct']:.1f}%",
          f"{results['Proposed AI Agent']['generation_metrics']['char_limit_compliance_pct']:.1f}%"),
-        ("Official Domain Link Validity",
-         f"{results['Trivial Baseline']['generation_metrics']['official_domain_validity_pct']:.1f}%",
-         f"{results['Simple Baseline']['generation_metrics']['official_domain_validity_pct']:.1f}%",
-         f"{results['Proposed AI Agent']['generation_metrics']['official_domain_validity_pct']:.1f}%"),
+        ("Official Domain Inclusion Rate",
+         f"{results['Trivial Baseline']['generation_metrics']['official_domain_inclusion_rate']:.1f}%",
+         f"{results['Simple Baseline']['generation_metrics']['official_domain_inclusion_rate']:.1f}%",
+         f"{results['Proposed AI Agent']['generation_metrics']['official_domain_inclusion_rate']:.1f}%"),
         ("Intent-Link Relevance Rate",
          f"{results['Trivial Baseline']['generation_metrics']['link_relevance_pct']:.1f}%",
          f"{results['Simple Baseline']['generation_metrics']['link_relevance_pct']:.1f}%",

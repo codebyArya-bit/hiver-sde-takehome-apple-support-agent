@@ -142,19 +142,11 @@ class IntentClassifier:
             prob_dict = {cls_name: float(p) for cls_name, p in zip(classes, probs)}
             for missing_cls in self.intents:
                 if missing_cls not in prob_dict:
-                    prob_dict[missing_cls] = 0.001
+                    prob_dict[missing_cls] = 0.0
         else:
             prob_dict = {k: 1.0 / len(self.intents) for k in self.intents}
 
-        # Bayesian fusion of statistical probabilities and explicit domain signals
-        for intent, score in rule_scores.items():
-            if score > 0:
-                prob_dict[intent] += (score * 0.45)
-
-        total = sum(prob_dict.values())
-        if total > 0:
-            prob_dict = {k: v / total for k, v in prob_dict.items()}
-
+        # Select predicted intent strictly based on calibrated probability distribution
         best_intent = max(prob_dict.keys(), key=lambda k: prob_dict[k])
         confidence = float(prob_dict[best_intent])
 
@@ -162,5 +154,7 @@ class IntentClassifier:
             "intent": best_intent,
             "confidence": round(confidence, 4),
             "probabilities": {k: round(v, 4) for k, v in sorted(prob_dict.items(), key=lambda x: -x[1])},
-            "matched_signals": list(set(matched_signals))[:5]
+            "matched_signals": list(set(matched_signals))[:5],
+            "rule_scores": rule_scores
         }
+

@@ -37,13 +37,20 @@ class SimpleBaselineAgent:
         self.pipeline.fit(texts, labels)
         return self
 
-    def process_message(self, customer_query: str) -> Dict[str, Any]:
+    def process_message(
+        self,
+        customer_query: str,
+        context_history: Any = None
+    ) -> Dict[str, Any]:
         cleaned = clean_tweet_text(customer_query)
         
         # 1. Intent via simple Naive Bayes
+        prob_dict = {}
         if self.pipeline:
             pred_intent = self.pipeline.predict([cleaned])[0]
             probs = self.pipeline.predict_proba([cleaned])[0]
+            classes = self.pipeline.classes_
+            prob_dict = {cls: float(p) for cls, p in zip(classes, probs)}
             conf = float(max(probs))
         else:
             pred_intent = "IOS_SOFTWARE_UPDATE"
@@ -68,6 +75,7 @@ class SimpleBaselineAgent:
             "query": customer_query,
             "intent": pred_intent,
             "intent_confidence": round(conf, 4),
+            "intent_probabilities": prob_dict,
             "escalation_decision": escalation_decision,
             "escalation_reason": escalation_reason,
             "draft_reply": raw_reply,

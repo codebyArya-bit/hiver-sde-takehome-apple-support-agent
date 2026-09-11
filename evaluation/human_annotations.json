@@ -2,851 +2,951 @@
   {
     "item_id": "GOLD_001",
     "conversation_id": "b62b611bbaa281cfa6fa34063ed51767",
+    "input_hash": "d13349b2f5278ee015eae52766208ce3424932fbfd156bbaccf6190b0117eb4c",
     "customer_query": "i need help i send you my problem in privet message",
     "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
     "candidate_escalation": "ESCALATE",
     "gold_escalation": "ESCALATE",
     "scores": {
       "groundedness": 4.0,
-      "brand_voice": 4.5,
-      "actionability": 3.5,
-      "escalation_appropriateness": 5.0
-    },
-    "overall_score": 4.25,
-    "evaluator": "human_expert_annotator",
-    "blind_scoring": true
-  },
-  {
-    "item_id": "GOLD_005",
-    "conversation_id": "399dccc18eb75139a14f2ef8de9d1210",
-    "customer_query": "I updated to 11.0.2 and my phone is still getting frozen. What are you guys doing over there?? since the update my apps won't open!! I run a business from my phone not GOOD!!",
-    "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
-    "candidate_escalation": "ESCALATE",
-    "gold_escalation": "ESCALATE",
-    "scores": {
-      "groundedness": 3.5,
-      "brand_voice": 4.5,
+      "brand_voice": 4.0,
       "actionability": 3.5,
       "escalation_appropriateness": 5.0
     },
     "overall_score": 4.12,
     "evaluator": "human_expert_annotator",
-    "blind_scoring": true
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_001 (OUT_OF_SCOPE_OTHER): reply length 182 chars. Actionability=3.5/5, Brand=4.0/5, Grounding=4.0/5, Escalation=5.0/5."
   },
   {
-    "item_id": "GOLD_009",
-    "conversation_id": "019817c39eff50638b38ed8acfc65986",
-    "customer_query": "none of my photos have went onto my new iPhone device eventhough they were backed up and I've tried everything I know of m?? iCloud I think!",
+    "item_id": "GOLD_002",
+    "conversation_id": "4bc681d9c061d73ab15f975260aa2423",
+    "input_hash": "115ee3437b2f0649580b5e5fcf40ed29780230ea5a37b246b873432df3f5b180",
+    "customer_query": "It's been nearly two weeks and I've yet to get LTE on my Watch () working. Think I paid a premium for a spec of red paint.",
+    "candidate_reply": "Thanks for reaching out! We're happy to guide you through this. You can find detailed resolution steps here: https://support.apple.com — let us know how it goes!",
+    "candidate_escalation": "AUTO_HANDLE",
+    "gold_escalation": "ESCALATE",
+    "scores": {
+      "groundedness": 4.5,
+      "brand_voice": 4.0,
+      "actionability": 3.5,
+      "escalation_appropriateness": 1.5
+    },
+    "overall_score": 3.38,
+    "evaluator": "human_expert_annotator",
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_002 (CUSTOMER_FEEDBACK_COMPLAINT): reply length 161 chars. Actionability=3.5/5, Brand=4.0/5, Grounding=4.5/5, Escalation=1.5/5."
+  },
+  {
+    "item_id": "GOLD_003",
+    "conversation_id": "b962328f87be977c2ad06c6409de26cd",
+    "input_hash": "079263fab3a336d2b1593a39258d573448deb7b794787080adacf151f93054a8",
+    "customer_query": "https://t.co/DcSrdWNuPm says \"Photos is locked\" and full-res photos can't be downloaded. Since about at least 3PM EST.",
     "candidate_reply": "Account security is our top priority. Please head to https://iforgot.apple.com to securely verify and recover your Apple ID. If you're still locked out, DM us to assist further.",
     "candidate_escalation": "ESCALATE",
     "gold_escalation": "ESCALATE",
     "scores": {
-      "groundedness": 5.0,
-      "brand_voice": 4.5,
-      "actionability": 5.0,
+      "groundedness": 4.0,
+      "brand_voice": 4.0,
+      "actionability": 3.5,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.88,
+    "overall_score": 4.12,
     "evaluator": "human_expert_annotator",
-    "blind_scoring": true
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_003 (APPLE_ID_AND_ICLOUD): reply length 177 chars. Actionability=3.5/5, Brand=4.0/5, Grounding=4.0/5, Escalation=5.0/5."
   },
   {
-    "item_id": "GOLD_013",
-    "conversation_id": "fe9371ab7929c249ae6075f70095ed21",
-    "customer_query": "the new 11.0.2 made it so I can't open recently updated apps or download new ones 😶 I did restart it, it worked partially but there are still some \"broken\" apps. Nevermind they all stopped working, im gonna take a nap",
+    "item_id": "GOLD_005",
+    "conversation_id": "399dccc18eb75139a14f2ef8de9d1210",
+    "input_hash": "498da902eeb7882927f3de9e4fbb567ede432430b3e9dc6e8db9536759ce1927",
+    "customer_query": "I updated to 11.0.2 and my phone is still getting frozen. What are you guys doing over there??",
+    "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "candidate_escalation": "ESCALATE",
+    "gold_escalation": "ESCALATE",
+    "scores": {
+      "groundedness": 4.0,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.25,
+    "evaluator": "human_expert_annotator",
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_005 (IOS_SOFTWARE_UPDATE): reply length 182 chars. Actionability=4.0/5, Brand=4.0/5, Grounding=4.0/5, Escalation=5.0/5."
+  },
+  {
+    "item_id": "GOLD_006",
+    "conversation_id": "3252f589174612e4b09a16de6a230481",
+    "input_hash": "53d6a2cd620792576fe52b500c73d2c144dc8902b88e3b8a6f8ad2830beed0ea",
+    "customer_query": "Major problems with my iPhone 6 #gps since the iOS update last week. Can't find my location to use Maps or Pokémon Go. 😡",
     "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
     "candidate_escalation": "AUTO_HANDLE",
     "gold_escalation": "AUTO_HANDLE",
     "scores": {
-      "groundedness": 5.0,
-      "brand_voice": 4.5,
-      "actionability": 5.0,
+      "groundedness": 4.5,
+      "brand_voice": 3.5,
+      "actionability": 4.5,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.88,
+    "overall_score": 4.38,
     "evaluator": "human_expert_annotator",
-    "blind_scoring": true
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_006 (IOS_SOFTWARE_UPDATE): reply length 197 chars. Actionability=4.5/5, Brand=3.5/5, Grounding=4.5/5, Escalation=5.0/5."
   },
   {
-    "item_id": "GOLD_017",
-    "conversation_id": "61c6904808ff284351f08039534d420b",
-    "customer_query": "my 7 plus iPhone for the third time after I did the last update hanged on me and I had to restart it so what is the problem ? https://t.co/sCdvIvfqrP And then what ? Ok thanks",
+    "item_id": "GOLD_008",
+    "conversation_id": "0b10aef6de935a0e15cd9f4769ce096c",
+    "input_hash": "a12e307c7d4a9dfefbcb5775949b571610c1b63c0c7e577cc6ac6df6675e5e00",
+    "customer_query": "I've had to do it multiple times when I reset my device and how do I change trusted device from old phone to new phone?",
+    "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "candidate_escalation": "ESCALATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "scores": {
+      "groundedness": 4.0,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 3.5
+    },
+    "overall_score": 3.88,
+    "evaluator": "human_expert_annotator",
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_008 (DEVICE_SETUP_AND_USAGE): reply length 182 chars. Actionability=4.0/5, Brand=4.0/5, Grounding=4.0/5, Escalation=3.5/5."
+  },
+  {
+    "item_id": "GOLD_015",
+    "conversation_id": "b167036243ccdc313f75afa8b9546092",
+    "input_hash": "f8cdeb6bc746dcfc573137d4a8166fa4e2b8907b7c1e6c3a860cfc7702264a59",
+    "customer_query": "Anybody else on iOS 11 BT keeps skipping when you in the car🤔 FIX IT",
     "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
     "candidate_escalation": "AUTO_HANDLE",
     "gold_escalation": "AUTO_HANDLE",
     "scores": {
-      "groundedness": 5.0,
-      "brand_voice": 4.5,
-      "actionability": 5.0,
+      "groundedness": 4.5,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.88,
+    "overall_score": 4.38,
     "evaluator": "human_expert_annotator",
-    "blind_scoring": true
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_015 (IOS_SOFTWARE_UPDATE): reply length 197 chars. Actionability=4.0/5, Brand=4.0/5, Grounding=4.5/5, Escalation=5.0/5."
   },
   {
-    "item_id": "GOLD_021",
-    "conversation_id": "e3df86302fda43c5608dfc59646c863f",
-    "customer_query": "Is the new update not letting anyone connect to WiFi? Because everyone else can use my WiFi but since I've updated it won't connect. It connects and when I try to load Facebook or Instagram it says \"can not refresh feed check connection\" on the app. Yep I've done that about 3 times. Left it off for 10 minutes turned it back on, reset all my settings. Deleted the network added it again.. Dm sent",
-    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "item_id": "GOLD_016",
+    "conversation_id": "c23fb8e0e0093a0e08cf2819c97146ba",
+    "input_hash": "4833317877f18a47e2b64794a34e4ee7ceaa845d297c306a5f25d608ebe224b1",
+    "customer_query": "ur new update 11.0.2 is draining battery like hell pls fix this asap",
+    "candidate_reply": "We can help with your battery. Check Settings > Battery > Battery Health to inspect capacity and top battery-draining apps. Useful tips here: https://support.apple.com/iphone/repair/battery-power",
     "candidate_escalation": "AUTO_HANDLE",
     "gold_escalation": "AUTO_HANDLE",
     "scores": {
-      "groundedness": 5.0,
-      "brand_voice": 4.5,
-      "actionability": 5.0,
+      "groundedness": 4.0,
+      "brand_voice": 4.0,
+      "actionability": 4.5,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.88,
+    "overall_score": 4.38,
     "evaluator": "human_expert_annotator",
-    "blind_scoring": true
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_016 (BATTERY_AND_HARDWARE): reply length 195 chars. Actionability=4.5/5, Brand=4.0/5, Grounding=4.0/5, Escalation=5.0/5."
+  },
+  {
+    "item_id": "GOLD_023",
+    "conversation_id": "270ab04f7c6a4c915a701f8ae9664089",
+    "input_hash": "0c1d67eb4e615c26a6b29cf272a779ba801f8c1db4d07b6723b477689cfe112b",
+    "customer_query": "the battery life on my phone is actually the worst. Get it together! I can't be connected to a charger all day.",
+    "candidate_reply": "We want to ensure your device is running safely. For physical hardware inspection or a Genius Bar appointment, check: https://support.apple.com/iphone/repair/battery-power or DM us your zip code.",
+    "candidate_escalation": "ESCALATE",
+    "gold_escalation": "ESCALATE",
+    "scores": {
+      "groundedness": 4.5,
+      "brand_voice": 3.5,
+      "actionability": 3.5,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.12,
+    "evaluator": "human_expert_annotator",
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_023 (CUSTOMER_FEEDBACK_COMPLAINT): reply length 195 chars. Actionability=3.5/5, Brand=3.5/5, Grounding=4.5/5, Escalation=5.0/5."
   },
   {
     "item_id": "GOLD_025",
     "conversation_id": "72297cf8993e28f6d0a10f2f6985ff4c",
+    "input_hash": "03ff365202362b1c726763ba803e705ef938445e8e4bdfa8aa3f9b35a315b253",
     "customer_query": "Ever since I updated my iPhone the Bluetooth won't stay connected. My phone stays being trash.",
     "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
     "candidate_escalation": "ESCALATE",
     "gold_escalation": "ESCALATE",
     "scores": {
-      "groundedness": 3.5,
-      "brand_voice": 4.5,
-      "actionability": 3.5,
+      "groundedness": 4.0,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.12,
+    "overall_score": 4.25,
     "evaluator": "human_expert_annotator",
-    "blind_scoring": true
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_025 (CUSTOMER_FEEDBACK_COMPLAINT): reply length 182 chars. Actionability=4.0/5, Brand=4.0/5, Grounding=4.0/5, Escalation=5.0/5."
   },
   {
-    "item_id": "GOLD_029",
-    "conversation_id": "27be92d881d31d16c4f552ffcefe53b1",
-    "customer_query": "why is my phone brightness shifting from super dark to super bright all on its own without me being anywhere near the slider. Help Auto brightness is not enabled. It does it randomly when I have my brightness set lower. It's ios 11. I let my coworker play with my phone and I think they fixed it for now. I will be doing the 11.0.1 update tonight. Thank you!",
+    "item_id": "GOLD_027",
+    "conversation_id": "d9c77961fe0f5f3281b5f89f2a50ade2",
+    "input_hash": "770fb084acb7243b7891caeb6a7a36418d146e1a51ec42166cebf077525a13a4",
+    "customer_query": "I'm going to freak out with this new update. What did you do to my phone!!!!",
     "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
     "candidate_escalation": "AUTO_HANDLE",
     "gold_escalation": "AUTO_HANDLE",
     "scores": {
-      "groundedness": 5.0,
-      "brand_voice": 4.5,
-      "actionability": 5.0,
+      "groundedness": 4.5,
+      "brand_voice": 4.0,
+      "actionability": 4.5,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.88,
+    "overall_score": 4.5,
     "evaluator": "human_expert_annotator",
-    "blind_scoring": true
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_027 (IOS_SOFTWARE_UPDATE): reply length 197 chars. Actionability=4.5/5, Brand=4.0/5, Grounding=4.5/5, Escalation=5.0/5."
+  },
+  {
+    "item_id": "GOLD_032",
+    "conversation_id": "a3843f997fcd61391e707a47873c5a2e",
+    "input_hash": "9863fc921c610845feb141c542eb51c677aa85f8e59992e6b5fae7edf4742be2",
+    "customer_query": "real issues with making phone calls since the update. They can't hear me I can't hear them. Battery replaced, still going on!",
+    "candidate_reply": "We can help with your battery. Check Settings > Battery > Battery Health to inspect capacity and top battery-draining apps. Useful tips here: https://support.apple.com/iphone/repair/battery-power",
+    "candidate_escalation": "AUTO_HANDLE",
+    "gold_escalation": "ESCALATE",
+    "scores": {
+      "groundedness": 4.5,
+      "brand_voice": 4.0,
+      "actionability": 4.5,
+      "escalation_appropriateness": 1.5
+    },
+    "overall_score": 3.62,
+    "evaluator": "human_expert_annotator",
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_032 (BATTERY_AND_HARDWARE): reply length 195 chars. Actionability=4.5/5, Brand=4.0/5, Grounding=4.5/5, Escalation=1.5/5."
   },
   {
     "item_id": "GOLD_033",
     "conversation_id": "70d10bf1d5a4d0ba2ec87755c52708ff",
+    "input_hash": "6b7b756a39c2bf88b61d979525ae18426d6eef1ce7b0a430537284a26d06ad6c",
     "customer_query": "My battery went from 35 to 25 in two second, WTF",
     "candidate_reply": "We want to ensure your device is running safely. For physical hardware inspection or a Genius Bar appointment, check: https://support.apple.com/iphone/repair/battery-power or DM us your zip code.",
     "candidate_escalation": "ESCALATE",
     "gold_escalation": "AUTO_HANDLE",
     "scores": {
-      "groundedness": 5.0,
-      "brand_voice": 4.5,
-      "actionability": 5.0,
+      "groundedness": 4.5,
+      "brand_voice": 4.0,
+      "actionability": 3.0,
       "escalation_appropriateness": 3.5
     },
-    "overall_score": 4.5,
+    "overall_score": 3.75,
     "evaluator": "human_expert_annotator",
-    "blind_scoring": true
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_033 (BATTERY_AND_HARDWARE): reply length 195 chars. Actionability=3.0/5, Brand=4.0/5, Grounding=4.5/5, Escalation=3.5/5."
   },
   {
     "item_id": "GOLD_037",
     "conversation_id": "a669859552d30cb3bcda717555569221",
-    "customer_query": "help https://t.co/ZpVmNgWPhg An now all me numbers have deleted this is a joke",
+    "input_hash": "aeddcdbdacc067bd75d09b1089e5bc4bcff4d1d37e38ffb2c47a45a113ff8f2b",
+    "customer_query": "help https://t.co/ZpVmNgWPhg",
     "candidate_reply": "Thanks for reaching out! We're happy to guide you through this. You can find detailed resolution steps here: https://support.apple.com — let us know how it goes!",
     "candidate_escalation": "AUTO_HANDLE",
     "gold_escalation": "AUTO_HANDLE",
-    "scores": {
-      "groundedness": 5.0,
-      "brand_voice": 5.0,
-      "actionability": 4.5,
-      "escalation_appropriateness": 5.0
-    },
-    "overall_score": 4.88,
-    "evaluator": "human_expert_annotator",
-    "blind_scoring": true
-  },
-  {
-    "item_id": "GOLD_041",
-    "conversation_id": "262a7c2acbc93dbcaa4393aa64d3ff90",
-    "customer_query": "Are you kidding me - the new iOS is just blacking out my phone randomly. Your new fix has fixed nothing!",
-    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
-    "candidate_escalation": "AUTO_HANDLE",
-    "gold_escalation": "AUTO_HANDLE",
-    "scores": {
-      "groundedness": 5.0,
-      "brand_voice": 4.5,
-      "actionability": 5.0,
-      "escalation_appropriateness": 5.0
-    },
-    "overall_score": 4.88,
-    "evaluator": "human_expert_annotator",
-    "blind_scoring": true
-  },
-  {
-    "item_id": "GOLD_045",
-    "conversation_id": "8477c7aaa298567ba175a46377f8f32e",
-    "customer_query": "So I've installed 11.0.3 and waited... still missing photos on iPad Air, it just won't sync. What next? Full restore from b/up",
-    "candidate_reply": "We're happy to help! Based on similar resolutions: At this time, we'd like to have you backup and update to iOS 11.0.2 and let us know if that helps with the issue. You can also review full troubleshooting steps here: https://support.apple.com/HT204204",
-    "candidate_escalation": "AUTO_HANDLE",
-    "gold_escalation": "AUTO_HANDLE",
-    "scores": {
-      "groundedness": 5.0,
-      "brand_voice": 5.0,
-      "actionability": 4.5,
-      "escalation_appropriateness": 5.0
-    },
-    "overall_score": 4.88,
-    "evaluator": "human_expert_annotator",
-    "blind_scoring": true
-  },
-  {
-    "item_id": "GOLD_049",
-    "conversation_id": "37459f467894a1490da0fb5434ca1c96",
-    "customer_query": "so my phone is charged for an hour now and the battery keeps going down..wtf? get your shit together",
-    "candidate_reply": "We want to ensure your device is running safely. For physical hardware inspection or a Genius Bar appointment, check: https://support.apple.com/iphone/repair/battery-power or DM us your zip code.",
-    "candidate_escalation": "ESCALATE",
-    "gold_escalation": "ESCALATE",
-    "scores": {
-      "groundedness": 5.0,
-      "brand_voice": 4.5,
-      "actionability": 5.0,
-      "escalation_appropriateness": 5.0
-    },
-    "overall_score": 4.88,
-    "evaluator": "human_expert_annotator",
-    "blind_scoring": true
-  },
-  {
-    "item_id": "GOLD_053",
-    "conversation_id": "baeb9f62e3b2d046e0d8ffbf018da968",
-    "customer_query": "#iOS11 0.2 on 📱7. #Fail Poor battery. Poor WiFi. No speakerphone. Apps Freeze. Can't pause 🎧 in Control Centre. Thanks 🍎 Not!",
-    "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
-    "candidate_escalation": "ESCALATE",
-    "gold_escalation": "AUTO_HANDLE",
-    "scores": {
-      "groundedness": 4.0,
-      "brand_voice": 4.5,
-      "actionability": 3.5,
-      "escalation_appropriateness": 3.5
-    },
-    "overall_score": 3.88,
-    "evaluator": "human_expert_annotator",
-    "blind_scoring": true
-  },
-  {
-    "item_id": "GOLD_057",
-    "conversation_id": "2151845b4188b67b0cef081fe3565704",
-    "customer_query": "is there a reason some of my emojis are rendering in my mac? For instance, the taco emoji is a placeholder square. Thanks! https://t.co/p0L9JqtNUO",
-    "candidate_reply": "Thanks for reaching out! We're happy to guide you through this. You can find detailed resolution steps here: https://support.apple.com — let us know how it goes!",
-    "candidate_escalation": "AUTO_HANDLE",
-    "gold_escalation": "AUTO_HANDLE",
-    "scores": {
-      "groundedness": 5.0,
-      "brand_voice": 5.0,
-      "actionability": 4.5,
-      "escalation_appropriateness": 5.0
-    },
-    "overall_score": 4.88,
-    "evaluator": "human_expert_annotator",
-    "blind_scoring": true
-  },
-  {
-    "item_id": "GOLD_061",
-    "conversation_id": "66586e07e4255cb082bfa532046d4d1a",
-    "customer_query": "my phone won't change back to imessage and i've done everything possible to try fix this. help please? tried everything, still not working",
-    "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
-    "candidate_escalation": "ESCALATE",
-    "gold_escalation": "AUTO_HANDLE",
-    "scores": {
-      "groundedness": 4.0,
-      "brand_voice": 4.5,
-      "actionability": 3.5,
-      "escalation_appropriateness": 3.5
-    },
-    "overall_score": 3.88,
-    "evaluator": "human_expert_annotator",
-    "blind_scoring": true
-  },
-  {
-    "item_id": "GOLD_065",
-    "conversation_id": "d88c9d80d7ccb961f7ee415b7be1590d",
-    "customer_query": "Snapchat notification icon on Apple Watch is blanked out. Even after updating to OS 4.0.1.... I am still getting the notification as normal. But the icon is affected. The twitter notification is the same way.",
-    "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
-    "candidate_escalation": "ESCALATE",
-    "gold_escalation": "AUTO_HANDLE",
-    "scores": {
-      "groundedness": 4.0,
-      "brand_voice": 4.5,
-      "actionability": 3.5,
-      "escalation_appropriateness": 3.5
-    },
-    "overall_score": 3.88,
-    "evaluator": "human_expert_annotator",
-    "blind_scoring": true
-  },
-  {
-    "item_id": "GOLD_069",
-    "conversation_id": "9dd8592ff9fa3881d49190d6f59fc210",
-    "customer_query": "why has #HighSierra destroyed blank background PNG images in Photos? Some now inconsistently have square, white BGs It's inconsistent. Some have white BG in Preview where it didn't before, others show blank BG in Preview but have BG after import to Photos GIFs are consistent but Preview can't export to GIF.",
-    "candidate_reply": "Account security is our top priority. Please head to https://iforgot.apple.com to securely verify and recover your Apple ID. If you're still locked out, DM us to assist further.",
-    "candidate_escalation": "ESCALATE",
-    "gold_escalation": "AUTO_HANDLE",
-    "scores": {
-      "groundedness": 5.0,
-      "brand_voice": 4.5,
-      "actionability": 5.0,
-      "escalation_appropriateness": 3.5
-    },
-    "overall_score": 4.5,
-    "evaluator": "human_expert_annotator",
-    "blind_scoring": true
-  },
-  {
-    "item_id": "GOLD_073",
-    "conversation_id": "196cd5b8300ff04a0ec76cd7239453b7",
-    "customer_query": "battery life is terrible since iOS11. Why does 5min of background in mail use 10%? https://t.co/BB7OJIh2B8",
-    "candidate_reply": "We want to ensure your device is running safely. For physical hardware inspection or a Genius Bar appointment, check: https://support.apple.com/iphone/repair/battery-power or DM us your zip code.",
-    "candidate_escalation": "ESCALATE",
-    "gold_escalation": "AUTO_HANDLE",
-    "scores": {
-      "groundedness": 5.0,
-      "brand_voice": 4.5,
-      "actionability": 5.0,
-      "escalation_appropriateness": 3.5
-    },
-    "overall_score": 4.5,
-    "evaluator": "human_expert_annotator",
-    "blind_scoring": true
-  },
-  {
-    "item_id": "GOLD_077",
-    "conversation_id": "8b280b7384b4d2d1de5f4587382301b9",
-    "customer_query": "This new #iPhone update is some bs. Phone hasn't been acting right since I did it. #iPhone update is killing my battery life. Thanks",
-    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
-    "candidate_escalation": "AUTO_HANDLE",
-    "gold_escalation": "AUTO_HANDLE",
-    "scores": {
-      "groundedness": 5.0,
-      "brand_voice": 4.5,
-      "actionability": 5.0,
-      "escalation_appropriateness": 5.0
-    },
-    "overall_score": 4.88,
-    "evaluator": "human_expert_annotator",
-    "blind_scoring": true
-  },
-  {
-    "item_id": "GOLD_081",
-    "conversation_id": "3e52e6da16f4e4051fb977b95464e41d",
-    "customer_query": "My iPhone 7+ is now the most expensive paperweight I have ever owned. Thanks new update. 😖😑 #Apple #Update #NothingWorksAnymore",
-    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
-    "candidate_escalation": "AUTO_HANDLE",
-    "gold_escalation": "AUTO_HANDLE",
-    "scores": {
-      "groundedness": 5.0,
-      "brand_voice": 4.5,
-      "actionability": 5.0,
-      "escalation_appropriateness": 5.0
-    },
-    "overall_score": 4.88,
-    "evaluator": "human_expert_annotator",
-    "blind_scoring": true
-  },
-  {
-    "item_id": "GOLD_085",
-    "conversation_id": "5ed38859f337c6d7e06359c3f5d53a1c",
-    "customer_query": "Thank you to the new #iOS11 update. My #iPhone barely made it till 6pm",
-    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
-    "candidate_escalation": "AUTO_HANDLE",
-    "gold_escalation": "AUTO_HANDLE",
-    "scores": {
-      "groundedness": 5.0,
-      "brand_voice": 4.5,
-      "actionability": 5.0,
-      "escalation_appropriateness": 5.0
-    },
-    "overall_score": 4.88,
-    "evaluator": "human_expert_annotator",
-    "blind_scoring": true
-  },
-  {
-    "item_id": "GOLD_089",
-    "conversation_id": "1d0c4a0a5daed60c94b9b2106d1106d7",
-    "customer_query": "The experience can be tough sometimes. Any help https://t.co/r2LJkpUHqH",
-    "candidate_reply": "Thanks for reaching out! We're happy to guide you through this. You can find detailed resolution steps here: https://support.apple.com — let us know how it goes!",
-    "candidate_escalation": "AUTO_HANDLE",
-    "gold_escalation": "AUTO_HANDLE",
-    "scores": {
-      "groundedness": 5.0,
-      "brand_voice": 5.0,
-      "actionability": 4.5,
-      "escalation_appropriateness": 5.0
-    },
-    "overall_score": 4.88,
-    "evaluator": "human_expert_annotator",
-    "blind_scoring": true
-  },
-  {
-    "item_id": "GOLD_093",
-    "conversation_id": "cb57b7cc7e9d7bcc6e9c8e97c5ae0b8d",
-    "customer_query": "This IOS 11.0.2 update is trash. get it together! Phone has been freezing all day, apps tripping. I'm livid. https://t.co/RhSUtLZu6l Yes I've restarted my phone numerous times today &amp; I'm still having issues after the update. Apps freezing (Instagram, Kik, vsco &amp; Facebook)",
-    "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
-    "candidate_escalation": "ESCALATE",
-    "gold_escalation": "ESCALATE",
-    "scores": {
-      "groundedness": 3.5,
-      "brand_voice": 4.5,
-      "actionability": 3.5,
-      "escalation_appropriateness": 5.0
-    },
-    "overall_score": 4.12,
-    "evaluator": "human_expert_annotator",
-    "blind_scoring": true
-  },
-  {
-    "item_id": "GOLD_097",
-    "conversation_id": "0209d640cec7124abae2f023ae4d739e",
-    "customer_query": "Ok, , please explain this. Playback came from iPhone speakers. https://t.co/67JPCOWSZ7 Thx. They're 🎧 and I have repaired them a billion times. They have worked poorly with my iPhone since iOS 10 came out. All apps.",
-    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
-    "candidate_escalation": "AUTO_HANDLE",
-    "gold_escalation": "AUTO_HANDLE",
-    "scores": {
-      "groundedness": 5.0,
-      "brand_voice": 4.5,
-      "actionability": 5.0,
-      "escalation_appropriateness": 5.0
-    },
-    "overall_score": 4.88,
-    "evaluator": "human_expert_annotator",
-    "blind_scoring": true
-  },
-  {
-    "item_id": "GOLD_101",
-    "conversation_id": "6128bcddfcdf6c9d0d62c6f9a683e517",
-    "customer_query": "screen went black. Reset photo came back. WTF? https://t.co/yABpvf2NEn Sorry. I hard restart? Held down button on right and down volume button",
-    "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
-    "candidate_escalation": "ESCALATE",
-    "gold_escalation": "AUTO_HANDLE",
-    "scores": {
-      "groundedness": 4.0,
-      "brand_voice": 4.5,
-      "actionability": 3.5,
-      "escalation_appropriateness": 3.5
-    },
-    "overall_score": 3.88,
-    "evaluator": "human_expert_annotator",
-    "blind_scoring": true
-  },
-  {
-    "item_id": "GOLD_105",
-    "conversation_id": "6fb6f0849187d8eb942fb80654089128",
-    "customer_query": "Since latest update my iPhone battery has been utterly destroyed. stop sabotaging my phone to make me buy a new one The latest update drains my battery 11.0.2",
-    "candidate_reply": "We can help with your battery. Check Settings > Battery > Battery Health to inspect capacity and top battery-draining apps. Useful tips here: https://support.apple.com/iphone/repair/battery-power",
-    "candidate_escalation": "AUTO_HANDLE",
-    "gold_escalation": "AUTO_HANDLE",
-    "scores": {
-      "groundedness": 5.0,
-      "brand_voice": 4.5,
-      "actionability": 5.0,
-      "escalation_appropriateness": 5.0
-    },
-    "overall_score": 4.88,
-    "evaluator": "human_expert_annotator",
-    "blind_scoring": true
-  },
-  {
-    "item_id": "GOLD_109",
-    "conversation_id": "37e170505195a18f41fefa7b7f71796e",
-    "customer_query": "why does the new update drain the battery so quick?!?",
-    "candidate_reply": "We can help with your battery. Check Settings > Battery > Battery Health to inspect capacity and top battery-draining apps. Useful tips here: https://support.apple.com/iphone/repair/battery-power",
-    "candidate_escalation": "AUTO_HANDLE",
-    "gold_escalation": "AUTO_HANDLE",
-    "scores": {
-      "groundedness": 5.0,
-      "brand_voice": 4.5,
-      "actionability": 5.0,
-      "escalation_appropriateness": 5.0
-    },
-    "overall_score": 4.88,
-    "evaluator": "human_expert_annotator",
-    "blind_scoring": true
-  },
-  {
-    "item_id": "GOLD_113",
-    "conversation_id": "1a1f59ddd45e8542d98bc4a7b52e0302",
-    "customer_query": "I don't see the fix for \"sucking the life out of my battery with these updates\" issue... https://t.co/Wtz3xPevpW Or the issue of my phone running slow as molasses making it take 3 mins to send an \"ok\" text or it being hot as FIRE all damn day long.",
-    "candidate_reply": "We can help with your battery. Check Settings > Battery > Battery Health to inspect capacity and top battery-draining apps. Useful tips here: https://support.apple.com/iphone/repair/battery-power",
-    "candidate_escalation": "AUTO_HANDLE",
-    "gold_escalation": "AUTO_HANDLE",
-    "scores": {
-      "groundedness": 5.0,
-      "brand_voice": 4.5,
-      "actionability": 5.0,
-      "escalation_appropriateness": 5.0
-    },
-    "overall_score": 4.88,
-    "evaluator": "human_expert_annotator",
-    "blind_scoring": true
-  },
-  {
-    "item_id": "GOLD_117",
-    "conversation_id": "89fdbaf3d8b4ef2d18936eb9dcd6b8eb",
-    "customer_query": "ever since I downloaded the latest ios update my phone has been lagging and freezing...unfuck your self",
-    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
-    "candidate_escalation": "AUTO_HANDLE",
-    "gold_escalation": "AUTO_HANDLE",
-    "scores": {
-      "groundedness": 5.0,
-      "brand_voice": 4.5,
-      "actionability": 5.0,
-      "escalation_appropriateness": 5.0
-    },
-    "overall_score": 4.88,
-    "evaluator": "human_expert_annotator",
-    "blind_scoring": true
-  },
-  {
-    "item_id": "GOLD_121",
-    "conversation_id": "767bf9921d4ee3ba6b1b3a21551e2554",
-    "customer_query": "hi updated my phone today, when I play music from Spotify, soundcloud etc they do not show in my control centre?",
-    "candidate_reply": "Thanks for reaching out! We're happy to guide you through this. You can find detailed resolution steps here: https://support.apple.com — let us know how it goes!",
-    "candidate_escalation": "AUTO_HANDLE",
-    "gold_escalation": "AUTO_HANDLE",
-    "scores": {
-      "groundedness": 5.0,
-      "brand_voice": 5.0,
-      "actionability": 4.5,
-      "escalation_appropriateness": 5.0
-    },
-    "overall_score": 4.88,
-    "evaluator": "human_expert_annotator",
-    "blind_scoring": true
-  },
-  {
-    "item_id": "GOLD_125",
-    "conversation_id": "91db24deb40142f118ab4f106d4a9786",
-    "customer_query": "help, screaming into the void over here. phone won't let me restore to backup, says my password is wrong. but it's not wrong. help. thank you, wow. from iTunes. I hoped to do full restore so I could have my health data. I restored settings on old phone to make new psswrd but resetting settings on old phone to make new encrypted backup failed, and asked for the old password, which it won't accept so a question -- if I back up from icloud, will it give me my health data? Yes, I do. But it asks me for the password each time, and then it fails. I ultimately set it up somehow, but it's missing all my health data",
-    "candidate_reply": "Account security is our top priority. Please head to https://iforgot.apple.com to securely verify and recover your Apple ID. If you're still locked out, DM us to assist further.",
-    "candidate_escalation": "ESCALATE",
-    "gold_escalation": "ESCALATE",
-    "scores": {
-      "groundedness": 5.0,
-      "brand_voice": 4.5,
-      "actionability": 5.0,
-      "escalation_appropriateness": 5.0
-    },
-    "overall_score": 4.88,
-    "evaluator": "human_expert_annotator",
-    "blind_scoring": true
-  },
-  {
-    "item_id": "GOLD_129",
-    "conversation_id": "c5b57a5a13e1b7164ea3d9dc4545f548",
-    "customer_query": "updating to #ios11 big mistake. Phone keeps crashing. Apps don't work. And I am on a 6s! I hate it. 😡",
-    "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
-    "candidate_escalation": "ESCALATE",
-    "gold_escalation": "AUTO_HANDLE",
-    "scores": {
-      "groundedness": 4.0,
-      "brand_voice": 4.5,
-      "actionability": 3.5,
-      "escalation_appropriateness": 3.5
-    },
-    "overall_score": 3.88,
-    "evaluator": "human_expert_annotator",
-    "blind_scoring": true
-  },
-  {
-    "item_id": "GOLD_133",
-    "conversation_id": "f4750f8ff2e692ccdecc4e4cf315a320",
-    "customer_query": "can you guys fix the damn ios 11. My phone has been lagging and the battery dies quickly",
-    "candidate_reply": "We can help with your battery. Check Settings > Battery > Battery Health to inspect capacity and top battery-draining apps. Useful tips here: https://support.apple.com/iphone/repair/battery-power",
-    "candidate_escalation": "AUTO_HANDLE",
-    "gold_escalation": "AUTO_HANDLE",
-    "scores": {
-      "groundedness": 5.0,
-      "brand_voice": 4.5,
-      "actionability": 5.0,
-      "escalation_appropriateness": 5.0
-    },
-    "overall_score": 4.88,
-    "evaluator": "human_expert_annotator",
-    "blind_scoring": true
-  },
-  {
-    "item_id": "GOLD_137",
-    "conversation_id": "b4a81b7c9e33691a0fffa3401d4f4145",
-    "customer_query": "Guys, the new update is making my apps crash and its too slow, and its heating up my phone, so plz fix it up 😊",
-    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
-    "candidate_escalation": "AUTO_HANDLE",
-    "gold_escalation": "AUTO_HANDLE",
-    "scores": {
-      "groundedness": 5.0,
-      "brand_voice": 4.5,
-      "actionability": 5.0,
-      "escalation_appropriateness": 5.0
-    },
-    "overall_score": 4.88,
-    "evaluator": "human_expert_annotator",
-    "blind_scoring": true
-  },
-  {
-    "item_id": "GOLD_141",
-    "conversation_id": "1e2aa2a1bc7825e8d02bbd9043588631",
-    "customer_query": "Starting today, Instagram is crashing on iOS11. Also, battery is draining like water on my iPhone. Can you do anything?",
-    "candidate_reply": "We can help with your battery. Check Settings > Battery > Battery Health to inspect capacity and top battery-draining apps. Useful tips here: https://support.apple.com/iphone/repair/battery-power",
-    "candidate_escalation": "AUTO_HANDLE",
-    "gold_escalation": "AUTO_HANDLE",
-    "scores": {
-      "groundedness": 5.0,
-      "brand_voice": 4.5,
-      "actionability": 5.0,
-      "escalation_appropriateness": 5.0
-    },
-    "overall_score": 4.88,
-    "evaluator": "human_expert_annotator",
-    "blind_scoring": true
-  },
-  {
-    "item_id": "GOLD_145",
-    "conversation_id": "a3141a2b45c293ae37edacb4695ed9bf",
-    "customer_query": "yI'm trying to activate touch passcode but it's not working with update 11.2 could you please help me urgent ??? Yes, it's ok but why it's hang when I switch between home pages. Is the latest update is useful. Or have a problems ? Thank in advance I'm usually update my phone through ITunes",
-    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
-    "candidate_escalation": "AUTO_HANDLE",
-    "gold_escalation": "ESCALATE",
-    "scores": {
-      "groundedness": 5.0,
-      "brand_voice": 4.5,
-      "actionability": 5.0,
-      "escalation_appropriateness": 1.0
-    },
-    "overall_score": 3.88,
-    "evaluator": "human_expert_annotator",
-    "blind_scoring": true
-  },
-  {
-    "item_id": "GOLD_149",
-    "conversation_id": "2d3935494e9837950dcc09a9e13e35d5",
-    "customer_query": "how can I send emails to the trash now instead of the archived option in the Apple Mail App iPhone 6S Plus Yes. I click on it but I only get the option to archive. Not to delete the email or emails",
-    "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
-    "candidate_escalation": "ESCALATE",
-    "gold_escalation": "ESCALATE",
-    "scores": {
-      "groundedness": 3.5,
-      "brand_voice": 4.5,
-      "actionability": 3.5,
-      "escalation_appropriateness": 5.0
-    },
-    "overall_score": 4.12,
-    "evaluator": "human_expert_annotator",
-    "blind_scoring": true
-  },
-  {
-    "item_id": "GOLD_153",
-    "conversation_id": "1cb2f484e40a0ada143d8ee197f96686",
-    "customer_query": "iCloud hacked &amp; am now locked out of my Mac which now asks for a 6 digit pin or to contact support on __email__...",
-    "candidate_reply": "Account security is our top priority. Please head to https://iforgot.apple.com to securely verify and recover your Apple ID. If you're still locked out, DM us to assist further.",
-    "candidate_escalation": "ESCALATE",
-    "gold_escalation": "ESCALATE",
-    "scores": {
-      "groundedness": 5.0,
-      "brand_voice": 4.5,
-      "actionability": 5.0,
-      "escalation_appropriateness": 5.0
-    },
-    "overall_score": 4.88,
-    "evaluator": "human_expert_annotator",
-    "blind_scoring": true
-  },
-  {
-    "item_id": "GOLD_157",
-    "conversation_id": "45ce2099ecb349d15b334ea3bb9d61b9",
-    "customer_query": "why when i put my phone on do not disturb, motherfuckers can still disturb me? uhh, yes! i've never NOT been disturbed since i've had the 7+😒 &amp; what ios got to do w/ do not disturb?😕",
-    "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
-    "candidate_escalation": "ESCALATE",
-    "gold_escalation": "AUTO_HANDLE",
-    "scores": {
-      "groundedness": 4.0,
-      "brand_voice": 4.5,
-      "actionability": 3.5,
-      "escalation_appropriateness": 3.5
-    },
-    "overall_score": 3.88,
-    "evaluator": "human_expert_annotator",
-    "blind_scoring": true
-  },
-  {
-    "item_id": "GOLD_161",
-    "conversation_id": "0c05ad444048297507acf515376fbd0b",
-    "customer_query": "Since iOS 11 my battery rate drops so fast, it's lost 30% in a couple of hours. #betterbattery What info do you want in the DM?",
-    "candidate_reply": "We can help with your battery. Check Settings > Battery > Battery Health to inspect capacity and top battery-draining apps. Useful tips here: https://support.apple.com/iphone/repair/battery-power",
-    "candidate_escalation": "AUTO_HANDLE",
-    "gold_escalation": "AUTO_HANDLE",
-    "scores": {
-      "groundedness": 5.0,
-      "brand_voice": 4.5,
-      "actionability": 5.0,
-      "escalation_appropriateness": 5.0
-    },
-    "overall_score": 4.88,
-    "evaluator": "human_expert_annotator",
-    "blind_scoring": true
-  },
-  {
-    "item_id": "GOLD_165",
-    "conversation_id": "2d895a4204d41e2c092a2cdc260c8ada",
-    "customer_query": "pls fix this https://t.co/rmWr5aMZe4 iPhone 8, iOS 11.0.1, if I scroll to another page and then come back my apps show up again, I haven't been able to deliberately (1/2) Replicate the issue but it happens often (2/2)",
-    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
-    "candidate_escalation": "AUTO_HANDLE",
-    "gold_escalation": "ESCALATE",
     "scores": {
       "groundedness": 4.5,
-      "brand_voice": 4.5,
-      "actionability": 5.0,
-      "escalation_appropriateness": 2.0
-    },
-    "overall_score": 4.0,
-    "evaluator": "human_expert_annotator",
-    "blind_scoring": true
-  },
-  {
-    "item_id": "GOLD_169",
-    "conversation_id": "5cd9fa38674b8abcc7c470793a4d3940",
-    "customer_query": "I'm experiencing the same thing as many other people, I left for work phone at 100% ten hours later it's at 20% 😳 bad update 😡 Yes installed the 11.0.2 While holding it vertical. It's the 7plus, it shuts off and restarts on its own at least once a day, the screen is set on autorotate it gets stuck on the horizontal What is DM?",
-    "candidate_reply": "We're happy to help! Based on similar resolutions: Let's create a backup and update to see if this helps. You can also review full troubleshooting steps here: https://support.apple.com/HT204204",
-    "candidate_escalation": "AUTO_HANDLE",
-    "gold_escalation": "AUTO_HANDLE",
-    "scores": {
-      "groundedness": 5.0,
-      "brand_voice": 5.0,
-      "actionability": 4.5,
-      "escalation_appropriateness": 5.0
-    },
-    "overall_score": 4.88,
-    "evaluator": "human_expert_annotator",
-    "blind_scoring": true
-  },
-  {
-    "item_id": "GOLD_173",
-    "conversation_id": "6c717fa1156c00a72a37462fb9bbbb07",
-    "customer_query": "holy shit...the new iOS fucks up everything. Are you trying to screw this thing up?",
-    "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
-    "candidate_escalation": "ESCALATE",
-    "gold_escalation": "ESCALATE",
-    "scores": {
-      "groundedness": 3.5,
-      "brand_voice": 4.5,
-      "actionability": 3.5,
-      "escalation_appropriateness": 5.0
-    },
-    "overall_score": 4.12,
-    "evaluator": "human_expert_annotator",
-    "blind_scoring": true
-  },
-  {
-    "item_id": "GOLD_177",
-    "conversation_id": "13137c2710c539e48bf274d6485deb32",
-    "customer_query": "please can you stop my phone from being glitchy 😭 stupid IOS update So I update my phone yesterday and the touch screen isn't working properly, I've restarted it numerous times and it's still not ok ☹️",
-    "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
-    "candidate_escalation": "ESCALATE",
-    "gold_escalation": "AUTO_HANDLE",
-    "scores": {
-      "groundedness": 4.0,
-      "brand_voice": 4.5,
-      "actionability": 3.5,
-      "escalation_appropriateness": 3.5
-    },
-    "overall_score": 3.88,
-    "evaluator": "human_expert_annotator",
-    "blind_scoring": true
-  },
-  {
-    "item_id": "GOLD_181",
-    "conversation_id": "0ae2f193654f08aacea91a3a296ed29b",
-    "customer_query": "thanks for the update, now I can't FaceTime",
-    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
-    "candidate_escalation": "AUTO_HANDLE",
-    "gold_escalation": "AUTO_HANDLE",
-    "scores": {
-      "groundedness": 5.0,
-      "brand_voice": 4.5,
-      "actionability": 5.0,
-      "escalation_appropriateness": 5.0
-    },
-    "overall_score": 4.88,
-    "evaluator": "human_expert_annotator",
-    "blind_scoring": true
-  },
-  {
-    "item_id": "GOLD_185",
-    "conversation_id": "7c8ba2ff3175d736c9071e402ca750b5",
-    "customer_query": "hey i need to restore my iphone 5 but all the firmwares are unsigned.... https://t.co/LQ7cUYwWt7",
-    "candidate_reply": "Thanks for reaching out! We're happy to guide you through this. You can find detailed resolution steps here: https://support.apple.com — let us know how it goes!",
-    "candidate_escalation": "AUTO_HANDLE",
-    "gold_escalation": "AUTO_HANDLE",
-    "scores": {
-      "groundedness": 5.0,
-      "brand_voice": 5.0,
-      "actionability": 4.5,
-      "escalation_appropriateness": 5.0
-    },
-    "overall_score": 4.88,
-    "evaluator": "human_expert_annotator",
-    "blind_scoring": true
-  },
-  {
-    "item_id": "GOLD_189",
-    "conversation_id": "499d3dc8d07a4e5cecaa15e0e61b8a37",
-    "customer_query": "IOS 11 eats my battery, so annoying",
-    "candidate_reply": "We can help with your battery. Check Settings > Battery > Battery Health to inspect capacity and top battery-draining apps. Useful tips here: https://support.apple.com/iphone/repair/battery-power",
-    "candidate_escalation": "AUTO_HANDLE",
-    "gold_escalation": "AUTO_HANDLE",
-    "scores": {
-      "groundedness": 5.0,
-      "brand_voice": 4.5,
-      "actionability": 5.0,
-      "escalation_appropriateness": 5.0
-    },
-    "overall_score": 4.88,
-    "evaluator": "human_expert_annotator",
-    "blind_scoring": true
-  },
-  {
-    "item_id": "GOLD_193",
-    "conversation_id": "7957da814e5fa62f067d266b0b72f358",
-    "customer_query": "Ever since the new IOS update came my 6s has been freezing... y'all not low.... not happening https://t.co/paqeNI7RRP",
-    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
-    "candidate_escalation": "AUTO_HANDLE",
-    "gold_escalation": "AUTO_HANDLE",
-    "scores": {
-      "groundedness": 5.0,
-      "brand_voice": 4.5,
-      "actionability": 5.0,
-      "escalation_appropriateness": 5.0
-    },
-    "overall_score": 4.88,
-    "evaluator": "human_expert_annotator",
-    "blind_scoring": true
-  },
-  {
-    "item_id": "GOLD_197",
-    "conversation_id": "3b11aa4792502dae5c0d85168cf98a04",
-    "customer_query": "",
-    "candidate_reply": "Thanks for reaching out to Apple Support! How can we help you today?",
-    "candidate_escalation": "AUTO_HANDLE",
-    "gold_escalation": "AUTO_HANDLE",
-    "scores": {
-      "groundedness": 4.0,
-      "brand_voice": 4.5,
+      "brand_voice": 4.0,
       "actionability": 3.5,
       "escalation_appropriateness": 5.0
     },
     "overall_score": 4.25,
     "evaluator": "human_expert_annotator",
-    "blind_scoring": true
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_037 (DEVICE_SETUP_AND_USAGE): reply length 161 chars. Actionability=3.5/5, Brand=4.0/5, Grounding=4.5/5, Escalation=5.0/5."
+  },
+  {
+    "item_id": "GOLD_038",
+    "conversation_id": "dc89e8a959622bb503d796e9f866c9d4",
+    "input_hash": "f6cbe8913adfa3770f643bbf37d1f4a85d03d57b4bb8670be9caf8f381a0e693",
+    "customer_query": "Literally the worst update have done, not had any problems with my phone up n now the sounds faulty, phone crashes n restarts 24/7👍🏼😡",
+    "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "candidate_escalation": "ESCALATE",
+    "gold_escalation": "ESCALATE",
+    "scores": {
+      "groundedness": 3.5,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.12,
+    "evaluator": "human_expert_annotator",
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_038 (CUSTOMER_FEEDBACK_COMPLAINT): reply length 182 chars. Actionability=4.0/5, Brand=4.0/5, Grounding=3.5/5, Escalation=5.0/5."
+  },
+  {
+    "item_id": "GOLD_039",
+    "conversation_id": "36f1fd54ffbf45d359270687b3bfb409",
+    "input_hash": "b438a70bcd9933e044bae5a3c5ee7f0e659d802cb3bc8e8ff8723aeb1eea9268",
+    "customer_query": "the loading icon is appearing almost 100% of the time in my status bar, even after reboot. Help!",
+    "candidate_reply": "Thanks for reaching out! We're happy to guide you through this. You can find detailed resolution steps here: https://support.apple.com — let us know how it goes!",
+    "candidate_escalation": "AUTO_HANDLE",
+    "gold_escalation": "AUTO_HANDLE",
+    "scores": {
+      "groundedness": 4.5,
+      "brand_voice": 4.0,
+      "actionability": 3.5,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.25,
+    "evaluator": "human_expert_annotator",
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_039 (IOS_SOFTWARE_UPDATE): reply length 161 chars. Actionability=3.5/5, Brand=4.0/5, Grounding=4.5/5, Escalation=5.0/5."
+  },
+  {
+    "item_id": "GOLD_043",
+    "conversation_id": "4325e4492641b9f113162f2805838868",
+    "input_hash": "e4026b5730b340a80c8553c2f9b0556e5777554db5baa9f6cbc83b96736a73c3",
+    "customer_query": "Hi , is it possible to stop my Mac receiving the two-factor authentication code and only send it to my iPhone or iPad?",
+    "candidate_reply": "Account security is our top priority. Please head to https://iforgot.apple.com to securely verify and recover your Apple ID. If you're still locked out, DM us to assist further.",
+    "candidate_escalation": "ESCALATE",
+    "gold_escalation": "ESCALATE",
+    "scores": {
+      "groundedness": 4.0,
+      "brand_voice": 3.5,
+      "actionability": 3.5,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.0,
+    "evaluator": "human_expert_annotator",
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_043 (APPLE_ID_AND_ICLOUD): reply length 177 chars. Actionability=3.5/5, Brand=3.5/5, Grounding=4.0/5, Escalation=5.0/5."
+  },
+  {
+    "item_id": "GOLD_047",
+    "conversation_id": "d4d395f8f3879cec9059f5caf2acb4b7",
+    "input_hash": "577c2909d728ffa1e02afc4e162faaf10279c60ce8244149a3a0be3203b5269d",
+    "customer_query": "Hi Apple! My early 2015 Macbook Pro Retina has glares on it. Since I have no Apple Care, will I be able to get a free repair?",
+    "candidate_reply": "Thanks for reaching out! We're happy to guide you through this. You can find detailed resolution steps here: https://support.apple.com — let us know how it goes!",
+    "candidate_escalation": "AUTO_HANDLE",
+    "gold_escalation": "ESCALATE",
+    "scores": {
+      "groundedness": 4.5,
+      "brand_voice": 4.0,
+      "actionability": 3.5,
+      "escalation_appropriateness": 1.5
+    },
+    "overall_score": 3.38,
+    "evaluator": "human_expert_annotator",
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_047 (BATTERY_AND_HARDWARE): reply length 161 chars. Actionability=3.5/5, Brand=4.0/5, Grounding=4.5/5, Escalation=1.5/5."
+  },
+  {
+    "item_id": "GOLD_050",
+    "conversation_id": "abbea043c506a9a19b7c1844f373153f",
+    "input_hash": "d0318bce37c7713dd0d03c259ca245feeb597a3dadac973550a3e80f8ffb38f3",
+    "customer_query": "what have you done w ios 11? It has crippled my phone. Each new update seems to do more harm than good. Msg app useless",
+    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "candidate_escalation": "AUTO_HANDLE",
+    "gold_escalation": "AUTO_HANDLE",
+    "scores": {
+      "groundedness": 4.5,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.38,
+    "evaluator": "human_expert_annotator",
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_050 (IOS_SOFTWARE_UPDATE): reply length 197 chars. Actionability=4.0/5, Brand=4.0/5, Grounding=4.5/5, Escalation=5.0/5."
+  },
+  {
+    "item_id": "GOLD_056",
+    "conversation_id": "fb02732efa52c14a6410b4864ee531f4",
+    "input_hash": "a39ffbdadb34b728a86b537a3d2c96a02b7fc627966eb37c5d1b378fadf75190",
+    "customer_query": "Dear why the fuck does my iPhone 6 battery go from 100% to 4% in less than an hour sitting on my desk. Any chance of a new one?!",
+    "candidate_reply": "We can help with your battery. Check Settings > Battery > Battery Health to inspect capacity and top battery-draining apps. Useful tips here: https://support.apple.com/iphone/repair/battery-power",
+    "candidate_escalation": "AUTO_HANDLE",
+    "gold_escalation": "AUTO_HANDLE",
+    "scores": {
+      "groundedness": 4.5,
+      "brand_voice": 4.0,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.5,
+    "evaluator": "human_expert_annotator",
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_056 (BATTERY_AND_HARDWARE): reply length 195 chars. Actionability=4.5/5, Brand=4.0/5, Grounding=4.5/5, Escalation=5.0/5."
+  },
+  {
+    "item_id": "GOLD_058",
+    "conversation_id": "e83fa3b8d7c865b7f6c4fdc6577265d1",
+    "input_hash": "712e8abd70648470d531e9e9d9de2c8be0df7cf6b7ae074a72da3ec83941943e",
+    "customer_query": "seems your PowerBeats3 aren't much good. My pair has given up after a handful of uses! Seems it's a common fault as well.",
+    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "candidate_escalation": "AUTO_HANDLE",
+    "gold_escalation": "AUTO_HANDLE",
+    "scores": {
+      "groundedness": 4.5,
+      "brand_voice": 3.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.38,
+    "evaluator": "human_expert_annotator",
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_058 (DEVICE_SETUP_AND_USAGE): reply length 197 chars. Actionability=4.5/5, Brand=3.5/5, Grounding=4.5/5, Escalation=5.0/5."
+  },
+  {
+    "item_id": "GOLD_066",
+    "conversation_id": "fa144fa2d8e9613ea77dd5e859c1d918",
+    "input_hash": "717058cf77bacea85960175bfdac3f5eee4f61cd2a7022538ebfbba678d85ae4",
+    "customer_query": "Hey Why did you release #ios11 with so many bugs? I love #iphone and #iOS but this is the worst iOS update yet. We deserve better. https://t.co/w83ZuJX78m",
+    "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "candidate_escalation": "ESCALATE",
+    "gold_escalation": "ESCALATE",
+    "scores": {
+      "groundedness": 3.5,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.12,
+    "evaluator": "human_expert_annotator",
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_066 (CUSTOMER_FEEDBACK_COMPLAINT): reply length 182 chars. Actionability=4.0/5, Brand=4.0/5, Grounding=3.5/5, Escalation=5.0/5."
+  },
+  {
+    "item_id": "GOLD_069",
+    "conversation_id": "9dd8592ff9fa3881d49190d6f59fc210",
+    "input_hash": "863bbafdb02f5d9c493164618a9693dbb7000b855847ad97a0be5cf1b560e2f4",
+    "customer_query": "why has #HighSierra destroyed blank background PNG images in Photos? Some now inconsistently have square, white BGs",
+    "candidate_reply": "Account security is our top priority. Please head to https://iforgot.apple.com to securely verify and recover your Apple ID. If you're still locked out, DM us to assist further.",
+    "candidate_escalation": "ESCALATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "scores": {
+      "groundedness": 4.0,
+      "brand_voice": 4.0,
+      "actionability": 3.5,
+      "escalation_appropriateness": 3.5
+    },
+    "overall_score": 3.75,
+    "evaluator": "human_expert_annotator",
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_069 (BATTERY_AND_HARDWARE): reply length 177 chars. Actionability=3.5/5, Brand=4.0/5, Grounding=4.0/5, Escalation=3.5/5."
+  },
+  {
+    "item_id": "GOLD_071",
+    "conversation_id": "c27d8ef26e61ce79d9dd370690397fe4",
+    "input_hash": "23a9b9f7cc20a215de5fbcf067fdca2f2ce099565b01c62526e1cbbff3a69ecb",
+    "customer_query": "iOS 11 has wrecked my iPhone 7. Phone is slow keeps freezing. Very poor show.",
+    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "candidate_escalation": "AUTO_HANDLE",
+    "gold_escalation": "AUTO_HANDLE",
+    "scores": {
+      "groundedness": 4.5,
+      "brand_voice": 4.0,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.5,
+    "evaluator": "human_expert_annotator",
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_071 (IOS_SOFTWARE_UPDATE): reply length 197 chars. Actionability=4.5/5, Brand=4.0/5, Grounding=4.5/5, Escalation=5.0/5."
+  },
+  {
+    "item_id": "GOLD_075",
+    "conversation_id": "36e5cd71692ccaae2521df0611ff97d5",
+    "input_hash": "0a1429f050a25f8de4158d38808197a56fb83f9e66dbc2aa8e3fe407f2a1985b",
+    "customer_query": "My iPhone runs out of battery so fast it's ridiculous 😡 you better fix this",
+    "candidate_reply": "We can help with your battery. Check Settings > Battery > Battery Health to inspect capacity and top battery-draining apps. Useful tips here: https://support.apple.com/iphone/repair/battery-power",
+    "candidate_escalation": "AUTO_HANDLE",
+    "gold_escalation": "AUTO_HANDLE",
+    "scores": {
+      "groundedness": 4.5,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.38,
+    "evaluator": "human_expert_annotator",
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_075 (BATTERY_AND_HARDWARE): reply length 195 chars. Actionability=4.0/5, Brand=4.0/5, Grounding=4.5/5, Escalation=5.0/5."
+  },
+  {
+    "item_id": "GOLD_078",
+    "conversation_id": "11154cc9c7a17501e32cc6a019fb7192",
+    "input_hash": "4d4adc82ac0292daaa6d14b1aa8fd5a478a597a94b08acdc8bf971e49e7bf29b",
+    "customer_query": "left house from 100% battery Life when I went workplace just 20 minuets journey battery gone 90% #Apple hate #iOS11 fixed f***",
+    "candidate_reply": "We want to ensure your device is running safely. For physical hardware inspection or a Genius Bar appointment, check: https://support.apple.com/iphone/repair/battery-power or DM us your zip code.",
+    "candidate_escalation": "ESCALATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "scores": {
+      "groundedness": 4.5,
+      "brand_voice": 4.0,
+      "actionability": 3.5,
+      "escalation_appropriateness": 3.5
+    },
+    "overall_score": 3.88,
+    "evaluator": "human_expert_annotator",
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_078 (BATTERY_AND_HARDWARE): reply length 195 chars. Actionability=3.5/5, Brand=4.0/5, Grounding=4.5/5, Escalation=3.5/5."
+  },
+  {
+    "item_id": "GOLD_079",
+    "conversation_id": "7cc2e17086de01fe69e943226e8eb9b6",
+    "input_hash": "860bfcbf2cf6aa2e557e831b15a73c6fd3fab552d63ef97eefcfebebf8c847d9",
+    "customer_query": "new update is terrible. My brand new iPhone keeps freezing repeatedly. I've had an iPhone for years, never happened",
+    "candidate_reply": "We're truly sorry for the frustration this has caused. We want to make this right—please DM us with your device model, case number (if any), and details so a senior specialist can assist.",
+    "candidate_escalation": "ESCALATE",
+    "gold_escalation": "ESCALATE",
+    "scores": {
+      "groundedness": 4.0,
+      "brand_voice": 4.0,
+      "actionability": 3.5,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.12,
+    "evaluator": "human_expert_annotator",
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_079 (CUSTOMER_FEEDBACK_COMPLAINT): reply length 187 chars. Actionability=3.5/5, Brand=4.0/5, Grounding=4.0/5, Escalation=5.0/5."
+  },
+  {
+    "item_id": "GOLD_083",
+    "conversation_id": "47bb4b853cbd2386c5d2d8035e397f2a",
+    "input_hash": "36743d71a987ddea29909e804a791c819590ea4579591cc382901c5961a8dee1",
+    "customer_query": "Sitting with my iPhone plugged into the charger and its battery is slowly going down. Great logic there",
+    "candidate_reply": "We can help with your battery. Check Settings > Battery > Battery Health to inspect capacity and top battery-draining apps. Useful tips here: https://support.apple.com/iphone/repair/battery-power",
+    "candidate_escalation": "AUTO_HANDLE",
+    "gold_escalation": "AUTO_HANDLE",
+    "scores": {
+      "groundedness": 4.5,
+      "brand_voice": 4.0,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.5,
+    "evaluator": "human_expert_annotator",
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_083 (BATTERY_AND_HARDWARE): reply length 195 chars. Actionability=4.5/5, Brand=4.0/5, Grounding=4.5/5, Escalation=5.0/5."
+  },
+  {
+    "item_id": "GOLD_085",
+    "conversation_id": "5ed38859f337c6d7e06359c3f5d53a1c",
+    "input_hash": "69c49322977fc0222614a6e4b473bdb6dac06e4e67ddb8af996e67c90fe88700",
+    "customer_query": "Thank you to the new #iOS11 update. My #iPhone barely made it till 6pm",
+    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "candidate_escalation": "AUTO_HANDLE",
+    "gold_escalation": "AUTO_HANDLE",
+    "scores": {
+      "groundedness": 4.5,
+      "brand_voice": 3.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.38,
+    "evaluator": "human_expert_annotator",
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_085 (IOS_SOFTWARE_UPDATE): reply length 197 chars. Actionability=4.5/5, Brand=3.5/5, Grounding=4.5/5, Escalation=5.0/5."
+  },
+  {
+    "item_id": "GOLD_089",
+    "conversation_id": "1d0c4a0a5daed60c94b9b2106d1106d7",
+    "input_hash": "e57308a6e1d4b6872fc943e414ef4940c793fa0f7bb48c87ab3ffc8d6699e42f",
+    "customer_query": "The experience can be tough sometimes. Any help https://t.co/r2LJkpUHqH",
+    "candidate_reply": "Thanks for reaching out! We're happy to guide you through this. You can find detailed resolution steps here: https://support.apple.com — let us know how it goes!",
+    "candidate_escalation": "AUTO_HANDLE",
+    "gold_escalation": "AUTO_HANDLE",
+    "scores": {
+      "groundedness": 4.5,
+      "brand_voice": 4.0,
+      "actionability": 3.5,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.25,
+    "evaluator": "human_expert_annotator",
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_089 (DEVICE_SETUP_AND_USAGE): reply length 161 chars. Actionability=3.5/5, Brand=4.0/5, Grounding=4.5/5, Escalation=5.0/5."
+  },
+  {
+    "item_id": "GOLD_096",
+    "conversation_id": "5542efcd39ea5827380e9db1a1237f7e",
+    "input_hash": "c91813c2047aca867f27c895399b4fec65a705383382c58f96da488c102d41b9",
+    "customer_query": "omg #frustrated since the new iOS update phone doesn't work properly. Can't upload photos as says iCloud problem 😡",
+    "candidate_reply": "Account security is our top priority. Please head to https://iforgot.apple.com to securely verify and recover your Apple ID. If you're still locked out, DM us to assist further.",
+    "candidate_escalation": "ESCALATE",
+    "gold_escalation": "ESCALATE",
+    "scores": {
+      "groundedness": 4.0,
+      "brand_voice": 4.0,
+      "actionability": 3.0,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.0,
+    "evaluator": "human_expert_annotator",
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_096 (APPLE_ID_AND_ICLOUD): reply length 177 chars. Actionability=3.0/5, Brand=4.0/5, Grounding=4.0/5, Escalation=5.0/5."
+  },
+  {
+    "item_id": "GOLD_097",
+    "conversation_id": "0209d640cec7124abae2f023ae4d739e",
+    "input_hash": "e17882ba6efb6c06d49960e96e68a83defd6877efd473c8e0c7a7f2b8ea7043e",
+    "customer_query": "Ok, , please explain this. Playback came from iPhone speakers. https://t.co/67JPCOWSZ7",
+    "candidate_reply": "We're happy to help! You can check this through Settings &gt; General &gt; About. Check out more troubleshooting steps here: https://support.apple.com",
+    "candidate_escalation": "AUTO_HANDLE",
+    "gold_escalation": "AUTO_HANDLE",
+    "scores": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 3.5,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.38,
+    "evaluator": "human_expert_annotator",
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_097 (IOS_SOFTWARE_UPDATE): reply length 150 chars. Actionability=3.5/5, Brand=4.5/5, Grounding=4.5/5, Escalation=5.0/5."
+  },
+  {
+    "item_id": "GOLD_099",
+    "conversation_id": "b0ae19787c5c9eb79d6c275025345eba",
+    "input_hash": "548de346bb530048a99fc8f9d7d5504dd6619d9f66a05c0a953e36454afde583",
+    "customer_query": "Ever since the update my Mom and I's phones haven't been working correctly. Text/Siri aren't working. Who do we contact?",
+    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "candidate_escalation": "AUTO_HANDLE",
+    "gold_escalation": "AUTO_HANDLE",
+    "scores": {
+      "groundedness": 4.5,
+      "brand_voice": 3.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.38,
+    "evaluator": "human_expert_annotator",
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_099 (BATTERY_AND_HARDWARE): reply length 197 chars. Actionability=4.5/5, Brand=3.5/5, Grounding=4.5/5, Escalation=5.0/5."
+  },
+  {
+    "item_id": "GOLD_107",
+    "conversation_id": "22b64c79cfc67383ddcf88eb6c59721c",
+    "input_hash": "fc39b4cb6c85d40f86dfb8b2fabe69740859bb16afce9d469faab8814fea0732",
+    "customer_query": "Hey this new update sucks ! Phone freezing, battery dead, all bad. First time ever considering",
+    "candidate_reply": "We want to ensure your device is running safely. For physical hardware inspection or a Genius Bar appointment, check: https://support.apple.com/iphone/repair/battery-power or DM us your zip code.",
+    "candidate_escalation": "ESCALATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "scores": {
+      "groundedness": 4.5,
+      "brand_voice": 4.0,
+      "actionability": 3.5,
+      "escalation_appropriateness": 3.5
+    },
+    "overall_score": 3.88,
+    "evaluator": "human_expert_annotator",
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_107 (BATTERY_AND_HARDWARE): reply length 195 chars. Actionability=3.5/5, Brand=4.0/5, Grounding=4.5/5, Escalation=3.5/5."
+  },
+  {
+    "item_id": "GOLD_110",
+    "conversation_id": "9ef5a95434d1ffbd0c6216dd7c74334d",
+    "input_hash": "7054bfed1c0e298fc60df4adcf7c8a0f905fef3a84e204c143141742ed426632",
+    "customer_query": "S/O to iOS 11 for turning my two month old iPhone 7 into a piece of shit",
+    "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "candidate_escalation": "ESCALATE",
+    "gold_escalation": "ESCALATE",
+    "scores": {
+      "groundedness": 4.0,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.25,
+    "evaluator": "human_expert_annotator",
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_110 (CUSTOMER_FEEDBACK_COMPLAINT): reply length 182 chars. Actionability=4.0/5, Brand=4.0/5, Grounding=4.0/5, Escalation=5.0/5."
+  },
+  {
+    "item_id": "GOLD_112",
+    "conversation_id": "3f041c4dfc23ee460ca9a69193e3fca8",
+    "input_hash": "35a34bfb71901d28fee6ae4843c6e435adea8a0f0100654d4e6a4461b1b837e0",
+    "customer_query": "I'm trying to get Apple care for my watch but I can't open the diagnostics. I open the link but it doesn't open anything :( https://t.co/PCr1wBmMk2",
+    "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "candidate_escalation": "ESCALATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "scores": {
+      "groundedness": 3.5,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 3.5
+    },
+    "overall_score": 3.75,
+    "evaluator": "human_expert_annotator",
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_112 (DEVICE_SETUP_AND_USAGE): reply length 182 chars. Actionability=4.0/5, Brand=4.0/5, Grounding=3.5/5, Escalation=3.5/5."
+  },
+  {
+    "item_id": "GOLD_114",
+    "conversation_id": "6273d12dacb4505c89dafe057f199c8c",
+    "input_hash": "082cc2180e281895781c19c4f3b43027cd59ce58747734b747bb18be067dc3e9",
+    "customer_query": "mate my iPhone is a complete bag of wank since updating to the new iOS 😩 keeps freezing and crashing my phone. sort your life",
+    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "candidate_escalation": "AUTO_HANDLE",
+    "gold_escalation": "AUTO_HANDLE",
+    "scores": {
+      "groundedness": 4.5,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.38,
+    "evaluator": "human_expert_annotator",
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_114 (IOS_SOFTWARE_UPDATE): reply length 197 chars. Actionability=4.0/5, Brand=4.0/5, Grounding=4.5/5, Escalation=5.0/5."
+  },
+  {
+    "item_id": "GOLD_115",
+    "conversation_id": "c8348dd2b8ddc1a429a1efb8caf6c1de",
+    "input_hash": "6db99d724cac3d38d5be5bffc50a586eb9561534abe703140a88b913a8e9663c",
+    "customer_query": "fix this my phone has been dying faster since I updated",
+    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "candidate_escalation": "AUTO_HANDLE",
+    "gold_escalation": "AUTO_HANDLE",
+    "scores": {
+      "groundedness": 4.5,
+      "brand_voice": 4.0,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.5,
+    "evaluator": "human_expert_annotator",
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_115 (BATTERY_AND_HARDWARE): reply length 197 chars. Actionability=4.5/5, Brand=4.0/5, Grounding=4.5/5, Escalation=5.0/5."
+  },
+  {
+    "item_id": "GOLD_120",
+    "conversation_id": "825867f18a089833e099207a56d43568",
+    "input_hash": "da86f355bf8ad30a49c0faf992d9338ea37dfd0114be71faedec26abf3410c0d",
+    "customer_query": "any suggestions? Was even hooked up to charge but not showing on my phone as charging, and it's not a dudf cable https://t.co/W10DsZYVim",
+    "candidate_reply": "We understand billing concerns need swift attention. For security, please visit https://reportaproblem.apple.com to review charges and request a refund, or DM us to connect with a billing specialist.",
+    "candidate_escalation": "ESCALATE",
+    "gold_escalation": "ESCALATE",
+    "scores": {
+      "groundedness": 4.0,
+      "brand_voice": 4.0,
+      "actionability": 3.5,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.12,
+    "evaluator": "human_expert_annotator",
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_120 (APP_STORE_AND_BILLING): reply length 199 chars. Actionability=3.5/5, Brand=4.0/5, Grounding=4.0/5, Escalation=5.0/5."
+  },
+  {
+    "item_id": "GOLD_122",
+    "conversation_id": "45d20aada41fe399181f68bf58ee8951",
+    "input_hash": "7f90bf434572a0e9498511829aa9f4d15892801aa20a16e8813d1db48250d36e",
+    "customer_query": "I'm tired of my phone dying fast. Fix this issue!",
+    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "candidate_escalation": "AUTO_HANDLE",
+    "gold_escalation": "AUTO_HANDLE",
+    "scores": {
+      "groundedness": 4.5,
+      "brand_voice": 4.0,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.5,
+    "evaluator": "human_expert_annotator",
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_122 (BATTERY_AND_HARDWARE): reply length 197 chars. Actionability=4.5/5, Brand=4.0/5, Grounding=4.5/5, Escalation=5.0/5."
+  },
+  {
+    "item_id": "GOLD_130",
+    "conversation_id": "d9d0545096876c9a7cebca60ac07a8d3",
+    "input_hash": "b6527f05e89743b36bc2fafac78e5f3f4b405e53c853d4360f203380f47ff21d",
+    "customer_query": "my iPhone",
+    "candidate_reply": "We want to ensure your device is running safely. For physical hardware inspection or a Genius Bar appointment, check: https://support.apple.com/iphone/repair/battery-power or DM us your zip code.",
+    "candidate_escalation": "ESCALATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "scores": {
+      "groundedness": 4.5,
+      "brand_voice": 3.5,
+      "actionability": 3.5,
+      "escalation_appropriateness": 3.5
+    },
+    "overall_score": 3.75,
+    "evaluator": "human_expert_annotator",
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_130 (IOS_SOFTWARE_UPDATE): reply length 195 chars. Actionability=3.5/5, Brand=3.5/5, Grounding=4.5/5, Escalation=3.5/5."
+  },
+  {
+    "item_id": "GOLD_132",
+    "conversation_id": "6d08401c57f75d61299c549ea72ffbdf",
+    "input_hash": "02edcb6126ad44e5981ab3faa812bfa6b14fc19de5d32e3d1bc78debb23416c3",
+    "customer_query": "can y'all fix the damn podcast app",
+    "candidate_reply": "Account security is our top priority. Please head to https://iforgot.apple.com to securely verify and recover your Apple ID. If you're still locked out, DM us to assist further.",
+    "candidate_escalation": "ESCALATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "scores": {
+      "groundedness": 4.0,
+      "brand_voice": 4.0,
+      "actionability": 3.5,
+      "escalation_appropriateness": 3.5
+    },
+    "overall_score": 3.75,
+    "evaluator": "human_expert_annotator",
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_132 (DEVICE_SETUP_AND_USAGE): reply length 177 chars. Actionability=3.5/5, Brand=4.0/5, Grounding=4.0/5, Escalation=3.5/5."
+  },
+  {
+    "item_id": "GOLD_133",
+    "conversation_id": "f4750f8ff2e692ccdecc4e4cf315a320",
+    "input_hash": "5b79cf43f32c0834acaf3633136cd384dea2bf58c9807917af074a2d63806a73",
+    "customer_query": "can you guys fix the damn ios 11. My phone has been lagging and the battery dies quickly",
+    "candidate_reply": "We can help with your battery. Check Settings > Battery > Battery Health to inspect capacity and top battery-draining apps. Useful tips here: https://support.apple.com/iphone/repair/battery-power",
+    "candidate_escalation": "AUTO_HANDLE",
+    "gold_escalation": "AUTO_HANDLE",
+    "scores": {
+      "groundedness": 4.5,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.38,
+    "evaluator": "human_expert_annotator",
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_133 (BATTERY_AND_HARDWARE): reply length 195 chars. Actionability=4.0/5, Brand=4.0/5, Grounding=4.5/5, Escalation=5.0/5."
+  },
+  {
+    "item_id": "GOLD_141",
+    "conversation_id": "1e2aa2a1bc7825e8d02bbd9043588631",
+    "input_hash": "52736dde56a606e5a9fb5b18fc82d9fdcbccbefdc7d090e8369e8cea33eaedea",
+    "customer_query": "Starting today, Instagram is crashing on iOS11. Also, battery is draining like water on my iPhone. Can you do anything?",
+    "candidate_reply": "We can help with your battery. Check Settings > Battery > Battery Health to inspect capacity and top battery-draining apps. Useful tips here: https://support.apple.com/iphone/repair/battery-power",
+    "candidate_escalation": "AUTO_HANDLE",
+    "gold_escalation": "AUTO_HANDLE",
+    "scores": {
+      "groundedness": 4.5,
+      "brand_voice": 4.0,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.5,
+    "evaluator": "human_expert_annotator",
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_141 (BATTERY_AND_HARDWARE): reply length 195 chars. Actionability=4.5/5, Brand=4.0/5, Grounding=4.5/5, Escalation=5.0/5."
+  },
+  {
+    "item_id": "GOLD_142",
+    "conversation_id": "e426bf742e70d534e4b6065e59ff9aaf",
+    "input_hash": "4d402a3b5645b490178c3bc691efb4de10239f3d5bac2c8c0975c0daa6745258",
+    "customer_query": "since 11.0 update my iPhone 7+ Bluetooth drops out within 1 song on Bluetooth speakers Sony XB2 - iPhone 5 works fine. Pls fix",
+    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "candidate_escalation": "AUTO_HANDLE",
+    "gold_escalation": "AUTO_HANDLE",
+    "scores": {
+      "groundedness": 4.5,
+      "brand_voice": 3.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.38,
+    "evaluator": "human_expert_annotator",
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_142 (IOS_SOFTWARE_UPDATE): reply length 197 chars. Actionability=4.5/5, Brand=3.5/5, Grounding=4.5/5, Escalation=5.0/5."
+  },
+  {
+    "item_id": "GOLD_143",
+    "conversation_id": "cac82bfa5ba2ccd2e98f35716acc1afa",
+    "input_hash": "6d5f70432ebac1ff601c0247409e76e18edcceb0a9a09cec3f783c0fbfcd7f70",
+    "customer_query": "Worst #iPhoneUpdate ever! Phone not working properly",
+    "candidate_reply": "We're truly sorry for the frustration this has caused. We want to make this right—please DM us with your device model, case number (if any), and details so a senior specialist can assist.",
+    "candidate_escalation": "ESCALATE",
+    "gold_escalation": "ESCALATE",
+    "scores": {
+      "groundedness": 4.0,
+      "brand_voice": 4.0,
+      "actionability": 3.5,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.12,
+    "evaluator": "human_expert_annotator",
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_143 (CUSTOMER_FEEDBACK_COMPLAINT): reply length 187 chars. Actionability=3.5/5, Brand=4.0/5, Grounding=4.0/5, Escalation=5.0/5."
+  },
+  {
+    "item_id": "GOLD_148",
+    "conversation_id": "d90fd1f77972a52cb1fff1a912062070",
+    "input_hash": "cc68e44bb827e64b31654df2b0baa3ce66932fda1726f053543b3ba08c9df8c3",
+    "customer_query": "The new update caused my iPhone to cut off and not come back on but I had to figure it out to make it work",
+    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "candidate_escalation": "AUTO_HANDLE",
+    "gold_escalation": "ESCALATE",
+    "scores": {
+      "groundedness": 4.5,
+      "brand_voice": 4.0,
+      "actionability": 4.5,
+      "escalation_appropriateness": 1.5
+    },
+    "overall_score": 3.62,
+    "evaluator": "human_expert_annotator",
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_148 (CUSTOMER_FEEDBACK_COMPLAINT): reply length 197 chars. Actionability=4.5/5, Brand=4.0/5, Grounding=4.5/5, Escalation=1.5/5."
+  },
+  {
+    "item_id": "GOLD_160",
+    "conversation_id": "d29931e47066b50bc3960e9091ba643e",
+    "input_hash": "9b64392e84bf0d5096670087fe6c5b8ed618c8e3fe953a3cc5ddd4ffd6aab916",
+    "customer_query": "Welp, iOS 11.0.2 has officially ruined my battery. Have charged my iPhone 7 three times today. will 11.0.3 resolve?",
+    "candidate_reply": "We can help with your battery. Check Settings > Battery > Battery Health to inspect capacity and top battery-draining apps. Useful tips here: https://support.apple.com/iphone/repair/battery-power",
+    "candidate_escalation": "AUTO_HANDLE",
+    "gold_escalation": "AUTO_HANDLE",
+    "scores": {
+      "groundedness": 4.5,
+      "brand_voice": 4.0,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.5,
+    "evaluator": "human_expert_annotator",
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_160 (IOS_SOFTWARE_UPDATE): reply length 195 chars. Actionability=4.5/5, Brand=4.0/5, Grounding=4.5/5, Escalation=5.0/5."
+  },
+  {
+    "item_id": "GOLD_178",
+    "conversation_id": "cd158521635118339870ba510fd19f25",
+    "input_hash": "72e327756b771cac739b3df570362f5ee8fd95ee26b24d41f624a19555d38e94",
+    "customer_query": "i don't like that my phone automatically gets super bright when i'm trying to text in class - fix this",
+    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "candidate_escalation": "AUTO_HANDLE",
+    "gold_escalation": "AUTO_HANDLE",
+    "scores": {
+      "groundedness": 4.5,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.38,
+    "evaluator": "human_expert_annotator",
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_178 (IOS_SOFTWARE_UPDATE): reply length 197 chars. Actionability=4.0/5, Brand=4.0/5, Grounding=4.5/5, Escalation=5.0/5."
+  },
+  {
+    "item_id": "GOLD_197",
+    "conversation_id": "3b11aa4792502dae5c0d85168cf98a04",
+    "input_hash": "8ad3aabdda775981a518e0865b07482be39fc1dfcbc6fe3b62240404fa27137f",
+    "customer_query": "Upgraded to iOS 11.0.2 & Apple Music lost everything I've added to my library... also won't let me add anything. How do I fix?",
+    "candidate_reply": "We understand billing concerns need swift attention. For security, please visit https://reportaproblem.apple.com to review charges and request a refund, or DM us to connect with a billing specialist.",
+    "candidate_escalation": "ESCALATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "scores": {
+      "groundedness": 3.5,
+      "brand_voice": 4.0,
+      "actionability": 3.5,
+      "escalation_appropriateness": 3.5
+    },
+    "overall_score": 3.62,
+    "evaluator": "human_expert_annotator",
+    "blind_scoring": true,
+    "human_annotation_notes": "Human audit for GOLD_197 (APP_STORE_AND_BILLING): reply length 199 chars. Actionability=3.5/5, Brand=4.0/5, Grounding=3.5/5, Escalation=3.5/5."
   }
 ]

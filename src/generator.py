@@ -100,9 +100,9 @@ class GroundedReplyGenerator:
         # --- AUTO-HANDLED RESPONSES (Grounded in Historical Troubleshooting Actions) ---
         else:
             if extracted_step:
-                # Genuinely incorporate the extracted step from historical resolution
+                # Genuinely incorporate the extracted step naturally without internal jargon
                 link_str = f" {target_link}" if target_link else ""
-                reply = f"We're happy to help! Based on similar resolutions: {extracted_step}. You can also review full troubleshooting steps here:{link_str}"
+                reply = f"We're happy to help! {extracted_step}. Check out more troubleshooting steps here:{link_str}"
             else:
                 # Default grounded fallbacks tailored by intent
                 if intent == "IOS_SOFTWARE_UPDATE":
@@ -130,8 +130,13 @@ class GroundedReplyGenerator:
             else:
                 reply = reply[:276].rstrip('., ') + "..."
 
+        used_evidence = [grounded_in[0]] if (extracted_step and grounded_in) else []
+
         return {
             "draft_reply": reply,
             "grounded_in": grounded_in,
+            "retrieved_evidence": grounded_in,
+            "used_evidence": used_evidence,
             "extracted_action_used": extracted_step is not None
         }
+

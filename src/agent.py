@@ -13,7 +13,7 @@ from src.generator import GroundedReplyGenerator
 
 class AppleSupportAgent:
     """
-    Production-grade AI Support Agent for @AppleSupport.
+    Evaluation-focused AI Support Agent prototype for @AppleSupport.
     """
     def __init__(
         self,
@@ -36,10 +36,15 @@ class AppleSupportAgent:
             self._initialized = True
         return self
 
-    def process_message(self, customer_query: str) -> Dict[str, Any]:
+    def process_message(
+        self,
+        customer_query: str,
+        context_history: Optional[List[Dict[str, str]]] = None
+    ) -> Dict[str, Any]:
         """
         Executes the full agent reasoning cycle on an incoming customer inquiry.
         """
+
         if not self._initialized:
             self.initialize()
 
@@ -93,6 +98,7 @@ class AppleSupportAgent:
             "intent": intent,
             "intent_confidence": intent_conf,
             "probabilities": clf_result.get("probabilities", {}),
+            "intent_probabilities": clf_result.get("probabilities", {}),
             "matched_signals": clf_result.get("matched_signals", []),
             "escalation_decision": escalation_decision,
             "escalation_reason": escalation_reason,
@@ -100,6 +106,8 @@ class AppleSupportAgent:
             "draft_reply": gen_result["draft_reply"],
             "reply_length": len(gen_result["draft_reply"]),
             "grounded_in": gen_result["grounded_in"],
-            "extracted_action_used": gen_result["extracted_action_used"],
-            "retrieved_evidence": retrieved_items
+            "retrieved_evidence": retrieved_items,
+            "used_evidence": gen_result.get("used_evidence", []),
+            "extracted_action_used": gen_result["extracted_action_used"]
         }
+

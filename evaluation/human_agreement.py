@@ -65,16 +65,47 @@ def calculate_agreement_metrics(
 
 def run_human_judge_agreement_study(
     human_ann_path: str = "evaluation/human_annotations.json",
-    llm_scores_path: str = "evaluation/llm_judge_scores.json"
+    llm_scores_path: str = "evaluation/llm_judge_scores.json",
+    frozen_subset_path: str = "data/frozen_eval_subset_n50.json"
 ) -> Dict[str, Any]:
     """
     Computes authentic human-judge agreement across the 50 paired evaluations.
+    Enforces cryptographic SHA256 input hash assertions to prevent stale cached scoring.
     """
     with open(human_ann_path, 'r', encoding='utf-8') as f:
         human_data = json.load(f)
 
     with open(llm_scores_path, 'r', encoding='utf-8') as f:
         llm_data = json.load(f)
+
+    frozen_hashes = {}
+    if Path(frozen_subset_path).exists():
+        with open(frozen_subset_path, 'r', encoding='utf-8') as f:
+            frozen_items = json.load(f)
+            frozen_hashes = {x["item_id"]: x.get("input_hash") for x in frozen_items}
+
+    # Verify cryptographic input hash integrity for every single evaluated item
+    verified_pairs = 0
+    for h_entry in human_data:
+        item_id = h_entry["item_id"]
+        assert item_id in llm_data, f"Missing LLM judge evaluation for item {item_id}"
+        j_entry = llm_data[item_id]
+
+        h_hash = h_entry.get("input_hash")
+        j_hash = j_entry.get("input_hash")
+        assert h_hash is not None and j_hash is not None, f"Missing input_hash on item {item_id}"
+        assert h_hash == j_hash, (
+            f"Cryptographic hash mismatch on {item_id}: "
+            f"Human hash ({h_hash}) does not match LLM hash ({j_hash}). Stale evaluation detected!"
+        )
+        if item_id in frozen_hashes and frozen_hashes[item_id]:
+            assert h_hash == frozen_hashes[item_id], (
+                f"Evaluation hash mismatch against frozen subset for {item_id}: "
+                f"Evaluated hash ({h_hash}) != Frozen candidate hash ({frozen_hashes[item_id]})"
+            )
+        verified_pairs += 1
+
+    print(f"[OK] Cryptographic verification passed: All {verified_pairs} human-LLM pairs match candidate input hashes.")
 
     dimensions = [
         ("groundedness", "Groundedness & Correctness"),
@@ -92,17 +123,16 @@ def run_human_judge_agreement_study(
 
         for h_entry in human_data:
             item_id = h_entry["item_id"]
-            if item_id in llm_data:
-                j_entry = llm_data[item_id]
-                if dim_key == "overall_score":
-                    h_val = h_entry["overall_score"]
-                    j_val = j_entry["overall_score"]
-                else:
-                    h_val = h_entry["scores"][dim_key]
-                    j_val = j_entry["scores"][dim_key]
+            j_entry = llm_data[item_id]
+            if dim_key == "overall_score":
+                h_val = h_entry["overall_score"]
+                j_val = j_entry["overall_score"]
+            else:
+                h_val = h_entry["scores"][dim_key]
+                j_val = j_entry["scores"][dim_key]
 
-                h_scores.append(float(h_val))
-                j_scores.append(float(j_val))
+            h_scores.append(float(h_val))
+            j_scores.append(float(j_val))
 
         agreement_summary[dim_key] = calculate_agreement_metrics(
             h_scores, j_scores, metric_name=dim_title

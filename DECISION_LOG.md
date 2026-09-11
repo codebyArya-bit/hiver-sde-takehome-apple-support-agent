@@ -19,29 +19,29 @@ A chronological record of 14 non-obvious technical and architectural decisions m
 ---
 
 ### 3. Asymmetric Metric Optimization: Prioritizing Safety Recall Over Precision in Escalation
-* **Decision**: Prioritize **Escalation Recall** (catching issues needing human agents) as a tier-1 critical metric, accepting a slight false escalation penalty over any risk of false auto-handling.
-* **Rationale**: In customer support, an unnecessary human escalation costs ~$3–$5 in agent time; an automated hallucination on an account compromise or refund dispute costs brand trust, legal liability, or direct churn. Under-escalation is catastrophic; over-escalation is merely sub-optimal.
-* **Trade-off**: The agent sends slightly more ambiguous queries to human specialists rather than aggressively attempting to auto-resolve everything.
+* **Decision**: Prioritize **Escalation Recall** (catching issues needing human agents) as a tier-1 critical metric, accepting a slight false escalation penalty over any risk of false auto-handling. Formalized via **Escalation F2 Score** and a **5:1 Weighted Risk-Cost Penalty** (5 points for a missed safety escalation vs. 1 point for an unnecessary escalation).
+* **Rationale**: In customer support operations, an unnecessary human escalation consumes frontline agent capacity and extends response backlogs; conversely, an automated hallucination or failure to escalate on an account takeover, damaged battery, or billing dispute creates severe customer harm, security exposure, and brand trust erosion. Under-escalation is safety-catastrophic; over-escalation is an operational capacity trade-off.
+* **Trade-off**: The agent routes ambiguous and safety-boundary queries to human specialists rather than aggressively attempting to auto-resolve everything, resulting in a false escalation rate of ~24.6% while achieving a 65.5% escalation recall and cutting total risk penalty by more than half.
 
 ---
 
 ### 4. Zero-Dependency Offline Execution Architecture
-* **Decision**: Implement a self-contained local pipeline using calibrated statistical classifiers and TF-IDF semantic vector spaces on CPU, rather than relying strictly on paid external LLM APIs (OpenAI / Anthropic / Gemini).
+* **Decision**: Implement a self-contained local pipeline using calibrated statistical classifiers and sparse TF-IDF retrieval on CPU, rather than relying strictly on paid external LLM APIs (OpenAI / Anthropic / Gemini).
 * **Rationale**: Fulfills the strict requirement that any reviewer or recruiter can clone the repository and reproduce headline results in under 15 minutes without configuring API keys, credit cards, or external cloud quotas.
 * **Trade-off**: Reply phrasing relies on retrieved verified historical precedents and modular templates rather than unconstrained generative autoregression.
 
 ---
 
 ### 5. Separate KB Indexing from Evaluation Candidates (Anti-Contamination Partition)
-* **Decision**: Strictly partition the 1,200 scraped conversations into 1,000 historical KB entries and 200 holdout golden evaluation examples.
+* **Decision**: Strictly partition the scraped conversations into 600 training threads, 1,000 historical KB entries, and 200 holdout golden evaluation examples with zero thread overlap across splits.
 * **Rationale**: Evaluating RAG systems on data present in the vector index produces artificially inflated ROUGE/BLEU scores and circular evaluation. Keeping the golden set completely out of the retrieval index tests true out-of-sample generalization.
 * **Trade-off**: Slightly smaller retrieval database (1,000 documents instead of 1,200).
 
 ---
 
 ### 6. Dynamic Calibration of Retrieval Similarity Threshold
-* **Decision**: Lower the `min_retrieval_similarity` threshold from 0.20 to 0.06 after empirical percentile analysis.
-* **Rationale**: Due to the brevity of customer tweets (10–20 tokens) and high sparsity in TF-IDF representations, cosine similarities rarely exceed 0.25 even for highly relevant matches (median was 0.149). An aggressive 0.20 threshold caused an 85.2% false escalation rate. Setting the threshold to 0.06 and pairing it with calibrated policy triggers achieved a balanced 21.1% false escalation rate while preserving a high 70.7% escalation recall on safety-critical interactions.
+* **Decision**: Set the default `min_retrieval_similarity` threshold to `0.05` in `EscalationEngine` after empirical percentile analysis over sparse TF-IDF vectors.
+* **Rationale**: Due to the extreme brevity of customer tweets (10–20 tokens) and high vocabulary sparsity, cosine similarities on sparse historical resolution text rarely exceed 0.25 even for relevant matches. An aggressive 0.20 threshold caused an >80% false escalation rate. Setting the threshold to 0.05 and pairing it with calibrated policy triggers preserves high recall on safety-critical interactions while preventing unnecessary agent queue flooding.
 * **Trade-off**: Relies on domain policy regex triggers rather than vector similarity alone to catch out-of-distribution adversarial prompts.
 
 
@@ -98,6 +98,6 @@ A chronological record of 14 non-obvious technical and architectural decisions m
 ---
 
 ### 14. Measuring Human-Judge Agreement via Inter-Rater Reliability (Pearson, Spearman, Kappa, MAE)
-* **Decision**: Include mathematical inter-rater agreement statistics in the automated evaluation harness.
-* **Rationale**: An automated judge cannot be trusted unless its scoring distribution demonstrably aligns with human expert grading.
-* **Trade-off**: Demands ground-truth human annotations across all evaluation dimensions.
+* **Decision**: Include authentic mathematical inter-rater agreement statistics in the automated evaluation harness with cryptographic SHA256 input hash assertions.
+* **Rationale**: An automated judge cannot be trusted unless its scoring distribution demonstrably aligns with human expert grading. By hashing the exact evaluation payload (`item_id`, `query`, `gold_intent`, `gold_escalation`, `candidate_reply`, `candidate_escalation`, `rubric_version`), the evaluation harness cryptographically guarantees that human and LLM ratings evaluate the exact same candidate output, preventing stale or synthetic score reuse.
+* **Trade-off**: Requires maintaining paired human and LLM evaluation sets with strict hash verification that fails loudly on any candidate text discrepancy.

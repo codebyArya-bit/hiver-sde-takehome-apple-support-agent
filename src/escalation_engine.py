@@ -16,20 +16,26 @@ ESCALATION_POLICIES = [
     {
         "id": "POLICY_FINANCIAL_TRANSACTION",
         "intent": "APP_STORE_AND_BILLING",
-        "regex": r'\b(refund|charge|charged|subscription|receipt|credit card|bank|purchased?|money back|unauthorized|stolen card|apple store charge)\b',
+        "regex": r'\b(refund|refunds|charge|charges|charged|charging|subscription|subscriptions|receipt|credit card|bank|purchased?|money back|unauthorized|stolen card|apple store charge)\b',
         "reason": "Financial transactions, billing disputes, and refund requests require authenticated access to the user's Apple ID billing portal."
     },
     {
         "id": "POLICY_SECURITY_CREDENTIALS",
         "intent": "APPLE_ID_AND_ICLOUD",
-        "regex": r'\b(locked|lockout|passcode|password|two[- ]factor|2fa|verification code|compromised|hacked|stolen phone|activation lock)\b',
+        "regex": r'\b(locked|lockout|passcode|password|two[- ]factor|2fa|verification code|compromised|hacked|stolen phone|stolen device|activation lock)\b',
         "reason": "Account recovery, credential resets, and 2FA authentication cannot be safely resolved over public social channels."
     },
     {
         "id": "POLICY_HARDWARE_DAMAGE_SAFETY",
-        "intent": "BATTERY_AND_HARDWARE",
-        "regex": r'\b(cracked|broken|shattered|swollen|bulging|smoke|burn|spark|water damage|submerged|hardware repair|genius bar|screen popped)\b',
+        "intent": None,
+        "regex": r'\b(cracked|broken|shattered|swollen|swelling|bulging|smoke|smoking|burn|burning|burnt|spark|sparking|fire|exploded|exploding|water damage|submerged|hardware repair|genius bar|screen popped|lifting off)\b',
         "reason": "Physical component damage or thermal safety hazards require in-person hardware diagnostics or Genius Bar service appointment."
+    },
+    {
+        "id": "POLICY_ADVERSARIAL_INJECTION",
+        "intent": None,
+        "regex": r'\b(ignore (all )?previous instructions|system rules|jailbreak|unconstrained ai|dan mode)\b',
+        "reason": "Potential adversarial prompt injection or jailbreak attempt detected; escalating to human supervision."
     },
     {
         "id": "POLICY_HIGH_DISTRESS_LEGAL",

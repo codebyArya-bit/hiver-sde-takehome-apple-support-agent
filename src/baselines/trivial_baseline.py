@@ -20,7 +20,11 @@ class TrivialBaselineAgent:
         self.majority_escalation = "AUTO_HANDLE"
         self.static_macro_reply = "Thanks for reaching out! We'd love to help. Please DM us your device model and iOS version so we can look into this."
 
-    def process_message(self, customer_query: str) -> Dict[str, Any]:
+    def process_message(
+        self,
+        customer_query: str,
+        context_history: Any = None
+    ) -> Dict[str, Any]:
         return {
             "query": customer_query,
             "intent": self.majority_intent,

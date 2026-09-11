@@ -185,5 +185,92 @@ def test_human_judge_agreement_stats():
     assert stats["pearson_r"] > 0.90
     assert stats["mae"] < 0.20
 
+def test_human_llm_hash_integrity():
+    import json
+    from pathlib import Path
+    
+    with open("evaluation/human_annotations.json", "r", encoding="utf-8") as f:
+        human_data = json.load(f)
+    with open("evaluation/llm_judge_scores.json", "r", encoding="utf-8") as f:
+        llm_data = json.load(f)
+    with open("data/frozen_eval_subset_n50.json", "r", encoding="utf-8") as f:
+        frozen_data = json.load(f)
+
+    frozen_map = {x["item_id"]: x for x in frozen_data}
+    assert len(human_data) == 50
+    assert len(llm_data) == 50
+    assert len(frozen_data) == 50
+
+    for h in human_data:
+        item_id = h["item_id"]
+        assert item_id in llm_data
+        assert item_id in frozen_map
+        j = llm_data[item_id]
+        f = frozen_map[item_id]
+
+        assert h.get("input_hash") is not None
+        assert j.get("input_hash") is not None
+        assert f.get("input_hash") is not None
+        # Cryptographic hash equality guarantee
+        assert h["input_hash"] == j["input_hash"] == f["input_hash"]
+        assert h["candidate_reply"] == f["candidate_reply"]
+
+def test_turn_separation_no_future_leakage():
+    import json
+    with open("data/golden_eval_set.json", "r", encoding="utf-8") as f:
+        gold = json.load(f)
+
+    assert len(gold) == 200
+    for item in gold:
+        query = item.get("current_customer_message") or item.get("customer_query")
+        assert query and len(query.strip()) > 0, f"Empty query in {item['id']}"
+        assert item["customer_query"] == item["current_customer_message"]
+
+        # If context_history exists, verify none are after target turn
+        ctx = item.get("context_history", [])
+        if "target_turn_index" in item and ctx:
+            assert len(ctx) <= item["target_turn_index"]
+
+def test_calibration_and_f2_metrics():
+    y_true = ["IOS_SOFTWARE_UPDATE", "BATTERY_AND_HARDWARE", "APPLE_ID_AND_ICLOUD"]
+    y_pred = ["IOS_SOFTWARE_UPDATE", "BATTERY_AND_HARDWARE", "BATTERY_AND_HARDWARE"]
+    y_probs = [
+        {"IOS_SOFTWARE_UPDATE": 0.8, "BATTERY_AND_HARDWARE": 0.1, "APPLE_ID_AND_ICLOUD": 0.1},
+        {"IOS_SOFTWARE_UPDATE": 0.1, "BATTERY_AND_HARDWARE": 0.85, "APPLE_ID_AND_ICLOUD": 0.05},
+        {"IOS_SOFTWARE_UPDATE": 0.2, "BATTERY_AND_HARDWARE": 0.5, "APPLE_ID_AND_ICLOUD": 0.3}
+    ]
+    labels = ["IOS_SOFTWARE_UPDATE", "BATTERY_AND_HARDWARE", "APPLE_ID_AND_ICLOUD"]
+    res = calculate_intent_metrics(y_true, y_pred, labels=labels, y_probs=y_probs)
+
+    assert res["brier_score"] is not None
+    assert 0.0 <= res["brier_score"] <= 2.0
+    assert res["expected_calibration_error"] is not None
+    assert 0.0 <= res["expected_calibration_error"] <= 1.0
+
+    esc_res = calculate_escalation_metrics(["ESCALATE", "AUTO_HANDLE"], ["ESCALATE", "AUTO_HANDLE"])
+    assert "escalation_f2" in esc_res
+    assert esc_res["escalation_f2"] == 1.0
+    assert "weighted_risk_cost" in esc_res
+    assert esc_res["weighted_risk_cost"] == 0
+
+def test_adversarial_stress_test_cases():
+    import json
+    with open("data/adversarial_stress_test.json", "r", encoding="utf-8") as f:
+        stress_items = json.load(f)
+
+    assert len(stress_items) == 12
+    agent = AppleSupportAgent().initialize()
+
+    # Verify thermal battery swelling triggers ESCALATE
+    swelling = next(x for x in stress_items if x["id"] == "STRESS_002")
+    res_swelling = agent.process_message(swelling["customer_query"])
+    assert res_swelling["escalation_decision"] == "ESCALATE"
+
+    # Verify account takeover triggers ESCALATE
+    takeover = next(x for x in stress_items if x["id"] == "STRESS_003")
+    res_takeover = agent.process_message(takeover["customer_query"])
+    assert res_takeover["escalation_decision"] == "ESCALATE"
+
+
 
 
