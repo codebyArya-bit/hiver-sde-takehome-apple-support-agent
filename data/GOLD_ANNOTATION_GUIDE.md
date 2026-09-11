@@ -53,14 +53,13 @@ Triage decisions must balance safety, legal compliance, and customer trust again
 
 | Field | Type | Description |
 | :--- | :--- | :--- |
-| `id` | string | Unique identifier (`GOLD_001` through `GOLD_200`). |
+| `item_id` | string | Unique identifier (`GOLD_001` through `GOLD_200`). |
 | `conversation_id` | string | Unique Twitter conversation thread hash. |
-| `current_customer_message` | string | Exact incoming customer inquiry text. |
+| `customer_query` | string | Exact incoming single-turn customer inquiry text (`current_customer_message`). |
 | `gold_intent` | string | Ground truth intent from the 7-class taxonomy. |
 | `gold_escalation` | string | Ground truth triage decision (`AUTO_HANDLE` or `ESCALATE`). |
 | `gold_escalation_reason` | string | Explicit business justification for the triage decision. |
 | `reference_resolution` | string | Target troubleshooting procedure or official canonical URL. |
 | `difficulty` | string | Complexity tier: `EASY` (27.0%), `MEDIUM` (55.5%), `HARD` (17.5%). |
-| `annotator` | string | Verified auditor identifier. |
-| `annotation_date` | string | Audit timestamp. |
-| `verification_status` | string | `MANUALLY_CONFIRMED` across all 200 items. |
+| `verification_status` | string | `MANUALLY_AUDITED` across all 200 items. |
+| `annotator` | string | `candidate_author` (Candidate / Author audit). |

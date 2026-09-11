@@ -309,13 +309,14 @@ def run_benchmark():
     agr_table.add_column("Cohen's Kappa (k)", justify="center", style="bold green")
 
     for k, stat in agreement_stats.items():
+        k_val = f"{stat['cohens_kappa']:.3f}" if stat.get('cohens_kappa') is not None else "N/A"
         agr_table.add_row(
             stat["metric_name"],
             f"{stat['pearson_r']:.3f}",
             f"{stat['spearman_rho']:.3f}",
             f"{stat['mae']:.3f}",
             f"{stat['within_0.5_points_pct']:.1f}%",
-            f"{stat['cohens_kappa']:.3f}"
+            k_val
         )
 
     console.print(agr_table)

@@ -53,7 +53,7 @@ class LLMSupportJudge:
     def __init__(
         self,
         cache_path: str = "evaluation/llm_judge_scores.json",
-        model_name: str = "gemini-2.0-flash",
+        model_name: str = "gemini-2.5-flash",
         temperature: float = 0.0
     ):
         self.cache_path = Path(cache_path)
@@ -183,6 +183,7 @@ class LLMSupportJudge:
                 return {
                     "item_id": item_id,
                     "input_hash": expected_hash,
+                    "candidate_reply": candidate_reply,
                     "judge_model": self.model_name,
                     "temperature": self.temperature,
                     "rubric_version": "v1.2",

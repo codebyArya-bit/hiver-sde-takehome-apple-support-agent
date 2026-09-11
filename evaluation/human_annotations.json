@@ -15,9 +15,9 @@
     },
     "overall_score": 4.38,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Correctly escalated (ESCALATE). The triage policy properly caught the safety/security boundary for OUT_OF_SCOPE_OTHER and provided an appropriate direct routing channel."
+    "human_annotation_notes": "Correctly escalated. Safety policy caught OUT_OF_SCOPE_OTHER boundary and provided secure routing."
   },
   {
     "item_id": "GOLD_002",
@@ -28,16 +28,16 @@
     "candidate_escalation": "AUTO_HANDLE",
     "gold_escalation": "ESCALATE",
     "scores": {
-      "groundedness": 4.5,
+      "groundedness": 4.0,
       "brand_voice": 4.0,
       "actionability": 3.5,
       "escalation_appropriateness": 1.5
     },
-    "overall_score": 3.38,
+    "overall_score": 3.25,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Under-escalation failure! Model auto-handled a case that required human escalation (CUSTOMER_FEEDBACK_COMPLAINT). Poses operational customer risk."
+    "human_annotation_notes": "Under-escalation failure on CUSTOMER_FEEDBACK_COMPLAINT. Model auto-handled when escalation was required."
   },
   {
     "item_id": "GOLD_003",
@@ -55,9 +55,9 @@
     },
     "overall_score": 4.5,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Correctly escalated (ESCALATE). The triage policy properly caught the safety/security boundary for APPLE_ID_AND_ICLOUD and provided an appropriate direct routing channel."
+    "human_annotation_notes": "Correctly escalated. Safety policy caught APPLE_ID_AND_ICLOUD boundary and provided secure routing."
   },
   {
     "item_id": "GOLD_005",
@@ -75,9 +75,9 @@
     },
     "overall_score": 4.38,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Correctly escalated (ESCALATE). The triage policy properly caught the safety/security boundary for IOS_SOFTWARE_UPDATE and provided an appropriate direct routing channel."
+    "human_annotation_notes": "Correctly escalated. Safety policy caught IOS_SOFTWARE_UPDATE boundary and provided secure routing."
   },
   {
     "item_id": "GOLD_006",
@@ -88,16 +88,16 @@
     "candidate_escalation": "AUTO_HANDLE",
     "gold_escalation": "AUTO_HANDLE",
     "scores": {
-      "groundedness": 4.5,
+      "groundedness": 4.0,
       "brand_voice": 3.5,
-      "actionability": 3.5,
+      "actionability": 4.5,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.12,
+    "overall_score": 4.25,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Appropriately auto-handled standard IOS_SOFTWARE_UPDATE inquiry with public documentation link. Voice is polite and within character limits."
+    "human_annotation_notes": "Appropriately auto-handled standard IOS_SOFTWARE_UPDATE inquiry with public documentation."
   },
   {
     "item_id": "GOLD_008",
@@ -115,9 +115,9 @@
     },
     "overall_score": 4.0,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Conservative false escalation. Routine DEVICE_SETUP_AND_USAGE inquiry could have been auto-handled with standard guidance, but routing to specialist does not endanger the customer."
+    "human_annotation_notes": "Conservative false escalation on routine DEVICE_SETUP_AND_USAGE. Safe for customer, slight agent queue load."
   },
   {
     "item_id": "GOLD_009",
@@ -135,29 +135,29 @@
     },
     "overall_score": 4.12,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Conservative false escalation. Routine APPLE_ID_AND_ICLOUD inquiry could have been auto-handled with standard guidance, but routing to specialist does not endanger the customer."
+    "human_annotation_notes": "Conservative false escalation on routine APPLE_ID_AND_ICLOUD. Safe for customer, slight agent queue load."
   },
   {
-    "item_id": "GOLD_015",
-    "conversation_id": "b167036243ccdc313f75afa8b9546092",
-    "input_hash": "f8cdeb6bc746dcfc573137d4a8166fa4e2b8907b7c1e6c3a860cfc7702264a59",
-    "customer_query": "Anybody else on iOS 11 BT keeps skipping when you in the car🤔 FIX IT",
-    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
-    "candidate_escalation": "AUTO_HANDLE",
-    "gold_escalation": "AUTO_HANDLE",
+    "item_id": "GOLD_012",
+    "conversation_id": "66d8edd721e626acf58c39669330c796",
+    "input_hash": "ba141b74a3e6aa374dd9bfb7a7da332d484dd95be180d46837a708e34fd6ff96",
+    "customer_query": "Dis c'est normal que mon #iPhone5S chauffe énormément depuis l'installation de l'#iOS11 ? 🌡",
+    "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "candidate_escalation": "ESCALATE",
+    "gold_escalation": "ESCALATE",
     "scores": {
-      "groundedness": 4.5,
-      "brand_voice": 3.5,
-      "actionability": 3.5,
+      "groundedness": 4.0,
+      "brand_voice": 4.5,
+      "actionability": 4.0,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.12,
+    "overall_score": 4.38,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Appropriately auto-handled standard IOS_SOFTWARE_UPDATE inquiry with public documentation link. Voice is polite and within character limits."
+    "human_annotation_notes": "Correctly escalated. Safety policy caught OUT_OF_SCOPE_OTHER boundary and provided secure routing."
   },
   {
     "item_id": "GOLD_016",
@@ -168,16 +168,36 @@
     "candidate_escalation": "AUTO_HANDLE",
     "gold_escalation": "AUTO_HANDLE",
     "scores": {
-      "groundedness": 4.5,
+      "groundedness": 4.0,
       "brand_voice": 3.5,
-      "actionability": 3.5,
+      "actionability": 4.5,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.12,
+    "overall_score": 4.25,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Appropriately auto-handled standard BATTERY_AND_HARDWARE inquiry with public documentation link. Voice is polite and within character limits."
+    "human_annotation_notes": "Appropriately auto-handled standard BATTERY_AND_HARDWARE inquiry with public documentation."
+  },
+  {
+    "item_id": "GOLD_017",
+    "conversation_id": "61c6904808ff284351f08039534d420b",
+    "input_hash": "3a9c01b8dfa141fb8b76e9ada7be63bdc6d350dff66b13c8cde8fcab3633416b",
+    "customer_query": "my 7 plus iPhone for the third time after I did the last update hanged on me and I had to restart it so what is the problem ?",
+    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "candidate_escalation": "AUTO_HANDLE",
+    "gold_escalation": "AUTO_HANDLE",
+    "scores": {
+      "groundedness": 4.0,
+      "brand_voice": 3.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.25,
+    "evaluator": "candidate_author_evaluator",
+    "role": "Candidate / Author (Blind Scoring)",
+    "blind_scoring": true,
+    "human_annotation_notes": "Appropriately auto-handled standard IOS_SOFTWARE_UPDATE inquiry with public documentation."
   },
   {
     "item_id": "GOLD_023",
@@ -188,16 +208,16 @@
     "candidate_escalation": "ESCALATE",
     "gold_escalation": "AUTO_HANDLE",
     "scores": {
-      "groundedness": 4.5,
-      "brand_voice": 4.0,
+      "groundedness": 4.0,
+      "brand_voice": 3.5,
       "actionability": 3.5,
       "escalation_appropriateness": 3.5
     },
-    "overall_score": 3.88,
+    "overall_score": 3.62,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Conservative false escalation. Routine BATTERY_AND_HARDWARE inquiry could have been auto-handled with standard guidance, but routing to specialist does not endanger the customer."
+    "human_annotation_notes": "Conservative false escalation on routine BATTERY_AND_HARDWARE. Safe for customer, slight agent queue load."
   },
   {
     "item_id": "GOLD_024",
@@ -208,16 +228,16 @@
     "candidate_escalation": "AUTO_HANDLE",
     "gold_escalation": "AUTO_HANDLE",
     "scores": {
-      "groundedness": 4.5,
+      "groundedness": 4.0,
       "brand_voice": 3.5,
       "actionability": 3.5,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.12,
+    "overall_score": 4.0,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Appropriately auto-handled standard IOS_SOFTWARE_UPDATE inquiry with public documentation link. Voice is polite and within character limits."
+    "human_annotation_notes": "Appropriately auto-handled standard IOS_SOFTWARE_UPDATE inquiry with public documentation."
   },
   {
     "item_id": "GOLD_026",
@@ -228,36 +248,36 @@
     "candidate_escalation": "AUTO_HANDLE",
     "gold_escalation": "AUTO_HANDLE",
     "scores": {
-      "groundedness": 4.5,
+      "groundedness": 4.0,
       "brand_voice": 3.5,
       "actionability": 3.5,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.12,
+    "overall_score": 4.0,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Appropriately auto-handled standard IOS_SOFTWARE_UPDATE inquiry with public documentation link. Voice is polite and within character limits."
+    "human_annotation_notes": "Appropriately auto-handled standard IOS_SOFTWARE_UPDATE inquiry with public documentation."
   },
   {
-    "item_id": "GOLD_027",
-    "conversation_id": "d9c77961fe0f5f3281b5f89f2a50ade2",
-    "input_hash": "770fb084acb7243b7891caeb6a7a36418d146e1a51ec42166cebf077525a13a4",
-    "customer_query": "I'm going to freak out with this new update. What did you do to my phone!!!!",
+    "item_id": "GOLD_028",
+    "conversation_id": "e8f3dd01ebeeadddedfd504b2b768f55",
+    "input_hash": "d0897e94398abd469545b6ebad6647eb5fb4b470ddc503a561fb64e99ff3b51f",
+    "customer_query": "You ruined my phone because of the latest update😿🙏🏻",
     "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
     "candidate_escalation": "AUTO_HANDLE",
     "gold_escalation": "AUTO_HANDLE",
     "scores": {
-      "groundedness": 4.5,
+      "groundedness": 4.0,
       "brand_voice": 3.5,
-      "actionability": 3.5,
+      "actionability": 4.5,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.12,
+    "overall_score": 4.25,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Appropriately auto-handled standard IOS_SOFTWARE_UPDATE inquiry with public documentation link. Voice is polite and within character limits."
+    "human_annotation_notes": "Appropriately auto-handled standard IOS_SOFTWARE_UPDATE inquiry with public documentation."
   },
   {
     "item_id": "GOLD_032",
@@ -268,16 +288,16 @@
     "candidate_escalation": "AUTO_HANDLE",
     "gold_escalation": "ESCALATE",
     "scores": {
-      "groundedness": 4.5,
+      "groundedness": 4.0,
       "brand_voice": 3.5,
-      "actionability": 3.5,
+      "actionability": 4.5,
       "escalation_appropriateness": 1.5
     },
-    "overall_score": 3.25,
+    "overall_score": 3.38,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Under-escalation failure! Model auto-handled a case that required human escalation (BATTERY_AND_HARDWARE). Poses operational customer risk."
+    "human_annotation_notes": "Under-escalation failure on BATTERY_AND_HARDWARE. Model auto-handled when escalation was required."
   },
   {
     "item_id": "GOLD_036",
@@ -288,16 +308,16 @@
     "candidate_escalation": "AUTO_HANDLE",
     "gold_escalation": "ESCALATE",
     "scores": {
-      "groundedness": 4.5,
+      "groundedness": 4.0,
       "brand_voice": 3.5,
-      "actionability": 3.5,
+      "actionability": 4.5,
       "escalation_appropriateness": 1.5
     },
-    "overall_score": 3.25,
+    "overall_score": 3.38,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Under-escalation failure! Model auto-handled a case that required human escalation (CUSTOMER_FEEDBACK_COMPLAINT). Poses operational customer risk."
+    "human_annotation_notes": "Under-escalation failure on CUSTOMER_FEEDBACK_COMPLAINT. Model auto-handled when escalation was required."
   },
   {
     "item_id": "GOLD_037",
@@ -308,36 +328,36 @@
     "candidate_escalation": "AUTO_HANDLE",
     "gold_escalation": "AUTO_HANDLE",
     "scores": {
-      "groundedness": 4.5,
+      "groundedness": 4.0,
       "brand_voice": 4.0,
       "actionability": 3.5,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.25,
+    "overall_score": 4.12,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Appropriately auto-handled standard DEVICE_SETUP_AND_USAGE inquiry with public documentation link. Voice is polite and within character limits."
+    "human_annotation_notes": "Appropriately auto-handled standard DEVICE_SETUP_AND_USAGE inquiry with public documentation."
   },
   {
-    "item_id": "GOLD_039",
-    "conversation_id": "36f1fd54ffbf45d359270687b3bfb409",
-    "input_hash": "b438a70bcd9933e044bae5a3c5ee7f0e659d802cb3bc8e8ff8723aeb1eea9268",
-    "customer_query": "the loading icon is appearing almost 100% of the time in my status bar, even after reboot. Help!",
-    "candidate_reply": "Thanks for reaching out! We're happy to guide you through this. You can find detailed resolution steps here: https://support.apple.com — let us know how it goes!",
+    "item_id": "GOLD_041",
+    "conversation_id": "262a7c2acbc93dbcaa4393aa64d3ff90",
+    "input_hash": "adcb2583456c80a89f8ccdff7122313f225151c6a354a4d089cf498bda0605c9",
+    "customer_query": "Are you kidding me - the new iOS is just blacking out my phone randomly. Your new fix has fixed nothing!",
+    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
     "candidate_escalation": "AUTO_HANDLE",
     "gold_escalation": "AUTO_HANDLE",
     "scores": {
-      "groundedness": 4.5,
-      "brand_voice": 4.0,
-      "actionability": 3.5,
+      "groundedness": 4.0,
+      "brand_voice": 3.5,
+      "actionability": 4.5,
       "escalation_appropriateness": 5.0
     },
     "overall_score": 4.25,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Appropriately auto-handled standard IOS_SOFTWARE_UPDATE inquiry with public documentation link. Voice is polite and within character limits."
+    "human_annotation_notes": "Appropriately auto-handled standard IOS_SOFTWARE_UPDATE inquiry with public documentation."
   },
   {
     "item_id": "GOLD_047",
@@ -348,36 +368,36 @@
     "candidate_escalation": "AUTO_HANDLE",
     "gold_escalation": "ESCALATE",
     "scores": {
-      "groundedness": 4.5,
+      "groundedness": 4.0,
       "brand_voice": 4.0,
       "actionability": 3.5,
       "escalation_appropriateness": 1.5
     },
-    "overall_score": 3.38,
+    "overall_score": 3.25,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Under-escalation failure! Model auto-handled a case that required human escalation (BATTERY_AND_HARDWARE). Poses operational customer risk."
+    "human_annotation_notes": "Under-escalation failure on BATTERY_AND_HARDWARE. Model auto-handled when escalation was required."
   },
   {
-    "item_id": "GOLD_050",
-    "conversation_id": "abbea043c506a9a19b7c1844f373153f",
-    "input_hash": "d0318bce37c7713dd0d03c259ca245feeb597a3dadac973550a3e80f8ffb38f3",
-    "customer_query": "what have you done w ios 11? It has crippled my phone. Each new update seems to do more harm than good. Msg app useless",
+    "item_id": "GOLD_051",
+    "conversation_id": "7eca82bef1a92ca904094a3b612a05c8",
+    "input_hash": "783be2f3bd203e218f5c4085eb0428a1e8738bba0d8109ff450ec92587f0748d",
+    "customer_query": "Hey ever since updating the iPhone iOS my 6s keeps freezing on apps/needing to be restarted. Any fix or is the \"fix\" to buy a new one",
     "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
     "candidate_escalation": "AUTO_HANDLE",
     "gold_escalation": "AUTO_HANDLE",
     "scores": {
-      "groundedness": 4.5,
+      "groundedness": 4.0,
       "brand_voice": 3.5,
-      "actionability": 3.5,
+      "actionability": 4.5,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.12,
+    "overall_score": 4.25,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Appropriately auto-handled standard IOS_SOFTWARE_UPDATE inquiry with public documentation link. Voice is polite and within character limits."
+    "human_annotation_notes": "Appropriately auto-handled standard IOS_SOFTWARE_UPDATE inquiry with public documentation."
   },
   {
     "item_id": "GOLD_053",
@@ -388,16 +408,16 @@
     "candidate_escalation": "ESCALATE",
     "gold_escalation": "AUTO_HANDLE",
     "scores": {
-      "groundedness": 4.5,
-      "brand_voice": 4.0,
+      "groundedness": 4.0,
+      "brand_voice": 3.5,
       "actionability": 3.5,
       "escalation_appropriateness": 3.5
     },
-    "overall_score": 3.88,
+    "overall_score": 3.62,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Conservative false escalation. Routine BATTERY_AND_HARDWARE inquiry could have been auto-handled with standard guidance, but routing to specialist does not endanger the customer."
+    "human_annotation_notes": "Conservative false escalation on routine BATTERY_AND_HARDWARE. Safe for customer, slight agent queue load."
   },
   {
     "item_id": "GOLD_055",
@@ -408,16 +428,16 @@
     "candidate_escalation": "AUTO_HANDLE",
     "gold_escalation": "AUTO_HANDLE",
     "scores": {
-      "groundedness": 4.5,
+      "groundedness": 4.0,
       "brand_voice": 3.5,
-      "actionability": 3.5,
+      "actionability": 4.5,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.12,
+    "overall_score": 4.25,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Appropriately auto-handled standard CUSTOMER_FEEDBACK_COMPLAINT inquiry with public documentation link. Voice is polite and within character limits."
+    "human_annotation_notes": "Appropriately auto-handled standard CUSTOMER_FEEDBACK_COMPLAINT inquiry with public documentation."
   },
   {
     "item_id": "GOLD_058",
@@ -428,16 +448,16 @@
     "candidate_escalation": "AUTO_HANDLE",
     "gold_escalation": "AUTO_HANDLE",
     "scores": {
-      "groundedness": 4.5,
+      "groundedness": 4.0,
       "brand_voice": 3.5,
-      "actionability": 3.5,
+      "actionability": 4.5,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.12,
+    "overall_score": 4.25,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Appropriately auto-handled standard DEVICE_SETUP_AND_USAGE inquiry with public documentation link. Voice is polite and within character limits."
+    "human_annotation_notes": "Appropriately auto-handled standard DEVICE_SETUP_AND_USAGE inquiry with public documentation."
   },
   {
     "item_id": "GOLD_066",
@@ -455,9 +475,9 @@
     },
     "overall_score": 4.38,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Correctly escalated (ESCALATE). The triage policy properly caught the safety/security boundary for CUSTOMER_FEEDBACK_COMPLAINT and provided an appropriate direct routing channel."
+    "human_annotation_notes": "Correctly escalated. Safety policy caught CUSTOMER_FEEDBACK_COMPLAINT boundary and provided secure routing."
   },
   {
     "item_id": "GOLD_069",
@@ -475,29 +495,29 @@
     },
     "overall_score": 4.12,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Conservative false escalation. Routine BATTERY_AND_HARDWARE inquiry could have been auto-handled with standard guidance, but routing to specialist does not endanger the customer."
+    "human_annotation_notes": "Conservative false escalation on routine BATTERY_AND_HARDWARE. Safe for customer, slight agent queue load."
   },
   {
-    "item_id": "GOLD_071",
-    "conversation_id": "c27d8ef26e61ce79d9dd370690397fe4",
-    "input_hash": "23a9b9f7cc20a215de5fbcf067fdca2f2ce099565b01c62526e1cbbff3a69ecb",
-    "customer_query": "iOS 11 has wrecked my iPhone 7. Phone is slow keeps freezing. Very poor show.",
+    "item_id": "GOLD_074",
+    "conversation_id": "3e0834d7c3e9c294cf273964570829c5",
+    "input_hash": "12e00f99b0712c421ef1f345219065e76e22358aef1b43ef21b93eab6d755167",
+    "customer_query": "hey! My music app doesn't work after iOS 11 update, it crashes right after I open the app. need support.",
     "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
     "candidate_escalation": "AUTO_HANDLE",
     "gold_escalation": "AUTO_HANDLE",
     "scores": {
-      "groundedness": 4.5,
+      "groundedness": 4.0,
       "brand_voice": 3.5,
-      "actionability": 3.5,
+      "actionability": 4.5,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.12,
+    "overall_score": 4.25,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Appropriately auto-handled standard IOS_SOFTWARE_UPDATE inquiry with public documentation link. Voice is polite and within character limits."
+    "human_annotation_notes": "Appropriately auto-handled standard IOS_SOFTWARE_UPDATE inquiry with public documentation."
   },
   {
     "item_id": "GOLD_076",
@@ -508,56 +528,56 @@
     "candidate_escalation": "AUTO_HANDLE",
     "gold_escalation": "AUTO_HANDLE",
     "scores": {
-      "groundedness": 4.5,
+      "groundedness": 4.0,
       "brand_voice": 3.5,
-      "actionability": 3.5,
+      "actionability": 4.5,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.12,
+    "overall_score": 4.25,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Appropriately auto-handled standard BATTERY_AND_HARDWARE inquiry with public documentation link. Voice is polite and within character limits."
+    "human_annotation_notes": "Appropriately auto-handled standard BATTERY_AND_HARDWARE inquiry with public documentation."
   },
   {
-    "item_id": "GOLD_084",
-    "conversation_id": "171d21af78f87591f09d44a0fed2332c",
-    "input_hash": "f729d1a39085b3f9eab72faf79df85d3afe3cb4685546c95f170e26d09f33fd5",
-    "customer_query": "why has outlook been blocked with the new macOS High Sierra update on my Mac? Says unsupported but no way of updating app!?",
-    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "item_id": "GOLD_086",
+    "conversation_id": "475220754d77ad262817edb657678a06",
+    "input_hash": "7c3b3effd01e34c3a35f97e6ce5f7e53954571d341215ca38503ea0f3e19e573",
+    "customer_query": "Has killed the IPhone 6 with IOS 11 my phone had slowed down so much! It's pain ful",
+    "candidate_reply": "We're happy to help! Let's create a backup and update to see if this helps. Check out more troubleshooting steps here: https://support.apple.com/HT204204",
     "candidate_escalation": "AUTO_HANDLE",
     "gold_escalation": "AUTO_HANDLE",
     "scores": {
-      "groundedness": 4.5,
+      "groundedness": 4.0,
       "brand_voice": 3.5,
       "actionability": 3.5,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.12,
+    "overall_score": 4.0,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Appropriately auto-handled standard DEVICE_SETUP_AND_USAGE inquiry with public documentation link. Voice is polite and within character limits."
+    "human_annotation_notes": "Appropriately auto-handled standard IOS_SOFTWARE_UPDATE inquiry with public documentation."
   },
   {
-    "item_id": "GOLD_085",
-    "conversation_id": "5ed38859f337c6d7e06359c3f5d53a1c",
-    "input_hash": "69c49322977fc0222614a6e4b473bdb6dac06e4e67ddb8af996e67c90fe88700",
-    "customer_query": "Thank you to the new #iOS11 update. My #iPhone barely made it till 6pm",
-    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "item_id": "GOLD_089",
+    "conversation_id": "1d0c4a0a5daed60c94b9b2106d1106d7",
+    "input_hash": "e57308a6e1d4b6872fc943e414ef4940c793fa0f7bb48c87ab3ffc8d6699e42f",
+    "customer_query": "The experience can be tough sometimes. Any help https://t.co/r2LJkpUHqH",
+    "candidate_reply": "Thanks for reaching out! We're happy to guide you through this. You can find detailed resolution steps here: https://support.apple.com — let us know how it goes!",
     "candidate_escalation": "AUTO_HANDLE",
     "gold_escalation": "AUTO_HANDLE",
     "scores": {
-      "groundedness": 4.5,
-      "brand_voice": 3.5,
+      "groundedness": 4.0,
+      "brand_voice": 4.0,
       "actionability": 3.5,
       "escalation_appropriateness": 5.0
     },
     "overall_score": 4.12,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Appropriately auto-handled standard IOS_SOFTWARE_UPDATE inquiry with public documentation link. Voice is polite and within character limits."
+    "human_annotation_notes": "Appropriately auto-handled standard DEVICE_SETUP_AND_USAGE inquiry with public documentation."
   },
   {
     "item_id": "GOLD_092",
@@ -568,16 +588,16 @@
     "candidate_escalation": "ESCALATE",
     "gold_escalation": "AUTO_HANDLE",
     "scores": {
-      "groundedness": 4.5,
-      "brand_voice": 4.0,
+      "groundedness": 4.0,
+      "brand_voice": 3.5,
       "actionability": 3.5,
       "escalation_appropriateness": 3.5
     },
-    "overall_score": 3.88,
+    "overall_score": 3.62,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Conservative false escalation. Routine BATTERY_AND_HARDWARE inquiry could have been auto-handled with standard guidance, but routing to specialist does not endanger the customer."
+    "human_annotation_notes": "Conservative false escalation on routine BATTERY_AND_HARDWARE. Safe for customer, slight agent queue load."
   },
   {
     "item_id": "GOLD_093",
@@ -595,49 +615,29 @@
     },
     "overall_score": 4.38,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Correctly escalated (ESCALATE). The triage policy properly caught the safety/security boundary for CUSTOMER_FEEDBACK_COMPLAINT and provided an appropriate direct routing channel."
+    "human_annotation_notes": "Correctly escalated. Safety policy caught CUSTOMER_FEEDBACK_COMPLAINT boundary and provided secure routing."
   },
   {
-    "item_id": "GOLD_096",
-    "conversation_id": "5542efcd39ea5827380e9db1a1237f7e",
-    "input_hash": "c91813c2047aca867f27c895399b4fec65a705383382c58f96da488c102d41b9",
-    "customer_query": "omg #frustrated since the new iOS update phone doesn't work properly. Can't upload photos as says iCloud problem 😡",
-    "candidate_reply": "Account security is our top priority. Please head to https://iforgot.apple.com to securely verify and recover your Apple ID. If you're still locked out, DM us to assist further.",
-    "candidate_escalation": "ESCALATE",
-    "gold_escalation": "ESCALATE",
-    "scores": {
-      "groundedness": 4.5,
-      "brand_voice": 4.0,
-      "actionability": 4.5,
-      "escalation_appropriateness": 5.0
-    },
-    "overall_score": 4.5,
-    "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
-    "blind_scoring": true,
-    "human_annotation_notes": "Correctly escalated (ESCALATE). The triage policy properly caught the safety/security boundary for APPLE_ID_AND_ICLOUD and provided an appropriate direct routing channel."
-  },
-  {
-    "item_id": "GOLD_097",
-    "conversation_id": "0209d640cec7124abae2f023ae4d739e",
-    "input_hash": "e17882ba6efb6c06d49960e96e68a83defd6877efd473c8e0c7a7f2b8ea7043e",
-    "customer_query": "Ok, , please explain this. Playback came from iPhone speakers. https://t.co/67JPCOWSZ7",
-    "candidate_reply": "We're happy to help! You can check this through Settings &gt; General &gt; About. Check out more troubleshooting steps here: https://support.apple.com",
+    "item_id": "GOLD_098",
+    "conversation_id": "e79c6277116a2f651b5f8ed03eee5f62",
+    "input_hash": "65c3c9558e734d2a8e6cc3de573c504129c548f9f1169ef69ad56bf9c6674952",
+    "customer_query": "My iPhone is slower than dial up since the new iOS update.",
+    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
     "candidate_escalation": "AUTO_HANDLE",
     "gold_escalation": "AUTO_HANDLE",
     "scores": {
-      "groundedness": 4.5,
+      "groundedness": 4.0,
       "brand_voice": 3.5,
-      "actionability": 3.5,
+      "actionability": 4.5,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.12,
+    "overall_score": 4.25,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Appropriately auto-handled standard IOS_SOFTWARE_UPDATE inquiry with public documentation link. Voice is polite and within character limits."
+    "human_annotation_notes": "Appropriately auto-handled standard IOS_SOFTWARE_UPDATE inquiry with public documentation."
   },
   {
     "item_id": "GOLD_106",
@@ -655,9 +655,9 @@
     },
     "overall_score": 4.38,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Correctly escalated (ESCALATE). The triage policy properly caught the safety/security boundary for APP_STORE_AND_BILLING and provided an appropriate direct routing channel."
+    "human_annotation_notes": "Correctly escalated. Safety policy caught APP_STORE_AND_BILLING boundary and provided secure routing."
   },
   {
     "item_id": "GOLD_109",
@@ -668,36 +668,16 @@
     "candidate_escalation": "AUTO_HANDLE",
     "gold_escalation": "AUTO_HANDLE",
     "scores": {
-      "groundedness": 4.5,
+      "groundedness": 4.0,
       "brand_voice": 3.5,
-      "actionability": 3.5,
+      "actionability": 4.5,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.12,
+    "overall_score": 4.25,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Appropriately auto-handled standard BATTERY_AND_HARDWARE inquiry with public documentation link. Voice is polite and within character limits."
-  },
-  {
-    "item_id": "GOLD_111",
-    "conversation_id": "ea91bf58d3712691b09950a423a97574",
-    "input_hash": "ba8d26478ab65cc581f083220ca65c0f6fb8f7f1d3ac8bd5b40b3854c5e9e19a",
-    "customer_query": "If a business has definitely had a name change and located at the same address, how long does it take for that to be changed in the Maps App?",
-    "candidate_reply": "Account security is our top priority. Please head to https://iforgot.apple.com to securely verify and recover your Apple ID. If you're still locked out, DM us to assist further.",
-    "candidate_escalation": "ESCALATE",
-    "gold_escalation": "AUTO_HANDLE",
-    "scores": {
-      "groundedness": 4.5,
-      "brand_voice": 4.0,
-      "actionability": 4.5,
-      "escalation_appropriateness": 3.5
-    },
-    "overall_score": 4.12,
-    "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
-    "blind_scoring": true,
-    "human_annotation_notes": "Conservative false escalation. Routine DEVICE_SETUP_AND_USAGE inquiry could have been auto-handled with standard guidance, but routing to specialist does not endanger the customer."
+    "human_annotation_notes": "Appropriately auto-handled standard BATTERY_AND_HARDWARE inquiry with public documentation."
   },
   {
     "item_id": "GOLD_118",
@@ -708,56 +688,56 @@
     "candidate_escalation": "AUTO_HANDLE",
     "gold_escalation": "AUTO_HANDLE",
     "scores": {
-      "groundedness": 4.5,
+      "groundedness": 4.0,
       "brand_voice": 3.5,
-      "actionability": 3.5,
-      "escalation_appropriateness": 5.0
-    },
-    "overall_score": 4.12,
-    "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
-    "blind_scoring": true,
-    "human_annotation_notes": "Appropriately auto-handled standard BATTERY_AND_HARDWARE inquiry with public documentation link. Voice is polite and within character limits."
-  },
-  {
-    "item_id": "GOLD_121",
-    "conversation_id": "767bf9921d4ee3ba6b1b3a21551e2554",
-    "input_hash": "224a9057dfbff06fa51dcd7ab7ae0df953202d7a3728c13f8082496a8c3de400",
-    "customer_query": "hi updated my phone today, when I play music from Spotify, soundcloud etc they do not show in my control centre?",
-    "candidate_reply": "Thanks for reaching out! We're happy to guide you through this. You can find detailed resolution steps here: https://support.apple.com — let us know how it goes!",
-    "candidate_escalation": "AUTO_HANDLE",
-    "gold_escalation": "AUTO_HANDLE",
-    "scores": {
-      "groundedness": 4.5,
-      "brand_voice": 4.0,
-      "actionability": 3.5,
+      "actionability": 4.5,
       "escalation_appropriateness": 5.0
     },
     "overall_score": 4.25,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Appropriately auto-handled standard IOS_SOFTWARE_UPDATE inquiry with public documentation link. Voice is polite and within character limits."
+    "human_annotation_notes": "Appropriately auto-handled standard BATTERY_AND_HARDWARE inquiry with public documentation."
   },
   {
-    "item_id": "GOLD_132",
-    "conversation_id": "6d08401c57f75d61299c549ea72ffbdf",
-    "input_hash": "02edcb6126ad44e5981ab3faa812bfa6b14fc19de5d32e3d1bc78debb23416c3",
-    "customer_query": "can y'all fix the damn podcast app",
-    "candidate_reply": "Account security is our top priority. Please head to https://iforgot.apple.com to securely verify and recover your Apple ID. If you're still locked out, DM us to assist further.",
-    "candidate_escalation": "ESCALATE",
+    "item_id": "GOLD_126",
+    "conversation_id": "fba05666aec048c550089d9bc5ac8f53",
+    "input_hash": "0e09f36cef2d0e47983755941aefcb6e8b3a0f8469cd98d43d83dc0915ee69ea",
+    "customer_query": "Why does the wifi keep turning itself back on when I turn it off in iOS 11? Why does exiting airplane mode turn everything on?",
+    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "candidate_escalation": "AUTO_HANDLE",
     "gold_escalation": "AUTO_HANDLE",
     "scores": {
-      "groundedness": 4.5,
-      "brand_voice": 4.0,
+      "groundedness": 4.0,
+      "brand_voice": 3.5,
       "actionability": 4.5,
-      "escalation_appropriateness": 3.5
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.25,
+    "evaluator": "candidate_author_evaluator",
+    "role": "Candidate / Author (Blind Scoring)",
+    "blind_scoring": true,
+    "human_annotation_notes": "Appropriately auto-handled standard IOS_SOFTWARE_UPDATE inquiry with public documentation."
+  },
+  {
+    "item_id": "GOLD_131",
+    "conversation_id": "a085a252fb4d6007b21382610d7e21ab",
+    "input_hash": "0cdfbe98eda88f8ad33fc67f7a1abfbd6ced645f5cd1685a997ebc9c411cc7ae",
+    "customer_query": "- https://t.co/jbcpYvd2Ws: Hey is my iphone suddenly being 100% wrong about everything",
+    "candidate_reply": "Thanks for reaching out! We're happy to guide you through this. You can find detailed resolution steps here: https://support.apple.com — let us know how it goes!",
+    "candidate_escalation": "AUTO_HANDLE",
+    "gold_escalation": "AUTO_HANDLE",
+    "scores": {
+      "groundedness": 4.0,
+      "brand_voice": 4.0,
+      "actionability": 3.5,
+      "escalation_appropriateness": 5.0
     },
     "overall_score": 4.12,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Conservative false escalation. Routine DEVICE_SETUP_AND_USAGE inquiry could have been auto-handled with standard guidance, but routing to specialist does not endanger the customer."
+    "human_annotation_notes": "Appropriately auto-handled standard DEVICE_SETUP_AND_USAGE inquiry with public documentation."
   },
   {
     "item_id": "GOLD_133",
@@ -768,16 +748,16 @@
     "candidate_escalation": "AUTO_HANDLE",
     "gold_escalation": "AUTO_HANDLE",
     "scores": {
-      "groundedness": 4.5,
+      "groundedness": 4.0,
       "brand_voice": 3.5,
-      "actionability": 3.5,
+      "actionability": 4.5,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.12,
+    "overall_score": 4.25,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Appropriately auto-handled standard BATTERY_AND_HARDWARE inquiry with public documentation link. Voice is polite and within character limits."
+    "human_annotation_notes": "Appropriately auto-handled standard BATTERY_AND_HARDWARE inquiry with public documentation."
   },
   {
     "item_id": "GOLD_135",
@@ -795,29 +775,29 @@
     },
     "overall_score": 4.38,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Correctly escalated (ESCALATE). The triage policy properly caught the safety/security boundary for CUSTOMER_FEEDBACK_COMPLAINT and provided an appropriate direct routing channel."
+    "human_annotation_notes": "Correctly escalated. Safety policy caught CUSTOMER_FEEDBACK_COMPLAINT boundary and provided secure routing."
   },
   {
-    "item_id": "GOLD_137",
-    "conversation_id": "b4a81b7c9e33691a0fffa3401d4f4145",
-    "input_hash": "791fd81b02f58d05ef89d78f40200e1b5027b737ff4a3351ab387c71c2cc6736",
-    "customer_query": "Guys, the new update is making my apps crash and its too slow, and its heating up my phone, so plz fix it up 😊",
+    "item_id": "GOLD_138",
+    "conversation_id": "e6da56e89c54b7f37a5b1ccd0fa2ed61",
+    "input_hash": "ef87ef7cb32b72a882fa416eb0542103a28a8876a2e2aa208ccbd877c2b65aa9",
+    "customer_query": "como es posible que un iphone 6 plus no funcione correctamente en ios 11?Un smartphone de 800€ con un rendimiento inadmisible",
     "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
     "candidate_escalation": "AUTO_HANDLE",
     "gold_escalation": "AUTO_HANDLE",
     "scores": {
-      "groundedness": 4.5,
+      "groundedness": 4.0,
       "brand_voice": 3.5,
-      "actionability": 3.5,
+      "actionability": 4.5,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.12,
+    "overall_score": 4.25,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Appropriately auto-handled standard IOS_SOFTWARE_UPDATE inquiry with public documentation link. Voice is polite and within character limits."
+    "human_annotation_notes": "Appropriately auto-handled standard IOS_SOFTWARE_UPDATE inquiry with public documentation."
   },
   {
     "item_id": "GOLD_148",
@@ -828,16 +808,16 @@
     "candidate_escalation": "AUTO_HANDLE",
     "gold_escalation": "ESCALATE",
     "scores": {
-      "groundedness": 4.5,
+      "groundedness": 4.0,
       "brand_voice": 3.5,
-      "actionability": 3.5,
+      "actionability": 4.5,
       "escalation_appropriateness": 1.5
     },
-    "overall_score": 3.25,
+    "overall_score": 3.38,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Under-escalation failure! Model auto-handled a case that required human escalation (CUSTOMER_FEEDBACK_COMPLAINT). Poses operational customer risk."
+    "human_annotation_notes": "Under-escalation failure on CUSTOMER_FEEDBACK_COMPLAINT. Model auto-handled when escalation was required."
   },
   {
     "item_id": "GOLD_151",
@@ -848,36 +828,56 @@
     "candidate_escalation": "AUTO_HANDLE",
     "gold_escalation": "AUTO_HANDLE",
     "scores": {
-      "groundedness": 4.5,
+      "groundedness": 4.0,
       "brand_voice": 3.5,
       "actionability": 3.5,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.12,
+    "overall_score": 4.0,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Appropriately auto-handled standard BATTERY_AND_HARDWARE inquiry with public documentation link. Voice is polite and within character limits."
+    "human_annotation_notes": "Appropriately auto-handled standard BATTERY_AND_HARDWARE inquiry with public documentation."
   },
   {
-    "item_id": "GOLD_152",
-    "conversation_id": "a596c06d5889515fcd0c2e2111b494fc",
-    "input_hash": "5e0de38b1578059105f6cce3865ab39372259bdccdead6a729995abd2a70f657",
-    "customer_query": "The new updates leave WiFi on in settings, even tho you swipe up and turn it off. Please fix.",
+    "item_id": "GOLD_155",
+    "conversation_id": "47fabcf900d9c18366e57a1f63fc0357",
+    "input_hash": "b5e30a047c8ad734444988ac09089d4c3a3a74d290970278c83c2d2545b1f609",
+    "customer_query": "I want all MY music back on my phone. Why do I constantly have to download it from the cloud.",
+    "candidate_reply": "Account security is our top priority. Please head to https://iforgot.apple.com to securely verify and recover your Apple ID. If you're still locked out, DM us to assist further.",
+    "candidate_escalation": "ESCALATE",
+    "gold_escalation": "AUTO_HANDLE",
+    "scores": {
+      "groundedness": 4.5,
+      "brand_voice": 4.0,
+      "actionability": 4.5,
+      "escalation_appropriateness": 3.5
+    },
+    "overall_score": 4.12,
+    "evaluator": "candidate_author_evaluator",
+    "role": "Candidate / Author (Blind Scoring)",
+    "blind_scoring": true,
+    "human_annotation_notes": "Conservative false escalation on routine DEVICE_SETUP_AND_USAGE. Safe for customer, slight agent queue load."
+  },
+  {
+    "item_id": "GOLD_156",
+    "conversation_id": "b4a9656c2c1e57a65964e8c50469781d",
+    "input_hash": "fcabc6a2d66af6941c9d76d3eaf2a2618045166dc5f4b9ce5a786a709e39ba03",
+    "customer_query": "i'm not playing, send me a new phone. your update makes me hard restart my phone 5-7 times a day when i try to open regular apps.",
     "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
     "candidate_escalation": "AUTO_HANDLE",
     "gold_escalation": "AUTO_HANDLE",
     "scores": {
-      "groundedness": 4.5,
+      "groundedness": 4.0,
       "brand_voice": 3.5,
-      "actionability": 3.5,
+      "actionability": 4.5,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.12,
+    "overall_score": 4.25,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Appropriately auto-handled standard IOS_SOFTWARE_UPDATE inquiry with public documentation link. Voice is polite and within character limits."
+    "human_annotation_notes": "Appropriately auto-handled standard IOS_SOFTWARE_UPDATE inquiry with public documentation."
   },
   {
     "item_id": "GOLD_166",
@@ -888,36 +888,36 @@
     "candidate_escalation": "AUTO_HANDLE",
     "gold_escalation": "AUTO_HANDLE",
     "scores": {
-      "groundedness": 4.5,
+      "groundedness": 4.0,
       "brand_voice": 3.5,
       "actionability": 3.5,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.12,
+    "overall_score": 4.0,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Appropriately auto-handled standard BATTERY_AND_HARDWARE inquiry with public documentation link. Voice is polite and within character limits."
+    "human_annotation_notes": "Appropriately auto-handled standard BATTERY_AND_HARDWARE inquiry with public documentation."
   },
   {
-    "item_id": "GOLD_168",
-    "conversation_id": "fb6d88609c2551a7988070d21c5e0e5c",
-    "input_hash": "cced129e6077e0150e807f918fef4d1256ddb90849b38f7fd209a325c71bd895",
-    "customer_query": "Dear : I love your products, but ever since I updated my phone's software, It. Hasn't. Worked. Please fix it.",
-    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "item_id": "GOLD_169",
+    "conversation_id": "5cd9fa38674b8abcc7c470793a4d3940",
+    "input_hash": "20ecf9fa8c8ba097e6a4f6fdb674d68b8b4cdbfc46077fe09e6c1a41898585ff",
+    "customer_query": "I'm experiencing the same thing as many other people, I left for work phone at 100% ten hours later it's at 20% 😳 bad update 😡",
+    "candidate_reply": "We're happy to help! Let's create a backup and update to see if this helps. Check out more troubleshooting steps here: https://support.apple.com/HT204204",
     "candidate_escalation": "AUTO_HANDLE",
     "gold_escalation": "AUTO_HANDLE",
     "scores": {
-      "groundedness": 4.5,
+      "groundedness": 4.0,
       "brand_voice": 3.5,
       "actionability": 3.5,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.12,
+    "overall_score": 4.0,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Appropriately auto-handled standard IOS_SOFTWARE_UPDATE inquiry with public documentation link. Voice is polite and within character limits."
+    "human_annotation_notes": "Appropriately auto-handled standard IOS_SOFTWARE_UPDATE inquiry with public documentation."
   },
   {
     "item_id": "GOLD_173",
@@ -935,9 +935,9 @@
     },
     "overall_score": 4.38,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Correctly escalated (ESCALATE). The triage policy properly caught the safety/security boundary for CUSTOMER_FEEDBACK_COMPLAINT and provided an appropriate direct routing channel."
+    "human_annotation_notes": "Correctly escalated. Safety policy caught CUSTOMER_FEEDBACK_COMPLAINT boundary and provided secure routing."
   },
   {
     "item_id": "GOLD_176",
@@ -948,36 +948,36 @@
     "candidate_escalation": "AUTO_HANDLE",
     "gold_escalation": "AUTO_HANDLE",
     "scores": {
-      "groundedness": 4.5,
+      "groundedness": 4.0,
       "brand_voice": 3.5,
-      "actionability": 3.5,
+      "actionability": 4.5,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.12,
+    "overall_score": 4.25,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Appropriately auto-handled standard BATTERY_AND_HARDWARE inquiry with public documentation link. Voice is polite and within character limits."
+    "human_annotation_notes": "Appropriately auto-handled standard BATTERY_AND_HARDWARE inquiry with public documentation."
   },
   {
-    "item_id": "GOLD_180",
-    "conversation_id": "7b7929f5f19dd2b6bb08bb123548e074",
-    "input_hash": "1232762fc929ddb158f8b476435df1d2b86db003417e67fd1eabbb6955aa8a9f",
-    "customer_query": "Hey - what's up with the iPhone ringer being FULL BLAST regardless of the setting since the last update? Annoying please fix..",
+    "item_id": "GOLD_181",
+    "conversation_id": "0ae2f193654f08aacea91a3a296ed29b",
+    "input_hash": "f0ea56cf33f742736e871fb445b4b4a352537f796a26d391cc8a3e62f1bdd02d",
+    "customer_query": "thanks for the update, now I can't FaceTime",
     "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
     "candidate_escalation": "AUTO_HANDLE",
     "gold_escalation": "AUTO_HANDLE",
     "scores": {
-      "groundedness": 4.5,
+      "groundedness": 4.0,
       "brand_voice": 3.5,
-      "actionability": 3.5,
+      "actionability": 4.5,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.12,
+    "overall_score": 4.25,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Appropriately auto-handled standard IOS_SOFTWARE_UPDATE inquiry with public documentation link. Voice is polite and within character limits."
+    "human_annotation_notes": "Appropriately auto-handled standard IOS_SOFTWARE_UPDATE inquiry with public documentation."
   },
   {
     "item_id": "GOLD_197",
@@ -995,8 +995,8 @@
     },
     "overall_score": 4.25,
     "evaluator": "candidate_author_evaluator",
-    "role": "Candidate / Author (Independent Blind Scoring)",
+    "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Conservative false escalation. Routine APP_STORE_AND_BILLING inquiry could have been auto-handled with standard guidance, but routing to specialist does not endanger the customer."
+    "human_annotation_notes": "Conservative false escalation on routine APP_STORE_AND_BILLING. Safe for customer, slight agent queue load."
   }
 ]

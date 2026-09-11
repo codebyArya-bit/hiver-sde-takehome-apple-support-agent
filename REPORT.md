@@ -69,13 +69,13 @@ To preserve safety and maintain high signal-to-noise ratio, we made deliberate d
 
 | Metric Dimension | Trivial Baseline (Always Auto-Handle) | Simple Baseline (Naive Bayes + 1-NN) | Proposed AI Agent (RAG + Policy) | Real-World Operational Impact |
 | :--- | :---: | :---: | :---: | :--- |
-| **Intent Classification Accuracy** | 36.0% | 55.0% | **62.5%** | Out-of-sample generalization across 7 domain intents |
-| **Intent Macro F1** | 0.076 | 0.267 | **0.474** | Balanced performance across minority and majority intents |
-| **Brier Calibration Score (Lower=Better)** | 1.000 | 0.787 | **0.602** | Superior statistical probability calibration directly from model |
-| **Expected Calibration Error (ECE)** | 0.360 | 0.355 | **0.054** | Highly calibrated confidence (predicted confidence tracks empirical accuracy) |
-| **Escalation Decision Accuracy** | 74.0% | 75.0% | **71.0%** | Higher overall triage correctness across safety boundaries |
+| **Intent Classification Accuracy** | 35.5% | 55.0% | **62.0%** | Out-of-sample generalization across 7 domain intents |
+| **Intent Macro F1** | 0.075 | 0.267 | **0.476** | Balanced performance across minority and majority intents |
+| **Brier Calibration Score (Lower=Better)** | 1.000 | 0.787 | **0.605** | Superior statistical probability calibration directly from model |
+| **Expected Calibration Error (ECE)** | 0.355 | 0.355 | **0.049** | Highly calibrated confidence (predicted confidence tracks empirical accuracy) |
+| **Escalation Decision Accuracy** | 74.0% | 75.0% | **71.0%** | Lower raw accuracy due to safety-biased escalation, traded for high recall |
 | **Escalation Recall (Safety-Critical)** | **0.0%** | **3.9%** | **69.2%** | Catches 36 of 52 escalations; baselines miss 96% to 100% |
-| **Escalation Precision** | 0.0% | 100.0% | **46.2%** | Balanced triage efficiency preventing agent queue overload |
+| **Escalation Precision** | 0.0% | 100.0% | **46.2%** | Trade-off: accepts ~28% false alarms to achieve 69.2% recall on safety cases |
 | **Escalation F2 Score (Recall-Weighted)** | 0.000 | 0.048 | **0.629** | Recall weighted 2x vs. precision, reflecting enterprise safety priority |
 | **False Escalation Rate (Lower=Better)**| 0.0% | 0.0% | **28.4%** | Trade-off: accepts ~28% false alarms to protect customer accounts |
 | **Illustrative 5:1 Risk Penalty (5*FN + 1*FP)** | 260 | 250 | **122** | Illustrative offline penalty reduced by over 51% |
@@ -86,8 +86,8 @@ To preserve safety and maintain high signal-to-noise ratio, we made deliberate d
 | **Heuristic: Groundedness (1–5)** | 4.20 | 4.06 | **4.78** | Factual grounding in verified historical resolution precedents |
 | **Heuristic: Brand Voice & Empathy (1–5)** | 5.00 | 4.36 | **4.58** | Professional, empathetic Apple tone within single-tweet limits |
 | **Heuristic: Actionability (1–5)** | 4.20 | 4.33 | **4.80** | Concrete step-by-step guidance and canonical navigation paths |
-| **Heuristic: Escalation Appropriateness (1–5)**| 4.13 | 4.17 | **4.42** | Safe triage decisions aligned with safety and compliance policies |
-| **Heuristic: Overall Quality Score (1–5)** | 4.38 | 4.23 | **4.65** | Holistic quality superiority over both baselines |
+| **Heuristic: Escalation Appropriateness (1–5)**| 4.14 | 4.17 | **4.42** | Safe triage decisions aligned with safety and compliance policies |
+| **Heuristic: Overall Quality Score (1–5)** | 4.39 | 4.23 | **4.65** | Holistic quality superiority over both baselines |
 
 ---
 
@@ -153,17 +153,18 @@ Under an illustrative candidate-selected 5:1 penalty ($5 \times \text{FN} + 1 \t
 Our benchmark evaluates incoming customer inquiries as single-turn interactions. In reality, customer support dialogues span multiple turns. Offline single-turn evaluation cannot measure downstream resolution rate or customer abandonment when initial troubleshooting fails.
 
 ### 5. Intent Accuracy is Bound by Domain Taxonomy Framing
-Our out-of-sample intent accuracy is 62.5% across 7 coarse categories. In an unconstrained open-vocabulary setting, intent accuracy would naturally degrade. The metric measures consistency within our defined taxonomy, not general conversational intelligence.
+Our out-of-sample intent accuracy is 62.0% across 7 coarse categories. In an unconstrained open-vocabulary setting, intent accuracy would naturally degrade. The metric measures consistency within our defined taxonomy, not general conversational intelligence.
 
 ---
 
 ## Section 5: Candidate Human Annotator vs. LLM-as-a-Judge Agreement (N=50 Paired Frozen Outputs)
 
-To evaluate automated rubric reliability, we conducted an inter-rater agreement study comparing Gemini 2.5 Flash rubric scoring and candidate author blind scoring on the exact same 50 frozen agent outputs:
+To evaluate automated rubric reliability, we conducted an inter-rater agreement study comparing Gemini 2.5 Flash rubric scoring and candidate author blind scoring on the exact same 50 frozen agent outputs. The candidate manually scored the 50 frozen outputs using the same rubric without viewing the LLM ratings, then compared the two rating sets:
 
-* **Pearson Correlation ($r$)**: **0.934** on Overall Rubric Score, indicating strong linear tracking of human scoring.
-* **Spearman Rank Correlation ($\rho$)**: **0.735**, demonstrating consistent ordinal ranking of response quality.
-* **Mean Absolute Error (MAE)**: **0.237 points** on the raw 1.0–5.0 scale, with **100.0% of all ratings within 0.5 points** of human ground truth.
+* **Pearson Correlation ($r$)**: **0.920** on Overall Rubric Score, indicating strong linear tracking of human scoring.
+* **Spearman Rank Correlation ($\rho$)**: **0.766**, demonstrating consistent ordinal ranking of response quality.
+* **Mean Absolute Error (MAE)**: **0.226 points** on the raw 1.0–5.0 scale, with **100.0% of all ratings within 0.5 points** of human ground truth.
+* **Cohen's $\kappa$ Handling**: Cohen's Kappa is undefined/NaN on dimensions where both evaluators assign uniform high scores (e.g., Actionability, Brand Voice), which is safely reported as N/A rather than using artificial 1.0 substitutions. On binary Escalation Appropriateness, agreement is $\kappa = 1.000$.
 * **Cryptographic Hash Verification**: 100% of evaluated pairs match candidate SHA256 input hashes (`item_id`, `query`, `gold_intent`, `gold_escalation`, `candidate_reply`, `candidate_escalation`, `rubric_version`), ensuring that both rating files refer strictly to identical candidate responses and preventing accidental reuse of ratings when model outputs change.
 
 ---

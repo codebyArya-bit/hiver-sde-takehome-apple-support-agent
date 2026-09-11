@@ -306,7 +306,7 @@ def build_pdf_report(pdf_filename="REPORT.pdf"):
         "A responsible engineering evaluation must transparently acknowledge the limitations of offline benchmark figures:<br/>"
         "1. <b>Single-Turn Static vs. Multi-Turn Dynamic Evaluation:</b> Our benchmark evaluates the incoming customer message in isolation. In production, customer interactions span multiple back-and-forth turns.<br/>"
         "2. <b>Illustrative Asymmetric Cost:</b> Under an illustrative 5:1 penalty weighting missed escalations more heavily than unnecessary escalations, the policy reduces the penalty from 260 to 122. However, this is a candidate-selected metric, not an empirical dollar figure.<br/>"
-        "3. <b>Domain Taxonomy Conditioning:</b> Achieving 62.5% out-of-sample intent accuracy reflects a closed 7-class taxonomy. In an unconstrained open-vocabulary setting, intent accuracy would degrade.<br/>"
+        f"3. <b>Domain Taxonomy Conditioning:</b> Achieving {prop['intent_metrics']['accuracy']*100:.1f}% out-of-sample intent accuracy reflects a closed 7-class taxonomy. In an unconstrained open-vocabulary setting, intent accuracy would degrade.<br/>"
         "4. <b>69.2% Escalation Recall in Production:</b> Catching 36 of 52 escalations means 16 are missed. In production, we would not deploy unrestricted auto-reply at this threshold; initial rollout must operate as an agent-assist copilot.",
         body_style
     ))

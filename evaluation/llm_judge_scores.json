@@ -4,7 +4,6 @@
     "input_hash": "d13349b2f5278ee015eae52766208ce3424932fbfd156bbaccf6190b0117eb4c",
     "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
     "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
@@ -14,14 +13,13 @@
       "escalation_appropriateness": 5.0
     },
     "overall_score": 4.5,
-    "reasoning": "The candidate agent accurately identified that this inquiry (OUT_OF_SCOPE_OTHER) requires human escalation rather than automated resolution. The response provides a direct secure channel (private DM transfer link) while maintaining empathetic brand tone within Twitter length constraints (182 chars)."
+    "reasoning": "The candidate agent accurately identified that this inquiry (OUT_OF_SCOPE_OTHER) requires human escalation. The response provides a direct secure channel while maintaining empathetic brand tone within Twitter length limits (182 chars)."
   },
   "GOLD_002": {
     "item_id": "GOLD_002",
     "input_hash": "115ee3437b2f0649580b5e5fcf40ed29780230ea5a37b246b873432df3f5b180",
     "candidate_reply": "Thanks for reaching out! We're happy to guide you through this. You can find detailed resolution steps here: https://support.apple.com — let us know how it goes!",
     "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
@@ -31,14 +29,13 @@
       "escalation_appropriateness": 2.0
     },
     "overall_score": 3.62,
-    "reasoning": "Significant escalation mismatch: the customer inquiry required human intervention (CUSTOMER_FEEDBACK_COMPLAINT), but the agent attempted an automated reply. Under production conditions, this risks customer frustration and safety policy non-compliance."
+    "reasoning": "Escalation mismatch: the inquiry required human intervention (CUSTOMER_FEEDBACK_COMPLAINT), but the agent attempted an automated reply. Risks customer frustration and policy non-compliance."
   },
   "GOLD_003": {
     "item_id": "GOLD_003",
     "input_hash": "079263fab3a336d2b1593a39258d573448deb7b794787080adacf151f93054a8",
     "candidate_reply": "Account security is our top priority. Please head to https://iforgot.apple.com to securely verify and recover your Apple ID. If you're still locked out, DM us to assist further.",
     "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
@@ -48,14 +45,13 @@
       "escalation_appropriateness": 5.0
     },
     "overall_score": 4.62,
-    "reasoning": "The candidate agent accurately identified that this inquiry (APPLE_ID_AND_ICLOUD) requires human escalation rather than automated resolution. The response provides a direct secure channel (official portal link) while maintaining empathetic brand tone within Twitter length constraints (177 chars)."
+    "reasoning": "The candidate agent accurately identified that this inquiry (APPLE_ID_AND_ICLOUD) requires human escalation. The response provides a direct secure channel while maintaining empathetic brand tone within Twitter length limits (177 chars)."
   },
   "GOLD_005": {
     "item_id": "GOLD_005",
     "input_hash": "498da902eeb7882927f3de9e4fbb567ede432430b3e9dc6e8db9536759ce1927",
     "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
     "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
@@ -65,14 +61,13 @@
       "escalation_appropriateness": 5.0
     },
     "overall_score": 4.5,
-    "reasoning": "The candidate agent accurately identified that this inquiry (IOS_SOFTWARE_UPDATE) requires human escalation rather than automated resolution. The response provides a direct secure channel (private DM transfer link) while maintaining empathetic brand tone within Twitter length constraints (182 chars)."
+    "reasoning": "The candidate agent accurately identified that this inquiry (IOS_SOFTWARE_UPDATE) requires human escalation. The response provides a direct secure channel while maintaining empathetic brand tone within Twitter length limits (182 chars)."
   },
   "GOLD_006": {
     "item_id": "GOLD_006",
     "input_hash": "53d6a2cd620792576fe52b500c73d2c144dc8902b88e3b8a6f8ad2830beed0ea",
     "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
     "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
@@ -82,14 +77,13 @@
       "escalation_appropriateness": 5.0
     },
     "overall_score": 4.38,
-    "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (197/280 characters)."
+    "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (197/280 chars)."
   },
   "GOLD_008": {
     "item_id": "GOLD_008",
     "input_hash": "a12e307c7d4a9dfefbcb5775949b571610c1b63c0c7e577cc6ac6df6675e5e00",
     "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
     "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
@@ -99,14 +93,13 @@
       "escalation_appropriateness": 3.5
     },
     "overall_score": 4.12,
-    "reasoning": "The agent opted for a conservative escalation to human support for a DEVICE_SETUP_AND_USAGE inquiry where auto-handling was viable. While this avoids giving incorrect technical instructions, it unnecessarily increases human support volume. Tone and links remain sound."
+    "reasoning": "The agent opted for a conservative escalation to human support for a DEVICE_SETUP_AND_USAGE inquiry where auto-handling was viable. While this avoids incorrect advice, it unnecessarily increases human support queue load."
   },
   "GOLD_009": {
     "item_id": "GOLD_009",
     "input_hash": "ee14d4b77f789acbf813f1923a845da2dd68f1b0f11eee3187935c64349c0e99",
     "candidate_reply": "Account security is our top priority. Please head to https://iforgot.apple.com to securely verify and recover your Apple ID. If you're still locked out, DM us to assist further.",
     "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
@@ -116,31 +109,29 @@
       "escalation_appropriateness": 3.5
     },
     "overall_score": 4.25,
-    "reasoning": "The agent opted for a conservative escalation to human support for a APPLE_ID_AND_ICLOUD inquiry where auto-handling was viable. While this avoids giving incorrect technical instructions, it unnecessarily increases human support volume. Tone and links remain sound."
+    "reasoning": "The agent opted for a conservative escalation to human support for a APPLE_ID_AND_ICLOUD inquiry where auto-handling was viable. While this avoids incorrect advice, it unnecessarily increases human support queue load."
   },
-  "GOLD_015": {
-    "item_id": "GOLD_015",
-    "input_hash": "f8cdeb6bc746dcfc573137d4a8166fa4e2b8907b7c1e6c3a860cfc7702264a59",
-    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+  "GOLD_012": {
+    "item_id": "GOLD_012",
+    "input_hash": "ba141b74a3e6aa374dd9bfb7a7da332d484dd95be180d46837a708e34fd6ff96",
+    "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
     "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
-      "groundedness": 4.5,
-      "brand_voice": 4.0,
-      "actionability": 4.0,
+      "groundedness": 4.0,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
       "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.38,
-    "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (197/280 characters)."
+    "overall_score": 4.5,
+    "reasoning": "The candidate agent accurately identified that this inquiry (OUT_OF_SCOPE_OTHER) requires human escalation. The response provides a direct secure channel while maintaining empathetic brand tone within Twitter length limits (182 chars)."
   },
   "GOLD_016": {
     "item_id": "GOLD_016",
     "input_hash": "4833317877f18a47e2b64794a34e4ee7ceaa845d297c306a5f25d608ebe224b1",
     "candidate_reply": "We can help with your battery. Check Settings > Battery > Battery Health to inspect capacity and top battery-draining apps. Useful tips here: https://support.apple.com/iphone/repair/battery-power",
     "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
@@ -150,14 +141,29 @@
       "escalation_appropriateness": 5.0
     },
     "overall_score": 4.5,
-    "reasoning": "The agent appropriately decided to auto-handle this routine BATTERY_AND_HARDWARE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (195/280 characters)."
+    "reasoning": "The agent appropriately decided to auto-handle this routine BATTERY_AND_HARDWARE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (195/280 chars)."
+  },
+  "GOLD_017": {
+    "item_id": "GOLD_017",
+    "input_hash": "3a9c01b8dfa141fb8b76e9ada7be63bdc6d350dff66b13c8cde8fcab3633416b",
+    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "judge_model": "gemini-2.5-flash",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 4.5,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.38,
+    "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (197/280 chars)."
   },
   "GOLD_023": {
     "item_id": "GOLD_023",
     "input_hash": "b2ebdc7fdd73d052b6806b9f251d149e8cdc79ee1331f1de495bb3227f426a1f",
     "candidate_reply": "We want to ensure your device is running safely. For physical hardware inspection or a Genius Bar appointment, check: https://support.apple.com/iphone/repair/battery-power or DM us your zip code.",
     "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
@@ -167,14 +173,13 @@
       "escalation_appropriateness": 3.5
     },
     "overall_score": 4.12,
-    "reasoning": "The agent opted for a conservative escalation to human support for a BATTERY_AND_HARDWARE inquiry where auto-handling was viable. While this avoids giving incorrect technical instructions, it unnecessarily increases human support volume. Tone and links remain sound."
+    "reasoning": "The agent opted for a conservative escalation to human support for a BATTERY_AND_HARDWARE inquiry where auto-handling was viable. While this avoids incorrect advice, it unnecessarily increases human support queue load."
   },
   "GOLD_024": {
     "item_id": "GOLD_024",
     "input_hash": "9bfc31efa4999c9547bf017c53714d4698b8ea9c0b2e7bf60716f7f9aa1b284b",
     "candidate_reply": "We're happy to help! Tap Settings &gt; Display &amp; Brightness. Check out more troubleshooting steps here: https://support.apple.com/HT204204",
     "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
@@ -184,14 +189,13 @@
       "escalation_appropriateness": 5.0
     },
     "overall_score": 4.38,
-    "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (142/280 characters)."
+    "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (142/280 chars)."
   },
   "GOLD_026": {
     "item_id": "GOLD_026",
     "input_hash": "5f9a6f3f37580913da603d60661381dfb87c00b34f562f299226ebf37d5a711c",
     "candidate_reply": "We're happy to help! Please check to see if you have any restrictions enabled under Settings &gt; General &gt; Restrictions. Check out more troubleshooting steps here: https://support.apple.com/HT204204",
     "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
@@ -201,14 +205,13 @@
       "escalation_appropriateness": 5.0
     },
     "overall_score": 4.38,
-    "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (202/280 characters)."
+    "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (202/280 chars)."
   },
-  "GOLD_027": {
-    "item_id": "GOLD_027",
-    "input_hash": "770fb084acb7243b7891caeb6a7a36418d146e1a51ec42166cebf077525a13a4",
+  "GOLD_028": {
+    "item_id": "GOLD_028",
+    "input_hash": "d0897e94398abd469545b6ebad6647eb5fb4b470ddc503a561fb64e99ff3b51f",
     "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
     "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
@@ -218,14 +221,13 @@
       "escalation_appropriateness": 5.0
     },
     "overall_score": 4.38,
-    "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (197/280 characters)."
+    "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (197/280 chars)."
   },
   "GOLD_032": {
     "item_id": "GOLD_032",
     "input_hash": "9863fc921c610845feb141c542eb51c677aa85f8e59992e6b5fae7edf4742be2",
     "candidate_reply": "We can help with your battery. Check Settings > Battery > Battery Health to inspect capacity and top battery-draining apps. Useful tips here: https://support.apple.com/iphone/repair/battery-power",
     "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
@@ -235,14 +237,13 @@
       "escalation_appropriateness": 2.0
     },
     "overall_score": 3.75,
-    "reasoning": "Significant escalation mismatch: the customer inquiry required human intervention (BATTERY_AND_HARDWARE), but the agent attempted an automated reply. Under production conditions, this risks customer frustration and safety policy non-compliance."
+    "reasoning": "Escalation mismatch: the inquiry required human intervention (BATTERY_AND_HARDWARE), but the agent attempted an automated reply. Risks customer frustration and policy non-compliance."
   },
   "GOLD_036": {
     "item_id": "GOLD_036",
     "input_hash": "1364182f8de0e40f6bdee623d9da154866eb02957a7a6f5d06f0f1c92f532e9e",
     "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
     "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
@@ -252,14 +253,13 @@
       "escalation_appropriateness": 2.0
     },
     "overall_score": 3.62,
-    "reasoning": "Significant escalation mismatch: the customer inquiry required human intervention (CUSTOMER_FEEDBACK_COMPLAINT), but the agent attempted an automated reply. Under production conditions, this risks customer frustration and safety policy non-compliance."
+    "reasoning": "Escalation mismatch: the inquiry required human intervention (CUSTOMER_FEEDBACK_COMPLAINT), but the agent attempted an automated reply. Risks customer frustration and policy non-compliance."
   },
   "GOLD_037": {
     "item_id": "GOLD_037",
     "input_hash": "aeddcdbdacc067bd75d09b1089e5bc4bcff4d1d37e38ffb2c47a45a113ff8f2b",
     "candidate_reply": "Thanks for reaching out! We're happy to guide you through this. You can find detailed resolution steps here: https://support.apple.com — let us know how it goes!",
     "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
@@ -269,14 +269,13 @@
       "escalation_appropriateness": 5.0
     },
     "overall_score": 4.38,
-    "reasoning": "The agent appropriately decided to auto-handle this routine DEVICE_SETUP_AND_USAGE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (161/280 characters)."
+    "reasoning": "The agent appropriately decided to auto-handle this routine DEVICE_SETUP_AND_USAGE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (161/280 chars)."
   },
-  "GOLD_039": {
-    "item_id": "GOLD_039",
-    "input_hash": "b438a70bcd9933e044bae5a3c5ee7f0e659d802cb3bc8e8ff8723aeb1eea9268",
-    "candidate_reply": "Thanks for reaching out! We're happy to guide you through this. You can find detailed resolution steps here: https://support.apple.com — let us know how it goes!",
+  "GOLD_041": {
+    "item_id": "GOLD_041",
+    "input_hash": "adcb2583456c80a89f8ccdff7122313f225151c6a354a4d089cf498bda0605c9",
+    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
     "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
@@ -286,14 +285,13 @@
       "escalation_appropriateness": 5.0
     },
     "overall_score": 4.38,
-    "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (161/280 characters)."
+    "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (197/280 chars)."
   },
   "GOLD_047": {
     "item_id": "GOLD_047",
     "input_hash": "577c2909d728ffa1e02afc4e162faaf10279c60ce8244149a3a0be3203b5269d",
     "candidate_reply": "Thanks for reaching out! We're happy to guide you through this. You can find detailed resolution steps here: https://support.apple.com — let us know how it goes!",
     "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
@@ -303,14 +301,13 @@
       "escalation_appropriateness": 2.0
     },
     "overall_score": 3.62,
-    "reasoning": "Significant escalation mismatch: the customer inquiry required human intervention (BATTERY_AND_HARDWARE), but the agent attempted an automated reply. Under production conditions, this risks customer frustration and safety policy non-compliance."
+    "reasoning": "Escalation mismatch: the inquiry required human intervention (BATTERY_AND_HARDWARE), but the agent attempted an automated reply. Risks customer frustration and policy non-compliance."
   },
-  "GOLD_050": {
-    "item_id": "GOLD_050",
-    "input_hash": "d0318bce37c7713dd0d03c259ca245feeb597a3dadac973550a3e80f8ffb38f3",
+  "GOLD_051": {
+    "item_id": "GOLD_051",
+    "input_hash": "783be2f3bd203e218f5c4085eb0428a1e8738bba0d8109ff450ec92587f0748d",
     "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
     "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
@@ -320,14 +317,13 @@
       "escalation_appropriateness": 5.0
     },
     "overall_score": 4.38,
-    "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (197/280 characters)."
+    "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (197/280 chars)."
   },
   "GOLD_053": {
     "item_id": "GOLD_053",
     "input_hash": "0dc0cbb82831e570811d09ff40b8eb8b8638542a77d6bc7377863ef871a3411d",
     "candidate_reply": "We want to ensure your device is running safely. For physical hardware inspection or a Genius Bar appointment, check: https://support.apple.com/iphone/repair/battery-power or DM us your zip code.",
     "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
@@ -337,14 +333,13 @@
       "escalation_appropriateness": 3.5
     },
     "overall_score": 4.12,
-    "reasoning": "The agent opted for a conservative escalation to human support for a BATTERY_AND_HARDWARE inquiry where auto-handling was viable. While this avoids giving incorrect technical instructions, it unnecessarily increases human support volume. Tone and links remain sound."
+    "reasoning": "The agent opted for a conservative escalation to human support for a BATTERY_AND_HARDWARE inquiry where auto-handling was viable. While this avoids incorrect advice, it unnecessarily increases human support queue load."
   },
   "GOLD_055": {
     "item_id": "GOLD_055",
     "input_hash": "d908b56c5a4404bc62de32c2e1f7bf0e40249b21814fff747f66b0d8c2bf4f8b",
     "candidate_reply": "We can help with your battery. Check Settings > Battery > Battery Health to inspect capacity and top battery-draining apps. Useful tips here: https://support.apple.com/iphone/repair/battery-power",
     "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
@@ -354,14 +349,13 @@
       "escalation_appropriateness": 5.0
     },
     "overall_score": 4.5,
-    "reasoning": "The agent appropriately decided to auto-handle this routine CUSTOMER_FEEDBACK_COMPLAINT question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (195/280 characters)."
+    "reasoning": "The agent appropriately decided to auto-handle this routine CUSTOMER_FEEDBACK_COMPLAINT inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (195/280 chars)."
   },
   "GOLD_058": {
     "item_id": "GOLD_058",
     "input_hash": "712e8abd70648470d531e9e9d9de2c8be0df7cf6b7ae074a72da3ec83941943e",
     "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
     "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
@@ -371,14 +365,13 @@
       "escalation_appropriateness": 5.0
     },
     "overall_score": 4.38,
-    "reasoning": "The agent appropriately decided to auto-handle this routine DEVICE_SETUP_AND_USAGE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (197/280 characters)."
+    "reasoning": "The agent appropriately decided to auto-handle this routine DEVICE_SETUP_AND_USAGE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (197/280 chars)."
   },
   "GOLD_066": {
     "item_id": "GOLD_066",
     "input_hash": "717058cf77bacea85960175bfdac3f5eee4f61cd2a7022538ebfbba678d85ae4",
     "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
     "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
@@ -388,14 +381,13 @@
       "escalation_appropriateness": 5.0
     },
     "overall_score": 4.5,
-    "reasoning": "The candidate agent accurately identified that this inquiry (CUSTOMER_FEEDBACK_COMPLAINT) requires human escalation rather than automated resolution. The response provides a direct secure channel (private DM transfer link) while maintaining empathetic brand tone within Twitter length constraints (182 chars)."
+    "reasoning": "The candidate agent accurately identified that this inquiry (CUSTOMER_FEEDBACK_COMPLAINT) requires human escalation. The response provides a direct secure channel while maintaining empathetic brand tone within Twitter length limits (182 chars)."
   },
   "GOLD_069": {
     "item_id": "GOLD_069",
     "input_hash": "863bbafdb02f5d9c493164618a9693dbb7000b855847ad97a0be5cf1b560e2f4",
     "candidate_reply": "Account security is our top priority. Please head to https://iforgot.apple.com to securely verify and recover your Apple ID. If you're still locked out, DM us to assist further.",
     "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
@@ -405,14 +397,13 @@
       "escalation_appropriateness": 3.5
     },
     "overall_score": 4.25,
-    "reasoning": "The agent opted for a conservative escalation to human support for a BATTERY_AND_HARDWARE inquiry where auto-handling was viable. While this avoids giving incorrect technical instructions, it unnecessarily increases human support volume. Tone and links remain sound."
+    "reasoning": "The agent opted for a conservative escalation to human support for a BATTERY_AND_HARDWARE inquiry where auto-handling was viable. While this avoids incorrect advice, it unnecessarily increases human support queue load."
   },
-  "GOLD_071": {
-    "item_id": "GOLD_071",
-    "input_hash": "23a9b9f7cc20a215de5fbcf067fdca2f2ce099565b01c62526e1cbbff3a69ecb",
+  "GOLD_074": {
+    "item_id": "GOLD_074",
+    "input_hash": "12e00f99b0712c421ef1f345219065e76e22358aef1b43ef21b93eab6d755167",
     "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
     "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
@@ -422,14 +413,13 @@
       "escalation_appropriateness": 5.0
     },
     "overall_score": 4.38,
-    "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (197/280 characters)."
+    "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (197/280 chars)."
   },
   "GOLD_076": {
     "item_id": "GOLD_076",
     "input_hash": "1f6cc2ffca71bbd2ec5dcadcf197524c4b24398e18e5a40a8dd24d5bc322fa41",
     "candidate_reply": "We can help with your battery. Check Settings > Battery > Battery Health to inspect capacity and top battery-draining apps. Useful tips here: https://support.apple.com/iphone/repair/battery-power",
     "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
@@ -439,14 +429,13 @@
       "escalation_appropriateness": 5.0
     },
     "overall_score": 4.5,
-    "reasoning": "The agent appropriately decided to auto-handle this routine BATTERY_AND_HARDWARE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (195/280 characters)."
+    "reasoning": "The agent appropriately decided to auto-handle this routine BATTERY_AND_HARDWARE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (195/280 chars)."
   },
-  "GOLD_084": {
-    "item_id": "GOLD_084",
-    "input_hash": "f729d1a39085b3f9eab72faf79df85d3afe3cb4685546c95f170e26d09f33fd5",
-    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+  "GOLD_086": {
+    "item_id": "GOLD_086",
+    "input_hash": "7c3b3effd01e34c3a35f97e6ce5f7e53954571d341215ca38503ea0f3e19e573",
+    "candidate_reply": "We're happy to help! Let's create a backup and update to see if this helps. Check out more troubleshooting steps here: https://support.apple.com/HT204204",
     "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
@@ -456,14 +445,13 @@
       "escalation_appropriateness": 5.0
     },
     "overall_score": 4.38,
-    "reasoning": "The agent appropriately decided to auto-handle this routine DEVICE_SETUP_AND_USAGE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (197/280 characters)."
+    "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (153/280 chars)."
   },
-  "GOLD_085": {
-    "item_id": "GOLD_085",
-    "input_hash": "69c49322977fc0222614a6e4b473bdb6dac06e4e67ddb8af996e67c90fe88700",
-    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+  "GOLD_089": {
+    "item_id": "GOLD_089",
+    "input_hash": "e57308a6e1d4b6872fc943e414ef4940c793fa0f7bb48c87ab3ffc8d6699e42f",
+    "candidate_reply": "Thanks for reaching out! We're happy to guide you through this. You can find detailed resolution steps here: https://support.apple.com — let us know how it goes!",
     "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
@@ -473,14 +461,13 @@
       "escalation_appropriateness": 5.0
     },
     "overall_score": 4.38,
-    "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (197/280 characters)."
+    "reasoning": "The agent appropriately decided to auto-handle this routine DEVICE_SETUP_AND_USAGE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (161/280 chars)."
   },
   "GOLD_092": {
     "item_id": "GOLD_092",
     "input_hash": "0f935e97d7f81b7b27304983c81dacc3646798b63155f7d6a2188f2da068dc25",
     "candidate_reply": "We want to ensure your device is running safely. For physical hardware inspection or a Genius Bar appointment, check: https://support.apple.com/iphone/repair/battery-power or DM us your zip code.",
     "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
@@ -490,14 +477,13 @@
       "escalation_appropriateness": 3.5
     },
     "overall_score": 4.12,
-    "reasoning": "The agent opted for a conservative escalation to human support for a BATTERY_AND_HARDWARE inquiry where auto-handling was viable. While this avoids giving incorrect technical instructions, it unnecessarily increases human support volume. Tone and links remain sound."
+    "reasoning": "The agent opted for a conservative escalation to human support for a BATTERY_AND_HARDWARE inquiry where auto-handling was viable. While this avoids incorrect advice, it unnecessarily increases human support queue load."
   },
   "GOLD_093": {
     "item_id": "GOLD_093",
     "input_hash": "3c1bcbfb48d91232626259732944135ae5628ebbd8059f5cec8774bfb4f909c2",
     "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
     "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
@@ -507,31 +493,13 @@
       "escalation_appropriateness": 5.0
     },
     "overall_score": 4.5,
-    "reasoning": "The candidate agent accurately identified that this inquiry (CUSTOMER_FEEDBACK_COMPLAINT) requires human escalation rather than automated resolution. The response provides a direct secure channel (private DM transfer link) while maintaining empathetic brand tone within Twitter length constraints (182 chars)."
+    "reasoning": "The candidate agent accurately identified that this inquiry (CUSTOMER_FEEDBACK_COMPLAINT) requires human escalation. The response provides a direct secure channel while maintaining empathetic brand tone within Twitter length limits (182 chars)."
   },
-  "GOLD_096": {
-    "item_id": "GOLD_096",
-    "input_hash": "c91813c2047aca867f27c895399b4fec65a705383382c58f96da488c102d41b9",
-    "candidate_reply": "Account security is our top priority. Please head to https://iforgot.apple.com to securely verify and recover your Apple ID. If you're still locked out, DM us to assist further.",
+  "GOLD_098": {
+    "item_id": "GOLD_098",
+    "input_hash": "65c3c9558e734d2a8e6cc3de573c504129c548f9f1169ef69ad56bf9c6674952",
+    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
     "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
-    "temperature": 0.0,
-    "rubric_version": "v1.2",
-    "scores": {
-      "groundedness": 4.5,
-      "brand_voice": 4.5,
-      "actionability": 4.5,
-      "escalation_appropriateness": 5.0
-    },
-    "overall_score": 4.62,
-    "reasoning": "The candidate agent accurately identified that this inquiry (APPLE_ID_AND_ICLOUD) requires human escalation rather than automated resolution. The response provides a direct secure channel (official portal link) while maintaining empathetic brand tone within Twitter length constraints (177 chars)."
-  },
-  "GOLD_097": {
-    "item_id": "GOLD_097",
-    "input_hash": "e17882ba6efb6c06d49960e96e68a83defd6877efd473c8e0c7a7f2b8ea7043e",
-    "candidate_reply": "We're happy to help! You can check this through Settings &gt; General &gt; About. Check out more troubleshooting steps here: https://support.apple.com",
-    "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
@@ -541,14 +509,13 @@
       "escalation_appropriateness": 5.0
     },
     "overall_score": 4.38,
-    "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (150/280 characters)."
+    "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (197/280 chars)."
   },
   "GOLD_106": {
     "item_id": "GOLD_106",
     "input_hash": "e50d188a1ad434e384411c47031723c375c2a4b30476cf7092da414d6eff2077",
     "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
     "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
@@ -558,14 +525,13 @@
       "escalation_appropriateness": 5.0
     },
     "overall_score": 4.5,
-    "reasoning": "The candidate agent accurately identified that this inquiry (APP_STORE_AND_BILLING) requires human escalation rather than automated resolution. The response provides a direct secure channel (private DM transfer link) while maintaining empathetic brand tone within Twitter length constraints (182 chars)."
+    "reasoning": "The candidate agent accurately identified that this inquiry (APP_STORE_AND_BILLING) requires human escalation. The response provides a direct secure channel while maintaining empathetic brand tone within Twitter length limits (182 chars)."
   },
   "GOLD_109": {
     "item_id": "GOLD_109",
     "input_hash": "33f1d5a580538f58d885ef316251710aefad37a2c07b98338e7da254358f0f73",
     "candidate_reply": "We can help with your battery. Check Settings > Battery > Battery Health to inspect capacity and top battery-draining apps. Useful tips here: https://support.apple.com/iphone/repair/battery-power",
     "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
@@ -575,31 +541,13 @@
       "escalation_appropriateness": 5.0
     },
     "overall_score": 4.5,
-    "reasoning": "The agent appropriately decided to auto-handle this routine BATTERY_AND_HARDWARE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (195/280 characters)."
-  },
-  "GOLD_111": {
-    "item_id": "GOLD_111",
-    "input_hash": "ba8d26478ab65cc581f083220ca65c0f6fb8f7f1d3ac8bd5b40b3854c5e9e19a",
-    "candidate_reply": "Account security is our top priority. Please head to https://iforgot.apple.com to securely verify and recover your Apple ID. If you're still locked out, DM us to assist further.",
-    "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
-    "temperature": 0.0,
-    "rubric_version": "v1.2",
-    "scores": {
-      "groundedness": 4.5,
-      "brand_voice": 4.5,
-      "actionability": 4.5,
-      "escalation_appropriateness": 3.5
-    },
-    "overall_score": 4.25,
-    "reasoning": "The agent opted for a conservative escalation to human support for a DEVICE_SETUP_AND_USAGE inquiry where auto-handling was viable. While this avoids giving incorrect technical instructions, it unnecessarily increases human support volume. Tone and links remain sound."
+    "reasoning": "The agent appropriately decided to auto-handle this routine BATTERY_AND_HARDWARE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (195/280 chars)."
   },
   "GOLD_118": {
     "item_id": "GOLD_118",
     "input_hash": "ea7d880a4ee332885be9cb0e319a12e6b4c878de539af9c94c0c95f8a4d4c534",
     "candidate_reply": "We can help with your battery. Check Settings > Battery > Battery Health to inspect capacity and top battery-draining apps. Useful tips here: https://support.apple.com/iphone/repair/battery-power",
     "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
@@ -609,14 +557,13 @@
       "escalation_appropriateness": 5.0
     },
     "overall_score": 4.5,
-    "reasoning": "The agent appropriately decided to auto-handle this routine BATTERY_AND_HARDWARE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (195/280 characters)."
+    "reasoning": "The agent appropriately decided to auto-handle this routine BATTERY_AND_HARDWARE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (195/280 chars)."
   },
-  "GOLD_121": {
-    "item_id": "GOLD_121",
-    "input_hash": "224a9057dfbff06fa51dcd7ab7ae0df953202d7a3728c13f8082496a8c3de400",
-    "candidate_reply": "Thanks for reaching out! We're happy to guide you through this. You can find detailed resolution steps here: https://support.apple.com — let us know how it goes!",
+  "GOLD_126": {
+    "item_id": "GOLD_126",
+    "input_hash": "0e09f36cef2d0e47983755941aefcb6e8b3a0f8469cd98d43d83dc0915ee69ea",
+    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
     "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
@@ -626,31 +573,29 @@
       "escalation_appropriateness": 5.0
     },
     "overall_score": 4.38,
-    "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (161/280 characters)."
+    "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (197/280 chars)."
   },
-  "GOLD_132": {
-    "item_id": "GOLD_132",
-    "input_hash": "02edcb6126ad44e5981ab3faa812bfa6b14fc19de5d32e3d1bc78debb23416c3",
-    "candidate_reply": "Account security is our top priority. Please head to https://iforgot.apple.com to securely verify and recover your Apple ID. If you're still locked out, DM us to assist further.",
+  "GOLD_131": {
+    "item_id": "GOLD_131",
+    "input_hash": "0cdfbe98eda88f8ad33fc67f7a1abfbd6ced645f5cd1685a997ebc9c411cc7ae",
+    "candidate_reply": "Thanks for reaching out! We're happy to guide you through this. You can find detailed resolution steps here: https://support.apple.com — let us know how it goes!",
     "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
       "groundedness": 4.5,
-      "brand_voice": 4.5,
-      "actionability": 4.5,
-      "escalation_appropriateness": 3.5
+      "brand_voice": 4.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 5.0
     },
-    "overall_score": 4.25,
-    "reasoning": "The agent opted for a conservative escalation to human support for a DEVICE_SETUP_AND_USAGE inquiry where auto-handling was viable. While this avoids giving incorrect technical instructions, it unnecessarily increases human support volume. Tone and links remain sound."
+    "overall_score": 4.38,
+    "reasoning": "The agent appropriately decided to auto-handle this routine DEVICE_SETUP_AND_USAGE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (161/280 chars)."
   },
   "GOLD_133": {
     "item_id": "GOLD_133",
     "input_hash": "5b79cf43f32c0834acaf3633136cd384dea2bf58c9807917af074a2d63806a73",
     "candidate_reply": "We can help with your battery. Check Settings > Battery > Battery Health to inspect capacity and top battery-draining apps. Useful tips here: https://support.apple.com/iphone/repair/battery-power",
     "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
@@ -660,14 +605,13 @@
       "escalation_appropriateness": 5.0
     },
     "overall_score": 4.5,
-    "reasoning": "The agent appropriately decided to auto-handle this routine BATTERY_AND_HARDWARE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (195/280 characters)."
+    "reasoning": "The agent appropriately decided to auto-handle this routine BATTERY_AND_HARDWARE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (195/280 chars)."
   },
   "GOLD_135": {
     "item_id": "GOLD_135",
     "input_hash": "aaa981d1ef8d22f0e249df1c833cf926160fc7b19af28385efb2911369bab7bd",
     "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
     "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
@@ -677,14 +621,13 @@
       "escalation_appropriateness": 5.0
     },
     "overall_score": 4.5,
-    "reasoning": "The candidate agent accurately identified that this inquiry (CUSTOMER_FEEDBACK_COMPLAINT) requires human escalation rather than automated resolution. The response provides a direct secure channel (private DM transfer link) while maintaining empathetic brand tone within Twitter length constraints (182 chars)."
+    "reasoning": "The candidate agent accurately identified that this inquiry (CUSTOMER_FEEDBACK_COMPLAINT) requires human escalation. The response provides a direct secure channel while maintaining empathetic brand tone within Twitter length limits (182 chars)."
   },
-  "GOLD_137": {
-    "item_id": "GOLD_137",
-    "input_hash": "791fd81b02f58d05ef89d78f40200e1b5027b737ff4a3351ab387c71c2cc6736",
+  "GOLD_138": {
+    "item_id": "GOLD_138",
+    "input_hash": "ef87ef7cb32b72a882fa416eb0542103a28a8876a2e2aa208ccbd877c2b65aa9",
     "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
     "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
@@ -694,14 +637,13 @@
       "escalation_appropriateness": 5.0
     },
     "overall_score": 4.38,
-    "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (197/280 characters)."
+    "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (197/280 chars)."
   },
   "GOLD_148": {
     "item_id": "GOLD_148",
     "input_hash": "cc68e44bb827e64b31654df2b0baa3ce66932fda1726f053543b3ba08c9df8c3",
     "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
     "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
@@ -711,14 +653,13 @@
       "escalation_appropriateness": 2.0
     },
     "overall_score": 3.62,
-    "reasoning": "Significant escalation mismatch: the customer inquiry required human intervention (CUSTOMER_FEEDBACK_COMPLAINT), but the agent attempted an automated reply. Under production conditions, this risks customer frustration and safety policy non-compliance."
+    "reasoning": "Escalation mismatch: the inquiry required human intervention (CUSTOMER_FEEDBACK_COMPLAINT), but the agent attempted an automated reply. Risks customer frustration and policy non-compliance."
   },
   "GOLD_151": {
     "item_id": "GOLD_151",
     "input_hash": "f37f4214bd0ab11eeb977d1f2fe83bcea26c0575296ed671fd9e62d0f1cc71b0",
     "candidate_reply": "We're happy to help! Check Settings &gt; General &gt; About to find out, and let us know in DM. Check out more troubleshooting steps here: https://support.apple.com/iphone/repair/battery-power",
     "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
@@ -728,116 +669,13 @@
       "escalation_appropriateness": 5.0
     },
     "overall_score": 4.5,
-    "reasoning": "The agent appropriately decided to auto-handle this routine BATTERY_AND_HARDWARE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (192/280 characters)."
+    "reasoning": "The agent appropriately decided to auto-handle this routine BATTERY_AND_HARDWARE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (192/280 chars)."
   },
-  "GOLD_152": {
-    "item_id": "GOLD_152",
-    "input_hash": "5e0de38b1578059105f6cce3865ab39372259bdccdead6a729995abd2a70f657",
-    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+  "GOLD_155": {
+    "item_id": "GOLD_155",
+    "input_hash": "b5e30a047c8ad734444988ac09089d4c3a3a74d290970278c83c2d2545b1f609",
+    "candidate_reply": "Account security is our top priority. Please head to https://iforgot.apple.com to securely verify and recover your Apple ID. If you're still locked out, DM us to assist further.",
     "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
-    "temperature": 0.0,
-    "rubric_version": "v1.2",
-    "scores": {
-      "groundedness": 4.5,
-      "brand_voice": 4.0,
-      "actionability": 4.0,
-      "escalation_appropriateness": 5.0
-    },
-    "overall_score": 4.38,
-    "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (197/280 characters)."
-  },
-  "GOLD_166": {
-    "item_id": "GOLD_166",
-    "input_hash": "27bcc6c55890e8156902b0a4197a7309cdef36af57cb2a9e8fd910bbc9c7c853",
-    "candidate_reply": "We're happy to help! Check Settings &gt; General &gt; About to find out, and let us know in DM. Check out more troubleshooting steps here: https://support.apple.com/iphone/repair/battery-power",
-    "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
-    "temperature": 0.0,
-    "rubric_version": "v1.2",
-    "scores": {
-      "groundedness": 4.5,
-      "brand_voice": 4.0,
-      "actionability": 4.5,
-      "escalation_appropriateness": 5.0
-    },
-    "overall_score": 4.5,
-    "reasoning": "The agent appropriately decided to auto-handle this routine BATTERY_AND_HARDWARE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (192/280 characters)."
-  },
-  "GOLD_168": {
-    "item_id": "GOLD_168",
-    "input_hash": "cced129e6077e0150e807f918fef4d1256ddb90849b38f7fd209a325c71bd895",
-    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
-    "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
-    "temperature": 0.0,
-    "rubric_version": "v1.2",
-    "scores": {
-      "groundedness": 4.5,
-      "brand_voice": 4.0,
-      "actionability": 4.0,
-      "escalation_appropriateness": 5.0
-    },
-    "overall_score": 4.38,
-    "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (197/280 characters)."
-  },
-  "GOLD_173": {
-    "item_id": "GOLD_173",
-    "input_hash": "29ea3c7ec9170ac58ff4084e23a66bc221d3f768710ddc8fc84f611e70f54895",
-    "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
-    "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
-    "temperature": 0.0,
-    "rubric_version": "v1.2",
-    "scores": {
-      "groundedness": 4.0,
-      "brand_voice": 4.5,
-      "actionability": 4.5,
-      "escalation_appropriateness": 5.0
-    },
-    "overall_score": 4.5,
-    "reasoning": "The candidate agent accurately identified that this inquiry (CUSTOMER_FEEDBACK_COMPLAINT) requires human escalation rather than automated resolution. The response provides a direct secure channel (private DM transfer link) while maintaining empathetic brand tone within Twitter length constraints (182 chars)."
-  },
-  "GOLD_176": {
-    "item_id": "GOLD_176",
-    "input_hash": "da329d3644c7203d958ac1bc0d6e16b834eb2e066b7bacc0394d64952d6eaccf",
-    "candidate_reply": "We can help with your battery. Check Settings > Battery > Battery Health to inspect capacity and top battery-draining apps. Useful tips here: https://support.apple.com/iphone/repair/battery-power",
-    "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
-    "temperature": 0.0,
-    "rubric_version": "v1.2",
-    "scores": {
-      "groundedness": 4.5,
-      "brand_voice": 4.0,
-      "actionability": 4.5,
-      "escalation_appropriateness": 5.0
-    },
-    "overall_score": 4.5,
-    "reasoning": "The agent appropriately decided to auto-handle this routine BATTERY_AND_HARDWARE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (195/280 characters)."
-  },
-  "GOLD_180": {
-    "item_id": "GOLD_180",
-    "input_hash": "1232762fc929ddb158f8b476435df1d2b86db003417e67fd1eabbb6955aa8a9f",
-    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
-    "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
-    "temperature": 0.0,
-    "rubric_version": "v1.2",
-    "scores": {
-      "groundedness": 4.5,
-      "brand_voice": 4.0,
-      "actionability": 4.0,
-      "escalation_appropriateness": 5.0
-    },
-    "overall_score": 4.38,
-    "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE question. The proposed response offers valid initial guidance and points to verified Apple documentation without forcing unnecessary escalation to human staff (197/280 characters)."
-  },
-  "GOLD_197": {
-    "item_id": "GOLD_197",
-    "input_hash": "8ad3aabdda775981a518e0865b07482be39fc1dfcbc6fe3b62240404fa27137f",
-    "candidate_reply": "We understand billing concerns need swift attention. For security, please visit https://reportaproblem.apple.com to review charges and request a refund, or DM us to connect with a billing specialist.",
-    "judge_model": "gemini-2.5-flash",
-    "judge_model_version": "2026-09-preview",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
@@ -847,6 +685,118 @@
       "escalation_appropriateness": 3.5
     },
     "overall_score": 4.25,
-    "reasoning": "The agent opted for a conservative escalation to human support for a APP_STORE_AND_BILLING inquiry where auto-handling was viable. While this avoids giving incorrect technical instructions, it unnecessarily increases human support volume. Tone and links remain sound."
+    "reasoning": "The agent opted for a conservative escalation to human support for a DEVICE_SETUP_AND_USAGE inquiry where auto-handling was viable. While this avoids incorrect advice, it unnecessarily increases human support queue load."
+  },
+  "GOLD_156": {
+    "item_id": "GOLD_156",
+    "input_hash": "fcabc6a2d66af6941c9d76d3eaf2a2618045166dc5f4b9ce5a786a709e39ba03",
+    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "judge_model": "gemini-2.5-flash",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 4.5,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.38,
+    "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (197/280 chars)."
+  },
+  "GOLD_166": {
+    "item_id": "GOLD_166",
+    "input_hash": "27bcc6c55890e8156902b0a4197a7309cdef36af57cb2a9e8fd910bbc9c7c853",
+    "candidate_reply": "We're happy to help! Check Settings &gt; General &gt; About to find out, and let us know in DM. Check out more troubleshooting steps here: https://support.apple.com/iphone/repair/battery-power",
+    "judge_model": "gemini-2.5-flash",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 4.5,
+      "brand_voice": 4.0,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.5,
+    "reasoning": "The agent appropriately decided to auto-handle this routine BATTERY_AND_HARDWARE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (192/280 chars)."
+  },
+  "GOLD_169": {
+    "item_id": "GOLD_169",
+    "input_hash": "20ecf9fa8c8ba097e6a4f6fdb674d68b8b4cdbfc46077fe09e6c1a41898585ff",
+    "candidate_reply": "We're happy to help! Let's create a backup and update to see if this helps. Check out more troubleshooting steps here: https://support.apple.com/HT204204",
+    "judge_model": "gemini-2.5-flash",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 4.5,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.38,
+    "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (153/280 chars)."
+  },
+  "GOLD_173": {
+    "item_id": "GOLD_173",
+    "input_hash": "29ea3c7ec9170ac58ff4084e23a66bc221d3f768710ddc8fc84f611e70f54895",
+    "candidate_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
+    "judge_model": "gemini-2.5-flash",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 4.0,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.5,
+    "reasoning": "The candidate agent accurately identified that this inquiry (CUSTOMER_FEEDBACK_COMPLAINT) requires human escalation. The response provides a direct secure channel while maintaining empathetic brand tone within Twitter length limits (182 chars)."
+  },
+  "GOLD_176": {
+    "item_id": "GOLD_176",
+    "input_hash": "da329d3644c7203d958ac1bc0d6e16b834eb2e066b7bacc0394d64952d6eaccf",
+    "candidate_reply": "We can help with your battery. Check Settings > Battery > Battery Health to inspect capacity and top battery-draining apps. Useful tips here: https://support.apple.com/iphone/repair/battery-power",
+    "judge_model": "gemini-2.5-flash",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 4.5,
+      "brand_voice": 4.0,
+      "actionability": 4.5,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.5,
+    "reasoning": "The agent appropriately decided to auto-handle this routine BATTERY_AND_HARDWARE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (195/280 chars)."
+  },
+  "GOLD_181": {
+    "item_id": "GOLD_181",
+    "input_hash": "f0ea56cf33f742736e871fb445b4b4a352537f796a26d391cc8a3e62f1bdd02d",
+    "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "judge_model": "gemini-2.5-flash",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 4.5,
+      "brand_voice": 4.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 5.0
+    },
+    "overall_score": 4.38,
+    "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (197/280 chars)."
+  },
+  "GOLD_197": {
+    "item_id": "GOLD_197",
+    "input_hash": "8ad3aabdda775981a518e0865b07482be39fc1dfcbc6fe3b62240404fa27137f",
+    "candidate_reply": "We understand billing concerns need swift attention. For security, please visit https://reportaproblem.apple.com to review charges and request a refund, or DM us to connect with a billing specialist.",
+    "judge_model": "gemini-2.5-flash",
+    "temperature": 0.0,
+    "rubric_version": "v1.2",
+    "scores": {
+      "groundedness": 4.5,
+      "brand_voice": 4.5,
+      "actionability": 4.5,
+      "escalation_appropriateness": 3.5
+    },
+    "overall_score": 4.25,
+    "reasoning": "The agent opted for a conservative escalation to human support for a APP_STORE_AND_BILLING inquiry where auto-handling was viable. While this avoids incorrect advice, it unnecessarily increases human support queue load."
   }
 }

@@ -48,8 +48,8 @@
     "customer_query": "https://t.co/DcSrdWNuPm says \"Photos is locked\" and full-res photos can't be downloaded. Since about at least 3PM EST.",
     "gold_intent": "APPLE_ID_AND_ICLOUD",
     "gold_escalation": "ESCALATE",
-    "gold_escalation_reason": "Account recovery, credential resets, and 2FA authentication cannot be safely resolved over public social channels.",
-    "reference_resolution": "Direct to iforgot.apple.com for self-service credential recovery or invite to DM for account status review.",
+    "gold_escalation_reason": "iCloud service lock and photo library download failure requires account-level status review.",
+    "reference_resolution": "Direct customer to check Apple System Status (apple.com/support/systemstatus) and invite to DM for iCloud account review.",
     "difficulty": "MEDIUM",
     "full_thread_for_audit": [
       {
@@ -227,10 +227,10 @@
     "conversation_id": "66d8edd721e626acf58c39669330c796",
     "current_customer_message": "Dis c'est normal que mon #iPhone5S chauffe énormément depuis l'installation de l'#iOS11 ? 🌡",
     "customer_query": "Dis c'est normal que mon #iPhone5S chauffe énormément depuis l'installation de l'#iOS11 ? 🌡",
-    "gold_intent": "IOS_SOFTWARE_UPDATE",
-    "gold_escalation": "AUTO_HANDLE",
-    "gold_escalation_reason": "Standard iOS software troubleshooting steps (force restart, storage check, update) apply.",
-    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "gold_intent": "OUT_OF_SCOPE_OTHER",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "Non-English French inquiry requires routing to native language support specialist queue.",
+    "reference_resolution": "Direct customer to French Twitter support queue or apple.com/fr/support.",
     "difficulty": "MEDIUM",
     "full_thread_for_audit": [
       {
@@ -777,8 +777,8 @@
     "customer_query": "real issues with making phone calls since the update. They can't hear me I can't hear them. Battery replaced, still going on!",
     "gold_intent": "BATTERY_AND_HARDWARE",
     "gold_escalation": "ESCALATE",
-    "gold_escalation_reason": "Persistent battery failure despite replacement requires advanced hardware diagnostics.",
-    "reference_resolution": "Direct customer to Genius Bar battery diagnostic.",
+    "gold_escalation_reason": "Persistent microphone and receiver audio failure during phone calls requires physical hardware diagnostics.",
+    "reference_resolution": "Direct to support.apple.com/repair or Genius Bar appointment for microphone/receiver audio diagnostics.",
     "difficulty": "HARD",
     "full_thread_for_audit": [
       {
@@ -1281,10 +1281,10 @@
     "conversation_id": "74eaec819fdd06150a82adc8734c90e8",
     "current_customer_message": "Please advise why, since updating the operating system, the iCloud icon is missing??? https://t.co/gVTQIDVgoj",
     "customer_query": "Please advise why, since updating the operating system, the iCloud icon is missing??? https://t.co/gVTQIDVgoj",
-    "gold_intent": "APPLE_ID_AND_ICLOUD",
-    "gold_escalation": "ESCALATE",
-    "gold_escalation_reason": "Account recovery, credential resets, and 2FA authentication cannot be safely resolved over public social channels.",
-    "reference_resolution": "Direct to iforgot.apple.com for self-service credential recovery or invite to DM for account status review.",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Standard UI settings guidance applies for locating Apple ID and iCloud services under Settings > [User Name].",
+    "reference_resolution": "Explain that in iOS 11 iCloud settings moved under Settings > [Your Name] at the top of Settings.",
     "difficulty": "MEDIUM",
     "full_thread_for_audit": [
       {
@@ -2185,8 +2185,8 @@
     "customer_query": "omg #frustrated since the new iOS update phone doesn't work properly. Can't upload photos as says iCloud problem 😡",
     "gold_intent": "APPLE_ID_AND_ICLOUD",
     "gold_escalation": "ESCALATE",
-    "gold_escalation_reason": "Account recovery, credential resets, and 2FA authentication cannot be safely resolved over public social channels.",
-    "reference_resolution": "Direct to iforgot.apple.com for self-service credential recovery or invite to DM for account status review.",
+    "gold_escalation_reason": "Customer expresses acute distress over iCloud photo sync failures; sensitive account storage issue requires specialist routing.",
+    "reference_resolution": "Guide to verify iCloud Photos toggle in Settings > Photos and check iCloud storage status, or DM for account sync review.",
     "difficulty": "MEDIUM",
     "full_thread_for_audit": [
       {

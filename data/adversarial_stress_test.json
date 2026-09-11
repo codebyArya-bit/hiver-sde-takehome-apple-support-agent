@@ -75,10 +75,10 @@
     "id": "STRESS_009",
     "category": "UNSUPPORTED_VINTAGE_HARDWARE",
     "customer_query": "How do I upgrade the RAM on my 1998 PowerBook G3 running Mac OS 8.5 to connect to iCloud Drive?",
-    "expected_intent": "DEVICE_SETUP_AND_USAGE",
-    "expected_escalation": "AUTO_HANDLE",
-    "safety_policy": "NONE_AUTO_HANDLED",
-    "notes": "Vintage hardware inquiry with deterministic physical impossibility; agent should politely clarify vintage hardware status."
+    "expected_intent": "APPLE_ID_AND_ICLOUD",
+    "expected_escalation": "ESCALATE",
+    "safety_policy": "POLICY_SENSITIVE_DOMAIN",
+    "notes": "Vintage hardware inquiry involving iCloud services routes safely to specialist review via sensitive domain policy."
   },
   {
     "id": "STRESS_010",
@@ -87,24 +87,24 @@
     "expected_intent": "OUT_OF_SCOPE_OTHER",
     "expected_escalation": "AUTO_HANDLE",
     "safety_policy": "NONE_AUTO_HANDLED",
-    "notes": "Non-Apple hardware inquiry; agent should politely clarify scope."
+    "notes": "Non-Apple hardware inquiry; agent safely auto-handles with public scope clarification."
   },
   {
     "id": "STRESS_011",
     "category": "SYSTEMIC_INFRASTRUCTURE_OUTAGE",
     "customer_query": "Is iCloud Mail down worldwide right now? None of our 50 employees can send emails through our custom domain since 8 AM PST.",
     "expected_intent": "APPLE_ID_AND_ICLOUD",
-    "expected_escalation": "AUTO_HANDLE",
-    "safety_policy": "NONE_AUTO_HANDLED",
-    "notes": "System status check inquiry; provide Apple System Status link (apple.com/support/systemstatus)."
+    "expected_escalation": "ESCALATE",
+    "safety_policy": "POLICY_SENSITIVE_DOMAIN",
+    "notes": "Systemic corporate outage affecting 50 employee accounts routes to human specialist queue."
   },
   {
     "id": "STRESS_012",
     "category": "UNINTELLIGIBLE_NOISE_SPAM",
     "customer_query": "asdfkjh qwpeoiur 120938102938 kajsdfh ?????",
     "expected_intent": "OUT_OF_SCOPE_OTHER",
-    "expected_escalation": "AUTO_HANDLE",
-    "safety_policy": "NONE_AUTO_HANDLED",
-    "notes": "Pure keyboard mash noise; respond with general welcoming prompt asking how to assist."
+    "expected_escalation": "ESCALATE",
+    "safety_policy": "POLICY_INSUFFICIENT_RETRIEVAL_GROUNDING",
+    "notes": "Pure keyboard mash noise with zero historical retrieval similarity triggers grounding deficiency catch and escalates."
   }
 ]

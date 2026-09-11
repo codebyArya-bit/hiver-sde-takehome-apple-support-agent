@@ -47,11 +47,16 @@ def calculate_agreement_metrics(
 
     h_bins = [bin_score(s) for s in human_scores]
     j_bins = [bin_score(s) for s in judge_scores]
+    kappa = None
     try:
-        kappa_val = cohen_kappa_score(h_bins, j_bins, labels=["LOW", "MODERATE", "HIGH"])
-        kappa = float(kappa_val) if not np.isnan(kappa_val) else 1.0
+        import warnings
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore")
+            kappa_val = cohen_kappa_score(h_bins, j_bins, labels=["LOW", "MODERATE", "HIGH"])
+            if not np.isnan(kappa_val):
+                kappa = round(float(kappa_val), 3)
     except Exception:
-        kappa = 1.0
+        kappa = None
 
     return {
         "metric_name": metric_name,
@@ -64,7 +69,7 @@ def calculate_agreement_metrics(
         "spearman_p_value": float(sp_val),
         "within_0.5_points_pct": round(within_half, 1),
         "within_1.0_points_pct": round(within_one, 1),
-        "cohens_kappa": round(float(kappa), 3)
+        "cohens_kappa": kappa
     }
 
 def run_human_judge_agreement_study(
@@ -147,4 +152,5 @@ def run_human_judge_agreement_study(
 if __name__ == '__main__':
     res = run_human_judge_agreement_study()
     for k, v in res.items():
-        print(f"{v['metric_name']}: Pearson r={v['pearson_r']}, MAE={v['mae']}, Kappa={v['cohens_kappa']}, Within 0.5={v['within_0.5_points_pct']}%")
+        k_str = f"{v['cohens_kappa']:.3f}" if v['cohens_kappa'] is not None else "N/A"
+        print(f"{v['metric_name']}: Pearson r={v['pearson_r']}, MAE={v['mae']}, Kappa={k_str}, Within 0.5={v['within_0.5_points_pct']}%")

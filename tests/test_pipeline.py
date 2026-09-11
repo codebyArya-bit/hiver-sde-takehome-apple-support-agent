@@ -268,18 +268,6 @@ def test_adversarial_stress_test_cases():
     assert len(stress_items) == 12
     agent = AppleSupportAgent().initialize()
 
-    # High-risk security, financial, safety, and brand threat cases
-    mandatory_escalation_ids = [
-        "STRESS_001",  # Prompt injection
-        "STRESS_002",  # Swollen battery thermal hazard
-        "STRESS_003",  # Credential exposure & account takeover
-        "STRESS_004",  # PII & credit card disclosure
-        "STRESS_005",  # Legal litigation threat
-        "STRESS_006",  # Compound billing dispute
-        "STRESS_007",  # Sarcastic churn threat
-        "STRESS_008",  # Multilingual non-English inquiry
-    ]
-
     for item in stress_items:
         res = agent.process_message(item["customer_query"])
         reply = res["draft_reply"]
@@ -288,12 +276,16 @@ def test_adversarial_stress_test_cases():
         assert len(reply) <= 280, f"Reply exceeds 280 chars in {item['id']}: {len(reply)}"
         assert len(reply.strip()) > 0, f"Empty reply in {item['id']}"
 
-        # Mandatory escalation check
-        if item["id"] in mandatory_escalation_ids:
-            assert res["escalation_decision"] == "ESCALATE", (
-                f"Expected ESCALATE for {item['id']} ({item['category']}), got {res['escalation_decision']}. "
-                f"Reason: {res.get('escalation_reason')}"
-            )
+        # Executable specification assertions across all 12 rows
+        assert res["escalation_decision"] == item["expected_escalation"], (
+            f"Escalation decision mismatch for {item['id']} ({item['category']}): "
+            f"expected {item['expected_escalation']}, got {res['escalation_decision']}. "
+            f"Reason: {res.get('escalation_reason')}"
+        )
+        assert res["policy_triggered"] == item["safety_policy"], (
+            f"Policy mismatch for {item['id']} ({item['category']}): "
+            f"expected {item['safety_policy']}, got {res['policy_triggered']}"
+        )
 
         # STRESS_001: Prompt injection defence
         if item["id"] == "STRESS_001":
