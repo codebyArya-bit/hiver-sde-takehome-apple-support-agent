@@ -263,7 +263,7 @@ def build_pdf_report(pdf_filename="REPORT.pdf"):
     story.append(Spacer(1, 4))
 
     story.append(Paragraph(
-        f"<b>The Illusion of Baseline Accuracy:</b> The Trivial Baseline achieves 74.0% accuracy simply by auto-handling all inquiries. However, its <b>Escalation Recall is 0.0%</b>, missing every safety-critical ticket. The Proposed Agent catches <b>{prop['escalation_metrics']['escalation_recall']*100:.1f}% of escalations</b> (36 of 52), reducing the illustrative 5:1 weighted risk penalty from 260 to 122.",
+        f"<b>The Illusion of Baseline Accuracy:</b> The Trivial Baseline achieves 74.0% accuracy simply by auto-handling all inquiries. However, its <b>Escalation Recall is 0.0%</b>, missing every safety-critical ticket. The Proposed Agent catches <b>{prop['escalation_metrics']['escalation_recall']*100:.1f}% of escalations</b> (35 of 52), reducing the illustrative 5:1 weighted risk penalty from 260 to {prop['escalation_metrics'].get('weighted_risk_cost', 128)}.",
         body_style
     ))
 
@@ -305,24 +305,25 @@ def build_pdf_report(pdf_filename="REPORT.pdf"):
     story.append(Paragraph(
         "A responsible engineering evaluation must transparently acknowledge the limitations of offline benchmark figures:<br/>"
         "1. <b>Single-Turn Static vs. Multi-Turn Dynamic Evaluation:</b> Our benchmark evaluates the incoming customer message in isolation. In production, customer interactions span multiple back-and-forth turns.<br/>"
-        "2. <b>Illustrative Asymmetric Cost:</b> Under an illustrative 5:1 penalty weighting missed escalations more heavily than unnecessary escalations, the policy reduces the penalty from 260 to 122. However, this is a candidate-selected metric, not an empirical dollar figure.<br/>"
+        f"2. <b>Illustrative Asymmetric Cost:</b> Under an illustrative 5:1 penalty weighting missed escalations more heavily than unnecessary escalations, the policy reduces the penalty from 260 to {prop['escalation_metrics'].get('weighted_risk_cost', 128)}. However, this is a candidate-selected metric, not an empirical dollar figure.<br/>"
         f"3. <b>Domain Taxonomy Conditioning:</b> Achieving {prop['intent_metrics']['accuracy']*100:.1f}% out-of-sample intent accuracy reflects a closed 7-class taxonomy. In an unconstrained open-vocabulary setting, intent accuracy would degrade.<br/>"
-        "4. <b>69.2% Escalation Recall in Production:</b> Catching 36 of 52 escalations means 16 are missed. In production, we would not deploy unrestricted auto-reply at this threshold; initial rollout must operate as an agent-assist copilot.",
+        f"4. <b>{prop['escalation_metrics']['escalation_recall']*100:.1f}% Escalation Recall in Production:</b> Catching 35 of 52 escalations means 17 are missed. In production, we would not deploy unrestricted auto-reply at this threshold; initial rollout must operate as an agent-assist copilot.",
         body_style
     ))
 
     # Section 5: Human-Judge Agreement (N=50 Paired Frozen Outputs)
     ovr_agr = agr.get("overall_score", {})
-    r_val = ovr_agr.get("pearson_r", 0.920)
-    rho_val = ovr_agr.get("spearman_rho", 0.766)
+    r_val = ovr_agr.get("pearson_r", 0.937)
+    rho_val = ovr_agr.get("spearman_rho", 0.785)
     mae_val = ovr_agr.get("mae", 0.226)
     within_half = ovr_agr.get("within_0.5_points_pct", 100.0)
+    gnd_mae = agr.get("groundedness", {}).get("mae", 0.350)
 
     story.append(Paragraph("5. Candidate Human Annotator vs. LLM-as-a-Judge Agreement (N=50)", h1_style))
     story.append(Paragraph(
         f"To assess automated grading reliability, we conducted an inter-rater agreement study comparing Gemini 2.5 Flash rubric scoring and candidate author blind scoring on the exact same 50 frozen agent outputs: "
         f"<b>Pearson Correlation <i>r = {r_val:.3f}</i></b>, <b>Spearman <i>ρ = {rho_val:.3f}</i></b>, <b>Mean Absolute Error = {mae_val:.3f} points</b> (on 1–5 scale), with <b>{within_half:.1f}% of ratings within 0.5 points</b>. "
-        f"Cohen's κ is reported as N/A on categories with uniform scores (κ = 1.000 on binary escalation). Groundedness achieves 100% agreement within 0.5 points (MAE = 0.360) on official Apple URLs. "
+        f"Cohen's κ is reported as N/A on categories with uniform scores (κ = 1.000 on binary escalation). Groundedness achieves 100% agreement within 0.5 points (MAE = {gnd_mae:.3f}) on official Apple URLs. "
         f"SHA256 validation ensures both rating files refer strictly to identical frozen outputs.",
         body_style
     ))

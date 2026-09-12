@@ -782,22 +782,24 @@
   {
     "item_id": "GOLD_138",
     "conversation_id": "e6da56e89c54b7f37a5b1ccd0fa2ed61",
-    "input_hash": "ef87ef7cb32b72a882fa416eb0542103a28a8876a2e2aa208ccbd877c2b65aa9",
+    "input_hash": "6ea7b18a3910264bc49b2ee77d948fd646147f5bc59237c7d14ff944f5e2170b",
     "customer_query": "como es posible que un iphone 6 plus no funcione correctamente en ios 11?Un smartphone de 800€ con un rendimiento inadmisible",
     "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
     "candidate_escalation": "AUTO_HANDLE",
-    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation": "ESCALATE",
     "scores": {
       "groundedness": 4.0,
-      "brand_voice": 3.5,
-      "actionability": 4.5,
-      "escalation_appropriateness": 5.0
+      "brand_voice": 2.0,
+      "actionability": 4.0,
+      "escalation_appropriateness": 1.0
     },
-    "overall_score": 4.25,
+    "overall_score": 2.75,
     "evaluator": "candidate_author_evaluator",
     "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Appropriately auto-handled standard IOS_SOFTWARE_UPDATE inquiry with public documentation."
+    "human_annotation_notes": "Appropriately auto-handled standard IOS_SOFTWARE_UPDATE inquiry with public documentation.",
+    "gold_intent": "OUT_OF_SCOPE_OTHER",
+    "notes": "Agent responded in English with generic iOS restart/storage troubleshooting rather than escalating to native Spanish support as required by localization policy."
   },
   {
     "item_id": "GOLD_148",

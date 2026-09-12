@@ -2626,6 +2626,40 @@
     "used_evidence": []
   },
   {
+    "item_id": "GOLD_138",
+    "conversation_id": "e6da56e89c54b7f37a5b1ccd0fa2ed61",
+    "customer_query": "como es posible que un iphone 6 plus no funcione correctamente en ios 11?Un smartphone de 800€ con un rendimiento inadmisible",
+    "gold_intent": "OUT_OF_SCOPE_OTHER",
+    "predicted_intent": "IOS_SOFTWARE_UPDATE",
+    "intent_confidence": 0.4747,
+    "intent_error": true,
+    "gold_escalation": "ESCALATE",
+    "predicted_escalation": "AUTO_HANDLE",
+    "escalation_error": true,
+    "gold_escalation_reason": "Non-English inquiry requires routing to native language support specialist.",
+    "agent_escalation_reason": "Standard iOS software troubleshooting steps (restart, storage check, supplemental update) apply.",
+    "policy_triggered": "NONE_AUTO_HANDLED",
+    "draft_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
+    "grounded_in": [
+      {
+        "conversation_id": "36b7827adea7be10ae6a129d25af7a29",
+        "similarity": 0.1541,
+        "resolution_snippet": "We offer support via Twitter in English. Get help in Spanish here: https://t.co/IBIY3vMgPj or join https://t.c"
+      },
+      {
+        "conversation_id": "19b5156dde60055fb36d64ed4d0135ab",
+        "similarity": 0.1528,
+        "resolution_snippet": "We offer support via Twitter in English. Get help in Spanish here: https://t.co/IBIY3vMgPj or join https://t.c"
+      },
+      {
+        "conversation_id": "f3454c3eb3ca47cd47aadc52708f1132",
+        "similarity": 0.1497,
+        "resolution_snippet": "We offer support via Twitter in English. Get help in Spanish here: https://t.co/IBIY3vMgPj or join https://t.c"
+      }
+    ],
+    "used_evidence": []
+  },
+  {
     "item_id": "GOLD_139",
     "conversation_id": "eebbab429135c93814aea10d1e0c09e7",
     "customer_query": "what's up my phones battery the last up date was not good",
@@ -2833,14 +2867,14 @@
     "item_id": "GOLD_149",
     "conversation_id": "2d3935494e9837950dcc09a9e13e35d5",
     "customer_query": "how can I send emails to the trash now instead of the archived option in the Apple Mail App",
-    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
     "predicted_intent": "OUT_OF_SCOPE_OTHER",
     "intent_confidence": 0.3019,
     "intent_error": true,
-    "gold_escalation": "ESCALATE",
+    "gold_escalation": "AUTO_HANDLE",
     "predicted_escalation": "ESCALATE",
-    "escalation_error": false,
-    "gold_escalation_reason": "High customer frustration or brand reputation risk requires empathetic senior human intervention.",
+    "escalation_error": true,
+    "gold_escalation_reason": "Routine device configuration query addressable with standard Apple Mail settings guidance.",
     "agent_escalation_reason": "Customer expresses severe dissatisfaction, brand trust risk, or legal escalation requiring senior human care intervention.",
     "policy_triggered": "POLICY_HIGH_DISTRESS_LEGAL",
     "draft_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",

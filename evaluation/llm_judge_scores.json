@@ -781,19 +781,19 @@
   },
   "GOLD_138": {
     "item_id": "GOLD_138",
-    "input_hash": "ef87ef7cb32b72a882fa416eb0542103a28a8876a2e2aa208ccbd877c2b65aa9",
+    "input_hash": "6ea7b18a3910264bc49b2ee77d948fd646147f5bc59237c7d14ff944f5e2170b",
     "candidate_reply": "We're here to help! First, try force restarting your device and confirm your storage in Settings > General > iPhone Storage. Check out troubleshooting steps here: https://support.apple.com/HT204204",
     "judge_model": "gemini-2.5-flash",
     "temperature": 0.0,
     "rubric_version": "v1.2",
     "scores": {
-      "groundedness": 4.5,
-      "brand_voice": 4.0,
-      "actionability": 4.0,
-      "escalation_appropriateness": 5.0
+      "groundedness": 4.0,
+      "brand_voice": 2.0,
+      "actionability": 4.5,
+      "escalation_appropriateness": 1.0
     },
-    "overall_score": 4.38,
-    "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (197/280 chars).",
+    "overall_score": 2.88,
+    "reasoning": "The agent provided technically accurate troubleshooting steps and a valid Apple URL, but completely failed to address the customer in their native language or follow the ground truth guidance to redirect to Spanish-specific support. By choosing to auto-handle in English rather than escalating/redirecting as required for non-English inquiries, the agent violated the localization safety protocol.",
     "provider": "google",
     "model": "gemini-2.5-flash",
     "actual_model_version": "gemini-2.5-flash-preview",

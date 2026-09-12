@@ -1,5 +1,5 @@
 {
-  "execution_timestamp": "2026-09-12T17:17:42Z",
+  "execution_timestamp": "2026-09-12T18:05:03Z",
   "dataset_size": 200,
   "split_verification": {
     "train_threads": 600,
@@ -11,13 +11,13 @@
   "results": {
     "Trivial Baseline": {
       "intent_metrics": {
-        "accuracy": 0.355,
-        "macro_f1": 0.0749,
-        "macro_precision": 0.0507,
+        "accuracy": 0.35,
+        "macro_f1": 0.0741,
+        "macro_precision": 0.05,
         "macro_recall": 0.1429,
-        "weighted_f1": 0.186,
+        "weighted_f1": 0.1815,
         "brier_score": 1.0,
-        "expected_calibration_error": 0.355,
+        "expected_calibration_error": 0.35,
         "per_class": {
           "BATTERY_AND_HARDWARE": {
             "precision": 0.0,
@@ -26,10 +26,10 @@
             "support": 55
           },
           "IOS_SOFTWARE_UPDATE": {
-            "precision": 0.355,
+            "precision": 0.35,
             "recall": 1.0,
-            "f1": 0.524,
-            "support": 71
+            "f1": 0.5185,
+            "support": 70
           },
           "APPLE_ID_AND_ICLOUD": {
             "precision": 0.0,
@@ -47,19 +47,19 @@
             "precision": 0.0,
             "recall": 0.0,
             "f1": 0.0,
-            "support": 24
+            "support": 25
           },
           "CUSTOMER_FEEDBACK_COMPLAINT": {
             "precision": 0.0,
             "recall": 0.0,
             "f1": 0.0,
-            "support": 32
+            "support": 31
           },
           "OUT_OF_SCOPE_OTHER": {
             "precision": 0.0,
             "recall": 0.0,
             "f1": 0.0,
-            "support": 4
+            "support": 5
           }
         },
         "confusion_matrix": [
@@ -74,7 +74,7 @@
           ],
           [
             0,
-            71,
+            70,
             0,
             0,
             0,
@@ -101,7 +101,7 @@
           ],
           [
             0,
-            24,
+            25,
             0,
             0,
             0,
@@ -110,7 +110,7 @@
           ],
           [
             0,
-            32,
+            31,
             0,
             0,
             0,
@@ -119,7 +119,7 @@
           ],
           [
             0,
-            4,
+            5,
             0,
             0,
             0,
@@ -152,7 +152,7 @@
       },
       "generation_metrics": {
         "bleu": 0.21,
-        "rouge_1_recall": 0.1509,
+        "rouge_1_recall": 0.1503,
         "rouge_2_recall": 0.0114,
         "char_limit_compliance_pct": 100.0,
         "official_domain_inclusion_rate": 0.0,
@@ -1129,8 +1129,8 @@
             "groundedness": 4.2,
             "brand_voice": 5.0,
             "actionability": 4.2,
-            "escalation_appropriateness": 5.0,
-            "overall_score": 4.6
+            "escalation_appropriateness": 2.0,
+            "overall_score": 3.85
           },
           {
             "groundedness": 4.2,
@@ -1206,8 +1206,8 @@
             "groundedness": 4.2,
             "brand_voice": 5.0,
             "actionability": 4.2,
-            "escalation_appropriateness": 2.0,
-            "overall_score": 3.85
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.6
           },
           {
             "groundedness": 4.2,
@@ -1603,13 +1603,13 @@
     },
     "Simple Baseline": {
       "intent_metrics": {
-        "accuracy": 0.55,
-        "macro_f1": 0.2873,
-        "macro_precision": 0.314,
-        "macro_recall": 0.3107,
-        "weighted_f1": 0.4533,
-        "brier_score": 0.7919,
-        "expected_calibration_error": 0.3573,
+        "accuracy": 0.545,
+        "macro_f1": 0.2824,
+        "macro_precision": 0.313,
+        "macro_recall": 0.3034,
+        "weighted_f1": 0.4485,
+        "brier_score": 0.7964,
+        "expected_calibration_error": 0.3623,
         "per_class": {
           "BATTERY_AND_HARDWARE": {
             "precision": 0.82,
@@ -1618,10 +1618,10 @@
             "support": 55
           },
           "IOS_SOFTWARE_UPDATE": {
-            "precision": 0.4615,
-            "recall": 0.9296,
-            "f1": 0.6168,
-            "support": 71
+            "precision": 0.4545,
+            "recall": 0.9286,
+            "f1": 0.6103,
+            "support": 70
           },
           "APPLE_ID_AND_ICLOUD": {
             "precision": 0.6667,
@@ -1639,19 +1639,19 @@
             "precision": 0.0,
             "recall": 0.0,
             "f1": 0.0,
-            "support": 24
+            "support": 25
           },
           "CUSTOMER_FEEDBACK_COMPLAINT": {
             "precision": 0.0,
             "recall": 0.0,
             "f1": 0.0,
-            "support": 32
+            "support": 31
           },
           "OUT_OF_SCOPE_OTHER": {
             "precision": 0.25,
-            "recall": 0.25,
-            "f1": 0.25,
-            "support": 4
+            "recall": 0.2,
+            "f1": 0.2222,
+            "support": 5
           }
         },
         "confusion_matrix": [
@@ -1666,7 +1666,7 @@
           ],
           [
             5,
-            66,
+            65,
             0,
             0,
             0,
@@ -1693,7 +1693,7 @@
           ],
           [
             0,
-            23,
+            24,
             0,
             0,
             0,
@@ -1702,7 +1702,7 @@
           ],
           [
             4,
-            28,
+            27,
             0,
             0,
             0,
@@ -1711,7 +1711,7 @@
           ],
           [
             0,
-            3,
+            4,
             0,
             0,
             0,
@@ -1743,9 +1743,9 @@
         "true_negatives_correct_autohandle": 148
       },
       "generation_metrics": {
-        "bleu": 0.37,
-        "rouge_1_recall": 0.0943,
-        "rouge_2_recall": 0.0013,
+        "bleu": 0.9,
+        "rouge_1_recall": 0.099,
+        "rouge_2_recall": 0.0053,
         "char_limit_compliance_pct": 95.0,
         "official_domain_inclusion_rate": 0.0,
         "official_domain_validity_pct": 0.0,
@@ -2721,8 +2721,8 @@
             "groundedness": 4.0,
             "brand_voice": 4.5,
             "actionability": 4.3,
-            "escalation_appropriateness": 5.0,
-            "overall_score": 4.45
+            "escalation_appropriateness": 2.0,
+            "overall_score": 3.7
           },
           {
             "groundedness": 4.0,
@@ -2798,8 +2798,8 @@
             "groundedness": 4.2,
             "brand_voice": 4.0,
             "actionability": 4.3,
-            "escalation_appropriateness": 2.0,
-            "overall_score": 3.62
+            "escalation_appropriateness": 5.0,
+            "overall_score": 4.38
           },
           {
             "groundedness": 4.0,
@@ -3252,13 +3252,13 @@
     },
     "Proposed AI Agent": {
       "intent_metrics": {
-        "accuracy": 0.62,
-        "macro_f1": 0.476,
-        "macro_precision": 0.7337,
-        "macro_recall": 0.5479,
-        "weighted_f1": 0.5832,
-        "brier_score": 0.6049,
-        "expected_calibration_error": 0.0453,
+        "accuracy": 0.615,
+        "macro_f1": 0.4746,
+        "macro_precision": 0.7323,
+        "macro_recall": 0.5335,
+        "weighted_f1": 0.5774,
+        "brier_score": 0.6073,
+        "expected_calibration_error": 0.0403,
         "per_class": {
           "BATTERY_AND_HARDWARE": {
             "precision": 0.9216,
@@ -3267,10 +3267,10 @@
             "support": 55
           },
           "IOS_SOFTWARE_UPDATE": {
-            "precision": 0.6122,
-            "recall": 0.8451,
-            "f1": 0.7101,
-            "support": 71
+            "precision": 0.602,
+            "recall": 0.8429,
+            "f1": 0.7024,
+            "support": 70
           },
           "APPLE_ID_AND_ICLOUD": {
             "precision": 0.5333,
@@ -3286,21 +3286,21 @@
           },
           "DEVICE_SETUP_AND_USAGE": {
             "precision": 1.0,
-            "recall": 0.0417,
-            "f1": 0.08,
-            "support": 24
+            "recall": 0.04,
+            "f1": 0.0769,
+            "support": 25
           },
           "CUSTOMER_FEEDBACK_COMPLAINT": {
             "precision": 1.0,
-            "recall": 0.0938,
-            "f1": 0.1714,
-            "support": 32
+            "recall": 0.0968,
+            "f1": 0.1765,
+            "support": 31
           },
           "OUT_OF_SCOPE_OTHER": {
             "precision": 0.069,
-            "recall": 0.5,
-            "f1": 0.1212,
-            "support": 4
+            "recall": 0.4,
+            "f1": 0.1176,
+            "support": 5
           }
         },
         "confusion_matrix": [
@@ -3315,7 +3315,7 @@
           ],
           [
             3,
-            60,
+            59,
             0,
             0,
             0,
@@ -3347,7 +3347,7 @@
             0,
             1,
             0,
-            12
+            13
           ],
           [
             1,
@@ -3356,11 +3356,11 @@
             0,
             0,
             3,
-            4
+            3
           ],
           [
             0,
-            2,
+            3,
             0,
             0,
             0,
@@ -3379,33 +3379,33 @@
         ]
       },
       "escalation_metrics": {
-        "accuracy": 0.71,
-        "escalation_recall": 0.6923,
-        "escalation_precision": 0.4615,
-        "escalation_f1": 0.5538,
-        "escalation_f2": 0.6294,
-        "false_escalation_rate": 0.2838,
-        "weighted_risk_cost": 122,
-        "true_positives_escalate": 36,
-        "false_negatives_missed_escalate": 16,
-        "false_positives_unnecessary_escalate": 42,
-        "true_negatives_correct_autohandle": 106
+        "accuracy": 0.7,
+        "escalation_recall": 0.6731,
+        "escalation_precision": 0.4487,
+        "escalation_f1": 0.5385,
+        "escalation_f2": 0.6119,
+        "false_escalation_rate": 0.2905,
+        "weighted_risk_cost": 128,
+        "true_positives_escalate": 35,
+        "false_negatives_missed_escalate": 17,
+        "false_positives_unnecessary_escalate": 43,
+        "true_negatives_correct_autohandle": 105
       },
       "generation_metrics": {
-        "bleu": 4.06,
-        "rouge_1_recall": 0.2663,
-        "rouge_2_recall": 0.1179,
+        "bleu": 4.18,
+        "rouge_1_recall": 0.2632,
+        "rouge_2_recall": 0.1164,
         "char_limit_compliance_pct": 100.0,
         "official_domain_inclusion_rate": 79.5,
         "official_domain_validity_pct": 79.5,
-        "link_relevance_pct": 75.79
+        "link_relevance_pct": 76.1
       },
       "judge_metrics": {
         "mean_groundedness": 4.78,
         "mean_brand_voice": 4.58,
         "mean_actionability": 4.8,
-        "mean_escalation_appropriateness": 4.42,
-        "mean_overall_score": 4.65,
+        "mean_escalation_appropriateness": 4.4,
+        "mean_overall_score": 4.64,
         "individual_scores": [
           {
             "groundedness": 4.0,
@@ -4370,8 +4370,8 @@
             "groundedness": 5.0,
             "brand_voice": 4.5,
             "actionability": 5.0,
-            "escalation_appropriateness": 5.0,
-            "overall_score": 4.88
+            "escalation_appropriateness": 2.0,
+            "overall_score": 4.12
           },
           {
             "groundedness": 5.0,
@@ -4447,8 +4447,8 @@
             "groundedness": 4.0,
             "brand_voice": 5.0,
             "actionability": 4.3,
-            "escalation_appropriateness": 5.0,
-            "overall_score": 4.58
+            "escalation_appropriateness": 3.5,
+            "overall_score": 4.2
           },
           {
             "groundedness": 5.0,
@@ -5054,12 +5054,12 @@
     "groundedness": {
       "metric_name": "Groundedness & Correctness",
       "sample_size": 50,
-      "mae": 0.36,
-      "rmse": 0.424,
-      "pearson_r": 0.156,
-      "pearson_p_value": 0.2787878370014258,
-      "spearman_rho": 0.156,
-      "spearman_p_value": 0.2787878370014255,
+      "mae": 0.35,
+      "rmse": 0.418,
+      "pearson_r": 0.167,
+      "pearson_p_value": 0.247347442353271,
+      "spearman_rho": 0.167,
+      "spearman_p_value": 0.24734744235327133,
       "within_0.5_points_pct": 100.0,
       "within_1.0_points_pct": 100.0,
       "cohens_kappa": null
@@ -5067,25 +5067,25 @@
     "brand_voice": {
       "metric_name": "Brand Voice & Empathy",
       "sample_size": 50,
-      "mae": 0.35,
-      "rmse": 0.418,
-      "pearson_r": 0.882,
-      "pearson_p_value": 2.825216359530651e-17,
-      "spearman_rho": 0.864,
-      "spearman_p_value": 6.971257146771931e-16,
+      "mae": 0.34,
+      "rmse": 0.412,
+      "pearson_r": 0.873,
+      "pearson_p_value": 1.4685080226085454e-16,
+      "spearman_rho": 0.874,
+      "spearman_p_value": 1.0906054799775606e-16,
       "within_0.5_points_pct": 100.0,
       "within_1.0_points_pct": 100.0,
-      "cohens_kappa": null
+      "cohens_kappa": 1.0
     },
     "actionability": {
       "metric_name": "Actionability & Quality",
       "sample_size": 50,
       "mae": 0.42,
       "rmse": 0.51,
-      "pearson_r": 0.045,
-      "pearson_p_value": 0.7545575075851114,
-      "spearman_rho": 0.003,
-      "spearman_p_value": 0.983063276106332,
+      "pearson_r": 0.06,
+      "pearson_p_value": 0.6796765201733529,
+      "spearman_rho": 0.018,
+      "spearman_p_value": 0.8991297974950198,
       "within_0.5_points_pct": 90.0,
       "within_1.0_points_pct": 100.0,
       "cohens_kappa": null
@@ -5095,8 +5095,8 @@
       "sample_size": 50,
       "mae": 0.05,
       "rmse": 0.158,
-      "pearson_r": 0.997,
-      "pearson_p_value": 8.755006099168324e-56,
+      "pearson_r": 0.996,
+      "pearson_p_value": 6.397410914543991e-53,
       "spearman_rho": 1.0,
       "spearman_p_value": 0.0,
       "within_0.5_points_pct": 100.0,
@@ -5108,14 +5108,14 @@
       "sample_size": 50,
       "mae": 0.226,
       "rmse": 0.26,
-      "pearson_r": 0.92,
-      "pearson_p_value": 3.437736506456128e-21,
-      "spearman_rho": 0.766,
-      "spearman_p_value": 9.003995623783756e-11,
+      "pearson_r": 0.937,
+      "pearson_p_value": 1.2949223758300457e-23,
+      "spearman_rho": 0.785,
+      "spearman_p_value": 1.4666153248410217e-11,
       "within_0.5_points_pct": 100.0,
       "within_1.0_points_pct": 100.0,
-      "cohens_kappa": -0.017
+      "cohens_kappa": 0.215
     }
   },
-  "elapsed_seconds": 6.32
+  "elapsed_seconds": 6.08
 }

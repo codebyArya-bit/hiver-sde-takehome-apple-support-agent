@@ -3500,10 +3500,10 @@
     "conversation_id": "e6da56e89c54b7f37a5b1ccd0fa2ed61",
     "current_customer_message": "como es posible que un iphone 6 plus no funcione correctamente en ios 11?Un smartphone de 800€ con un rendimiento inadmisible",
     "customer_query": "como es posible que un iphone 6 plus no funcione correctamente en ios 11?Un smartphone de 800€ con un rendimiento inadmisible",
-    "gold_intent": "IOS_SOFTWARE_UPDATE",
-    "gold_escalation": "AUTO_HANDLE",
-    "gold_escalation_reason": "Standard iOS software troubleshooting steps (force restart, storage check, update) apply.",
-    "reference_resolution": "Advise force restart and verifying Settings > General > Software Update.",
+    "gold_intent": "OUT_OF_SCOPE_OTHER",
+    "gold_escalation": "ESCALATE",
+    "gold_escalation_reason": "Non-English inquiry requires routing to native language support specialist.",
+    "reference_resolution": "We offer support via Twitter in English. Get help in Spanish here: https://support.apple.com/es-es or join https://getsupport.apple.com.",
     "difficulty": "MEDIUM",
     "full_thread_for_audit": [
       {
@@ -3752,11 +3752,11 @@
     "conversation_id": "2d3935494e9837950dcc09a9e13e35d5",
     "current_customer_message": "how can I send emails to the trash now instead of the archived option in the Apple Mail App",
     "customer_query": "how can I send emails to the trash now instead of the archived option in the Apple Mail App",
-    "gold_intent": "CUSTOMER_FEEDBACK_COMPLAINT",
-    "gold_escalation": "ESCALATE",
-    "gold_escalation_reason": "High customer frustration or brand reputation risk requires empathetic senior human intervention.",
-    "reference_resolution": "Acknowledge frustration with utmost empathy and transfer to a senior support representative.",
-    "difficulty": "HARD",
+    "gold_intent": "DEVICE_SETUP_AND_USAGE",
+    "gold_escalation": "AUTO_HANDLE",
+    "gold_escalation_reason": "Routine device configuration query addressable with standard Apple Mail settings guidance.",
+    "reference_resolution": "Advise checking Settings > Mail > Accounts > Advanced > Move Discarded Messages Into > Deleted Mailbox.",
+    "difficulty": "MEDIUM",
     "full_thread_for_audit": [
       {
         "role": "support",
