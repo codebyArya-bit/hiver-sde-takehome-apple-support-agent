@@ -86,7 +86,7 @@
       {
         "conversation_id": "9fe6592126438ab14e2d8daefc6df096",
         "similarity": 0.1562,
-        "resolution_snippet": "We're happy to assist. Which iOS 11 version are you currently running? Go to Settings &gt; General &gt; About "
+        "resolution_snippet": "We're happy to assist. Which iOS 11 version are you currently running? Go to Settings > General > About for th"
       },
       {
         "conversation_id": "1ad8ae2e8c367faf06b7a5a679951b92",
@@ -103,7 +103,7 @@
       {
         "conversation_id": "9fe6592126438ab14e2d8daefc6df096",
         "similarity": 0.1562,
-        "resolution_snippet": "We're happy to assist. Which iOS 11 version are you currently running? Go to Settings &gt; General &gt; About "
+        "resolution_snippet": "We're happy to assist. Which iOS 11 version are you currently running? Go to Settings > General > About for th"
       }
     ]
   },
@@ -228,7 +228,7 @@
       {
         "conversation_id": "30d2db88b09949f0b7498b7e5bc2f900",
         "similarity": 0.27,
-        "resolution_snippet": "We released 11.0.2. Make sure there's a backup, then go ahead &amp; update your iPhone: https://t.co/80YRnjDFD"
+        "resolution_snippet": "We released 11.0.2. Make sure there's a backup, then go ahead & update your iPhone: https://t.co/80YRnjDFDk DM"
       },
       {
         "conversation_id": "6b216e5e06fd27d5281c638c405d7bb2",
@@ -481,9 +481,9 @@
     ],
     "used_evidence": [
       {
-        "conversation_id": "cf24fae68ef4380a02d403bf236e26a1",
-        "similarity": 0.1461,
-        "resolution_snippet": "You're very welcome. Please DM us if you have any other questions: https://t.co/GDrqU22YpT"
+        "conversation_id": "11c0d0f8056579c045876a0a65b68178",
+        "similarity": 0.1139,
+        "resolution_snippet": "Let's take a closer look at getting its search function working right. Which model is it and which exact iOS 1"
       }
     ]
   },
@@ -516,7 +516,7 @@
       {
         "conversation_id": "7b5e9c2f138a0a4e1f6e0dc469c0d5f4",
         "similarity": 0.1072,
-        "resolution_snippet": "We'd like to see how we can help. To start, in Settings &gt; Sounds, if you drag the Ringer And Alerts slider "
+        "resolution_snippet": "We'd like to see how we can help. To start, in Settings > Sounds, if you drag the Ringer And Alerts slider up,"
       }
     ],
     "used_evidence": []
@@ -589,9 +589,9 @@
     ],
     "used_evidence": [
       {
-        "conversation_id": "34a008be90de4fa2623a5f08b078c75b",
-        "similarity": 0.1151,
-        "resolution_snippet": "We'd like to help. What happens when you try use AirDrop with your MacBook? Let us know in DM. https://t.co/GD"
+        "conversation_id": "8da290d25eaa347d00afd30b4175ff7f",
+        "similarity": 0.0998,
+        "resolution_snippet": "Hello. Check our system status here: https://t.co/7NVrDovSd8 Have you tried on another Wi-Fi network by chance"
       }
     ]
   },
@@ -619,7 +619,7 @@
       {
         "conversation_id": "e5748f06492dabb173976d660a261247",
         "similarity": 0.1048,
-        "resolution_snippet": "This is now in Settings &gt; Accounts &amp; Passwords &gt; Fetch New Data. Learn more about setting up mail ac"
+        "resolution_snippet": "This is now in Settings > Accounts & Passwords > Fetch New Data. Learn more about setting up mail acounts: htt"
       },
       {
         "conversation_id": "660bcb7a26f26e3c581d1beb588790a7",
@@ -891,7 +891,7 @@
       {
         "conversation_id": "17683915f18db161f76531e919972c4a",
         "similarity": 0.1072,
-        "resolution_snippet": "We'll be happy to look into this with you. If you go to Settings &gt; General &gt; About, and look to Version,"
+        "resolution_snippet": "We'll be happy to look into this with you. If you go to Settings > General > About, and look to Version, are y"
       },
       {
         "conversation_id": "e79ea4226aaf2cf9957b98c14c33fcfc",
@@ -1038,7 +1038,7 @@
       {
         "conversation_id": "0732722f0d4399083c0a1b8d05cea31e",
         "similarity": 0.1434,
-        "resolution_snippet": "We'd like to help. What's the exact iOS version do you have installed? Its located at Settings &gt; General &g"
+        "resolution_snippet": "We'd like to help. What's the exact iOS version do you have installed? Its located at Settings > General > Abo"
       }
     ],
     "used_evidence": []
@@ -1203,7 +1203,7 @@
       {
         "conversation_id": "6346788def41e833d07a95a2735aee68",
         "similarity": 0.0809,
-        "resolution_snippet": "We're here for you. Send us a DM &amp; we'll continue working there. https://t.co/GDrqU22YpT"
+        "resolution_snippet": "We're here for you. Send us a DM & we'll continue working there. https://t.co/GDrqU22YpT"
       },
       {
         "conversation_id": "0d44b9e26ecbd2d70435021f6acd2d20",
@@ -1321,7 +1321,7 @@
     "customer_query": "- iOS 11 &amp; .1 terrible! Battery life drops quicker than pound did after Brexit referendum! &amp; it crashes more than bumper cars!",
     "gold_intent": "BATTERY_AND_HARDWARE",
     "predicted_intent": "BATTERY_AND_HARDWARE",
-    "intent_confidence": 0.5974,
+    "intent_confidence": 0.6676,
     "intent_error": false,
     "gold_escalation": "AUTO_HANDLE",
     "predicted_escalation": "ESCALATE",
@@ -1332,19 +1332,19 @@
     "draft_reply": "We want to ensure your device is running safely. For physical hardware inspection or a Genius Bar appointment, check: https://support.apple.com/iphone/repair/battery-power or DM us your zip code.",
     "grounded_in": [
       {
-        "conversation_id": "2418a49e39f5d907a0e976602ba15bf2",
-        "similarity": 0.1343,
-        "resolution_snippet": "We're here to help. Send us a DM and we can look into some options for you. https://t.co/GDrqU22YpT"
-      },
-      {
         "conversation_id": "b79243bb4284b3275c8c2b9497a654c7",
-        "similarity": 0.123,
-        "resolution_snippet": "We can help. Can you tell us which version of iOS 11 your device is on? That can be found in Settings &gt; Gen"
+        "similarity": 0.132,
+        "resolution_snippet": "We can help. Can you tell us which version of iOS 11 your device is on? That can be found in Settings > Genera"
       },
       {
         "conversation_id": "42a25a89a90a57b3ceb650be09cc0e3b",
-        "similarity": 0.1011,
+        "similarity": 0.1084,
         "resolution_snippet": "We're more than happy to help you. Please meet us in DM so we can get some information and help you out! https"
+      },
+      {
+        "conversation_id": "e890dc5aa5bbb9971f54a9e553523d5d",
+        "similarity": 0.0935,
+        "resolution_snippet": "We can help with battery life. Could you Direct Message us what country you're located in? https://t.co/GDrqU2"
       }
     ],
     "used_evidence": []
@@ -1373,7 +1373,7 @@
       {
         "conversation_id": "e5748f06492dabb173976d660a261247",
         "similarity": 0.103,
-        "resolution_snippet": "This is now in Settings &gt; Accounts &amp; Passwords &gt; Fetch New Data. Learn more about setting up mail ac"
+        "resolution_snippet": "This is now in Settings > Accounts & Passwords > Fetch New Data. Learn more about setting up mail acounts: htt"
       },
       {
         "conversation_id": "074ee8d0fa001b6fcddf9f629ff8020f",
@@ -1475,7 +1475,7 @@
       {
         "conversation_id": "b2aed2d4e2d33ce45b87127d6f0e2ddc",
         "similarity": 0.0896,
-        "resolution_snippet": "We want to help. Let us know in DM the exact software version you're using. You can find that under Settings &"
+        "resolution_snippet": "We want to help. Let us know in DM the exact software version you're using. You can find that under Settings >"
       },
       {
         "conversation_id": "2c950cf167152e1c26cab715b77fa349",
@@ -1791,9 +1791,9 @@
     ],
     "used_evidence": [
       {
-        "conversation_id": "092026fe961a00305cab4eec032c947f",
-        "similarity": 0.1064,
-        "resolution_snippet": "We'd like to work with you to address those concerns. Let's continue our conversation in DM. https://t.co/GDrq"
+        "conversation_id": "5e893f522724b69f660cac0410a1a584",
+        "similarity": 0.0977,
+        "resolution_snippet": "We know how important battery life is. We'd like to help out. Which iOS version are you running on your device"
       }
     ]
   },
@@ -1845,7 +1845,7 @@
     "gold_escalation_reason": "Standard iOS software troubleshooting steps (force restart, storage check, update) apply.",
     "agent_escalation_reason": "General product inquiry addressable with standard public resources.",
     "policy_triggered": "NONE_AUTO_HANDLED",
-    "draft_reply": "We're happy to help! You can check this through Settings &gt; General &gt; About. Check out more troubleshooting steps here: https://support.apple.com",
+    "draft_reply": "We're happy to help! You can check this through Settings > General > About. Check out more troubleshooting steps here: https://support.apple.com",
     "grounded_in": [
       {
         "conversation_id": "6aaebbc51b8a82fd5ccb9cef62406d4b",
@@ -1860,14 +1860,14 @@
       {
         "conversation_id": "0622cdaccbd09edafe8918972a9f8d1b",
         "similarity": 0.1122,
-        "resolution_snippet": "Which iOS 11 version is your device currently running? You can check this through Settings &gt; General &gt; A"
+        "resolution_snippet": "Which iOS 11 version is your device currently running? You can check this through Settings > General > About. "
       }
     ],
     "used_evidence": [
       {
-        "conversation_id": "6aaebbc51b8a82fd5ccb9cef62406d4b",
-        "similarity": 0.1417,
-        "resolution_snippet": "We know how important it is to have reliable battery life, so we'd love to help with any issues. Please DM us "
+        "conversation_id": "0622cdaccbd09edafe8918972a9f8d1b",
+        "similarity": 0.1122,
+        "resolution_snippet": "Which iOS 11 version is your device currently running? You can check this through Settings > General > About. "
       }
     ]
   },
@@ -1992,7 +1992,7 @@
       {
         "conversation_id": "0732722f0d4399083c0a1b8d05cea31e",
         "similarity": 0.2131,
-        "resolution_snippet": "We'd like to help. What's the exact iOS version do you have installed? Its located at Settings &gt; General &g"
+        "resolution_snippet": "We'd like to help. What's the exact iOS version do you have installed? Its located at Settings > General > Abo"
       },
       {
         "conversation_id": "6c3db135c3ba3dfc011b74b07e039683",
@@ -2075,9 +2075,9 @@
     ],
     "used_evidence": [
       {
-        "conversation_id": "c7e46f01175f51faba4614d3947201ce",
-        "similarity": 0.1168,
-        "resolution_snippet": "We want you to enjoy your iPhone and the iOS features introduced in updates. Join us in a DM so we can dive in"
+        "conversation_id": "e2738021e842094a8023342712d3cb2f",
+        "similarity": 0.1001,
+        "resolution_snippet": "Let's be sure your iPhone is working well with iOS 11. Have you had the chance to backup and update to iOS 11."
       }
     ]
   },
@@ -2280,7 +2280,7 @@
       {
         "conversation_id": "b79243bb4284b3275c8c2b9497a654c7",
         "similarity": 0.0941,
-        "resolution_snippet": "We can help. Can you tell us which version of iOS 11 your device is on? That can be found in Settings &gt; Gen"
+        "resolution_snippet": "We can help. Can you tell us which version of iOS 11 your device is on? That can be found in Settings > Genera"
       }
     ],
     "used_evidence": []
@@ -2343,7 +2343,7 @@
       {
         "conversation_id": "0550fd737f0eac5a1752e61ea53e0256",
         "similarity": 0.1725,
-        "resolution_snippet": "Check out the Audio &amp; Charge cables we have available here: https://t.co/i1UvwNbTE3"
+        "resolution_snippet": "Check out the Audio & Charge cables we have available here: https://t.co/i1UvwNbTE3"
       },
       {
         "conversation_id": "94a4677696149253f099b5aec922edfb",
@@ -2474,7 +2474,7 @@
       {
         "conversation_id": "ca3ec6ca1759aae60abb789559d45f1b",
         "similarity": 0.1504,
-        "resolution_snippet": "We're behind you 100%, and want your device back to reliable again. Just DM your country &amp; iPhone model an"
+        "resolution_snippet": "We're behind you 100%, and want your device back to reliable again. Just DM your country & iPhone model and we"
       },
       {
         "conversation_id": "c5d4e9f412ebca5dc4fa265b1afc4a7b",
@@ -2654,7 +2654,7 @@
       {
         "conversation_id": "7b5e9c2f138a0a4e1f6e0dc469c0d5f4",
         "similarity": 0.1094,
-        "resolution_snippet": "We'd like to see how we can help. To start, in Settings &gt; Sounds, if you drag the Ringer And Alerts slider "
+        "resolution_snippet": "We'd like to see how we can help. To start, in Settings > Sounds, if you drag the Ringer And Alerts slider up,"
       }
     ],
     "used_evidence": []
@@ -2712,7 +2712,7 @@
       {
         "conversation_id": "11570fc5471f84d4f9b8b1e70f963329",
         "similarity": 0.127,
-        "resolution_snippet": "We'd be happy to look &amp; see if we can find out. Which software update impacted your Touch ID? How is it no"
+        "resolution_snippet": "We'd be happy to look & see if we can find out. Which software update impacted your Touch ID? How is it not wo"
       },
       {
         "conversation_id": "247dcf79a62d1bf15539a868de8bab86",
@@ -2751,7 +2751,7 @@
       {
         "conversation_id": "95a0bad45f60287e02a952e00db5e6ff",
         "similarity": 0.1005,
-        "resolution_snippet": "We surely want you to be able to enjoy your device. Which device is this happening on &amp; which version of i"
+        "resolution_snippet": "We surely want you to be able to enjoy your device. Which device is this happening on & which version of iOS a"
       },
       {
         "conversation_id": "54aacabd318a48864a6d765d1a1fbf7f",
@@ -2848,7 +2848,7 @@
       {
         "conversation_id": "e5748f06492dabb173976d660a261247",
         "similarity": 0.1368,
-        "resolution_snippet": "This is now in Settings &gt; Accounts &amp; Passwords &gt; Fetch New Data. Learn more about setting up mail ac"
+        "resolution_snippet": "This is now in Settings > Accounts & Passwords > Fetch New Data. Learn more about setting up mail acounts: htt"
       },
       {
         "conversation_id": "8dc9dc92c0dccc9c9a8af1fb0d7eca15",
@@ -3018,7 +3018,7 @@
       {
         "conversation_id": "ca3ec6ca1759aae60abb789559d45f1b",
         "similarity": 0.1454,
-        "resolution_snippet": "We're behind you 100%, and want your device back to reliable again. Just DM your country &amp; iPhone model an"
+        "resolution_snippet": "We're behind you 100%, and want your device back to reliable again. Just DM your country & iPhone model and we"
       },
       {
         "conversation_id": "1edc5b1a325ffd9e847ebddc23f01165",
@@ -3499,7 +3499,7 @@
       {
         "conversation_id": "b495f1d0c9810be88da00c28988c67d0",
         "similarity": 0.0974,
-        "resolution_snippet": "We're here for you. Have you also updated all apps in the App Store &gt; Updates? Happens with all apps or jus"
+        "resolution_snippet": "We're here for you. Have you also updated all apps in the App Store > Updates? Happens with all apps or just a"
       },
       {
         "conversation_id": "2f584afa545bec0fc8454829a8df40a6",
@@ -3543,9 +3543,9 @@
     ],
     "used_evidence": [
       {
-        "conversation_id": "067c0ef1df796bd6eec6002d8c7932e4",
-        "similarity": 0.1193,
-        "resolution_snippet": "We understand how vital the battery is. Let's work together. Did you update to iOS 11.0.2? Send us a DM with y"
+        "conversation_id": "76e13483443ecb0c9da53544750d8320",
+        "similarity": 0.1031,
+        "resolution_snippet": "Thanks for reaching out, we'd be happy to look into this. To start, can you let us know which device and iOS v"
       }
     ]
   },

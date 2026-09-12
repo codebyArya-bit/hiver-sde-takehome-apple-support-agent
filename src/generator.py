@@ -8,7 +8,7 @@ Drafts customer support replies conditioned directly on:
 """
 
 import re
-from typing import Dict, Any, List, Optional
+from typing import Dict, Any, List, Optional, Tuple
 from src.data_loader import clean_tweet_text
 
 class GroundedReplyGenerator:
@@ -19,30 +19,35 @@ class GroundedReplyGenerator:
     def __init__(self):
         pass
 
-    def extract_actionable_step_from_evidence(self, historical_replies: List[str]) -> Optional[str]:
+    def extract_actionable_step_with_index(self, historical_replies: List[str]) -> Optional[Tuple[str, int]]:
         """
         Extracts concrete troubleshooting guidance from retrieved historical brand responses.
-        Searches for imperative troubleshooting action sentences.
+        Returns a tuple of (action_clause, evidence_index) or None.
         """
-        for reply in historical_replies:
+        for idx, reply in enumerate(historical_replies):
             cleaned = clean_tweet_text(reply)
-            # Split into candidate sentences/clauses
             sentences = re.split(r'[.!?]\s+', cleaned)
             for s in sentences:
                 s_lower = s.lower().strip()
-                # Must contain operational instruction verbs and device keywords
                 has_action = any(s_lower.startswith(v) or f" {v} " in s_lower for v in [
                     "restart", "force restart", "try restarting", "check", "head to", "go to",
                     "verify", "ensure", "confirm", "visit", "tap", "swipe", "test", "update to"
                 ])
                 has_target = any(kw in s_lower for kw in [
                     "settings", "storage", "battery health", "network settings", "wi-fi",
-                    "control center", "backup", "icloud", "itunes", "bluetooth"
+                    "control center", "backup", "icloud", "itunes", "bluetooth", "display & brightness"
                 ])
-                if has_action and has_target and len(s) > 15 and len(s) < 140:
-                    # Clean trailing punctuation
-                    return s.strip('.,; ')
+                if has_action and has_target and 15 < len(s) < 140:
+                    return s.strip('.,; '), idx
         return None
+
+    def extract_actionable_step_from_evidence(self, historical_replies: List[str]) -> Optional[str]:
+        """
+        Extracts concrete troubleshooting guidance from retrieved historical brand responses.
+        Searches for imperative troubleshooting action sentences.
+        """
+        res = self.extract_actionable_step_with_index(historical_replies)
+        return res[0] if res else None
 
     def generate_reply(
         self,
@@ -70,7 +75,9 @@ class GroundedReplyGenerator:
 
         # Extract historical replies for grounded extraction
         hist_replies = [r.get('historical_reply', '') for r in retrieved_resolutions]
-        extracted_step = self.extract_actionable_step_from_evidence(hist_replies)
+        extracted_result = self.extract_actionable_step_with_index(hist_replies)
+        extracted_step = extracted_result[0] if extracted_result else None
+        extracted_idx = extracted_result[1] if extracted_result else 0
 
         # Build grounded_in attribution structure
         grounded_in = []
@@ -130,7 +137,7 @@ class GroundedReplyGenerator:
             else:
                 reply = reply[:276].rstrip('., ') + "..."
 
-        used_evidence = [grounded_in[0]] if (extracted_step and grounded_in) else []
+        used_evidence = [grounded_in[extracted_idx]] if (extracted_step and extracted_idx < len(grounded_in)) else []
 
         return {
             "draft_reply": reply,

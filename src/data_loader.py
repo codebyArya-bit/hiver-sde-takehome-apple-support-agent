@@ -19,6 +19,8 @@ def clean_tweet_text(text: str) -> str:
     if not text:
         return ""
     
+    import html
+    text = html.unescape(text)
     # Replace non-breaking spaces and common Unicode artifacts
     text = text.replace('\xa0', ' ').replace('\u2019', "'").replace('\u2018', "'")
     text = text.replace('\u201c', '"').replace('\u201d', '"').replace('\u2014', ' - ')

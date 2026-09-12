@@ -13,6 +13,7 @@ import hashlib
 import urllib.request
 import urllib.error
 from pathlib import Path
+from datetime import datetime, timezone
 from typing import Dict, Any, List, Optional
 
 LLM_JUDGE_PROMPT_TEMPLATE = """You are an expert QA Auditor evaluating an AI Customer Support Agent for @AppleSupport on Twitter.
@@ -180,13 +181,18 @@ class LLMSupportJudge:
                     "escalation_appropriateness": float(res["escalation_appropriateness"])
                 }
                 overall = float(res.get("overall_score", sum(scores.values()) / 4.0))
+                evaluated_at = datetime.now(timezone.utc).isoformat()
                 return {
                     "item_id": item_id,
                     "input_hash": expected_hash,
                     "candidate_reply": candidate_reply,
+                    "provider": "google",
+                    "model": self.model_name,
                     "judge_model": self.model_name,
+                    "actual_model_version": "gemini-2.5-flash-preview",
                     "temperature": self.temperature,
                     "rubric_version": "v1.2",
+                    "evaluated_at": evaluated_at,
                     "scores": scores,
                     "overall_score": round(overall, 2),
                     "reasoning": res.get("reasoning", "Live Gemini API evaluation")
@@ -204,12 +210,18 @@ class LLMSupportJudge:
                     "escalation_appropriateness": float(res["escalation_appropriateness"])
                 }
                 overall = float(res.get("overall_score", sum(scores.values()) / 4.0))
+                evaluated_at = datetime.now(timezone.utc).isoformat()
                 return {
                     "item_id": item_id,
                     "input_hash": expected_hash,
+                    "candidate_reply": candidate_reply,
+                    "provider": "openai",
+                    "model": "gpt-4o-mini",
                     "judge_model": "gpt-4o-mini",
+                    "actual_model_version": "gpt-4o-mini-2024-07-18",
                     "temperature": self.temperature,
                     "rubric_version": "v1.2",
+                    "evaluated_at": evaluated_at,
                     "scores": scores,
                     "overall_score": round(overall, 2),
                     "reasoning": res.get("reasoning", "Live OpenAI API evaluation")

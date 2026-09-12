@@ -101,3 +101,11 @@ A chronological record of 14 non-obvious technical and architectural decisions m
 * **Decision**: Include authentic mathematical inter-rater agreement statistics in the automated evaluation harness with cryptographic SHA256 input hash assertions.
 * **Rationale**: An automated judge cannot be trusted unless its scoring distribution demonstrably aligns with human grading. By hashing the exact evaluation payload (`item_id`, `query`, `gold_intent`, `gold_escalation`, `candidate_reply`, `candidate_escalation`, `rubric_version`), the evaluation harness ensures that both human ratings and LLM ratings refer to the exact same frozen candidate outputs, preventing accidental reuse of ratings when model responses change.
 * **Trade-off**: Requires maintaining paired human and LLM evaluation sets with strict hash verification that fails loudly on any candidate text discrepancy.
+
+---
+
+### 15. Single-Source-of-Truth Provenance, Statistical Rigor & Disjoint Split Framing
+* **Decision**: Synchronize canonical evaluation metadata, treat undefined Cohen's Kappa strictly as `null` in JSON and `"N/A"` in presentation (never substituting artificial 1.0), lock judge provenance metadata to `gemini-2.5-flash`, and formally frame dataset splits: the 200-item gold holdout is thread-disjoint from both the 600 training examples and the 1,000-item historical retrieval KB (with training threads contained within the KB).
+* **Rationale**: Defensibility and honesty in engineering evaluation outweigh inflated or misleading metric representations. Statistical edge cases (e.g. constant rater agreement) must reflect true mathematical properties rather than swallow exceptions.
+* **Trade-off**: Requires strict automated synchronization between evaluation artifacts, code provenance schemas, and documentation.
+

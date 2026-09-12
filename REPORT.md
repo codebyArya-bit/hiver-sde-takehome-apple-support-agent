@@ -31,7 +31,7 @@ The proposed agent achieves:
 ## Section 1: Problem Framing & Scope Boundaries
 
 ### 1.1 What "Good" Means for @AppleSupport
-On Twitter, `@AppleSupport` handles hundreds of thousands of customer inquiries monthly spanning hardware, software, and cloud services. Through analysis of the historical corpus, "good" support for Apple is characterized by four non-negotiable operational principles:
+On Twitter, `@AppleSupport` handles a high volume of public customer inquiries spanning hardware, software, and cloud services. Through analysis of the historical corpus, "good" support for Apple is characterized by four non-negotiable operational principles:
 
 1. **Safety and Privacy First (Non-Negotiable Escalation)**: Public Twitter is an unauthenticated communication channel. Any issue requiring access to Apple ID credentials, two-factor authentication, credit card numbers, or App Store purchase receipts must **never** be resolved in public. "Good" means immediately routing these inquiries to private authenticated channels (DM or official Apple recovery portals) without exposing the user to phishing or data leakage.
 2. **Definitive Troubleshooting Steps (Actionability)**: Customers reach out when their devices disrupt their daily lives. Vague guidance ("have you checked your phone?") causes customer frustration. "Good" means providing concrete, deterministic steps (e.g., *Settings > Battery > Battery Health*, or *Settings > General > iPhone Storage*) accompanied by canonical knowledge base links (`support.apple.com/HT...`).
@@ -58,28 +58,30 @@ To preserve safety and maintain high signal-to-noise ratio, we made deliberate d
 2. **Simple Baseline**:
    - Intent: Multinomial Naive Bayes trained on word count vectors.
    - Escalation: Simple keyword-matching rules (looking for words like "refund", "human", "agent", "sue", "manager").
-   - Reply: 1-Nearest-Neighbor historical reply retrieval.
+   - Reply: 1-Nearest Neighbor historical retrieval selecting top retrieved resolution text directly.
 3. **Proposed AI Agent**:
-   - Intent: Calibrated Classifier (`CalibratedClassifierCV`) over word bigram TF-IDF features with class-balanced weighting, outputting strictly calibrated posterior probabilities.
-   - Grounded RAG: Sparse TF-IDF retrieval over 1,000 historical brand resolutions, extracting actionable resolution clauses from historical replies with canonical Apple domain whitelisting.
+   - Intent Classifier: Calibrated Logistic Regression over sublinear TF-IDF character and word n-grams with Platt probability scaling.
+   - Retrieval Engine: Sparse TF-IDF retrieval over 1,000 historical `@AppleSupport` resolutions with domain-whitelisted URL grounding.
    - Escalation Engine: Asymmetric safety policy rules + calibrated confidence thresholds with explicit stated reasons and recall-prioritized triage.
    - Reply Generator: Brand-conditioned reply drafting enforcing Twitter <280-char constraints with structured `used_evidence` and `grounded_in` tracking.
 
 ### 2.2 Benchmark Results Table (Thread-Disjoint Holdout Split)
 
+The 200-item gold holdout is thread-disjoint from both the 600 training examples and the 1,000-item historical retrieval KB. The 600 classifier-training conversations are included within the 1,000-item historical KB:
+
 | Metric Dimension | Trivial Baseline (Always Auto-Handle) | Simple Baseline (Naive Bayes + 1-NN) | Proposed AI Agent (RAG + Policy) | Real-World Operational Impact |
 | :--- | :---: | :---: | :---: | :--- |
-| **Intent Classification Accuracy** | 35.5% | 54.5% | **62.0%** | Out-of-sample generalization across 7 domain intents |
-| **Intent Macro F1** | 0.075 | 0.264 | **0.476** | Balanced performance across minority and majority intents |
-| **Brier Calibration Score (Lower=Better)** | 1.000 | 0.795 | **0.605** | Superior statistical probability calibration directly from model |
-| **Expected Calibration Error (ECE)** | 0.355 | 0.360 | **0.049** | Highly calibrated confidence (predicted confidence tracks empirical accuracy) |
-| **Escalation Decision Accuracy** | 74.0% | 75.0% | **71.0%** | Lower raw accuracy due to safety-biased escalation, but much higher recall on cases requiring humans |
+| **Intent Classification Accuracy** | 35.5% | 55.0% | **62.0%** | Out-of-sample generalization across 7 domain intents |
+| **Intent Macro F1** | 0.075 | 0.287 | **0.476** | Balanced performance across minority and majority intents |
+| **Brier Calibration Score (Lower=Better)** | 1.000 | 0.792 | **0.605** | Superior statistical probability calibration directly from model |
+| **Expected Calibration Error (ECE)** | 0.355 | 0.357 | **0.045** | Highly calibrated confidence (predicted confidence tracks empirical accuracy) |
+| **Escalation Decision Accuracy** | 74.0% | 75.0% | **71.0%** | The proposed policy sacrifices raw escalation accuracy and precision to substantially increase recall for cases requiring human intervention |
 | **Escalation Recall (Safety-Critical)** | **0.0%** | **3.9%** | **69.2%** | Catches 36 of 52 escalations; baselines miss 96% to 100% |
-| **Escalation Precision** | 0.0% | 100.0% | **46.2%** | Trade-off: 28.4% false escalation rate on auto-handle queries in exchange for 69.2% safety recall |
-| **Escalation F2 Score (Recall-Weighted)** | 0.000 | 0.048 | **0.629** | Recall weighted 2x vs. precision, reflecting enterprise safety priority |
+| **Escalation Precision** | 0.0% | 100.0% | **46.2%** | The safety-oriented operating point catches substantially more required escalations at the cost of additional unnecessary human handoffs (46.2% precision) |
+| **Escalation F2 Score (Recall-Weighted)** | 0.000 | 0.048 | **0.629** | Recall weighted 2x vs. precision, reflecting safety-first priority |
 | **False Escalation Rate (Lower=Better)**| 0.0% | 0.0% | **28.4%** | Trade-off: accepts ~28% false alarms to protect customer accounts |
-| **Illustrative 5:1 Risk Penalty (5*FN + 1*FP)** | 260 | 250 | **122** | Illustrative offline penalty reduced by over 51% |
-| **SacreBLEU Score** | 0.2 | 0.4 | **4.1** | Significant lexical alignment over canned baseline macros |
+| **Illustrative 5:1 Risk Penalty (5*FN + 1*FP)** | 260 | 250 | **122** | Candidate-selected offline penalty reduced by over 51% |
+| **SacreBLEU Score** | 0.2 | 0.4 | **4.1** | Lexical overlap with authentic support resolutions |
 | **Twitter Char Limit Compliance (<280)** | 100.0% | 95.0% | **100.0%** | Zero tweet truncation or broken URL artifacts |
 | **Official Apple Domain Inclusion Rate** | 0.0% | 0.0% | **79.5%** | Verified canonical Apple domains (`support.apple.com`, `iforgot.apple.com`) |
 | **Intent-Link Relevance Rate** | 0.0% | 0.0% | **75.8%** | Canonical URL matches classified customer issue domain |
@@ -87,7 +89,7 @@ To preserve safety and maintain high signal-to-noise ratio, we made deliberate d
 | **Heuristic: Brand Voice & Empathy (1–5)** | 5.00 | 4.36 | **4.58** | Professional, empathetic Apple tone within single-tweet limits |
 | **Heuristic: Actionability (1–5)** | 4.20 | 4.33 | **4.80** | Concrete step-by-step guidance and canonical navigation paths |
 | **Heuristic: Escalation Appropriateness (1–5)**| 4.14 | 4.18 | **4.42** | Safe triage decisions aligned with safety and compliance policies |
-| **Heuristic: Overall Quality Score (1–5)** | 4.39 | 4.23 | **4.65** | Holistic quality superiority over both baselines |
+| **Heuristic: Overall Quality Score (1–5)** | 4.39 | 4.24 | **4.65** | Holistic quality superiority over both baselines |
 
 ---
 
@@ -144,13 +146,16 @@ The Trivial Baseline achieves **74.0% accuracy** simply by auto-handling everyth
 Accuracy is an actively misleading metric in customer support triage. This is why we formalize triage performance via the **Escalation F2 Score (0.629)**, weighting recall twice as heavily as precision.
 
 ### 2. Operational Reality of 69.2% Escalation Recall
-An escalation recall of 69.2% means that while the agent successfully intercepts 36 safety-critical inquiries, **16 out of 52 escalations are missed** (e.g., subtle sarcasm in GOLD_002 or foreign-language idioms in GOLD_004). In an enterprise production environment, we would **not** enable unrestricted autonomous auto-replies at this recall level. Instead, initial deployment must operate as an **agent-assist copilot**, reserving automated replies strictly for high-confidence, non-sensitive routine setup queries.
+An escalation recall of 69.2% means that while the agent successfully intercepts 36 safety-critical inquiries, **16 out of 52 escalations are missed** (e.g., subtle sarcasm in GOLD_002 or foreign-language idioms in GOLD_004). In an enterprise production environment, we would **not** enable unrestricted autonomous auto-replies at this recall level. Instead, deployment must follow a disciplined **tri-state routing policy**:
+- **High-Confidence Auto-Handle (>0.85 confidence)**: Restricted strictly to deterministic, non-sensitive routine setup and informational queries.
+- **Medium-Confidence Agent-Assist Draft (0.55–0.85 confidence)**: Pre-generate grounded draft responses in the Hiver inbox for one-click human support agent review and approval.
+- **Low-Confidence / Sensitive Direct Escalation (<0.55 confidence or safety trigger)**: Immediate human routing with zero automated customer-facing replies.
 
 ### 3. Illustrative Asymmetric Cost Metric (5:1 Risk Penalty)
-Under an illustrative candidate-selected 5:1 penalty ($5 \times \text{FN} + 1 \times \text{FP}$) that weights missed escalations more heavily than unnecessary escalations, the policy reduces the offline penalty from 260 to 122. However, this formula is an illustrative proxy for asymmetric risk, not an empirical dollar model of Hiver's or Apple's actual operational balance sheet.
+Under an illustrative candidate-selected 5:1 penalty ($5 \times \text{FN} + 1 \times \text{FP}$) that weights missed escalations more heavily than unnecessary escalations, the policy reduces the offline penalty from 260 to 122. However, this formula is an illustrative candidate-selected risk weighting, not an empirical dollar model of Hiver's or Apple's actual operational balance sheet.
 
 ### 4. Single-Turn Evaluation vs. Dynamic Multi-Turn Conversations
-Our benchmark evaluates incoming customer inquiries as single-turn interactions. In reality, customer support dialogues span multiple turns. Offline single-turn evaluation cannot measure downstream resolution rate or customer abandonment when initial troubleshooting fails.
+Our benchmark evaluates incoming customer inquiries as single-turn interactions (`current_customer_message`). In reality, customer support dialogues span multiple turns. Offline single-turn evaluation cannot measure downstream resolution rate or customer abandonment when initial troubleshooting fails.
 
 ### 5. Intent Accuracy is Bound by Domain Taxonomy Framing
 Our out-of-sample intent accuracy is 62.0% across 7 coarse categories. In an unconstrained open-vocabulary setting, intent accuracy would naturally degrade. The metric measures consistency within our defined taxonomy, not general conversational intelligence.
@@ -159,14 +164,14 @@ Our out-of-sample intent accuracy is 62.0% across 7 coarse categories. In an unc
 
 ## Section 5: Candidate Human Annotator vs. LLM-as-a-Judge Agreement (N=50 Paired Frozen Outputs)
 
-To evaluate automated rubric reliability, we conducted an inter-rater agreement study comparing Gemini 2.5 Flash rubric scoring and candidate author blind scoring on the exact same 50 frozen agent outputs. The candidate manually scored the 50 frozen outputs using the same rubric without viewing the LLM ratings, then compared the two rating sets:
+To evaluate automated rubric reliability, we conducted an inter-rater agreement study comparing Gemini 2.5 Flash rubric scoring and candidate author blind scoring on the exact same 50 frozen agent outputs. The candidate manually scored the 50 frozen outputs using the four-axis rubric without viewing the LLM ratings, then compared the two rating sets:
 
 * **Pearson Correlation ($r$)**: **0.920** on Overall Rubric Score, indicating strong linear tracking of human scoring.
 * **Spearman Rank Correlation ($\rho$)**: **0.766**, demonstrating consistent ordinal ranking of response quality.
 * **Mean Absolute Error (MAE)**: **0.226 points** on the raw 1.0–5.0 scale, with **100.0% of all ratings within 0.5 points** of human ground truth.
-* **Cohen's $\kappa$ Handling**: Cohen's Kappa is undefined/NaN on dimensions where both evaluators assign uniform high scores (e.g., Actionability, Brand Voice), which is safely reported as N/A rather than using artificial 1.0 substitutions. On binary Escalation Appropriateness, agreement is $\kappa = 1.000$.
+* **Cohen's $\kappa$ Handling**: Cohen's Kappa is undefined/NaN on dimensions where both evaluators assign uniform high scores (Brand Voice, Groundedness, Actionability), which is represented as `null` in JSON and reported strictly as `N/A` at the presentation layer rather than using artificial 1.0 substitutions. On binary Escalation Appropriateness, agreement is $\kappa = 1.000$.
 * **Groundedness Score Distribution**: Both the human evaluator and the LLM judge scored candidate replies high on grounding (mean ratings 4.60 and 4.96 respectively, with 100% within 0.5 points and MAE = 0.360), because candidate responses consistently cite valid official Apple support URLs and verbatim Apple steps. This low score variance naturally produces a modest Pearson correlation ($r=0.156$), while absolute error confirms close agreement.
-* **Cryptographic Hash Verification**: 100% of evaluated pairs match candidate SHA256 input hashes (`item_id`, `query`, `gold_intent`, `gold_escalation`, `candidate_reply`, `candidate_escalation`, `rubric_version`), ensuring that both rating files refer strictly to identical candidate responses and preventing accidental reuse of ratings when model outputs change.
+* **Input Alignment Verification**: 100% of evaluated pairs match candidate SHA256 input hashes (`item_id`, `query`, `gold_intent`, `gold_escalation`, `candidate_reply`, `candidate_escalation`, `rubric_version`). These cryptographic hashes verify identical evaluation inputs between human and LLM scoring; they prove input alignment only, not evaluator identity.
 
 ---
 

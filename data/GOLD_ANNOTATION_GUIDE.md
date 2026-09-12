@@ -8,9 +8,11 @@ This document defines the formal annotation standards, intent taxonomy boundarie
 
 The Golden Evaluation Set consists of **200 hand-verified, stratified interactions** targeting `@AppleSupport` on Twitter, sourced from the public Customer Support on Twitter dataset (`thoughtvector/customer-support-on-twitter`).
 
-* **Zero Synthetic Contamination**: All 200 records represent authentic customer inquiries. Synthetic edge cases (adversarial prompts, prompt injection, simulated extreme threats) are strictly segregated into `data/adversarial_stress_test.json` so they do not artificially distort benchmark metrics.
-* **Thread-Level Disjointness**: Every record belongs to a distinct conversation thread with **zero thread overlap** against the 600-thread training split (`apple_train_set.json`) and the 1,000-thread historical knowledge base (`apple_support_kb.json`).
-* **Turn Integrity**: The evaluated text represents the incoming customer turn (`current_customer_message`). Evaluator agents are strictly barred from peeking at future customer turns or subsequent support follow-ups.
+* **Candidate Author Annotation**: All annotations, intent taxonomy assignments, and escalation decisions were performed directly by the **candidate/author** (not an external domain panel or synthetic LLM).
+* **Frozen Benchmark**: Gold labels and reference resolutions were **frozen before final benchmark evaluation** to ensure unbiased model comparison across the two baselines and the proposed agent.
+* **Single-Turn Evaluation vs. Audit Context**: The evaluated text represents exclusively the incoming single-turn customer message (`current_customer_message` / `customer_query`). Any subsequent conversation turns (`full_thread_for_audit`) are stored strictly for post-hoc audit/reference and are **never provided to the model** during benchmark execution.
+* **Zero Synthetic Contamination**: All 200 records represent authentic customer inquiries. Synthetic edge cases (adversarial prompts, prompt injection, simulated extreme threats) are strictly segregated into `data/adversarial_stress_test.json`.
+* **Thread-Level Disjointness**: The 200-item gold holdout is thread-disjoint from both the 600 training examples (`apple_train_set.json`) and the 1,000-item historical retrieval KB (`apple_support_kb.json`). The 600 classifier-training conversations are included within the 1,000-item historical KB.
 
 ---
 
@@ -49,17 +51,22 @@ Triage decisions must balance safety, legal compliance, and customer trust again
 
 ---
 
-## 4. Annotation Schema (`data/gold_annotations.csv`)
+## 4. Canonical Annotation Schema
+
+The exact schema is synchronized across both `data/gold_annotations.csv` and `data/golden_eval_set.json`:
 
 | Field | Type | Description |
 | :--- | :--- | :--- |
-| `item_id` | string | Unique identifier (`GOLD_001` through `GOLD_200`). |
+| `item_id` / `id` | string | Unique identifier (`GOLD_001` through `GOLD_200`). |
 | `conversation_id` | string | Unique Twitter conversation thread hash. |
-| `customer_query` | string | Exact incoming single-turn customer inquiry text (`current_customer_message`). |
+| `customer_query` | string | Incoming single-turn customer inquiry text (identically mapped as `current_customer_message`). |
+| `current_customer_message` | string | Canonical incoming customer turn, ensuring strict single-turn evaluation. |
 | `gold_intent` | string | Ground truth intent from the 7-class taxonomy. |
 | `gold_escalation` | string | Ground truth triage decision (`AUTO_HANDLE` or `ESCALATE`). |
 | `gold_escalation_reason` | string | Explicit business justification for the triage decision. |
 | `reference_resolution` | string | Target troubleshooting procedure or official canonical URL. |
 | `difficulty` | string | Complexity tier: `EASY` (27.0%), `MEDIUM` (55.5%), `HARD` (17.5%). |
 | `verification_status` | string | `MANUALLY_AUDITED` across all 200 items. |
-| `annotator` | string | `candidate_author` (Candidate / Author audit). |
+| `annotator` | string | `candidate_author` (Candidate / Author audit; not an external expert). |
+| `full_thread_for_audit` | list | Multi-turn dialogue history stored exclusively for post-hoc audit/reference (JSON only). |
+

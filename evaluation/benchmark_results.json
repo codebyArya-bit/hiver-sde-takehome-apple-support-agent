@@ -1,5 +1,5 @@
 {
-  "execution_timestamp": "2026-09-11T14:23:56Z",
+  "execution_timestamp": "2026-09-12T17:17:42Z",
   "dataset_size": 200,
   "split_verification": {
     "train_threads": 600,
@@ -1603,13 +1603,13 @@
     },
     "Simple Baseline": {
       "intent_metrics": {
-        "accuracy": 0.545,
-        "macro_f1": 0.2636,
-        "macro_precision": 0.2898,
-        "macro_recall": 0.2929,
-        "weighted_f1": 0.4457,
-        "brier_score": 0.7954,
-        "expected_calibration_error": 0.36,
+        "accuracy": 0.55,
+        "macro_f1": 0.2873,
+        "macro_precision": 0.314,
+        "macro_recall": 0.3107,
+        "weighted_f1": 0.4533,
+        "brier_score": 0.7919,
+        "expected_calibration_error": 0.3573,
         "per_class": {
           "BATTERY_AND_HARDWARE": {
             "precision": 0.82,
@@ -1618,15 +1618,15 @@
             "support": 55
           },
           "IOS_SOFTWARE_UPDATE": {
-            "precision": 0.4583,
+            "precision": 0.4615,
             "recall": 0.9296,
-            "f1": 0.614,
+            "f1": 0.6168,
             "support": 71
           },
           "APPLE_ID_AND_ICLOUD": {
-            "precision": 0.5,
-            "recall": 0.125,
-            "f1": 0.2,
+            "precision": 0.6667,
+            "recall": 0.25,
+            "f1": 0.3636,
             "support": 8
           },
           "APP_STORE_AND_BILLING": {
@@ -1675,8 +1675,8 @@
           ],
           [
             0,
-            7,
-            1,
+            6,
+            2,
             0,
             0,
             0,
@@ -1743,8 +1743,8 @@
         "true_negatives_correct_autohandle": 148
       },
       "generation_metrics": {
-        "bleu": 0.36,
-        "rouge_1_recall": 0.0939,
+        "bleu": 0.37,
+        "rouge_1_recall": 0.0943,
         "rouge_2_recall": 0.0013,
         "char_limit_compliance_pct": 95.0,
         "official_domain_inclusion_rate": 0.0,
@@ -1756,7 +1756,7 @@
         "mean_brand_voice": 4.36,
         "mean_actionability": 4.33,
         "mean_escalation_appropriateness": 4.18,
-        "mean_overall_score": 4.23,
+        "mean_overall_score": 4.24,
         "individual_scores": [
           {
             "groundedness": 4.0,
@@ -2193,11 +2193,11 @@
             "overall_score": 4.33
           },
           {
-            "groundedness": 4.0,
+            "groundedness": 4.2,
             "brand_voice": 4.5,
-            "actionability": 4.3,
+            "actionability": 5.0,
             "escalation_appropriateness": 5.0,
-            "overall_score": 4.45
+            "overall_score": 4.67
           },
           {
             "groundedness": 4.0,
@@ -3257,8 +3257,8 @@
         "macro_precision": 0.7337,
         "macro_recall": 0.5479,
         "weighted_f1": 0.5832,
-        "brier_score": 0.6052,
-        "expected_calibration_error": 0.049,
+        "brier_score": 0.6049,
+        "expected_calibration_error": 0.0453,
         "per_class": {
           "BATTERY_AND_HARDWARE": {
             "precision": 0.9216,
@@ -3393,8 +3393,8 @@
       },
       "generation_metrics": {
         "bleu": 4.06,
-        "rouge_1_recall": 0.2643,
-        "rouge_2_recall": 0.1148,
+        "rouge_1_recall": 0.2663,
+        "rouge_2_recall": 0.1179,
         "char_limit_compliance_pct": 100.0,
         "official_domain_inclusion_rate": 79.5,
         "official_domain_validity_pct": 79.5,
@@ -5012,7 +5012,7 @@
             {
               "conversation_id": "c92b053ebcdf7622daaef251380a9a65",
               "similarity": 0.1118,
-              "resolution_snippet": "We can help! Which version of iOS 11 are you currently running? Settings &gt; General &gt; About &gt; Version "
+              "resolution_snippet": "We can help! Which version of iOS 11 are you currently running? Settings > General > About > Version will show"
             }
           ],
           "retrieved_evidence": [
@@ -5117,5 +5117,5 @@
       "cohens_kappa": -0.017
     }
   },
-  "elapsed_seconds": 6.62
+  "elapsed_seconds": 6.32
 }

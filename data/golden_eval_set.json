@@ -14,7 +14,10 @@
         "role": "support",
         "text": "We've received your DM and are working on a reply there. Watch your inbox for our response."
       }
-    ]
+    ],
+    "item_id": "GOLD_001",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_002",
@@ -39,7 +42,10 @@
         "role": "support",
         "text": "We'd like to take a look into this with you further. Please reach out to us in DM and we'll continue there. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_002",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_003",
@@ -56,7 +62,10 @@
         "role": "support",
         "text": "We're here for you. Does this just happen on https://t.co/tmRhWEkIq4, or does it happen on other devices such as in the Photos App?"
       }
-    ]
+    ],
+    "item_id": "GOLD_003",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_004",
@@ -73,7 +82,10 @@
         "role": "support",
         "text": "We offer support via Twitter in English. Get help in Spanish here: https://t.co/IBIY3vMgPj or join https://t.co/OczyRx7IOs https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_004",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_005",
@@ -98,7 +110,10 @@
         "role": "support",
         "text": "We'd be happy to look into this with you! Send us a DM, and we'll get started there. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_005",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_006",
@@ -115,7 +130,10 @@
         "role": "support",
         "text": "What version of iOS are you currently running? Let us know and we'll do everything we can to help."
       }
-    ]
+    ],
+    "item_id": "GOLD_006",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_007",
@@ -144,7 +162,10 @@
         "role": "support",
         "text": "We certainly understand the importance of getting that fixed quickly! Send us a DM to get started. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_007",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_008",
@@ -161,7 +182,10 @@
         "role": "support",
         "text": "Make your Apple ID more secure and keep your personal information safe with two-factor authentication. Here's how it works. https://t.co/lcjIwpnciB"
       }
-    ]
+    ],
+    "item_id": "GOLD_008",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_009",
@@ -186,7 +210,10 @@
         "role": "support",
         "text": "Great. Is iCloud Photo Library enabled on your new iPhone? You can check at Settings &gt; Photo. Also, do you have your old iPhone?"
       }
-    ]
+    ],
+    "item_id": "GOLD_009",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_010",
@@ -203,7 +230,10 @@
         "role": "support",
         "text": "Thanks for reaching out! We'd recommend leaving that request on our feedback page: https://t.co/eTPVYVFyd8"
       }
-    ]
+    ],
+    "item_id": "GOLD_010",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_011",
@@ -220,7 +250,10 @@
         "role": "support",
         "text": "We'd be glad to advise on the best way to figure this out. Meet us in DM so we can gather more information. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_011",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_012",
@@ -237,7 +270,10 @@
         "role": "support",
         "text": "We offer support via Twitter in English. Contact us for help in your preferred language here: https://t.co/IBIY3vMgPj"
       }
-    ]
+    ],
+    "item_id": "GOLD_012",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_013",
@@ -262,7 +298,10 @@
         "role": "customer",
         "text": "Nevermind they all stopped working, im gonna take a nap"
       }
-    ]
+    ],
+    "item_id": "GOLD_013",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_014",
@@ -295,7 +334,10 @@
         "role": "support",
         "text": "You're welcome. We'd like to look into this further. Can you provide us with the details of the issue? Click here to hop in DM: https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_014",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_015",
@@ -332,7 +374,10 @@
         "role": "customer",
         "text": "Sure"
       }
-    ]
+    ],
+    "item_id": "GOLD_015",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_016",
@@ -357,7 +402,10 @@
         "role": "support",
         "text": "We received your DM and will continue with you there. Thanks. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_016",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_017",
@@ -394,7 +442,10 @@
         "role": "customer",
         "text": "Ok thanks"
       }
-    ]
+    ],
+    "item_id": "GOLD_017",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_018",
@@ -419,7 +470,10 @@
         "role": "support",
         "text": "Does it show any updates available for the apps in the App Store? DM the answer below. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_018",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_019",
@@ -444,7 +498,10 @@
         "role": "support",
         "text": "Alright, thanks. Let's meet in DM to continue. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_019",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_020",
@@ -477,7 +534,10 @@
         "role": "customer",
         "text": "Still buggy though."
       }
-    ]
+    ],
+    "item_id": "GOLD_020",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_021",
@@ -514,7 +574,10 @@
         "role": "customer",
         "text": "Dm sent"
       }
-    ]
+    ],
+    "item_id": "GOLD_021",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_022",
@@ -547,7 +610,10 @@
         "role": "support",
         "text": "Please take a look at the following article and let us know if this helps: https://t.co/G3RWMwaBju"
       }
-    ]
+    ],
+    "item_id": "GOLD_022",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_023",
@@ -572,7 +638,10 @@
         "role": "support",
         "text": "Could you let us know in DM which iPhone this is happening with? https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_023",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_024",
@@ -601,7 +670,10 @@
         "role": "support",
         "text": "Thanks for reaching out. We're here to help. DM us so we can look into this further with you. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_024",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_025",
@@ -618,7 +690,10 @@
         "role": "support",
         "text": "Thanks for reaching out. Which iPhone model do you have? Send us a DM with more details and we'll go from there. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_025",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_026",
@@ -635,7 +710,10 @@
         "role": "support",
         "text": "We'd like to help. What version of watchOS is installed? Let us know in DM. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_026",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_027",
@@ -660,7 +738,10 @@
         "role": "support",
         "text": "DM us and we can work from there. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_027",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_028",
@@ -697,7 +778,10 @@
         "role": "customer",
         "text": "How to send a message directly"
       }
-    ]
+    ],
+    "item_id": "GOLD_028",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_029",
@@ -730,7 +814,10 @@
         "role": "support",
         "text": "Absolutely. Keep us updated in DM. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_029",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_030",
@@ -747,7 +834,10 @@
         "role": "support",
         "text": "We can look into this for you. Send us a DM and we'll see what options are available. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_030",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_031",
@@ -768,7 +858,10 @@
         "role": "customer",
         "text": "It's not something you can help with, it's just how you guys chose to redesign the keyboard"
       }
-    ]
+    ],
+    "item_id": "GOLD_031",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_032",
@@ -793,7 +886,10 @@
         "role": "support",
         "text": "That sounds like a plan. We're here from 5am until 8pm Pacific time, daily. We look forward to hearing the results."
       }
-    ]
+    ],
+    "item_id": "GOLD_032",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_033",
@@ -810,7 +906,10 @@
         "role": "support",
         "text": "Let's investigate this together. To start, let us know the device you're using, and we'll help out."
       }
-    ]
+    ],
+    "item_id": "GOLD_033",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_034",
@@ -835,7 +934,10 @@
         "role": "customer",
         "text": "https://t.co/mWQ6ttt25b"
       }
-    ]
+    ],
+    "item_id": "GOLD_034",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_035",
@@ -860,7 +962,10 @@
         "role": "support",
         "text": "Okay, thanks. Let's get updated to iOS 11.0.2. Follow the steps here: https://t.co/80YRnjDFDk DM us if the issue continues. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_035",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_036",
@@ -909,7 +1014,10 @@
         "role": "support",
         "text": "DM us what model phone you are using and we can help out. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_036",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_037",
@@ -930,7 +1038,10 @@
         "role": "support",
         "text": "Hi there, thanks for taking the time to reach out to us. We want to help. Reach us via DM to gather more information. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_037",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_038",
@@ -947,7 +1058,10 @@
         "role": "support",
         "text": "We're here to help. Let's team up in DM and we'll do our best to assist you. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_038",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_039",
@@ -972,7 +1086,10 @@
         "role": "support",
         "text": "Got it. Which exact version of iOS is the iPhone 7 running? Let us know in DM, we'll continue there. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_039",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_040",
@@ -993,7 +1110,10 @@
         "role": "support",
         "text": "We're here to help. Let's take this to DM so we can better assist you. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_040",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_041",
@@ -1010,7 +1130,10 @@
         "role": "support",
         "text": "Definitely not the experience that we want for you to have, but we're here to help out. Reach out to us via DM. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_041",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_042",
@@ -1027,7 +1150,10 @@
         "role": "support",
         "text": "Hi there. The information comes from your carrier network. Please send us a DM, we'll meet you there to take a look. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_042",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_043",
@@ -1044,7 +1170,10 @@
         "role": "support",
         "text": "We're here to help. Take a look at this article here: https://t.co/j91dpFKT7P"
       }
-    ]
+    ],
+    "item_id": "GOLD_043",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_044",
@@ -1089,7 +1218,10 @@
         "role": "support",
         "text": "We do want to get to the bottom of the issues you're seeing. Could you join us in DM and we'll get started? https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_044",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_045",
@@ -1106,7 +1238,10 @@
         "role": "support",
         "text": "We would like to help. Go ahead and DM us some more details of the steps you have already taken and we can work together. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_045",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_046",
@@ -1123,7 +1258,10 @@
         "role": "support",
         "text": "We are here to help whenever possible. DM the specific issue you are having with your Mac to get started. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_046",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_047",
@@ -1148,7 +1286,10 @@
         "role": "support",
         "text": "No worries at all and thanks for letting us know. Feel free to reach out if you have any other questions or concerns."
       }
-    ]
+    ],
+    "item_id": "GOLD_047",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_048",
@@ -1181,7 +1322,10 @@
         "role": "support",
         "text": "Which country are you currently located within? Let us know in DM here: https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_048",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_049",
@@ -1198,7 +1342,10 @@
         "role": "support",
         "text": "We'd like to look into this with you and make sure your iPhone charges properly. What kind of iPhone do you have?"
       }
-    ]
+    ],
+    "item_id": "GOLD_049",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_050",
@@ -1223,7 +1370,10 @@
         "role": "support",
         "text": "We appreciate all the information provided. Reach us via DM to continue. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_050",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_051",
@@ -1240,7 +1390,10 @@
         "role": "support",
         "text": "We can offer some assistance. Send us a DM with which iOS version you're running and we'll go from there. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_051",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_052",
@@ -1257,7 +1410,10 @@
         "role": "support",
         "text": "Have you had a chance yet to update to iOS 11.0.2? This will help you back up and update if not: https://t.co/80YRnjDFDk"
       }
-    ]
+    ],
+    "item_id": "GOLD_052",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_053",
@@ -1274,7 +1430,10 @@
         "role": "support",
         "text": "Let's talk. We want to turn this around so you can enjoy iOS 11. Please DM us and we'll get started: https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_053",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_054",
@@ -1299,7 +1458,10 @@
         "role": "support",
         "text": "Have you restarted your devices since noticing this? DM us and let us know. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_054",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_055",
@@ -1332,7 +1494,10 @@
         "role": "support",
         "text": "Let's help take a closer look to see what's going on. DM us and we can go from there. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_055",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_056",
@@ -1357,7 +1522,10 @@
         "role": "support",
         "text": "Let's begin by updating your iPhone to iOS 11.0.2, our current release, and let us know if the concern is still present."
       }
-    ]
+    ],
+    "item_id": "GOLD_056",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_057",
@@ -1374,7 +1542,10 @@
         "role": "support",
         "text": "Let's look into that. Send us a DM and we'll go from there. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_057",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_058",
@@ -1395,7 +1566,10 @@
         "role": "customer",
         "text": "In asking friends 2 people have had the same and then looking at forums numerous people have experienced the same thing"
       }
-    ]
+    ],
+    "item_id": "GOLD_058",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_059",
@@ -1412,7 +1586,10 @@
         "role": "support",
         "text": "This article can help with that https://t.co/HhL1HiRans"
       }
-    ]
+    ],
+    "item_id": "GOLD_059",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_060",
@@ -1433,7 +1610,10 @@
         "role": "customer",
         "text": "If you read the comments almost every post is about this shitty iOS 11 these guys here will make it seem like it is isolated"
       }
-    ]
+    ],
+    "item_id": "GOLD_060",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_061",
@@ -1454,7 +1634,10 @@
         "role": "customer",
         "text": "tried everything, still not working"
       }
-    ]
+    ],
+    "item_id": "GOLD_061",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_062",
@@ -1471,7 +1654,10 @@
         "role": "support",
         "text": "We can offer some assistance. Send us a DM with which device you are using and we'll continue there. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_062",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_063",
@@ -1488,7 +1674,10 @@
         "role": "support",
         "text": "Let's take a closer look together. Please DM us and we can go from there. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_063",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_064",
@@ -1505,7 +1694,10 @@
         "role": "support",
         "text": "We're here to help. Let's team up in DM and we'll do our best to assist you. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_064",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_065",
@@ -1526,7 +1718,10 @@
         "role": "customer",
         "text": "I am still getting the notification as normal. But the icon is affected. The twitter notification is the same way."
       }
-    ]
+    ],
+    "item_id": "GOLD_065",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_066",
@@ -1547,7 +1742,10 @@
         "role": "customer",
         "text": "I agree it sure is the worst"
       }
-    ]
+    ],
+    "item_id": "GOLD_066",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_067",
@@ -1564,7 +1762,10 @@
         "role": "support",
         "text": "We can help. Which version of iOS 11 is your device currently on? That info can be found under Settings &gt; General &gt; About."
       }
-    ]
+    ],
+    "item_id": "GOLD_067",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_068",
@@ -1581,7 +1782,10 @@
         "role": "support",
         "text": "We're here to help! When did this behavior begin? Have you tried restarting your device yet?"
       }
-    ]
+    ],
+    "item_id": "GOLD_068",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_069",
@@ -1606,7 +1810,10 @@
         "role": "support",
         "text": "Thanks for reaching out. Let's get you in touch with our Photos experts for a look. Reach them here: https://t.co/IBIY3vMgPj"
       }
-    ]
+    ],
+    "item_id": "GOLD_069",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_070",
@@ -1623,7 +1830,10 @@
         "role": "support",
         "text": "We want help. In DM, please share with us the exact iOS version you're currently using. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_070",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_071",
@@ -1640,7 +1850,10 @@
         "role": "support",
         "text": "Thanks for reaching out! We see your DM and we'll respond to it shortly."
       }
-    ]
+    ],
+    "item_id": "GOLD_071",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_072",
@@ -1661,7 +1874,10 @@
         "role": "support",
         "text": "We'd like to provide some assistance with these issues. Let us know which iPhone you're using in DM. We'll go from there. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_072",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_073",
@@ -1678,7 +1894,10 @@
         "role": "support",
         "text": "We'd like to help you out. Let's continue chatting via DM so we can find the best solution. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_073",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_074",
@@ -1699,7 +1918,10 @@
         "role": "customer",
         "text": "Alright thanks I've sent a DM. Bless."
       }
-    ]
+    ],
+    "item_id": "GOLD_074",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_075",
@@ -1716,7 +1938,10 @@
         "role": "support",
         "text": "Let's examine this battery issue. How long does a full charge usually last? Let us know in DM. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_075",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_076",
@@ -1741,7 +1966,10 @@
         "role": "support",
         "text": "We'd like to gather some more information for better troubleshooting. Can you DM us the country you are located in? https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_076",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_077",
@@ -1762,7 +1990,10 @@
         "role": "support",
         "text": "We'd love to assist you. DM us using the link below for further assistance. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_077",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_078",
@@ -1783,7 +2014,10 @@
         "role": "customer",
         "text": "iOS 11.0.2"
       }
-    ]
+    ],
+    "item_id": "GOLD_078",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_079",
@@ -1808,7 +2042,10 @@
         "role": "customer",
         "text": "iPhone 6 Plus from 11.0.1 to 11.0.2 to try &amp; combat issues but still suffering lockups -can't swipe to answer calls -very laggy in general."
       }
-    ]
+    ],
+    "item_id": "GOLD_079",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_080",
@@ -1825,7 +2062,10 @@
         "role": "support",
         "text": "We'd like to help with your device. To start, can you tell us what's happening with your device?"
       }
-    ]
+    ],
+    "item_id": "GOLD_080",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_081",
@@ -1842,7 +2082,10 @@
         "role": "support",
         "text": "We'd like to see if we can help with your iPhone. To get started, DM us what's going on with it. We'll meet you there. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_081",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_082",
@@ -1859,7 +2102,10 @@
         "role": "support",
         "text": "Let's get this sorted out together. Is your iPhone freezing when using any specific applications? DM us your response, please. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_082",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_083",
@@ -1876,7 +2122,10 @@
         "role": "support",
         "text": "We want to help. Let's gather some details to isolate this. Which iPhone and iOS version do you have? Did this issue just start?"
       }
-    ]
+    ],
+    "item_id": "GOLD_083",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_084",
@@ -1893,7 +2142,10 @@
         "role": "support",
         "text": "We're happy to help you with this. DM us with the model of your Mac and we'll go from there. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_084",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_085",
@@ -1910,7 +2162,10 @@
         "role": "support",
         "text": "We'd like to help with this. Could you please DM us so we can gather some info and get started? https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_085",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_086",
@@ -1947,7 +2202,10 @@
         "role": "support",
         "text": "We'd like to know more about your issue. Let's meet in DM and we'll pick up from there. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_086",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_087",
@@ -1964,7 +2222,10 @@
         "role": "support",
         "text": "Let's see if we can help. Send us a DM with your current version of iOS 11. We'll start from there. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_087",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_088",
@@ -1981,7 +2242,10 @@
         "role": "support",
         "text": "We are here to help! Please DM us what's happening, which device, and your country. We'll work out a solution there. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_088",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_089",
@@ -1998,7 +2262,10 @@
         "role": "support",
         "text": "Hey there! We'd be happy to look into this. Send us a DM to get started: https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_089",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_090",
@@ -2035,7 +2302,10 @@
         "role": "customer",
         "text": "Thanks. In iTunes \"Back Up Now\" is greyed out. The only thing I can click is \"Restore Backup..."
       }
-    ]
+    ],
+    "item_id": "GOLD_090",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_091",
@@ -2068,7 +2338,10 @@
         "role": "support",
         "text": "Join us in DM and we'll explore ways to provide you assistance. https://t.co/GDrqU2kzhr"
       }
-    ]
+    ],
+    "item_id": "GOLD_091",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_092",
@@ -2093,7 +2366,10 @@
         "role": "support",
         "text": "We want to look into this with you. DM us and we'll meet you there! https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_092",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_093",
@@ -2118,7 +2394,10 @@
         "role": "support",
         "text": "Got it. Have you checked for app updates within the App Store? Send us a DM, and we'll go from there. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_093",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_094",
@@ -2143,7 +2422,10 @@
         "role": "support",
         "text": "Join us in DM and we'll explore ways to provide you assistance. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_094",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_095",
@@ -2176,7 +2458,10 @@
         "role": "support",
         "text": "OK, go ahead and send us a DM and we'll investigate this further with you. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_095",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_096",
@@ -2201,7 +2486,10 @@
         "role": "support",
         "text": "Please DM us any steps you've tried so far here: https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_096",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_097",
@@ -2234,7 +2522,10 @@
         "role": "support",
         "text": "Thanks for confirming. Meet up with us in DM and we'll take a closer look. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_097",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_098",
@@ -2251,7 +2542,10 @@
         "role": "support",
         "text": "We want to help. Reach out to us in DM and we'll work together to find out what's happening. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_098",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_099",
@@ -2292,7 +2586,10 @@
         "role": "support",
         "text": "Let's dig a little deeper in to the brightness issue. Let us know when you first noticed the issue in DM. We'll continue there. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_099",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_100",
@@ -2317,7 +2614,10 @@
         "role": "support",
         "text": "To ensure this concern gets the attention to detail needed, let's continue our support in DM. Join with the link below. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_100",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_101",
@@ -2342,7 +2642,10 @@
         "role": "support",
         "text": "Thanks for clearing that up. How long after you restart does the wallpaper disappear? Does it happen with a specific app? https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_101",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_102",
@@ -2359,7 +2662,10 @@
         "role": "support",
         "text": "We'd like to help. Yes, the Apple Watch 3 with Cellular will work with your iPhone via Wi-Fi and Bluetooth."
       }
-    ]
+    ],
+    "item_id": "GOLD_102",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_103",
@@ -2380,7 +2686,10 @@
         "role": "customer",
         "text": "Awesome, thanks, I already did :)"
       }
-    ]
+    ],
+    "item_id": "GOLD_103",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_104",
@@ -2397,7 +2706,10 @@
         "role": "support",
         "text": "We want your iPhone to work as expected. DM us details of the issues you're having and we'll be happy to help. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_104",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_105",
@@ -2430,7 +2742,10 @@
         "role": "support",
         "text": "Follow up with us in DM. We'll take a further look there. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_105",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_106",
@@ -2451,7 +2766,10 @@
         "role": "support",
         "text": "We'd like to help. Let's start by following this article to make sure your AppleID is secured: https://t.co/ufbG3Gx5bq https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_106",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_107",
@@ -2468,7 +2786,10 @@
         "role": "support",
         "text": "We want to help out with any issues you're having. Let us know exactly what's going on in DM, and we'll work there. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_107",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_108",
@@ -2493,7 +2814,10 @@
         "role": "support",
         "text": "We'll be happy to take a closer look. DM us and we'll get started. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_108",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_109",
@@ -2510,7 +2834,10 @@
         "role": "support",
         "text": "We're happy to assist. Let us know which iPhone you're using in DM. We'll go from there. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_109",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_110",
@@ -2527,7 +2854,10 @@
         "role": "support",
         "text": "We'd like to know more about what's happening with your iPhone. Reach out to us via DM with your specific iOS 11 version. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_110",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_111",
@@ -2544,7 +2874,10 @@
         "role": "support",
         "text": "We can help. Please report this issue to us, so that our teams can look into this: https://t.co/jiMIBQw7go"
       }
-    ]
+    ],
+    "item_id": "GOLD_111",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_112",
@@ -2561,7 +2894,10 @@
         "role": "support",
         "text": "We'll be happy to assist. Please send us a DM with what country you're located in and we'll get started. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_112",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_113",
@@ -2582,7 +2918,10 @@
         "role": "support",
         "text": "We're here to look into the best options available. DM us what country or region you're located in. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_113",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_114",
@@ -2599,7 +2938,10 @@
         "role": "support",
         "text": "That's not the experience we want for you, and we're happy to see how we can help. To get started, send us a DM. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_114",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_115",
@@ -2616,7 +2958,10 @@
         "role": "support",
         "text": "Let's see if your power settings have changed. Learn to max your battery life here: https://t.co/TpjqFp3jxD"
       }
-    ]
+    ],
+    "item_id": "GOLD_115",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_116",
@@ -2633,7 +2978,10 @@
         "role": "support",
         "text": "You should enjoy using your device without worrying about battery life. Meet us in DM, and we'll see how we can help. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_116",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_117",
@@ -2650,7 +2998,10 @@
         "role": "support",
         "text": "We'd like to gather some more information for better troubleshooting. Can you DM us the country you are located in? https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_117",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_118",
@@ -2667,7 +3018,10 @@
         "role": "support",
         "text": "That's not typical behavior. Meet us in DM so we can dig deeper. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_118",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_119",
@@ -2700,7 +3054,10 @@
         "role": "customer",
         "text": "What's to look into? Your developers dropped the ball w/ this update. Back to the drawing board and fix the problems!"
       }
-    ]
+    ],
+    "item_id": "GOLD_119",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_120",
@@ -2717,7 +3074,10 @@
         "role": "support",
         "text": "Glad to help. Was this update being completed in iTunes or via Wi-Fi?"
       }
-    ]
+    ],
+    "item_id": "GOLD_120",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_121",
@@ -2734,7 +3094,10 @@
         "role": "support",
         "text": "Hi there. Let's see how we can sort this out together. Use the link below to connect with us in DM to get started. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_121",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_122",
@@ -2751,7 +3114,10 @@
         "role": "support",
         "text": "We'd love to help. To start, please send us a DM with which iPhone and software version you are using. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_122",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_123",
@@ -2768,7 +3134,10 @@
         "role": "support",
         "text": "We're happy to help. Can you send us a DM with which device you have? We'll take a look and go from there. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_123",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_124",
@@ -2801,7 +3170,10 @@
         "role": "support",
         "text": "DM us and we can take a look at this. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_124",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_125",
@@ -2842,7 +3214,10 @@
         "role": "support",
         "text": "We'd like to have you restore from that backup and DM us if you run into any issues with your password or the data. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_125",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_126",
@@ -2867,7 +3242,10 @@
         "role": "support",
         "text": "To help our engineers gather information, please feel free to leave us feedback here: https://t.co/eTPVYVFyd8"
       }
-    ]
+    ],
+    "item_id": "GOLD_126",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_127",
@@ -2884,7 +3262,10 @@
         "role": "support",
         "text": "We've received your DM, and we'll continue with you there. Be on the lookout for a response."
       }
-    ]
+    ],
+    "item_id": "GOLD_127",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_128",
@@ -2901,7 +3282,10 @@
         "role": "support",
         "text": "Since our Twitter support is available in English, get help at https://t.co/IBIY3w3RGR or join https://t.co/pvaOFg6Mb1"
       }
-    ]
+    ],
+    "item_id": "GOLD_128",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_129",
@@ -2918,7 +3302,10 @@
         "role": "support",
         "text": "We'd be happy to help. Could you please send us a DM so we can gather some info and take a look? https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_129",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_130",
@@ -2947,7 +3334,10 @@
         "role": "support",
         "text": "Is the behavior occurring completely at random or mainly when using specific applications? DM us the answer. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_130",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_131",
@@ -2964,7 +3354,10 @@
         "role": "support",
         "text": "We're here to help. DM us, and let us know what's going on. We'll do whatever we can to get this resolved. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_131",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_132",
@@ -2981,7 +3374,10 @@
         "role": "support",
         "text": "We've got a great article which may help with the podcast app: https://t.co/gQVExEKnrj Let us know the results."
       }
-    ]
+    ],
+    "item_id": "GOLD_132",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_133",
@@ -2998,7 +3394,10 @@
         "role": "support",
         "text": "Which iOS version is your device currently running? We want to make sure that you're running the latest version."
       }
-    ]
+    ],
+    "item_id": "GOLD_133",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_134",
@@ -3015,7 +3414,10 @@
         "role": "support",
         "text": "You've come to the right place. Please ensure you have 11.0.2, and DM your model phone and country. We'll see you there! https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_134",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_135",
@@ -3032,7 +3434,10 @@
         "role": "support",
         "text": "What kind of issues have you noticed since updating? DM us with details, and we'll find a solution together. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_135",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_136",
@@ -3065,7 +3470,10 @@
         "role": "support",
         "text": "You should be able to rely on your iPhone. Let's find a solution together. Meet us in DM, and we'll see how we can help. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_136",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_137",
@@ -3082,7 +3490,10 @@
         "role": "support",
         "text": "That's not expected. So we have the details, let us know the exact iOS running. If needed, this will help: https://t.co/lhhJthvNy9"
       }
-    ]
+    ],
+    "item_id": "GOLD_137",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_138",
@@ -3099,7 +3510,10 @@
         "role": "support",
         "text": "We offer support via Twitter in English. Get help in Spanish here: https://t.co/IBIY3vMgPj or join https://t.co/OczyRx7IOs"
       }
-    ]
+    ],
+    "item_id": "GOLD_138",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_139",
@@ -3116,7 +3530,10 @@
         "role": "support",
         "text": "We know battery life is important. We recommend checking out this link: https://t.co/bivpdfBNJ6"
       }
-    ]
+    ],
+    "item_id": "GOLD_139",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_140",
@@ -3137,7 +3554,10 @@
         "role": "customer",
         "text": "True story mason"
       }
-    ]
+    ],
+    "item_id": "GOLD_140",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_141",
@@ -3154,7 +3574,10 @@
         "role": "support",
         "text": "We can certainly help. Look at this article for help with your app crashing. DM us about your battery: https://t.co/fUZ0NRJxcn https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_141",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_142",
@@ -3171,7 +3594,10 @@
         "role": "support",
         "text": "We want to help. Are you running the latest release of iOS, iOS 11.0.2? You can check in Settings &gt; General &gt; About."
       }
-    ]
+    ],
+    "item_id": "GOLD_142",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_143",
@@ -3192,7 +3618,10 @@
         "role": "customer",
         "text": "Join the club this iso is shit isn't helping besides making you do this and that waste hours and nothing works"
       }
-    ]
+    ],
+    "item_id": "GOLD_143",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_144",
@@ -3217,7 +3646,10 @@
         "role": "support",
         "text": "Got it! We'd be happy to look into what's going on and try to save you a trip to the Apple Store. To start, send us a DM. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_144",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_145",
@@ -3246,7 +3678,10 @@
         "role": "support",
         "text": "We'd like to further review this for you. Please DM us additional details and we'll go from there. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_145",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_146",
@@ -3263,7 +3698,10 @@
         "role": "support",
         "text": "Let's look into that. Send us a DM and we'll go from there. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_146",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_147",
@@ -3280,7 +3718,10 @@
         "role": "support",
         "text": "Thanks for letting us know. You can see more about phishing here: https://t.co/LNMCdqt6fD"
       }
-    ]
+    ],
+    "item_id": "GOLD_147",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_148",
@@ -3301,7 +3742,10 @@
         "role": "customer",
         "text": "I fixed the issue myself thanks"
       }
-    ]
+    ],
+    "item_id": "GOLD_148",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_149",
@@ -3334,7 +3778,10 @@
         "role": "support",
         "text": "Thanks! The option to archive or delete will depend on the email service provider, but may be adjustable. Please DM us to proceed. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_149",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_150",
@@ -3355,7 +3802,10 @@
         "role": "customer",
         "text": "Read the posts here on Twitter is overwhelmed with the complaints about iOS 11"
       }
-    ]
+    ],
+    "item_id": "GOLD_150",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_151",
@@ -3372,7 +3822,10 @@
         "role": "support",
         "text": "We'd be happy to look this over with you. Please meet us in DM so we may gather information, and better assist. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_151",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_152",
@@ -3389,7 +3842,10 @@
         "role": "support",
         "text": "We're here for you! Learn more about turning Wi-Fi on/off in the Control Center with iOS 11 here: https://t.co/G7BHuQnDS6"
       }
-    ]
+    ],
+    "item_id": "GOLD_152",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_153",
@@ -3406,7 +3862,10 @@
         "role": "support",
         "text": "Thanks for reaching out. For assistance with your Apple ID reach out to our Account Security team here: https://t.co/UJm15vmMM2"
       }
-    ]
+    ],
+    "item_id": "GOLD_153",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_154",
@@ -3423,7 +3882,10 @@
         "role": "support",
         "text": "We certainly want your iPhone performing as it should be. Which version of iOS have you updated to? DM us to let us know. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_154",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_155",
@@ -3440,7 +3902,10 @@
         "role": "support",
         "text": "Let's look into this together. Are you an Apple Music member? Send us a DM and also let us know the country you're in. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_155",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_156",
@@ -3457,7 +3922,10 @@
         "role": "support",
         "text": "We'd be happy to look into what's going on. To start, reach out to us in DM and we'll continue from there. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_156",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_157",
@@ -3482,7 +3950,10 @@
         "role": "support",
         "text": "Do Not Disturb is a current feature available on the iOS software. Knowing which version you have will help us resolve the issue."
       }
-    ]
+    ],
+    "item_id": "GOLD_157",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_158",
@@ -3507,7 +3978,10 @@
         "role": "support",
         "text": "Got it. We'd like to investigate this. Send us a DM and we'll take a closer look. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_158",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_159",
@@ -3524,7 +3998,10 @@
         "role": "support",
         "text": "We'd like to help. Please DM us the device you're using and we'll get started. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_159",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_160",
@@ -3541,7 +4018,10 @@
         "role": "support",
         "text": "We certainly don't expect that. Send us a DM and we'll look into this further with you. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_160",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_161",
@@ -3566,7 +4046,10 @@
         "role": "support",
         "text": "Great question! We'd like to start by gathering your device model and the specific version of iOS 11 you've got installed. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_161",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_162",
@@ -3583,7 +4066,10 @@
         "role": "support",
         "text": "Let's help you get this sorted. Please DM us and we can go from there. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_162",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_163",
@@ -3604,7 +4090,10 @@
         "role": "support",
         "text": "We offer support via Twitter in English. Get help in Spanish here: https://t.co/IBIY3vMgPj or join https://t.co/OczyRx7IOs"
       }
-    ]
+    ],
+    "item_id": "GOLD_163",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_164",
@@ -3629,7 +4118,10 @@
         "role": "support",
         "text": "Let's dive deeper into this together. Here's a link to DM us: https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_164",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_165",
@@ -3658,7 +4150,10 @@
         "role": "support",
         "text": "We're here to help. Let's team up in DM and we'll do our best to assist you. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_165",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_166",
@@ -3683,7 +4178,10 @@
         "role": "support",
         "text": "We're here to help. DM us the exact iOS version you are running to get started. Find this in Settings &gt; General &gt; About. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_166",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_167",
@@ -3700,7 +4198,10 @@
         "role": "support",
         "text": "Hi! For this particular issue, we'd suggest keeping in contact with the Apple Store you had your previous appointment at."
       }
-    ]
+    ],
+    "item_id": "GOLD_167",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_168",
@@ -3725,7 +4226,10 @@
         "role": "support",
         "text": "We'd like to work with you to sort it out. Let's discuss it further in DM. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_168",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_169",
@@ -3766,7 +4270,10 @@
         "role": "support",
         "text": "DM stands for Direct Message. You can use this link to begin. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_169",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_170",
@@ -3803,7 +4310,10 @@
         "role": "support",
         "text": "What's the exact OS version number installed on your Mac? Please DM us here: https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_170",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_171",
@@ -3828,7 +4338,10 @@
         "role": "support",
         "text": "Let's work together to get as long a battery life from your device as possible. Which model do you have? Is iOS 11.0.2 installed?"
       }
-    ]
+    ],
+    "item_id": "GOLD_171",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_172",
@@ -3845,7 +4358,10 @@
         "role": "support",
         "text": "We want to help with battery life. Have you done the steps here: https://t.co/bivpdfBNJ6"
       }
-    ]
+    ],
+    "item_id": "GOLD_172",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_173",
@@ -3862,7 +4378,10 @@
         "role": "support",
         "text": "What kind of issues have you noticed with Podcasts? DM us with details, and we'll sort it out together. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_173",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_174",
@@ -3879,7 +4398,10 @@
         "role": "support",
         "text": "Let's help. DM us a bit more about what is going on and we'll do everything we can to get you up and running again. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_174",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_175",
@@ -3896,7 +4418,10 @@
         "role": "support",
         "text": "Let us help out. Tell us more about the battery issue. Also, which iOS version are you running in Settings &gt; General &gt; About?"
       }
-    ]
+    ],
+    "item_id": "GOLD_175",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_176",
@@ -3913,7 +4438,10 @@
         "role": "support",
         "text": "Let's take a closer look at your battery. Which iPhone do you have? Let us know in DM: https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_176",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_177",
@@ -3938,7 +4466,10 @@
         "role": "support",
         "text": "Thanks for reaching out. Let's look into this issue together. DM us with which iPhone you are using and we'll go from there. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_177",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_178",
@@ -3975,7 +4506,10 @@
         "role": "customer",
         "text": "get me in on this convo! myself &amp; many others are struggling with this as well. why'd you get rid of the option to disable auto-brightness?"
       }
-    ]
+    ],
+    "item_id": "GOLD_178",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_179",
@@ -3992,7 +4526,10 @@
         "role": "support",
         "text": "We're here for you! DM us about the issues you're experiencing, and we'll continue from there. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_179",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_180",
@@ -4009,7 +4546,10 @@
         "role": "support",
         "text": "We'd like to better understand what's happening. Which model do you have and is iOS 11.0.2 the one installed?"
       }
-    ]
+    ],
+    "item_id": "GOLD_180",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_181",
@@ -4026,7 +4566,10 @@
         "role": "support",
         "text": "We'd be happy to look this over with you. Please meet us in DM so we may gather information, and better assist. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_181",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_182",
@@ -4043,7 +4586,10 @@
         "role": "support",
         "text": "We're interested in getting your iPhone back on track. What's going on? Tell us about the \"glitching\". Maybe we can help."
       }
-    ]
+    ],
+    "item_id": "GOLD_182",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_183",
@@ -4060,7 +4606,10 @@
         "role": "support",
         "text": "We're here for you! Send us a DM, and we'll take a closer look at your device together. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_183",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_184",
@@ -4077,7 +4626,10 @@
         "role": "support",
         "text": "Let's get you over to our Billing team to help take a look. You can reach out by phone or chat here: https://t.co/SDIe7UiyJN"
       }
-    ]
+    ],
+    "item_id": "GOLD_184",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_185",
@@ -4094,7 +4646,10 @@
         "role": "support",
         "text": "We would like to help. Go ahead and DM us the iOS version you are running and we can work together. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_185",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_186",
@@ -4111,7 +4666,10 @@
         "role": "support",
         "text": "We know battery life is important. We recommend checking out this link: https://t.co/bivpdfBNJ6"
       }
-    ]
+    ],
+    "item_id": "GOLD_186",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_187",
@@ -4128,7 +4686,10 @@
         "role": "support",
         "text": "We would like to help. Are you currently running iOS 11.0.2? You can find out in Settings &gt; General &gt; About"
       }
-    ]
+    ],
+    "item_id": "GOLD_187",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_188",
@@ -4145,7 +4706,10 @@
         "role": "support",
         "text": "Are you currently having an issue with your iPhone? If so, we're happy to help. DM us with the details and we'll continue. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_188",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_189",
@@ -4162,7 +4726,10 @@
         "role": "support",
         "text": "We want to help with battery life. Have you done the steps here: https://t.co/bivpdfBNJ6"
       }
-    ]
+    ],
+    "item_id": "GOLD_189",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_190",
@@ -4179,7 +4746,10 @@
         "role": "support",
         "text": "We can let you know your best options for this situation. Let's look into this together. What iPhone are you using?"
       }
-    ]
+    ],
+    "item_id": "GOLD_190",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_191",
@@ -4204,7 +4774,10 @@
         "role": "support",
         "text": "Let's work together in a DM to check your options and get your iPhone responding nimbly. Please tap here to continue: https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_191",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_192",
@@ -4221,7 +4794,10 @@
         "role": "support",
         "text": "We'd be happy to look into any issues you are having. Send us a DM. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_192",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_193",
@@ -4238,7 +4814,10 @@
         "role": "support",
         "text": "Let's help take a closer look and get this sorted. Please reach out to us via DM and we can go from there. https://t.co/GDrqU22YpT"
       }
-    ]
+    ],
+    "item_id": "GOLD_193",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_194",
@@ -4255,7 +4834,10 @@
         "role": "support",
         "text": "Let's help improve this. Check out the suggestions shown here: https://t.co/bivpdfBNJ6 but keep us posted."
       }
-    ]
+    ],
+    "item_id": "GOLD_194",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_195",
@@ -4280,7 +4862,10 @@
         "role": "customer",
         "text": "After the latest update 11.0.3 the iPhone still freezing!!!!! I wish u back iOS 10.0.3 again and BTW it's 7+ bought 6 months ago"
       }
-    ]
+    ],
+    "item_id": "GOLD_195",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_196",
@@ -4292,7 +4877,10 @@
     "gold_escalation_reason": "Customer threatening churn and expressing severe dissatisfaction over crashing apps requires senior empathetic escalation.",
     "reference_resolution": "Empathetic de-escalation addressing churn risk and inviting to DM for personalized diagnosis.",
     "difficulty": "HARD",
-    "full_thread_for_audit": []
+    "full_thread_for_audit": [],
+    "item_id": "GOLD_196",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_197",
@@ -4304,7 +4892,10 @@
     "gold_escalation_reason": "iCloud Music Library sync toggle and Apple Music account status check can resolve missing library items.",
     "reference_resolution": "Advise checking Settings > Music > iCloud Music Library toggle and confirming subscription status.",
     "difficulty": "MEDIUM",
-    "full_thread_for_audit": []
+    "full_thread_for_audit": [],
+    "item_id": "GOLD_197",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_198",
@@ -4316,7 +4907,10 @@
     "gold_escalation_reason": "Abusive language and severe customer hostility require immediate human de-escalation.",
     "reference_resolution": "De-escalate professionally without arguing and route to specialist via secure DM.",
     "difficulty": "HARD",
-    "full_thread_for_audit": []
+    "full_thread_for_audit": [],
+    "item_id": "GOLD_198",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_199",
@@ -4328,7 +4922,10 @@
     "gold_escalation_reason": "Post-update background indexing and battery diagnostic steps address new device battery drain.",
     "reference_resolution": "Explain 48-hour post-update re-indexing and provide battery diagnostic steps.",
     "difficulty": "MEDIUM",
-    "full_thread_for_audit": []
+    "full_thread_for_audit": [],
+    "item_id": "GOLD_199",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   },
   {
     "id": "GOLD_200",
@@ -4340,6 +4937,9 @@
     "gold_escalation_reason": "Simple iPad Dock customization and app removal instructions resolve the user request.",
     "reference_resolution": "Provide instructions for dragging apps off the iPad Dock in Settings > Multitasking & Dock.",
     "difficulty": "EASY",
-    "full_thread_for_audit": []
+    "full_thread_for_audit": [],
+    "item_id": "GOLD_200",
+    "verification_status": "MANUALLY_AUDITED",
+    "annotator": "candidate_author"
   }
 ]

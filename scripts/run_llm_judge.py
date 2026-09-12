@@ -97,14 +97,22 @@ def run_or_verify_evaluations(
         if h_hash != expected_hash:
             mismatches.append(f"Human hash mismatch in {i_id}: expected {expected_hash[:8]}..., got {str(h_hash)[:8]}...")
 
+        # Provenance metadata verification
+        l_rec = llm_map[i_id]
+        if l_rec.get("model") != "gemini-2.5-flash" and l_rec.get("judge_model") != "gemini-2.5-flash":
+            mismatches.append(f"LLM model mismatch in {i_id}: expected gemini-2.5-flash, got {l_rec.get('model')}")
+        if not l_rec.get("provider"):
+            mismatches.append(f"Missing provider metadata in {i_id}")
+
     if mismatches:
-        print(f"[ERROR] Found {len(mismatches)} hash verification errors:")
+        print(f"[ERROR] Found {len(mismatches)} verification errors:")
         for m in mismatches[:5]:
             print(f"   - {m}")
         sys.exit(1)
     else:
-        print(f"[SUCCESS] All {len(frozen_items)} records verified with 100% SHA256 input hash alignment.")
+        print(f"[SUCCESS] All {len(frozen_items)} records verified with 100% SHA256 input hash and model provenance alignment.")
         print("  - LLM judge evaluations and Human annotations refer strictly to identical candidate outputs.")
+        print("  - Judge model provenance confirmed as gemini-2.5-flash.")
         print("  - Zero stale evaluation reuse confirmed.")
 
 if __name__ == "__main__":

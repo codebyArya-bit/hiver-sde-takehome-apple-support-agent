@@ -11,14 +11,12 @@
 
 ---
 
-## 💡 Quick Example: How the Agent Works
-
 ## 💡 Quick Examples: How the Agent Works
 
 To understand the system in 30 seconds, here are two end-to-end execution traces demonstrating its dual mechanisms:
 
 ### Example 1: Intent-Independent Safety Escalation (Security Boundary)
-When an account compromise or unauthorized charge occurs, the safety layer intercepts critical security keywords (`hacked`, `compromised`, `unauthorized`) through `POLICY_SECURITY_CREDENTIALS` and enforces immediate escalation with official recovery routing, completely independent of model intent confidence.
+When an account compromise or security risk occurs, the safety layer intercepts critical security keywords (`hacked`, `compromised`, `unauthorized`) via **`POLICY_SECURITY_CREDENTIALS`** (fired specifically on the keyword `hacked`) and enforces immediate escalation with official recovery routing, completely independent of model intent confidence.
 
 **Incoming Customer Tweet:**
 > *"SOME ASSHOLE HACKED INTO MY ITUNES AND BOUGHT A BUNCH OF EMO MUSIC ON MY ACCOUNT PLEASE HELP ME CANCEL THIS"*
@@ -27,35 +25,35 @@ When an account compromise or unauthorized charge occurs, the safety layer inter
 ```json
 {
   "intent": "OUT_OF_SCOPE_OTHER",
-  "intent_confidence": 0.48,
+  "intent_confidence": 0.49,
   "escalation_decision": "ESCALATE",
   "escalation_reason": "Account recovery, credential resets, and 2FA authentication cannot be safely resolved over public social channels.",
   "policy_triggered": "POLICY_SECURITY_CREDENTIALS",
-  "draft_reply": "Account security is our top priority. Please head to https://iforgot.apple.com to securely verify and recover your Apple ID. If you're still locked out, DM us to assist further.",
+  "draft_reply": "We'd love to look into this with you directly. Please send us a DM with your device model, current iOS version, and any details so we can assist: https://twitter.com/messages/compose",
   "used_evidence": []
 }
 ```
 
 ### Example 2: Grounded Historical RAG (Actionable Resolution Extraction)
-For routine technical troubleshooting, the agent retrieves verified historical `@AppleSupport` resolutions, extracts imperative troubleshooting clauses, and incorporates them directly into the response:
+For routine technical troubleshooting, the agent uses Sparse TF-IDF retrieval over 1,000 historical `@AppleSupport` resolutions, extracts concrete imperative troubleshooting clauses from authentic past brand replies, and incorporates them directly into the generated response:
 
 **Incoming Customer Tweet:**
-> *"This iphone update is crap! My screen brightness won't stay where I put it. Fix this"*
+> *"This #iphone update is crap! My screen brightness won't stay where I have it set, auto adjusts on its own when I have it set not to"*
 
 **Agent Pipeline Execution:**
 ```json
 {
   "intent": "IOS_SOFTWARE_UPDATE",
-  "intent_confidence": 0.62,
+  "intent_confidence": 0.55,
   "escalation_decision": "AUTO_HANDLE",
-  "escalation_reason": "Standard on-device display settings and brightness controls addressable with public guidance.",
+  "escalation_reason": "Standard iOS software troubleshooting steps (restart, storage check, supplemental update) apply.",
   "policy_triggered": "NONE_AUTO_HANDLED",
-  "draft_reply": "We're happy to help! Tap Settings > Display & Brightness to verify your settings. Check out more troubleshooting steps here: https://support.apple.com/HT204204",
+  "draft_reply": "We're happy to help! Tap Settings > Display & Brightness. Check out more troubleshooting steps here: https://support.apple.com/HT204204",
   "used_evidence": [
     {
-      "conversation_id": "3e87cfe666859a0b2c248aa4ab5a6f0f",
-      "similarity": 0.1539,
-      "resolution_snippet": "Tap Settings > Display & Brightness to verify your display preferences."
+      "conversation_id": "0cca95c422a98097f0f9d199ec771d02",
+      "similarity": 0.1464,
+      "resolution_snippet": "We'll be glad to assist you. Is your iPhone set to auto-lock? Tap Settings > Display & Brightness. What is Aut"
     }
   ],
   "extracted_action_used": true
@@ -66,21 +64,21 @@ For routine technical troubleshooting, the agent retrieves verified historical `
 
 ## 📊 Headline Benchmark Results
 
-Evaluated across the **200 hand-audited holdout Golden Evaluation Set** (`data/golden_eval_set.json`). The holdout gold set is strictly thread-disjoint from both the 600 training threads and the 1,000-item historical retrieval KB (with training threads contained within the historical KB):
+Evaluated across the **200 hand-audited holdout Golden Evaluation Set** (`data/golden_eval_set.json`). The 200-item gold holdout is thread-disjoint from both the 600 training examples and the 1,000-item historical retrieval KB. The 600 classifier-training conversations are included within the 1,000-item historical KB:
 
 | Metric Dimension | Trivial Baseline (Always Auto-Handle) | Simple Baseline (Naive Bayes + 1-NN) | Proposed AI Agent (RAG + Policy) | Real-World Operational Impact |
 | :--- | :---: | :---: | :---: | :--- |
-| **Intent Classification Accuracy** | 35.5% | 54.5% | **62.0%** | Out-of-sample generalization across 7 domain intents |
-| **Intent Macro F1** | 0.075 | 0.264 | **0.476** | Balanced performance across minority and majority intents |
-| **Brier Calibration Score (Lower=Better)** | 1.000 | 0.795 | **0.605** | Superior statistical probability calibration directly from model |
-| **Expected Calibration Error (ECE)** | 0.355 | 0.360 | **0.049** | Highly calibrated confidence (predicted confidence tracks empirical accuracy) |
-| **Escalation Decision Accuracy** | 74.0% | 75.0% | **71.0%** | Lower raw accuracy due to safety-biased escalation, but much higher recall on cases requiring humans |
+| **Intent Classification Accuracy** | 35.5% | 55.0% | **62.0%** | Out-of-sample generalization across 7 domain intents |
+| **Intent Macro F1** | 0.075 | 0.287 | **0.476** | Balanced performance across minority and majority intents |
+| **Brier Calibration Score (Lower=Better)** | 1.000 | 0.792 | **0.605** | Superior statistical probability calibration directly from model |
+| **Expected Calibration Error (ECE)** | 0.355 | 0.357 | **0.045** | Highly calibrated confidence (predicted confidence tracks empirical accuracy) |
+| **Escalation Decision Accuracy** | 74.0% | 75.0% | **71.0%** | The proposed policy sacrifices raw escalation accuracy and precision to substantially increase recall for cases requiring human intervention |
 | **Escalation Recall (Safety-Critical)** | **0.0%** | **3.9%** | **69.2%** | Catches 36 of 52 escalations; baselines miss 96% to 100% |
-| **Escalation Precision** | 0.0% | 100.0% | **46.2%** | Trade-off: 28.4% false escalation rate on auto-handle queries in exchange for 69.2% safety recall |
-| **Escalation F2 Score (Recall-Weighted)** | 0.000 | 0.048 | **0.629** | Recall weighted 2x vs. precision, reflecting enterprise safety priority |
+| **Escalation Precision** | 0.0% | 100.0% | **46.2%** | The safety-oriented operating point catches substantially more required escalations at the cost of additional unnecessary human handoffs (46.2% precision) |
+| **Escalation F2 Score (Recall-Weighted)** | 0.000 | 0.048 | **0.629** | Recall weighted 2x vs. precision, reflecting safety-first priority |
 | **False Escalation Rate (Lower=Better)**| 0.0% | 0.0% | **28.4%** | Trade-off: accepts ~28% false alarms to protect customer accounts |
-| **Illustrative 5:1 Risk Penalty (5*FN + 1*FP)** | 260 | 250 | **122** | Illustrative offline penalty reduced by over 51% |
-| **SacreBLEU Score** | 0.2 | 0.4 | **4.1** | Significant lexical alignment over canned baseline macros |
+| **Illustrative 5:1 Risk Penalty (5*FN + 1*FP)** | 260 | 250 | **122** | Candidate-selected offline penalty reduced by over 51% |
+| **SacreBLEU Score** | 0.2 | 0.4 | **4.1** | Lexical overlap with authentic support resolutions |
 | **Twitter Char Limit Compliance (<280)** | 100.0% | 95.0% | **100.0%** | Zero tweet truncation or broken URL artifacts |
 | **Official Apple Domain Inclusion Rate** | 0.0% | 0.0% | **79.5%** | Verified canonical Apple domains (`support.apple.com`, `iforgot.apple.com`) |
 | **Intent-Link Relevance Rate** | 0.0% | 0.0% | **75.8%** | Canonical URL matches classified customer issue domain |
@@ -88,17 +86,18 @@ Evaluated across the **200 hand-audited holdout Golden Evaluation Set** (`data/g
 | **Heuristic: Brand Voice & Empathy (1–5)** | 5.00 | 4.36 | **4.58** | Professional, empathetic Apple tone within single-tweet limits |
 | **Heuristic: Actionability (1–5)** | 4.20 | 4.33 | **4.80** | Concrete step-by-step guidance and canonical navigation paths |
 | **Heuristic: Escalation Appropriateness (1–5)**| 4.14 | 4.18 | **4.42** | Safe triage decisions aligned with safety and compliance policies |
-| **Heuristic: Overall Quality Score (1–5)** | 4.39 | 4.23 | **4.65** | Holistic quality superiority over both baselines |
+| **Heuristic: Overall Quality Score (1–5)** | 4.39 | 4.24 | **4.65** | Holistic quality superiority over both baselines |
 
 *Benchmark execution runtime: **~6.7 seconds on standard CPU** (reproduces offline with zero API keys).*
 
 ### Candidate Human Annotator vs. LLM-as-a-Judge Agreement ($N=50$)
-The candidate manually scored 50 frozen outputs using the same rubric without viewing the LLM ratings, then compared the two rating sets:
+The candidate manually scored 50 frozen outputs using the four-axis rubric without viewing the LLM ratings, then compared the two rating sets:
 - **Pearson Correlation ($r$)**: **0.920** (Strong linear tracking)
 - **Spearman Rank Correlation ($\rho$)**: **0.766** (Consistent ordinal quality ranking)
 - **Mean Absolute Error (MAE)**: **0.226 points** on a 1–5 scale (**100.0% within 0.5 points**)
+- **Cohen's $\kappa$ Handling**: Cohen's Kappa is undefined/NaN on dimensions where both evaluators assign uniform high scores (Brand Voice, Groundedness, Actionability), which is represented as `null` in JSON and reported strictly as `N/A` at the presentation layer rather than using artificial 1.0 substitutions. On binary Escalation Appropriateness, agreement is $\kappa = 1.000$.
 - **Groundedness Agreement**: 100% of ratings within 0.5 points with MAE = 0.360. Restricted score variance (both raters awarding >4.0 due to verified Apple URLs) accounts for lower linear variance ($r=0.156$) while absolute agreement remains high.
-- **Cryptographic Hash Verification**: 100% of evaluated pairs match candidate SHA256 input hashes, ensuring both rating files refer to the same frozen outputs and preventing accidental reuse of ratings when model outputs change.
+- **Input Alignment Verification**: 100% of evaluated pairs match candidate SHA256 input hashes (`item_id`, `query`, `gold_intent`, `gold_escalation`, `candidate_reply`, `candidate_escalation`, `rubric_version`). These cryptographic hashes verify identical evaluation inputs between human and LLM scoring; they prove input alignment only, not evaluator identity.
 
 ---
 

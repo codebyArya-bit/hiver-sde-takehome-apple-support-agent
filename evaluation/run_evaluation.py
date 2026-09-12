@@ -83,7 +83,7 @@ def run_benchmark():
     overlap_kb = kb_ids.intersection(gold_ids)
     assert len(overlap_train) == 0, f"Leakage detected: {len(overlap_train)} threads in train & gold"
     assert len(overlap_kb) == 0, f"Leakage detected: {len(overlap_kb)} threads in KB & gold"
-    console.print(f"[green][OK] Verified 0 Thread Overlap: Train ({len(train_data)}) vs KB ({len(kb_data)}) vs Gold ({len(golden_data)}).[/green]")
+    console.print(f"[green][OK] Verified 0 Thread Overlap: Gold ({len(golden_data)}) vs Train ({len(train_data)}) and Gold vs KB ({len(kb_data)}) (Train is included within KB).[/green]")
 
     # 2. Train and Initialize Models
     console.print("\n[yellow]>> Initializing Agents and Training Classifiers on Disjoint Train Split...[/yellow]")
@@ -248,7 +248,7 @@ def run_benchmark():
          fmt_stat(results['Trivial Baseline']['escalation_metrics']['false_escalation_rate'], pct=True),
          fmt_stat(results['Simple Baseline']['escalation_metrics']['false_escalation_rate'], pct=True),
          fmt_stat(results['Proposed AI Agent']['escalation_metrics']['false_escalation_rate'], pct=True)),
-        ("Weighted Risk-Cost Penalty (5*FN + 1*FP)",
+        ("Illustrative 5:1 Risk Penalty (5*FN + 1*FP)",
          str(results['Trivial Baseline']['escalation_metrics']['weighted_risk_cost']),
          str(results['Simple Baseline']['escalation_metrics']['weighted_risk_cost']),
          str(results['Proposed AI Agent']['escalation_metrics']['weighted_risk_cost'])),
@@ -260,7 +260,7 @@ def run_benchmark():
          f"{results['Trivial Baseline']['generation_metrics']['char_limit_compliance_pct']:.1f}%",
          f"{results['Simple Baseline']['generation_metrics']['char_limit_compliance_pct']:.1f}%",
          f"{results['Proposed AI Agent']['generation_metrics']['char_limit_compliance_pct']:.1f}%"),
-        ("Official Domain Inclusion Rate",
+        ("Official Apple Domain Inclusion Rate",
          f"{results['Trivial Baseline']['generation_metrics']['official_domain_inclusion_rate']:.1f}%",
          f"{results['Simple Baseline']['generation_metrics']['official_domain_inclusion_rate']:.1f}%",
          f"{results['Proposed AI Agent']['generation_metrics']['official_domain_inclusion_rate']:.1f}%"),

@@ -11,7 +11,7 @@ evaluating the EXACT SAME proposed-agent responses across 50 holdout items using
 
 import json
 from pathlib import Path
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Optional
 import numpy as np
 from scipy import stats
 from sklearn.metrics import cohen_kappa_score
@@ -28,9 +28,21 @@ def calculate_agreement_metrics(
     mae = float(np.mean(np.abs(h_arr - j_arr)))
     rmse = float(np.sqrt(np.mean((h_arr - j_arr) ** 2)))
 
-    # 2. Correlations
-    pearson_r, p_val = stats.pearsonr(h_arr, j_arr)
-    spearman_rho, sp_val = stats.spearmanr(h_arr, j_arr)
+    # 2. Correlations (safely handling constant inputs where correlation is undefined)
+    import warnings
+    if np.all(h_arr == h_arr[0]) or np.all(j_arr == j_arr[0]):
+        pearson_r, p_val = None, None
+        spearman_rho, sp_val = None, None
+    else:
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore")
+            p_r, p_v = stats.pearsonr(h_arr, j_arr)
+            pearson_r = round(float(p_r), 3) if not np.isnan(p_r) else None
+            p_val = float(p_v) if not np.isnan(p_v) else None
+
+            s_r, s_v = stats.spearmanr(h_arr, j_arr)
+            spearman_rho = round(float(s_r), 3) if not np.isnan(s_r) else None
+            sp_val = float(s_v) if not np.isnan(s_v) else None
 
     # 3. Tolerance Agreement
     diffs = np.abs(h_arr - j_arr)
@@ -48,14 +60,20 @@ def calculate_agreement_metrics(
     h_bins = [bin_score(s) for s in human_scores]
     j_bins = [bin_score(s) for s in judge_scores]
     kappa = None
-    try:
-        import warnings
-        with warnings.catch_warnings():
-            warnings.simplefilter("ignore")
-            kappa_val = cohen_kappa_score(h_bins, j_bins, labels=["LOW", "MODERATE", "HIGH"])
-            if not np.isnan(kappa_val):
-                kappa = round(float(kappa_val), 3)
-    except Exception:
+
+    # Statistically, if one or both raters assign all items to a single category,
+    # category variance is 0 and Cohen's Kappa is mathematically undefined (0/0 or NaN).
+    # It must NEVER be converted to 1.0 or interpreted as perfect agreement.
+    if len(set(h_bins)) > 1 and len(set(j_bins)) > 1:
+        try:
+            with warnings.catch_warnings():
+                warnings.simplefilter("ignore")
+                kappa_val = cohen_kappa_score(h_bins, j_bins, labels=["LOW", "MODERATE", "HIGH"])
+                if not np.isnan(kappa_val):
+                    kappa = round(float(kappa_val), 3)
+        except Exception:
+            kappa = None
+    else:
         kappa = None
 
     return {
@@ -63,14 +81,23 @@ def calculate_agreement_metrics(
         "sample_size": len(human_scores),
         "mae": round(mae, 3),
         "rmse": round(rmse, 3),
-        "pearson_r": round(float(pearson_r), 3),
-        "pearson_p_value": float(p_val),
-        "spearman_rho": round(float(spearman_rho), 3),
-        "spearman_p_value": float(sp_val),
+        "pearson_r": pearson_r,
+        "pearson_p_value": p_val,
+        "spearman_rho": spearman_rho,
+        "spearman_p_value": sp_val,
         "within_0.5_points_pct": round(within_half, 1),
         "within_1.0_points_pct": round(within_one, 1),
         "cohens_kappa": kappa
     }
+
+def format_kappa_presentation(kappa_val: Optional[float]) -> str:
+    """
+    Renders Cohen's Kappa strictly for the presentation layer (CLI, tables, reports).
+    Undefined/NaN Kappa is presented as 'N/A' and never substituted with 1.0.
+    """
+    if kappa_val is None or (isinstance(kappa_val, float) and np.isnan(kappa_val)):
+        return "N/A"
+    return f"{kappa_val:.3f}"
 
 def run_human_judge_agreement_study(
     human_ann_path: str = "evaluation/human_annotations.json",
@@ -152,5 +179,6 @@ def run_human_judge_agreement_study(
 if __name__ == '__main__':
     res = run_human_judge_agreement_study()
     for k, v in res.items():
-        k_str = f"{v['cohens_kappa']:.3f}" if v['cohens_kappa'] is not None else "N/A"
-        print(f"{v['metric_name']}: Pearson r={v['pearson_r']}, MAE={v['mae']}, Kappa={k_str}, Within 0.5={v['within_0.5_points_pct']}%")
+        k_str = format_kappa_presentation(v['cohens_kappa'])
+        p_str = f"{v['pearson_r']:.3f}" if v['pearson_r'] is not None else "N/A"
+        print(f"{v['metric_name']}: Pearson r={p_str}, MAE={v['mae']}, Kappa={k_str}, Within 0.5={v['within_0.5_points_pct']}%")
