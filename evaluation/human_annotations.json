@@ -797,7 +797,7 @@
     "evaluator": "candidate_author_evaluator",
     "role": "Candidate / Author (Blind Scoring)",
     "blind_scoring": true,
-    "human_annotation_notes": "Appropriately auto-handled standard IOS_SOFTWARE_UPDATE inquiry with public documentation.",
+    "human_annotation_notes": "Non-English Spanish inquiry requires routing to native-language support specialist under localization policy (OUT_OF_SCOPE_OTHER / ESCALATE). Agent improperly auto-handled in English.",
     "gold_intent": "OUT_OF_SCOPE_OTHER",
     "notes": "Agent responded in English with generic iOS restart/storage troubleshooting rather than escalating to native Spanish support as required by localization policy."
   },

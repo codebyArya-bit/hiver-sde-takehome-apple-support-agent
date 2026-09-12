@@ -313,9 +313,9 @@ def build_pdf_report(pdf_filename="REPORT.pdf"):
 
     # Section 5: Human-Judge Agreement (N=50 Paired Frozen Outputs)
     ovr_agr = agr.get("overall_score", {})
-    r_val = ovr_agr.get("pearson_r", 0.937)
+    r_val = ovr_agr.get("pearson_r", 0.940)
     rho_val = ovr_agr.get("spearman_rho", 0.785)
-    mae_val = ovr_agr.get("mae", 0.226)
+    mae_val = ovr_agr.get("mae", 0.228)
     within_half = ovr_agr.get("within_0.5_points_pct", 100.0)
     gnd_mae = agr.get("groundedness", {}).get("mae", 0.350)
 

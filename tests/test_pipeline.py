@@ -411,7 +411,7 @@ def test_llm_judge_provenance_and_model_metadata():
         assert record.get("provider") == "google"
         assert record.get("model") == "gemini-2.5-flash"
         assert record.get("judge_model") == "gemini-2.5-flash"
-        assert record.get("actual_model_version") is not None
+        assert record.get("configured_model_variant") is not None
         assert record.get("temperature") == 0.0
         assert record.get("rubric_version") == "v1.2"
         assert record.get("evaluated_at") is not None

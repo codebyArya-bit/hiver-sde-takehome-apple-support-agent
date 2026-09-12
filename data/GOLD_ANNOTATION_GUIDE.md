@@ -28,7 +28,7 @@ Each message is assigned to one of seven mutually exclusive operational domains:
 | `APP_STORE_AND_BILLING` | Purchases, refund requests, disputed subscriptions, credit card charges | Unwanted iTunes charge, refund for in-app purchase, student discount pricing | Technical App Store download freezing belongs to `IOS_SOFTWARE_UPDATE`. |
 | `DEVICE_SETUP_AND_USAGE` | How-to guidance, UI navigation, feature discovery, settings toggles | Orientation lock toggle, iPad dock removal, Apple Watch pairing, AirDrop setup | If user asks how to recover an account, route to `APPLE_ID_AND_ICLOUD`. |
 | `CUSTOMER_FEEDBACK_COMPLAINT` | Expressed dissatisfaction, service delays, store experience, brand frustration | Waiting 2 weeks for AppleCare callback, sarcastic complaints, threats to switch to Android | Routine technical questions with mild annoyance still classify by technical intent unless primary intent is venting/complaint. |
-| `OUT_OF_SCOPE_OTHER` | Multilingual inquiries, non-Apple products, unintelligible spam | Non-English messages (Spanish, French), inquiries about Samsung/Windows, random gibberish | Non-English queries must be flagged for language localization escalation. |
+| `OUT_OF_SCOPE_OTHER` | Multilingual inquiries, non-Apple products, unintelligible spam | Pure non-English messages (Spanish, French), inquiries about Samsung/Windows, random gibberish | Pure non-English queries requiring translation must be flagged for language localization escalation (`OUT_OF_SCOPE_OTHER` + `ESCALATE`). However, mixed-language messages that already contain a complete, unambiguous English translation (e.g., `GOLD_147` with Russian preamble + full English text) may be classified and handled directly from their English content without requiring localization escalation. |
 
 ---
 
@@ -41,7 +41,7 @@ Triage decisions must balance safety, legal compliance, and customer trust again
 2. **Financial Transactions**: Refund requests, duplicate card billings, subscription disputes. (Requires authenticated transaction logs).
 3. **Physical & Safety Hazards**: Swollen batteries, overheating causing smoke/burns, shattered glass risks.
 4. **Severe Dissatisfaction & Legal/PR Risk**: Threatening litigation, multi-week unresolved delays with prior AppleCare case IDs, abusive rants.
-5. **Language Localization**: Inquiries written in languages other than English requiring native-language support specialists.
+5. **Language Localization**: Inquiries written purely in languages other than English requiring native-language support specialists. *(Note: Mixed-language inquiries containing a full, intelligible English translation such as `GOLD_147` may be auto-handled in English if the inquiry is routine).*
 6. **Low Model Confidence**: Inquiries with ambiguous symptoms where automated guidance risks incorrect advice.
 
 ### Must `AUTO_HANDLE`:

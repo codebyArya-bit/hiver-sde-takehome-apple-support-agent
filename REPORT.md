@@ -23,7 +23,7 @@ The proposed agent achieves:
 - **79.5% Official Apple Domain Inclusion Rate** and **76.1% Intent-Link Relevance Rate** (vs. 0.0% for baselines).
 - **100.0% Twitter Character Limit Compliance** (<280 chars).
 - Mean Heuristic Rubric score of **4.64 / 5.00** (vs. 4.39 for Trivial and 4.24 for Simple Baseline).
-- Paired Human vs. LLM-as-a-Judge Study ($N=50$): **Pearson $r = 0.937$**, **Spearman $\rho = 0.785$**, **MAE = 0.226 points** (100.0% within 0.5 points), with cryptographic SHA256 input hash verification across all evaluated pairs.
+- Paired Human vs. LLM-as-a-Judge Study ($N=50$): **Pearson $r = 0.940$**, **Spearman $\rho = 0.785$**, **MAE = 0.228 points** (100.0% within 0.5 points), with cryptographic SHA256 input hash verification across all evaluated pairs.
 - The full evaluation suite reproduces completely offline on standard CPU in **~6 seconds**, easily satisfying the <15-minute reproduction requirement with zero external API dependencies.
 
 ---
@@ -166,9 +166,9 @@ Our out-of-sample intent accuracy is 61.5% across 7 coarse categories. In an unc
 
 To evaluate automated rubric reliability, we conducted an inter-rater agreement study comparing Gemini 2.5 Flash rubric scoring and candidate author blind scoring on the exact same 50 frozen agent outputs. The candidate manually scored the 50 frozen outputs using the four-axis rubric without viewing the LLM ratings, then compared the two rating sets:
 
-* **Pearson Correlation ($r$)**: **0.937** on Overall Rubric Score, indicating strong linear tracking of human scoring.
+* **Pearson Correlation ($r$)**: **0.940** on Overall Rubric Score, indicating strong linear tracking of human scoring.
 * **Spearman Rank Correlation ($\rho$)**: **0.785**, demonstrating consistent ordinal ranking of response quality.
-* **Mean Absolute Error (MAE)**: **0.226 points** on the raw 1.0–5.0 scale, with **100.0% of all ratings within 0.5 points** of human ground truth.
+* **Mean Absolute Error (MAE)**: **0.228 points** on the raw 1.0–5.0 scale, with **100.0% of all ratings within 0.5 points** of human ground truth.
 * **Cohen's $\kappa$ Handling**: Cohen's Kappa is undefined/NaN on dimensions where both evaluators assign uniform high scores (Groundedness, Actionability), which is represented as `null` in JSON and reported strictly as `N/A` at the presentation layer rather than using artificial 1.0 substitutions. On binary Escalation Appropriateness, agreement is $\kappa = 1.000$; Brand Voice agreement is $\kappa = 1.000$; Overall is $\kappa = 0.215$.
 * **Groundedness Score Distribution**: Both the human evaluator and the LLM judge scored candidate replies high on grounding (mean ratings 4.60 and 4.95 respectively, with 100% within 0.5 points and MAE = 0.350), because candidate responses consistently cite valid official Apple support URLs and verbatim Apple steps. This low score variance naturally produces a modest Pearson correlation ($r=0.167$), while absolute error confirms close agreement.
 * **Input Alignment Verification**: 100% of evaluated pairs match candidate SHA256 input hashes (`item_id`, `query`, `gold_intent`, `gold_escalation`, `candidate_reply`, `candidate_escalation`, `rubric_version`). These cryptographic hashes verify identical evaluation inputs between human and LLM scoring; they prove input alignment only, not evaluator identity.

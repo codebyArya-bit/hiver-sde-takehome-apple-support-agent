@@ -92,9 +92,9 @@ Evaluated across the **200 hand-audited holdout Golden Evaluation Set** (`data/g
 
 ### Candidate Human Annotator vs. LLM-as-a-Judge Agreement ($N=50$)
 The candidate manually scored 50 frozen outputs using the four-axis rubric without viewing the LLM ratings, then compared the two rating sets:
-- **Pearson Correlation ($r$)**: **0.937** (Strong linear tracking)
+- **Pearson Correlation ($r$)**: **0.940** (Strong linear tracking)
 - **Spearman Rank Correlation ($\rho$)**: **0.785** (Consistent ordinal quality ranking)
-- **Mean Absolute Error (MAE)**: **0.226 points** on a 1–5 scale (**100.0% within 0.5 points**)
+- **Mean Absolute Error (MAE)**: **0.228 points** on a 1–5 scale (**100.0% within 0.5 points**)
 - **Cohen's $\kappa$ Handling**: Cohen's Kappa is undefined/NaN on dimensions where both evaluators assign uniform high scores (Groundedness, Actionability), which is represented as `null` in JSON and reported strictly as `N/A` at the presentation layer rather than using artificial 1.0 substitutions. On binary Escalation Appropriateness, agreement is $\kappa = 1.000$; Brand Voice agreement is $\kappa = 1.000$; Overall is $\kappa = 0.215$.
 - **Groundedness Agreement**: 100% of ratings within 0.5 points with MAE = 0.350. Restricted score variance (both raters awarding >4.0 due to verified Apple URLs) accounts for lower linear variance ($r=0.167$) while absolute agreement remains high.
 - **Input Alignment Verification**: 100% of evaluated pairs match candidate SHA256 input hashes (`item_id`, `query`, `gold_intent`, `gold_escalation`, `candidate_reply`, `candidate_escalation`, `rubric_version`). These cryptographic hashes verify identical evaluation inputs between human and LLM scoring; they prove input alignment only, not evaluator identity.

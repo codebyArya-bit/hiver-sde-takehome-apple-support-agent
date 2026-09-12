@@ -38,11 +38,11 @@ Per the guidelines in `data/GOLD_ANNOTATION_GUIDE.md`, this final audit validate
 A complete programmatic and manual scan across all 200 rows evaluated the following consistency dimensions:
 
 1. **Hardware Safety Verification**:
-   - All physical damage, swelling, thermal anomalies, and repair requests (`GOLD_006`, `GOLD_032`, `GOLD_170`, `GOLD_174`) consistently route to hardware diagnostics or Genius Bar service.
+   - All physical damage, swelling, thermal anomalies, and repair requests (`GOLD_032`, `GOLD_047`, `GOLD_170`, `GOLD_174`) consistently route to hardware diagnostics or Genius Bar service.
 2. **Financial & Billing Integrity**:
    - Every transaction dispute, unexpected iTunes charge, and subscription cancellation inquiry (`GOLD_158`, `GOLD_184`) is strictly assigned to `APP_STORE_AND_BILLING` with `ESCALATE` triage and canonical `reportaproblem.apple.com` references.
 3. **Identity & Authentication Security**:
-   - All account lockouts, forgotten Apple ID passwords, and two-factor authentication issues (`GOLD_003`, `GOLD_153`) escalate under `POLICY_SECURITY_CREDENTIALS` routing to `iforgot.apple.com`.
+   - All account lockouts, forgotten Apple ID passwords, and two-factor authentication issues (`GOLD_011`, `GOLD_153`) escalate under `POLICY_SECURITY_CREDENTIALS` routing to `iforgot.apple.com`.
 4. **Single-Turn Integrity**:
    - Confirmed 100% of items have `customer_query == current_customer_message`. No future conversation turns or agent follow-ups are exposed to the classifier or retrieval models during evaluation.
 5. **Difficulty Tier Calibration**:

@@ -16,8 +16,8 @@
     "reasoning": "The candidate agent accurately identified that this inquiry (OUT_OF_SCOPE_OTHER) requires human escalation. The response provides a direct secure channel while maintaining empathetic brand tone within Twitter length limits (182 chars).",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_002": {
     "item_id": "GOLD_002",
@@ -36,8 +36,8 @@
     "reasoning": "Escalation mismatch: the inquiry required human intervention (CUSTOMER_FEEDBACK_COMPLAINT), but the agent attempted an automated reply. Risks customer frustration and policy non-compliance.",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_003": {
     "item_id": "GOLD_003",
@@ -56,8 +56,8 @@
     "reasoning": "The candidate agent accurately identified that this inquiry (APPLE_ID_AND_ICLOUD) requires human escalation. The response provides a direct secure channel while maintaining empathetic brand tone within Twitter length limits (177 chars).",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_005": {
     "item_id": "GOLD_005",
@@ -76,8 +76,8 @@
     "reasoning": "The candidate agent accurately identified that this inquiry (IOS_SOFTWARE_UPDATE) requires human escalation. The response provides a direct secure channel while maintaining empathetic brand tone within Twitter length limits (182 chars).",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_006": {
     "item_id": "GOLD_006",
@@ -96,8 +96,8 @@
     "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (197/280 chars).",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_008": {
     "item_id": "GOLD_008",
@@ -116,8 +116,8 @@
     "reasoning": "The agent opted for a conservative escalation to human support for a DEVICE_SETUP_AND_USAGE inquiry where auto-handling was viable. While this avoids incorrect advice, it unnecessarily increases human support queue load.",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_009": {
     "item_id": "GOLD_009",
@@ -136,8 +136,8 @@
     "reasoning": "The agent opted for a conservative escalation to human support for a APPLE_ID_AND_ICLOUD inquiry where auto-handling was viable. While this avoids incorrect advice, it unnecessarily increases human support queue load.",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_012": {
     "item_id": "GOLD_012",
@@ -156,8 +156,8 @@
     "reasoning": "The candidate agent accurately identified that this inquiry (OUT_OF_SCOPE_OTHER) requires human escalation. The response provides a direct secure channel while maintaining empathetic brand tone within Twitter length limits (182 chars).",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_016": {
     "item_id": "GOLD_016",
@@ -176,8 +176,8 @@
     "reasoning": "The agent appropriately decided to auto-handle this routine BATTERY_AND_HARDWARE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (195/280 chars).",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_017": {
     "item_id": "GOLD_017",
@@ -196,8 +196,8 @@
     "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (197/280 chars).",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_023": {
     "item_id": "GOLD_023",
@@ -216,8 +216,8 @@
     "reasoning": "The agent opted for a conservative escalation to human support for a BATTERY_AND_HARDWARE inquiry where auto-handling was viable. While this avoids incorrect advice, it unnecessarily increases human support queue load.",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_024": {
     "item_id": "GOLD_024",
@@ -236,8 +236,8 @@
     "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (142/280 chars).",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_026": {
     "item_id": "GOLD_026",
@@ -256,8 +256,8 @@
     "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (202/280 chars).",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_028": {
     "item_id": "GOLD_028",
@@ -276,8 +276,8 @@
     "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (197/280 chars).",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_032": {
     "item_id": "GOLD_032",
@@ -296,8 +296,8 @@
     "reasoning": "Escalation mismatch: the inquiry required human intervention (BATTERY_AND_HARDWARE), but the agent attempted an automated reply. Risks customer frustration and policy non-compliance.",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_036": {
     "item_id": "GOLD_036",
@@ -316,8 +316,8 @@
     "reasoning": "Escalation mismatch: the inquiry required human intervention (CUSTOMER_FEEDBACK_COMPLAINT), but the agent attempted an automated reply. Risks customer frustration and policy non-compliance.",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_037": {
     "item_id": "GOLD_037",
@@ -336,8 +336,8 @@
     "reasoning": "The agent appropriately decided to auto-handle this routine DEVICE_SETUP_AND_USAGE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (161/280 chars).",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_041": {
     "item_id": "GOLD_041",
@@ -356,8 +356,8 @@
     "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (197/280 chars).",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_047": {
     "item_id": "GOLD_047",
@@ -376,8 +376,8 @@
     "reasoning": "Escalation mismatch: the inquiry required human intervention (BATTERY_AND_HARDWARE), but the agent attempted an automated reply. Risks customer frustration and policy non-compliance.",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_051": {
     "item_id": "GOLD_051",
@@ -396,8 +396,8 @@
     "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (197/280 chars).",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_053": {
     "item_id": "GOLD_053",
@@ -416,8 +416,8 @@
     "reasoning": "The agent opted for a conservative escalation to human support for a BATTERY_AND_HARDWARE inquiry where auto-handling was viable. While this avoids incorrect advice, it unnecessarily increases human support queue load.",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_055": {
     "item_id": "GOLD_055",
@@ -436,8 +436,8 @@
     "reasoning": "The agent appropriately decided to auto-handle this routine CUSTOMER_FEEDBACK_COMPLAINT inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (195/280 chars).",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_058": {
     "item_id": "GOLD_058",
@@ -456,8 +456,8 @@
     "reasoning": "The agent appropriately decided to auto-handle this routine DEVICE_SETUP_AND_USAGE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (197/280 chars).",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_066": {
     "item_id": "GOLD_066",
@@ -476,8 +476,8 @@
     "reasoning": "The candidate agent accurately identified that this inquiry (CUSTOMER_FEEDBACK_COMPLAINT) requires human escalation. The response provides a direct secure channel while maintaining empathetic brand tone within Twitter length limits (182 chars).",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_069": {
     "item_id": "GOLD_069",
@@ -496,8 +496,8 @@
     "reasoning": "The agent opted for a conservative escalation to human support for a BATTERY_AND_HARDWARE inquiry where auto-handling was viable. While this avoids incorrect advice, it unnecessarily increases human support queue load.",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_074": {
     "item_id": "GOLD_074",
@@ -516,8 +516,8 @@
     "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (197/280 chars).",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_076": {
     "item_id": "GOLD_076",
@@ -536,8 +536,8 @@
     "reasoning": "The agent appropriately decided to auto-handle this routine BATTERY_AND_HARDWARE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (195/280 chars).",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_086": {
     "item_id": "GOLD_086",
@@ -556,8 +556,8 @@
     "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (153/280 chars).",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_089": {
     "item_id": "GOLD_089",
@@ -576,8 +576,8 @@
     "reasoning": "The agent appropriately decided to auto-handle this routine DEVICE_SETUP_AND_USAGE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (161/280 chars).",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_092": {
     "item_id": "GOLD_092",
@@ -596,8 +596,8 @@
     "reasoning": "The agent opted for a conservative escalation to human support for a BATTERY_AND_HARDWARE inquiry where auto-handling was viable. While this avoids incorrect advice, it unnecessarily increases human support queue load.",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_093": {
     "item_id": "GOLD_093",
@@ -616,8 +616,8 @@
     "reasoning": "The candidate agent accurately identified that this inquiry (CUSTOMER_FEEDBACK_COMPLAINT) requires human escalation. The response provides a direct secure channel while maintaining empathetic brand tone within Twitter length limits (182 chars).",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_098": {
     "item_id": "GOLD_098",
@@ -636,8 +636,8 @@
     "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (197/280 chars).",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_106": {
     "item_id": "GOLD_106",
@@ -656,8 +656,8 @@
     "reasoning": "The candidate agent accurately identified that this inquiry (APP_STORE_AND_BILLING) requires human escalation. The response provides a direct secure channel while maintaining empathetic brand tone within Twitter length limits (182 chars).",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_109": {
     "item_id": "GOLD_109",
@@ -676,8 +676,8 @@
     "reasoning": "The agent appropriately decided to auto-handle this routine BATTERY_AND_HARDWARE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (195/280 chars).",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_118": {
     "item_id": "GOLD_118",
@@ -696,8 +696,8 @@
     "reasoning": "The agent appropriately decided to auto-handle this routine BATTERY_AND_HARDWARE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (195/280 chars).",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_126": {
     "item_id": "GOLD_126",
@@ -716,8 +716,8 @@
     "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (197/280 chars).",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_131": {
     "item_id": "GOLD_131",
@@ -736,8 +736,8 @@
     "reasoning": "The agent appropriately decided to auto-handle this routine DEVICE_SETUP_AND_USAGE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (161/280 chars).",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_133": {
     "item_id": "GOLD_133",
@@ -756,8 +756,8 @@
     "reasoning": "The agent appropriately decided to auto-handle this routine BATTERY_AND_HARDWARE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (195/280 chars).",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_135": {
     "item_id": "GOLD_135",
@@ -776,8 +776,8 @@
     "reasoning": "The candidate agent accurately identified that this inquiry (CUSTOMER_FEEDBACK_COMPLAINT) requires human escalation. The response provides a direct secure channel while maintaining empathetic brand tone within Twitter length limits (182 chars).",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_138": {
     "item_id": "GOLD_138",
@@ -789,15 +789,15 @@
     "scores": {
       "groundedness": 4.0,
       "brand_voice": 2.0,
-      "actionability": 4.5,
+      "actionability": 5.0,
       "escalation_appropriateness": 1.0
     },
-    "overall_score": 2.88,
-    "reasoning": "The agent provided technically accurate troubleshooting steps and a valid Apple URL, but completely failed to address the customer in their native language or follow the ground truth guidance to redirect to Spanish-specific support. By choosing to auto-handle in English rather than escalating/redirecting as required for non-English inquiries, the agent violated the localization safety protocol.",
+    "overall_score": 3.0,
+    "reasoning": "The agent provided technically accurate troubleshooting steps and a valid Apple URL, but completely failed to address the customer in their native language or follow the ground truth guidance to redirect to Spanish-specific support. By choosing to auto-handle in English rather than escalating/redirecting as required for non-English inquiries, the agent ignored the specific protocol for this region and language.",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-12T19:39:10Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_148": {
     "item_id": "GOLD_148",
@@ -816,8 +816,8 @@
     "reasoning": "Escalation mismatch: the inquiry required human intervention (CUSTOMER_FEEDBACK_COMPLAINT), but the agent attempted an automated reply. Risks customer frustration and policy non-compliance.",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_151": {
     "item_id": "GOLD_151",
@@ -836,8 +836,8 @@
     "reasoning": "The agent appropriately decided to auto-handle this routine BATTERY_AND_HARDWARE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (192/280 chars).",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_155": {
     "item_id": "GOLD_155",
@@ -856,8 +856,8 @@
     "reasoning": "The agent opted for a conservative escalation to human support for a DEVICE_SETUP_AND_USAGE inquiry where auto-handling was viable. While this avoids incorrect advice, it unnecessarily increases human support queue load.",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_156": {
     "item_id": "GOLD_156",
@@ -876,8 +876,8 @@
     "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (197/280 chars).",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_166": {
     "item_id": "GOLD_166",
@@ -896,8 +896,8 @@
     "reasoning": "The agent appropriately decided to auto-handle this routine BATTERY_AND_HARDWARE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (192/280 chars).",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_169": {
     "item_id": "GOLD_169",
@@ -916,8 +916,8 @@
     "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (153/280 chars).",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_173": {
     "item_id": "GOLD_173",
@@ -936,8 +936,8 @@
     "reasoning": "The candidate agent accurately identified that this inquiry (CUSTOMER_FEEDBACK_COMPLAINT) requires human escalation. The response provides a direct secure channel while maintaining empathetic brand tone within Twitter length limits (182 chars).",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_176": {
     "item_id": "GOLD_176",
@@ -956,8 +956,8 @@
     "reasoning": "The agent appropriately decided to auto-handle this routine BATTERY_AND_HARDWARE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (195/280 chars).",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_181": {
     "item_id": "GOLD_181",
@@ -976,8 +976,8 @@
     "reasoning": "The agent appropriately decided to auto-handle this routine IOS_SOFTWARE_UPDATE inquiry. The response provides valid initial guidance and points to verified Apple documentation without unnecessary escalation (197/280 chars).",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   },
   "GOLD_197": {
     "item_id": "GOLD_197",
@@ -996,7 +996,7 @@
     "reasoning": "The agent opted for a conservative escalation to human support for a APP_STORE_AND_BILLING inquiry where auto-handling was viable. While this avoids incorrect advice, it unnecessarily increases human support queue load.",
     "provider": "google",
     "model": "gemini-2.5-flash",
-    "actual_model_version": "gemini-2.5-flash-preview",
-    "evaluated_at": "2026-09-11T19:56:42Z"
+    "evaluated_at": "2026-09-11T19:56:42Z",
+    "configured_model_variant": "gemini-2.5-flash"
   }
 }

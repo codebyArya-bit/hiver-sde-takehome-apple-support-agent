@@ -1,5 +1,5 @@
 {
-  "execution_timestamp": "2026-09-12T18:05:03Z",
+  "execution_timestamp": "2026-09-12T19:41:56Z",
   "dataset_size": 200,
   "split_verification": {
     "train_threads": 600,
@@ -5080,13 +5080,13 @@
     "actionability": {
       "metric_name": "Actionability & Quality",
       "sample_size": 50,
-      "mae": 0.42,
-      "rmse": 0.51,
-      "pearson_r": 0.06,
-      "pearson_p_value": 0.6796765201733529,
-      "spearman_rho": 0.018,
-      "spearman_p_value": 0.8991297974950198,
-      "within_0.5_points_pct": 90.0,
+      "mae": 0.43,
+      "rmse": 0.524,
+      "pearson_r": 0.045,
+      "pearson_p_value": 0.7545928994650475,
+      "spearman_rho": 0.008,
+      "spearman_p_value": 0.9580552371557195,
+      "within_0.5_points_pct": 88.0,
       "within_1.0_points_pct": 100.0,
       "cohens_kappa": null
     },
@@ -5106,10 +5106,10 @@
     "overall_score": {
       "metric_name": "Overall Rubric Score",
       "sample_size": 50,
-      "mae": 0.226,
-      "rmse": 0.26,
-      "pearson_r": 0.937,
-      "pearson_p_value": 1.2949223758300457e-23,
+      "mae": 0.228,
+      "rmse": 0.262,
+      "pearson_r": 0.94,
+      "pearson_p_value": 3.885384008405449e-24,
       "spearman_rho": 0.785,
       "spearman_p_value": 1.4666153248410217e-11,
       "within_0.5_points_pct": 100.0,
@@ -5117,5 +5117,5 @@
       "cohens_kappa": 0.215
     }
   },
-  "elapsed_seconds": 6.08
+  "elapsed_seconds": 7.41
 }
